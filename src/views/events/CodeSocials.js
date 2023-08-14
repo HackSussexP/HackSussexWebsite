@@ -1,10 +1,11 @@
 import React from "react";
+import AboutHeader from '../../components/AboutHeader';
 
 const CodeSocials = () => {
   return (
-    <div>
-      <h1>CodeSocials</h1>
-    </div>
+    <>
+      <AboutHeader />
+    </>
   );
 }
 

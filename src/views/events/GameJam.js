@@ -1,9 +1,10 @@
 import React from 'react';
+import AboutHeader from '../../components/AboutHeader';
 
 const GameJam = () => {
   return(
     <div>
-      <h1>GameJam</h1>
+      <AboutHeader />
     </div>
   );
 }

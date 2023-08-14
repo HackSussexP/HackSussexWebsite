@@ -1,9 +1,10 @@
 import React from 'react';
+import AboutHeader from '../../components/AboutHeader';
 
 const CodersCup = () => {
   return(
     <div>
-      <h1>CodersCup</h1>
+      <AboutHeader />
     </div>
   );
 }

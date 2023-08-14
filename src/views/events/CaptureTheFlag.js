@@ -1,9 +1,12 @@
 import React from 'react';
+import AboutHeader from '../../components/AboutHeader';
+import SocialMediaSection from '../../components/SocialMediaSection';
 
 const CaptureTheFlag = () => {
   return(
     <div>
-      <h1>CaptureTheFlag</h1>
+      <AboutHeader />
+      <SocialMediaSection />
     </div>
   );
 }
