@@ -4,7 +4,7 @@ import AboutHeader from '../../components/AboutHeader';
 const Hackathon = () => {
   return(
     <div>
-      <AboutHeader />
+      <h1>Hackathon</h1>
     </div>
   );
 }

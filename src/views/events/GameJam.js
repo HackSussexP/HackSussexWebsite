@@ -4,7 +4,7 @@ import AboutHeader from '../../components/AboutHeader';
 const GameJam = () => {
   return(
     <div>
-      <AboutHeader />
+      <h1>Game Jam</h1>
     </div>
   );
 }

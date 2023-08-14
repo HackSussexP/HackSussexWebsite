@@ -4,7 +4,7 @@ import AboutHeader from '../../components/AboutHeader';
 const CodeSocials = () => {
   return (
     <>
-      <AboutHeader />
+      <h1>Code Socials</h1>
     </>
   );
 }

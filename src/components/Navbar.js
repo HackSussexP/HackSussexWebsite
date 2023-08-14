@@ -5,7 +5,7 @@ import logo from './../assets/logo-gradient.png';
 const Navbar = () => {
   return(
     <>
-      <nav class="navbar navbar-expand-md text-center">
+      <nav class="navbar navbar-expand-xl text-center">
         <div class="container-fluid px-5">
           <Link class="navbar-brand" to="/">
             <img src={logo} alt="logo" width="100" height="50" />
