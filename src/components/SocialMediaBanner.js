@@ -14,11 +14,9 @@ var sectionStyle = {
   width: '100%',
 };
 
-//make the icons bigger when on a phone screen - they shrink too far
-
 const SocialMediaBanner = () => {
   function openLink() {
-    window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley')
+    window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
   }
 
   return (
@@ -27,24 +25,24 @@ const SocialMediaBanner = () => {
         <div class="row text-center">
           <h2 class="col-12">Find us on Social Media</h2>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center p-2">
           <div class="col-2">
-            <button class="btn" onClick={openLink}>
-              <img src={discord} class="img-fluid" alt="discord logo" />
+            <button class="btn p-0" onClick={openLink}>
+              <img src={discord} class="img-fluid w-100" alt="discord logo" />
             </button>
           </div>
           <div class="col-2">
-            <button class="btn" onClick={openLink}>
+            <button class="btn p-0" onClick={openLink}>
               <img src={insta} class="img-fluid" alt="instagram logo" />
             </button>
           </div>
           <div class="col-2">
-            <button class="btn" onClick={openLink}>
+            <button class="btn p-0" onClick={openLink}>
               <img src={linkedin} class="img-fluid" alt="linkedin logo" />
             </button>
           </div>
           <div class="col-2">
-            <button class="btn" onClick={openLink}>
+            <button class="btn p-0" onClick={openLink}>
               <img src={twitter} class="img-fluid" alt="twitter logo" />
             </button>
           </div>
