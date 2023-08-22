@@ -1,10 +1,10 @@
 import React from 'react';
-import AboutHeader from '../../components/AboutHeader';
+import SponsorBanner from '../../components/SponsorBanner';
 
 const Hackathon = () => {
   return(
     <div>
-      <h1>Hackathon</h1>
+      <SponsorBanner />
     </div>
   );
 }

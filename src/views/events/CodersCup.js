@@ -1,11 +1,13 @@
 import React from 'react';
 import AboutHeader from '../../components/AboutHeader';
+import SponsorBanner from '../../components/SponsorBanner';
 
 const CodersCup = () => {
   return(
-    <div>
+    <>
+      <SponsorBanner />
       <AboutHeader />
-    </div>
+    </>
   );
 }
 

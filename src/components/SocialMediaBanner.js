@@ -14,6 +14,8 @@ var sectionStyle = {
   width: '100%',
 };
 
+//make the icons bigger when on a phone screen - they shrink too far
+
 const SocialMediaBanner = () => {
   function openLink() {
     window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley')
