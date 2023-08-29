@@ -6,9 +6,6 @@ import ElectricSquare from './../assets/SponsorLogos/ElectricSquare.png';
 import GitHub from './../assets/SponsorLogos/GitHub.png';
 import Overleaf from './../assets/SponsorLogos/Overleaf.png';
 
-//make a row with the arrows for big sceens
-//and a row with no arrows for small screens
-
 const SponsorBanner = () => {
     return(
         <>
