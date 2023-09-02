@@ -1,7 +1,7 @@
 import React from 'react';
 import AboutHeader from '../../components/AboutHeader';
 import SocialMediaBanner from '../../components/SocialMediaBanner';
-import SponsorBanner from '../../components/SponsorBanner';
+import RotatingSponsorBanner from '../../components/RotatingSponsorBanner';
 import background from './../../assets/CTFbackground.png';
 import pic from './../../assets/index-carousel/image2.png'
 
@@ -36,7 +36,7 @@ const CaptureTheFlag = () => {
           </div>
         </div>
       </div>
-      <SponsorBanner />
+      <RotatingSponsorBanner />
       <AboutHeader />
       <SocialMediaBanner />
       <div className='container p-3'>

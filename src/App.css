@@ -68,3 +68,13 @@ html, body {
   object-fit: cover;
   height: 600px;
 }
+
+.sponsor-banner {
+  background-color: var(--darker-blue);
+}
+
+.slick-initialized .slick-track {
+  display: flex;
+  align-items: center;
+}
+

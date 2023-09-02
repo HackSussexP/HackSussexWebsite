@@ -1,11 +1,11 @@
 import React from 'react';
 import AboutHeader from '../../components/AboutHeader';
-import SponsorBanner from '../../components/SponsorBanner';
+import RotatingSponsorBanner from '../../components/RotatingSponsorBanner';
 
 const CodersCup = () => {
   return(
     <>
-      <SponsorBanner />
+      <RotatingSponsorBanner />
       <AboutHeader />
     </>
   );
