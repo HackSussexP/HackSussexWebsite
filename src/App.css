@@ -27,6 +27,7 @@ html, body {
   min-height: calc(100vh);
   max-height: 100%;
   font-size: 1.25rem;
+  overflow-x: hidden;
 }
 
 .btn-blue {

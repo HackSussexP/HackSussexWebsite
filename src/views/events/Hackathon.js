@@ -5,29 +5,35 @@ import SponsorBanner from './../../components/SponsorBanner';
 //couldn't get any sort of unload function to work to make it stop but if you have nay ideas please try
 
 const Hackathon = () => {
-  function timer() {
+
+  function timer(interval) {
     let countDownDate = new Date("May 1, 2024 0:0:0").getTime();
 
     let x = setInterval(function() {
+        
+        let distance = countDownDate - new Date().getTime();
 
-      let distance = countDownDate - new Date().getTime();
-
-      document.getElementById('days').innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
-      document.getElementById('hours').innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      document.getElementById('minutes').innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      document.getElementById('seconds').innerText = Math.floor((distance % (1000 * 60)) / 1000);
-
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById('countdown').innerText = "ENJOY THE 2024 HACKATHON!!";
-      }
-    }, 1000);
+        if (distance < 0 || interval == 0) {
+            clearInterval(x);
+            document.getElementById('days').innerText = '0';
+            document.getElementById('hours').innerText = '0';
+            document.getElementById('minutes').innerText = '0';
+            document.getElementById('seconds').innerText = '0';
+            document.getElementById('countdown').innerText = "ENJOY THE 2024 HACKATHON!!";
+        } else {
+            document.getElementById('days').innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
+            document.getElementById('hours').innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            document.getElementById('minutes').innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            document.getElementById('seconds').innerText = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById('countdown').innerText = null;
+        }
+    }, interval);
   }
 
   return(
     <>
       <SponsorBanner />
-      <div className='container-fluid text-center p-3' onLoad={timer()} style={{backgroundColor: "var(--darker-blue)"}}>
+      <div className='container-fluid text-center p-3' onLoad={timer(0)} style={{backgroundColor: "var(--darker-blue)"}}>
         <h1 id="headline">Countdown to the 2024 Hackathon</h1>
         <div className='row justify-content-center' style={{color: "var(--green)"}}>
           <div className='col-1'>

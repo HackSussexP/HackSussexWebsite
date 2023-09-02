@@ -3,6 +3,7 @@ import { Link, Outlet } from 'react-router-dom';
 import logo from './../assets/logo-gradient.png';
 
 const Navbar = () => {
+
   return(
     <>
       <nav class="navbar navbar-expand-xl text-center">
