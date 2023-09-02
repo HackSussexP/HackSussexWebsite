@@ -21,6 +21,7 @@ html, body {
   background-color: var(--dark-grey);
   background-image: url("assets/background-scatter.png");
   color: var(--text);
+  scroll-behavior: smooth;
 }
 
 #root {
@@ -31,12 +32,26 @@ html, body {
 }
 
 .btn-blue {
-  background-color: var(--teal);
+  background-color: var(--electric-green);
   color: var(--super-dark);
 }
 
 .btn-blue:hover {
-  background-color: var(--blue);
+  background-color: var(--electric-green) !important;
+  color: var(--super-dark) !important;
+  text-decoration: underline !important;
+}
+
+.btn-blue:active {
+  background-color: var(--electric-green) !important;
+  color: var(--super-dark) !important;
+  text-decoration: underline !important;
+}
+
+.btn-blue:focus {
+  background-color: var(--electric-green);
+  color: var(--super-dark);
+  text-decoration: underline;
 }
 
 .navbar {
@@ -60,15 +75,6 @@ html, body {
   color: var(--super-dark);
 }
 
-#indexCarousel .carousel-item {
-  height: 600px;
-}
-
-#indexCarousel .carousel-item img {
-  object-fit: cover;
-  height: 600px;
-}
-
 .sponsor-banner {
   background-color: var(--darker-blue);
 }
@@ -77,4 +83,32 @@ html, body {
   display: flex;
   align-items: center;
 }
+
+.carousel-item {
+  height: 500px;
+  width: 100%;
+}
+
+.carousel-item .img-fluid {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-indicators button {
+  width: 30px !important;
+  height: 30px !important;
+  border: 5px solid var(--super-dark) !important;
+  border-radius: 100%;
+  background-color: var(--electric-green) !important;
+  margin: 5px 0;
+}
+
+.text-electric {
+  color: var(--electric-green);
+}
+
+
+
+
 

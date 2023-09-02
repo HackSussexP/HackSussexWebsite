@@ -21,27 +21,27 @@ const SocialMediaBanner = () => {
 
   return (
     <>
-      <div class="container-fluid social-media-banner p-3" style={sectionStyle}>
+      <div class="container-fluid social-media-banner p-3 text-center" style={sectionStyle}>
         <div class="row text-center">
           <h2 class="col-12">Find us on Social Media</h2>
         </div>
         <div class="row justify-content-center p-2">
-          <div class="col-2">
+          <div class="col col-sm-2 col-lg-1">
             <button class="btn p-0" onClick={openLink}>
               <img src={discord} class="img-fluid w-100" alt="discord logo" />
             </button>
           </div>
-          <div class="col-2">
+          <div class="col col-sm-2 col-lg-1">
             <button class="btn p-0" onClick={openLink}>
               <img src={insta} class="img-fluid" alt="instagram logo" />
             </button>
           </div>
-          <div class="col-2">
+          <div class="col col-sm-2 col-lg-1">
             <button class="btn p-0" onClick={openLink}>
               <img src={linkedin} class="img-fluid" alt="linkedin logo" />
             </button>
           </div>
-          <div class="col-2">
+          <div class="col col-sm-2 col-lg-1">
             <button class="btn p-0" onClick={openLink}>
               <img src={twitter} class="img-fluid" alt="twitter logo" />
             </button>
