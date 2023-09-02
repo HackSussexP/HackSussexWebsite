@@ -1,6 +1,8 @@
 import './App.css';
 
+import React, { Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from './components/ScrollToTop';
 
 import Navbar from "./components/Navbar.js"; // what is this error for 
 
@@ -25,20 +27,23 @@ function NoMatch() {
 
 export default function App() {
   return (
-  <BrowserRouter>
-    <Navbar />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/events/hackathon" element={<Hackathon />} />
-      <Route path="/events/coderscup" element={<CodersCup />} />
-      <Route path="/events/codesocials" element={<CodeSocials />} />
-      <Route path="/events/capturetheflag" element={<CaptureTheFlag />} />
-      <Route path="/events/gamejam" element={<GameJam />} />
-      <Route path="/calendar" element={<Calendar />} />
-      <Route path="/gallery" element={<Gallery />} />
-      <Route path="*" element={<NoMatch />} />
-    </Routes>
-  </BrowserRouter>
+    <Suspense fallback={<div>Loading...</div>}>
+      <BrowserRouter>
+        <ScrollToTop />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/events/hackathon" element={<Hackathon />} />
+          <Route path="/events/coderscup" element={<CodersCup />} />
+          <Route path="/events/codesocials" element={<CodeSocials />} />
+          <Route path="/events/capturetheflag" element={<CaptureTheFlag />} />
+          <Route path="/events/gamejam" element={<GameJam />} />
+          <Route path="/calendar" element={<Calendar />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="*" element={<NoMatch />} />
+        </Routes>
+      </BrowserRouter>
+    </Suspense>
   );
 }
