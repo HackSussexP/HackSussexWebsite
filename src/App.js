@@ -1,20 +1,20 @@
 import './App.css';
 
-import React, { Suspense } from "react";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from './components/ScrollToTop';
 
 import Navbar from "./components/Navbar.js"; // what is this error for 
 
-import Home from "./views/Home.js";
-import About from "./views/About.js";
-import Hackathon from "./views/events/Hackathon.js";
-import CodersCup from "./views/events/CodersCup.js";
-import CodeSocials from "./views/events/CodeSocials.js";
-import CaptureTheFlag from "./views/events/CaptureTheFlag.js";
-import GameJam from "./views/events/GameJam.js";
-import Calendar from "./views/Calendar.js";
-import Gallery from "./views/Gallery.js";
+const Home = lazy(() => import("./views/Home.js"));
+const About = lazy(() => import("./views/About.js"));
+const Hackathon = lazy(() => import("./views/events/Hackathon.js"));
+const CodersCup = lazy(() => import("./views/events/CodersCup.js"));
+const CodeSocials = lazy(() => import("./views/events/CodeSocials.js"));
+const CaptureTheFlag = lazy(() => import("./views/events/CaptureTheFlag.js"));
+const GameJam = lazy(() => import("./views/events/GameJam.js"));
+const Calendar = lazy(() => import("./views/Calendar.js"));
+const Gallery = lazy(() => import("./views/Gallery.js"));
 
 function NoMatch() {
   return (
@@ -24,10 +24,15 @@ function NoMatch() {
   );
 }
 
-
-export default function App() {
+const App = () => {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={
+      <div className="d-flex justify-content-center align-items-center me-auto" style={{height: "100vh"}}>
+        <div className="spinner-border text-primary" role="status">
+          <span className="visually-hidden">Loading...</span>
+        </div>
+      </div>
+      }>
       <BrowserRouter>
         <ScrollToTop />
         <Navbar />
@@ -47,3 +52,5 @@ export default function App() {
     </Suspense>
   );
 }
+
+export default App;
