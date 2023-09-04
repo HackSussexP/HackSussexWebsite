@@ -74,7 +74,10 @@ const Home = () => {
       <RotatingSponsorBanner />
       <div className='container pt-3 text-center'>
         <div className='row mb-3'>
-          <div className='col-12 col-md-6 m-auto text-md-end'>
+          <div className='col-12 col-md-6 p-5 m-auto'>
+            <img src={image1} alt="hackathon" className='img-fluid rounded'></img>
+          </div>
+          <div className='col-12 col-md-6 m-auto text-md-start'>
             <h2 className='display-6 fw-bold text-electric'>
               Hackathon
             </h2>
@@ -85,12 +88,9 @@ const Home = () => {
               Lorem ipsum dolar sit amet, consectetur adipiscing elit, sed do eiusm tempor incididun. Eiusum tempor incididun.
             </p>
           </div>
-          <div className='col-12 col-md-6 p-5 m-auto'>
-            <img src={image1} alt="hackathon" className='img-fluid'></img>
-          </div>
         </div>
         <div className='row mb-3'>
-          <div className='col-12 col-md-6 m-auto order-1 order-md-2 text-md-start'>
+          <div className='col-12 col-md-6 m-auto text-md-end'>
             <h2 className='display-6 fw-bold text-electric'>
               Game Jam
             </h2>
@@ -101,12 +101,15 @@ const Home = () => {
               Lorem ipsum dolar sit amet, consectetur adipiscing elit, sed do eiusm tempor incididun. Eiusum tempor incididun.
             </p>
           </div>
-          <div className='col-12 col-md-6 p-5 m-auto order-2 order-md-1'>
-            <img src={image2} alt="hackathon" className='img-fluid'></img>
+          <div className='col-12 col-md-6 p-5 m-auto'>
+            <img src={image2} alt="hackathon" className='img-fluid rounded'></img>
           </div>
         </div>
         <div className='row mb-3'>
-          <div className='col-12 col-md-6 m-auto text-md-end'>
+          <div className='col-12 col-md-6 p-5 m-auto'>
+            <img src={image3} alt="hackathon" className='img-fluid rounded'></img>
+          </div> 
+          <div className='col-12 col-md-6 m-auto text-md-start'>
             <h2 className='display-6 fw-bold text-electric'>
               Coders Cup
             </h2>
@@ -116,10 +119,23 @@ const Home = () => {
             <p>
             Lorem ipsum dolar sit amet, consectetur adipiscing elit, sed do eiusm tempor incididun. Eiusum tempor incididun.
             </p>
-          </div>
+          </div>   
+        </div>
+        <div className='row mb-3'>
+          <div className='col-12 col-md-6 m-auto text-md-start'>
+            <h2 className='display-6 fw-bold text-electric'>
+              Capture The Flag
+            </h2>
+            <p className='fs-4'>
+              Cybersecruity Puzzles for our HackerSussexers
+            </p>
+            <p>
+            Lorem ipsum dolar sit amet, consectetur adipiscing elit, sed do eiusm tempor incididun. Eiusum tempor incididun.
+            </p>
+          </div>  
           <div className='col-12 col-md-6 p-5 m-auto'>
-            <img src={image3} alt="hackathon" className='img-fluid'></img>
-          </div>    
+            <img src={image3} alt="hackathon" className='img-fluid rounded'></img>
+          </div>  
         </div>
       </div>
       <SocialMediaBanner />
@@ -128,3 +144,14 @@ const Home = () => {
 }
 
 export default Home;
+
+/*
+          <div className='col text-right'>
+            <p className='h2' style={{color: "var(--electric-green)"}}>Capture The Flag</p>
+            <p className='h5 text-light lh-2'>Cybersecruity Puzzles for our HackerSussexers</p>
+            <p className='text-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun. eiusm tempor incididun.</p>
+          </div>
+          <div className='col'>
+            <img src={pic} className='img-fluid rounded' />
+          </div>
+*/

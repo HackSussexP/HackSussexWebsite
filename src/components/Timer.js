@@ -39,42 +39,6 @@ const Timer = (props) => {
                 ) : (
                     <>
                         <h1 id="headline">Countdown to the 2024 Hackathon</h1>
-                        {/* <div className='row justify-content-center' style={{color: "var(--green)"}}>
-                            <div className='col-auto'>
-                                <p id='days' className='h2'>
-                                {days}
-                                </p>
-                            </div>
-                            <div className='col-auto'>
-                                <p id='hours' className='h2'>
-                                {hours}
-                                </p>
-                            </div>
-                            <div className='col-auto'>
-                                <p id='minutes' className='h2'>
-                                {minutes}
-                                </p>
-                            </div>
-                            <div className='col-auto'>
-                                <p id='seconds' className='h2'>
-                                {seconds}
-                                </p>
-                            </div>
-                        </div>
-                        <div className='row justify-content-center' style={{color: "var(--electric-green)"}}>
-                            <div className='col-auto'>
-                                <p className='h3'>DAYS</p>
-                            </div>
-                            <div className='col-auto'>
-                                <p className='h3'>HOURS</p>
-                            </div>
-                            <div className='col-auto'>
-                                <p className='h3'>MINS</p>
-                            </div>
-                            <div className='col-auto'>
-                                <p className='h3'>SECS</p>
-                            </div>
-                        </div> */}
                         <div className='row justify-content-center text-center'>
                             <div className='col-auto'>
                                 <div className='row justify-content-center text-green'>

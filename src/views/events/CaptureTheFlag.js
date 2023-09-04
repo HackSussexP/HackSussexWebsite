@@ -39,46 +39,70 @@ const CaptureTheFlag = () => {
       <RotatingSponsorBanner />
       <AboutHeader />
       <SocialMediaBanner />
-      <div className='container p-3'>
-        <div className='row p-2 align-items-center'>
-          <div className='col'>
-            <img src={pic} className='img-fluid rounded' />
+      <div className='container pt-3 text-center'>
+        <div className='row mb-3'>
+          <div className='col-12 col-md-6 p-5 m-auto'>
+            <img src={pic} alt="hackathon" className='img-fluid rounded'></img>
           </div>
-          <div className='col text-left'>
-            <p className='h2' style={{color: "var(--electric-green)"}}>Hackathon</p>
-            <p className='h5 text-light lh-2'>The biggest Annual Hackathon in Brighton & Hove!</p>
-            <p className='text-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun. eiusm tempor incididun.</p>
-          </div>
-        </div>
-        <div className='row p-2 align-items-center'>
-          <div className='col text-right'>
-            <p className='h2' style={{color: "var(--electric-green)"}}>Game Jam</p>
-            <p className='h5 text-light lh-2'>Our Newest Event with the objective to design a game within 24 hours!</p>
-            <p className='text-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun. eiusm tempor incididun.</p>
-          </div>
-          <div className='col'>
-            <img src={pic} className='img-fluid rounded' />
+          <div className='col-12 col-md-6 m-auto text-md-start'>
+            <h2 className='display-6 fw-bold text-electric'>
+              Hackathon
+            </h2>
+            <p className='fs-4'>
+              The biggest annual hackathon in Brighton & Hove!
+            </p>
+            <p>
+              Lorem ipsum dolar sit amet, consectetur adipiscing elit, sed do eiusm tempor incididun. Eiusum tempor incididun.
+            </p>
           </div>
         </div>
-        <div className='row p-2 align-items-center'>
-          <div className='col'>
-            <img src={pic} className='img-fluid rounded' />
+        <div className='row mb-3'>
+          <div className='col-12 col-md-6 m-auto text-md-end'>
+            <h2 className='display-6 fw-bold text-electric'>
+              Game Jam
+            </h2>
+            <p className='fs-4'>
+              Our newest event where participants are challenged with designing a game within 24 hours!
+            </p>
+            <p>
+              Lorem ipsum dolar sit amet, consectetur adipiscing elit, sed do eiusm tempor incididun. Eiusum tempor incididun.
+            </p>
           </div>
-          <div className='col text-left'>
-            <p className='h2' style={{color: "var(--electric-green)"}}>Coders Cup</p>
-            <p className='h5 text-light lh-2'>Algorithmic Coding Compeititon for Students!</p>
-            <p className='text-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun. eiusm tempor incididun.</p>
+          <div className='col-12 col-md-6 p-5 m-auto'>
+            <img src={pic} alt="hackathon" className='img-fluid rounded'></img>
           </div>
         </div>
-        <div className='row p-2 align-items-center'>
-          <div className='col text-right'>
-            <p className='h2' style={{color: "var(--electric-green)"}}>Capture The Flag</p>
-            <p className='h5 text-light lh-2'>Cybersecruity Puzzles for our HackerSussexers</p>
-            <p className='text-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun. eiusm tempor incididun.</p>
-          </div>
-          <div className='col'>
-            <img src={pic} className='img-fluid rounded' />
-          </div>
+        <div className='row mb-3'>
+          <div className='col-12 col-md-6 p-5 m-auto'>
+            <img src={pic} alt="hackathon" className='img-fluid rounded'></img>
+          </div> 
+          <div className='col-12 col-md-6 m-auto text-md-start'>
+            <h2 className='display-6 fw-bold text-electric'>
+              Coders Cup
+            </h2>
+            <p className='fs-4'>
+              Algorithmic coding compeition
+            </p>
+            <p>
+            Lorem ipsum dolar sit amet, consectetur adipiscing elit, sed do eiusm tempor incididun. Eiusum tempor incididun.
+            </p>
+          </div>   
+        </div>
+        <div className='row mb-3'>
+          <div className='col-12 col-md-6 m-auto text-md-start'>
+            <h2 className='display-6 fw-bold text-electric'>
+              Capture The Flag
+            </h2>
+            <p className='fs-4'>
+              Cybersecruity Puzzles for our HackerSussexers
+            </p>
+            <p>
+            Lorem ipsum dolar sit amet, consectetur adipiscing elit, sed do eiusm tempor incididun. Eiusum tempor incididun.
+            </p>
+          </div>  
+          <div className='col-12 col-md-6 p-5 m-auto'>
+            <img src={pic} alt="hackathon" className='img-fluid rounded'></img>
+          </div>  
         </div>
       </div>
     </>
