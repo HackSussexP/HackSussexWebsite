@@ -108,6 +108,9 @@ html, body {
   color: var(--electric-green);
 }
 
+.text-green {
+  color: var(--green);
+}
 
 
 

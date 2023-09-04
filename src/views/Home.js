@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import RotatingSponsorBanner from '../components/RotatingSponsorBanner';
@@ -9,13 +9,24 @@ import image2 from './../assets/index-carousel/image2.png'
 import image3 from './../assets/index-carousel/image3.png'
 
 const Home = () => {
+  const [loading, setLoading] = useState(true)
+
+  const waitForLoad = () => {
+    if (document.readyState === "complete") {
+      setLoading(false)
+    }
+  }
+
+  useEffect(() => {
+    waitForLoad()
+  }, [])
 
   return(
     <>
       <div className='container-fluid m-0 p-0'>
         <div className='row'>
           <div className='col-12 p-0'>
-            <div id='homeCarousel' className='carousel carousel-fade' data-bs-ride='carousel'> {/* TODO vertical slide or change buttons back */}
+            <div id='homeCarousel' className='carousel slide' data-bs-ride='carousel'> {/* TODO vertical slide or change buttons back */}
               <div class="carousel-indicators mb-3 p-0">
                 <div className='row'>
                   <div className='col'>
