@@ -74,10 +74,7 @@ const Home = () => {
       <RotatingSponsorBanner />
       <div className='container pt-3 text-center'>
         <div className='row mb-3'>
-          <div className='col-12 col-md-6 p-5 m-auto'>
-            <img src={image1} alt="hackathon" className='img-fluid rounded'></img>
-          </div>
-          <div className='col-12 col-md-6 m-auto text-md-start'>
+          <div className='col-12 col-md-6 m-auto text-md-end'>
             <h2 className='display-6 fw-bold text-electric'>
               Hackathon
             </h2>
@@ -88,9 +85,12 @@ const Home = () => {
               Lorem ipsum dolar sit amet, consectetur adipiscing elit, sed do eiusm tempor incididun. Eiusum tempor incididun.
             </p>
           </div>
+          <div className='col-12 col-md-6 p-5 m-auto'>
+            <img src={image1} alt="hackathon" className='img-fluid rounded'></img>
+          </div>
         </div>
         <div className='row mb-3'>
-          <div className='col-12 col-md-6 m-auto text-md-end'>
+          <div className='col-12 col-md-6 m-auto text-md-start order-1 order-md-2'>
             <h2 className='display-6 fw-bold text-electric'>
               Game Jam
             </h2>
@@ -101,15 +101,12 @@ const Home = () => {
               Lorem ipsum dolar sit amet, consectetur adipiscing elit, sed do eiusm tempor incididun. Eiusum tempor incididun.
             </p>
           </div>
-          <div className='col-12 col-md-6 p-5 m-auto'>
+          <div className='col-12 col-md-6 p-5 m-auto order-2 order-md-1'>
             <img src={image2} alt="hackathon" className='img-fluid rounded'></img>
           </div>
         </div>
         <div className='row mb-3'>
-          <div className='col-12 col-md-6 p-5 m-auto'>
-            <img src={image3} alt="hackathon" className='img-fluid rounded'></img>
-          </div> 
-          <div className='col-12 col-md-6 m-auto text-md-start'>
+          <div className='col-12 col-md-6 m-auto text-md-end'>
             <h2 className='display-6 fw-bold text-electric'>
               Coders Cup
             </h2>
@@ -119,10 +116,13 @@ const Home = () => {
             <p>
             Lorem ipsum dolar sit amet, consectetur adipiscing elit, sed do eiusm tempor incididun. Eiusum tempor incididun.
             </p>
-          </div>   
+          </div>
+          <div className='col-12 col-md-6 p-5 m-auto'>
+            <img src={image3} alt="hackathon" className='img-fluid rounded'></img>
+          </div>    
         </div>
         <div className='row mb-3'>
-          <div className='col-12 col-md-6 m-auto text-md-start'>
+          <div className='col-12 col-md-6 m-auto text-md-start order-1 order-md-2'>
             <h2 className='display-6 fw-bold text-electric'>
               Capture The Flag
             </h2>
@@ -133,7 +133,7 @@ const Home = () => {
             Lorem ipsum dolar sit amet, consectetur adipiscing elit, sed do eiusm tempor incididun. Eiusum tempor incididun.
             </p>
           </div>  
-          <div className='col-12 col-md-6 p-5 m-auto'>
+          <div className='col-12 col-md-6 p-5 m-auto order-2 order-md-1'>
             <img src={image3} alt="hackathon" className='img-fluid rounded'></img>
           </div>  
         </div>
