@@ -1,5 +1,5 @@
 import React from 'react';
-import Timer from './../../components/Timer';
+import Timer from './../../components/Timer'; //weird error here, but you damned if you and damned if you don't
 import RotatingSponsorBanner from './../../components/RotatingSponsorBanner';
 
 //once the timer starts it'll run forever so if you leave the page you'll get errors cause it'll try change things that aren't there

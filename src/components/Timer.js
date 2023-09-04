@@ -114,10 +114,3 @@ const Timer = (props) => {
 }
 
 export default Timer;
-
-/*<div className="row d-block d-sm-none">
-
-</div>
-<div className="row d-none d-sm-block">
-
-</div>*/
