@@ -5,6 +5,8 @@ import insta from './../assets/SocialMediaIcons/instagram.png'
 import linkedin from './../assets/SocialMediaIcons/linkedin.png'
 import twitter from './../assets/SocialMediaIcons/twitter.png'
 
+//put actual social media links
+
 var sectionStyle = {
   backgroundImage: `url(${background})`,
   backgroundSize: 'cover',
