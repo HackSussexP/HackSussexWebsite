@@ -1,13 +1,31 @@
 import React from 'react';
 import RotatingSponsorBanner from './../../components/RotatingSponsorBanner';
 import Timer from './../../components/Timer';
+import background from '../../assets/hackathon-background-darker.png';
+import hackathonLogo from '../../assets/hackathon-23-trans-gradient-small.png';
 
-//once the timer starts it'll run forever so if you leave the page you'll get errors cause it'll try change things that aren't there
-//couldn't get any sort of unload function to work to make it stop but if you have nay ideas please try
+var hackathonStyle = {
+  backgroundImage: `url(${background})`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+  height: '100%',
+  width: '100%',
+};
 
 const Hackathon = () => {
   return(
     <>
+      <div className='container-fluid p-2' style={hackathonStyle}>
+        <div className='row'>
+          <div className='col p-5'>
+            <img src={hackathonLogo} className='img-fluid'></img>
+          </div>
+          <div className='col p-5'>
+            <div className='container p-2 text-center'>Copy something goes here, text, graphic, dates, social media. just pad this out somehow</div>
+          </div>
+        </div>
+      </div>
       <Timer date={"May 1, 2024, 0:0:0"} />
       <RotatingSponsorBanner />
     </>

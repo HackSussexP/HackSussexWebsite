@@ -89,7 +89,7 @@ const CaptureTheFlag = () => {
           </div>   
         </div>
         <div className='row mb-3'>
-          <div className='col-12 col-md-6 m-auto text-md-start'>
+          <div className='col-12 col-md-6 m-auto text-md-end'>
             <h2 className='display-6 fw-bold text-electric'>
               Capture The Flag
             </h2>
