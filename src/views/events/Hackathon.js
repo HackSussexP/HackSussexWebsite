@@ -30,7 +30,7 @@ const Hackathon = () => {
         </div>
       </div>
       <Timer date={"May 1, 2024, 0:0:0"} />
-      <EventWhereWhen />
+      <EventWhereWhen location="University of Sussex, Brighton" date="June 01, 2024, 10:00AM" />
 
     </>
   );
