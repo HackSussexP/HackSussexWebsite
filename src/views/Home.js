@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import styles from './Home.module.css';
+
 import RotatingSponsorBanner from '../components/RotatingSponsorBanner';
 import SocialMediaBanner from '../components/SocialMediaBanner';
 import AboutHeader from '../components/AboutHeader'
@@ -7,6 +9,14 @@ import AboutHeader from '../components/AboutHeader'
 import image1 from './../assets/index-carousel/image1.png'
 import image2 from './../assets/index-carousel/image2.png'
 import image3 from './../assets/index-carousel/image3.png'
+
+import hackathonBackground from './../assets/hackathon-background-darker.png';
+import hackathonLogo from '../assets/hackathon-23-trans-gradient-small.png'
+
+import codersCupBackground from './../assets/coders-cup-background-dark.png';
+import codersCupLogo from '../assets/coders-cup-logo-white-23.png'
+import codersCupWideLogo from '../assets/HackSussex-SuperWide-Text-Lined-Trans.png'
+import codersCupWideLogoColoured from '../assets/HackSussex-SuperWide-Text-Lined-Trans-Gradient.png'
 
 const Home = () => {
   const [loading, setLoading] = useState(true)
@@ -45,20 +55,81 @@ const Home = () => {
                 </div>
               </div>
               <div className='carousel-inner' role='listbox'>
-                <div className='carousel-item active'>
-                  <img src={image1} className='d-block w-100 img-fluid' alt='...' />
+
+              {/* HACKATHON CAROUSEL */}
+              <a href="/events/hackathon" className={styles.carouselLink}>
+                <div className={styles.carouselItem + ' carousel-item active'}>
+                  <img src={hackathonBackground} className={styles.backgroundImage + ' d-block w-100 img-fluid'} alt='Background' />
+
+                  <div className={styles.carouselCaption + " carousel-caption d-none d-md-block"}>
+                    <div className="container">
+                      <div className="row align-items-center justify-content-center">
+                        
+                        <div className={`col-md-5 ${styles.leftColumn}`}>
+                            <img src={hackathonLogo} alt="Logo" className={styles.logo} />
+                            <div className={styles.details}>
+                                <p>📅 18th - 19th February 2023 </p>
+                                <p>📍 Chichester building, University of Sussex, UK</p>
+                                <p>🌐 Hybrid</p>
+                            </div>
+                        </div>
+
+                        <div className={`col-md-7 ${styles.rightColumn}`}>
+                            <iframe 
+                                className={styles.youtubeEmbed} 
+                                src="https://www.youtube.com/embed/gmKBSb7kbTY" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className='carousel-item'>
-                  <img src={image2} className=' d-block w-100 img-fluid' alt='...' />
-                </div>
-                <div className='carousel-item'>
-                  <img src={image3} className=' d-block w-100 img-fluid' alt='...' />
-                </div>
+              </a>
+              {/* END HACKATHON CAROUSEL */}
+
+              <div className='carousel-item'>
+                <img src={image2} className=' d-block w-100 img-fluid' alt='...' />
               </div>
+
+
+              {/* CODERS CUP CAROUSEL */}
+              <a href="/events/coderscup" className={styles.carouselLink}>
+                <div className={styles.carouselItem + ' carousel-item active'}>
+                  <img src={codersCupBackground} className={styles.backgroundImage + ' d-block w-100 img-fluid'} alt='Background' />
+
+                  <div className={styles.carouselCaption + " carousel-caption d-none d-md-block"}>
+                    <div className="container">
+                      <div className="row align-items-center justify-content-center">
+                        
+                      <div className={`col-md-5 ${styles.leftColumn}`}>
+                        <img src={codersCupWideLogoColoured} alt="Wide Logo" className={styles.wideLogo} />
+                        <img src={codersCupLogo} alt="Square Logo" className={styles.squareLogo} />
+                      </div>
+
+                      <div className={`col-md-7 ${styles.rightColumn}`}>
+                          <iframe 
+                              className={styles.youtubeEmbed} 
+                              src="https://www.youtube.com/embed/yPifHEfu4Qs?si=-9kvdIJc05nbL4IY" 
+                              frameborder="0" 
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                              allowfullscreen
+                          ></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              {/* CODERS CUP CAROUSEL */}
+
             </div>
           </div>
         </div>
       </div>
+    </div>
       <AboutHeader />
       <RotatingSponsorBanner />
       <div className='container pt-3 text-center'>
