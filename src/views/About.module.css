@@ -1,0 +1,50 @@
+.meetCommitteeSection {
+  background-color: #e3dad2;
+  background-image: url("./../assets/sparse-icon-scatter-dark.png");
+}
+
+.blackText {
+  color: black;
+}
+
+.icon {
+  color: black;
+  transition: transform 0.3s;
+  font-size: 2rem;
+}
+
+.icon:hover {
+  transform: scale(1.5);
+}
+
+.emailLink {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  transition: text-decoration 0.3s, color 0.3s;
+}
+
+.emailLink:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.roleText {
+  font-size: 1rem;
+}
+
+.titleSpacing {
+  padding-top: 60px;
+  color: black;
+}
+
+.responsiveText {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 576px) {
+  .responsiveText {
+    font-size: inherit;
+  }
+  
+}

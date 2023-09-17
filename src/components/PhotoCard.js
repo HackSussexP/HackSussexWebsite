@@ -1,17 +1,25 @@
 import React from 'react';
+import styles from '../views/About.module.css';
 
-const PhotoCard = (props) => {
-    return (
-        <>
-            <div className="card text-center p-3" style={{width: 18+"rem", backgroundColor: "var(--light-blue)"}}>
-                <img className='card-img-top' src={props.photo} alt='hooman #5'></img>
-                <div className="card-body">
-                <h5 className="card-title">{props.title}</h5>
-                <p className="card-text">{props.text}</p>
-                </div>
-            </div>
-        </>
-    )
-}
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+
+const PhotoCard = ({ imageUrl, name, role, email, githubLink, linkedinLink }) => {
+  return (
+    <div className="text-center mb-4">
+      <img src={imageUrl} alt={`${name}'s photo`} style={{ width: '80%', maxWidth: '200px', height: 'auto', maxHeight: '340px', borderRadius: '5px' }} />
+      <h5 className={styles.blackText + " mt-3 font-weight-bold"}>{name}</h5>
+      <div className={styles.roleText + " font-weight-bold"} style={{ color: 'black'}}>{role}</div>
+      <a href={`mailto:${email}`} className={styles.emailLink}>{email}</a>
+      <div className="d-flex justify-content-center mt-2">
+        <a href={githubLink} target="_blank" rel="noopener noreferrer" className="mx-2">
+          <FaGithub className={styles.icon} />
+        </a>
+        <a href={linkedinLink} target="_blank" rel="noopener noreferrer" className="mx-2">
+          <FaLinkedin className={styles.icon} />
+        </a>
+      </div>
+    </div>
+  );
+};
 
 export default PhotoCard;
