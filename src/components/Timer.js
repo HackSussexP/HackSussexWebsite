@@ -31,7 +31,7 @@ const Timer = (props) => {
 
     return (
         <>
-            <div className='container-fluid text-center p-3 mt-3' style={{backgroundColor: "var(--darker-blue)"}}>
+            <div className='container-fluid text-center p-3' style={{backgroundColor: "var(--darker-blue)"}}>
             {loading ? (
                     <div className="spinner-border text-primary" role="status">
                         <span className="visually-hidden">Loading...</span>
