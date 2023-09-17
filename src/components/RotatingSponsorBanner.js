@@ -87,18 +87,21 @@ const RotatingSponsorBanner = () => {
     ]
   })
 
+  const sponsorLogoStyle = {
+    width: '12vw',
+    height: 'auto'
+  };
+
+  const titleStyle = {
+    fontSize: '3rem'
+  };
+
   return(
     <>
       <div className='container-fluid sponsor-banner mt-3 py-3'>
-        <div className='row px-3 text-center justify-content-center'>
-          <div className='col'>
-            <img src={arrow} className='img-fluid' alt="right arrow"></img>
-          </div>
-          <div className='col-auto'>
-            <h3 className='text-center'>Past Sponsors</h3>
-          </div>
-          <div className='col'>
-            <img src={arrow} className='img-fluid' alt="right arrow"></img>
+        <div className='row text-center justify-content-center'>
+          <div className='col-12'>
+            <h3 className='text-center' style={titleStyle}>Past Sponsors</h3>
           </div>
         </div>
         <div className='row justify-content-center'>
@@ -106,7 +109,7 @@ const RotatingSponsorBanner = () => {
             <Slider {...settings}>
               {sponsors.map((sponsor, index) => (
                 <div key={index} className="col-auto">
-                  <img src={sponsor} className='img-fluid py-1 px-5' alt="sponsor logo"></img>
+                  <img src={sponsor} className='img-fluid py-1 px-5' style={sponsorLogoStyle} alt="sponsor logo"></img>
                 </div>
               ))}
             </Slider>   
