@@ -12,6 +12,8 @@ import UoS from './../assets/SponsorLogos/UoS.png';
 import 'slick-carousel/slick/slick.css';
 import Slider from 'react-slick';
 
+import backgroundPattern from './../assets/sparse-icon-scatter-dark.png';
+
 const RotatingSponsorBanner = () => {
   const sponsors = [
     BCS,
@@ -88,20 +90,29 @@ const RotatingSponsorBanner = () => {
   })
 
   const sponsorLogoStyle = {
-    width: '12vw',
-    height: 'auto'
+    width: '15vw',
+    height: '10vh'
   };
 
   const titleStyle = {
-    fontSize: '3rem'
+    fontSize: '2rem'
+  };
+
+  const containerStyle = {
+    backgroundColor: '#e3dad2',
+    backgroundImage: `url(${backgroundPattern})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    color: 'black',
   };
 
   return(
     <>
-      <div className='container-fluid sponsor-banner mt-3 py-3'>
+      <div className='container-fluid sponsor-banner py-3' style={containerStyle}>
         <div className='row text-center justify-content-center'>
           <div className='col-12'>
-            <h3 className='text-center' style={titleStyle}>Past Sponsors</h3>
+            <h3 className='mb-4 text-center' style={titleStyle}>Past Sponsors</h3>
           </div>
         </div>
         <div className='row justify-content-center'>

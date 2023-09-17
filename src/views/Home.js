@@ -131,9 +131,9 @@ const Home = () => {
         </div>
       </div>
     </div>
-
-    <AboutHeader />
+    
     <RotatingSponsorBanner />
+    <AboutHeader />
     <HomeEvents />
     
 
