@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem 10%;
+  background-color: #1C252D;
+  background-image: url("./../assets/background-scatter.png");
+}
+
+.leftColumn, .rightColumn {
+  width: 100%;
+  padding: 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  background-color: lightgrey;
+  color: #000;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #e3dad2;
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightColumnContent {
+  font-size: 1.1rem;
+  color: #fff;
+  line-height: 1.6;
+}
+
+
+@media (min-width: 768px) {
+  .leftColumn {
+    flex: 80%;
+    width: auto;
+  }
+
+  .rightColumn {
+    flex: 20%;
+    width: auto;
+  }
+}

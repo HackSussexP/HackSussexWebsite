@@ -3,9 +3,13 @@ import React from 'react';
 import RotatingSponsorBanner from './../../components/RotatingSponsorBanner';
 import EventWhereWhen from '../../components/EventWhereWhen'; 
 import Timer from './../../components/Timer';
+import EventAbout from './../../components/EventAbout';
+
 
 import background from '../../assets/hackathon-background-darker.png';
 import hackathonLogo from '../../assets/hackathon-23-trans-gradient-small.png';
+
+
 
 var hackathonStyle = {
   backgroundImage: `url(${background})`,
@@ -30,6 +34,7 @@ const Hackathon = () => {
         </div>
       </div>
       <Timer date={"May 1, 2024, 0:0:0"} />
+      <EventAbout />
       <EventWhereWhen location="University of Sussex, Brighton" date="June 01, 2024, 10:00AM" />
 
     </>
