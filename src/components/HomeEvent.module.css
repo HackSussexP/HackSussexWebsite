@@ -1,8 +1,8 @@
 .container {
   background-size: cover;
   background-position: center;
-  background-color: #e3dad2;
-  background-image: url('./../assets/sparse-icon-scatter-dark.png');
+  background-color: #EEEEEE;
+  /* background-image: url('./../assets/sparse-icon-scatter-dark.png'); */
   min-height: 100vh;
   padding: 2rem 0;
   margin: 0;

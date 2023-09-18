@@ -99,8 +99,8 @@ const RotatingSponsorBanner = () => {
   };
 
   const containerStyle = {
-    backgroundColor: '#e3dad2',
-    backgroundImage: `url(${backgroundPattern})`,
+    backgroundColor: '#EEEEEE',
+    // backgroundImage: `url(${backgroundPattern})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
