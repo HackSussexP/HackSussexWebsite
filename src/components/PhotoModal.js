@@ -4,26 +4,22 @@ const PhotoModal = (props) => {
 
     return (
         <>
-            <button id="button" type="button" className="btn btn-light p-0" style={{borderRadius: "3vw", background:  "transparent", border: "0px"}} data-toggle="modal" data-target="#photoModal">
-                <img src={props.img} alt='adnan' style={{borderRadius: "3vw", width: "75%"}} ></img>
+            <button id="button" type="button" className="btn btn-light p-0" style={{borderRadius: "3vw", background:  "transparent", border: "0px"}} data-bs-toggle="modal" data-bs-target={"#photoModal"+props.number}>
+                <img src={props.img} alt={props.description} style={{borderRadius: "3vw", width: "75%"}} ></img>
             </button>
 
-            {/* Cannot get this modal to appear on screen */}
-            <div className="modal fade" id="photoModal" tabIndex="-1" role="dialog" aria-labelledby="photoModalLabel" aria-hidden="true">
-                <div className="modal-dialog" role="document">
+            <div className="modal fade" id={"photoModal"+props.number} tabIndex="-1" role="dialog" aria-labelledby="photoModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-xl" role="document">
                     <div className="modal-content">
-                    <div className="modal-header">
-                        <h5 className="modal-title" id="photoModalLabel">{props.description}</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div className="modal-body">
-                        <img src={props.image} />
-                    </div>
-                    <div className="modal-footer">
-                        <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+                        <div className="modal-header">
+                            <p className="modal-title h5 text-black" id="photoModalLabel">{props.description}</p>
+                            <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div className="modal-body">
+                            <img src={props.img} style={{width: "100%"}}/>
+                        </div>
                     </div>
                 </div>
             </div>
