@@ -127,6 +127,14 @@ html, body {
   color: var(--green);
 }
 
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  color: black !important;
+  border-bottom: 1px solid var(--super-dark) !important;
+}
 
+.accordion-button:focus {
+  box-shadow: none !important;
+}
 
 

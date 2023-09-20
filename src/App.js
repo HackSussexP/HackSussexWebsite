@@ -15,7 +15,7 @@ const CaptureTheFlag = lazy(() => import("./views/events/CaptureTheFlag.js"));
 const GameJam = lazy(() => import("./views/events/GameJam.js"));
 const Calendar = lazy(() => import("./views/Calendar.js"));
 const Gallery = lazy(() => import("./views/Gallery.js"));
-const Test = lazy(() => import("./views/Test.js"));
+const FAQ = lazy(() => import("./views/FAQ.js"));
 
 function NoMatch() {
   return (
@@ -47,7 +47,7 @@ const App = () => {
           <Route path="/events/gamejam" element={<GameJam />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/test" element={<Test />} />
+          <Route path="/faq" element={<FAQ />} />
           <Route path="*" element={<NoMatch />} />
         </Routes>
       </BrowserRouter>
