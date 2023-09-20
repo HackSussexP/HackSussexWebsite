@@ -56,6 +56,15 @@ html, body {
 
 .navbar {
   background-color: var(--darker-blue);
+  box-shadow: none;
+}
+
+.navbar-blur {
+  /* frosty class effect */
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .navbar-toggler {
@@ -64,6 +73,7 @@ html, body {
 
 .dropdown-menu {
   background-color: var(--dark-gunmetal);
+  z-index: 0;
 }
 
 .dropdown-item {
@@ -84,11 +94,6 @@ html, body {
   align-items: center;
 }
 
-.carousel-item {
-  height: 500px;
-  width: 100%;
-}
-
 .carousel-item .img-fluid {
   object-fit: cover;
   height: 100%;
@@ -96,12 +101,22 @@ html, body {
 }
 
 .carousel-indicators button {
-  width: 30px !important;
-  height: 30px !important;
+  width: 20px !important;
+  height: 20px !important;
   border: 5px solid var(--super-dark) !important;
   border-radius: 100%;
   background-color: var(--electric-green) !important;
-  margin: 5px 0;
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+#hackathonCarouselText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .text-electric {
