@@ -57,6 +57,7 @@ html, body {
 .navbar {
   background-color: var(--darker-blue);
   box-shadow: none;
+  z-index: 2;
 }
 
 .navbar-blur {
