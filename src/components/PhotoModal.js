@@ -4,7 +4,7 @@ const PhotoModal = (props) => {
 
     return (
         <>
-            <button id="button" type="button" className="btn btn-light p-0" style={{borderRadius: "3vw", background:  "transparent", border: "0px"}} data-bs-toggle="modal" data-bs-target={"#photoModal"+props.number}>
+            <button id="button" type="button" className="btn btn-light p-0 btn-lg rounded-5" style={{background:  "transparent", border: "0px"}} data-bs-toggle="modal" data-bs-target={"#photoModal"+props.number}>
                 <img src={props.img} alt={props.description} style={{borderRadius: "3vw", width: "75%"}} ></img>
             </button>
 
