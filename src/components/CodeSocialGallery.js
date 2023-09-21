@@ -1,11 +1,11 @@
 import React from "react";
 import PhotoModal from "./PhotoModal";
 
-import cs1 from '../assets/Gallery/cs1.png';
-import cs2 from '../assets/Gallery/cs2.png';
-import cs3 from '../assets/Gallery/cs3.png';
-import cs4 from '../assets/Gallery/cs4.png';
-import cs5 from '../assets/Gallery/cs5.png';
+import cs1 from '../assets/Gallery/cs1.jpg';
+import cs2 from '../assets/Gallery/cs2.jpg';
+import cs3 from '../assets/Gallery/cs3.jpg';
+import cs4 from '../assets/Gallery/cs4.jpg';
+import cs5 from '../assets/Gallery/cs5.jpg';
 
 const CodeSocialGallery = () => {
     return (

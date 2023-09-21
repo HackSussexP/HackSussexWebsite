@@ -1,12 +1,12 @@
 import React from "react";
 import PhotoModal from "./PhotoModal";
 
-import w1 from '../assets/Gallery/w1.png';
-import w3 from '../assets/Gallery/w3.png';
-import w4 from '../assets/Gallery/w4.png';
-import w5 from '../assets/Gallery/w5.png';
-import w6 from '../assets/Gallery/w6.png';
-import w7 from '../assets/Gallery/w7.png';
+import w1 from '../assets/Gallery/w1.jpg';
+import w3 from '../assets/Gallery/w3.jpg';
+import w4 from '../assets/Gallery/w4.jpg';
+import w5 from '../assets/Gallery/w5.jpg';
+import w6 from '../assets/Gallery/w6.jpg';
+import w7 from '../assets/Gallery/w7.jpg';
 
 const WorkshopsGallery = () => {
     return (
