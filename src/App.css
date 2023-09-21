@@ -139,3 +139,28 @@ html, body {
 }
 
 
+.schedule.active {
+  background-color: var(--electric-green);
+}
+
+.schedule {
+  background: transparent;
+  color: var(--text);
+  border: none;
+  box-shadow: none;
+}
+
+#schedule {
+  position: relative;
+}
+
+.vertical-line {
+  width: 5px;
+  background-color: var(--text);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--text);
+  height: 100%;
+}
+

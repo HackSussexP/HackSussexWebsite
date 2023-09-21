@@ -4,12 +4,6 @@ import { Link, Outlet } from "react-router-dom";
 import logo from "./../assets/logo-gradient.png";
 
 const Navbar = (props) => {
-  function randomIntFromInterval(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min)
-  }
-  const image = randomIntFromInterval(1, 3)
-  console.log(image)
-
   const [navbar, setNavbar] = useState(false)
 
   const toggleNavbar = () => {
