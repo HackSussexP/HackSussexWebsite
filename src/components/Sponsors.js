@@ -21,7 +21,7 @@ const Sponsor = ({ size, logo }) => (
 const Sponsors = ({ sponsorData }) => {
   return (
     <div className="container mt-5">
-      <h1 className="text-center mb-5 font-weight-bold">Sponsors</h1>
+      <h1 className="text-center mb-5 display-3">Sponsors</h1>
       {sponsorData.map(section => (
         <SponsorSection key={section.title} title={section.title} size={section.size} logos={section.logos} />
       ))}
