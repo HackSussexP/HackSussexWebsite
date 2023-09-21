@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from './components/ScrollToTop';
 
 import Navbar from "./components/NewNavbar.js"; // what is this error for 
+import Footer from "./components/Footer.js";
 
 const Home = lazy(() => import("./views/Home.js"));
 const About = lazy(() => import("./views/About.js"));
@@ -50,6 +51,7 @@ const App = () => {
           <Route path="/faq" element={<FAQ />} />
           <Route path="*" element={<NoMatch />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </Suspense>
   );
