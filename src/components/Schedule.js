@@ -37,6 +37,7 @@ const Schedule = (props) => {
                         <span>{event.time}</span>
                       </div>
                       <div className="row fs-2">
+                        <span className="circle-left" />
                         <span>{event.event}</span>
                       </div>
                       <div className="row">
@@ -79,6 +80,7 @@ const Schedule = (props) => {
                         <span>{event.time}</span>
                       </div>
                       <div className="row fs-2">
+                        <span className="circle-right" />
                         <span>{event.event}</span>
                       </div>
                       <div className="row">

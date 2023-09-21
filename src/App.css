@@ -152,6 +152,7 @@ html, body {
 
 #schedule {
   position: relative;
+  background-color: inherit;
 }
 
 .vertical-line {
@@ -164,3 +165,31 @@ html, body {
   height: 100%;
 }
 
+.circle-left, .circle-right {
+  position: relative;
+}
+
+/* add circles where the events are */
+.circle-left::after {
+  content: '';
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  right: -31px;
+  background-color: var(--text);
+  z-index: 1;
+}
+
+.circle-right::after {
+  content: '';
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  left: -16px;
+  background-color: var(--text);
+  z-index: 1;
+}
