@@ -4,7 +4,7 @@ import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from './components/ScrollToTop';
 
-import Navbar from "./components/Navbar.js"; // what is this error for 
+import Navbar from "./components/NewNavbar.js"; // what is this error for 
 
 const Home = lazy(() => import("./views/Home.js"));
 const About = lazy(() => import("./views/About.js"));
@@ -15,6 +15,7 @@ const CaptureTheFlag = lazy(() => import("./views/events/CaptureTheFlag.js"));
 const GameJam = lazy(() => import("./views/events/GameJam.js"));
 const Calendar = lazy(() => import("./views/Calendar.js"));
 const Gallery = lazy(() => import("./views/Gallery.js"));
+const FAQ = lazy(() => import("./views/FAQ.js"));
 
 function NoMatch() {
   return (
@@ -46,6 +47,7 @@ const App = () => {
           <Route path="/events/gamejam" element={<GameJam />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/faq" element={<FAQ />} />
           <Route path="*" element={<NoMatch />} />
         </Routes>
       </BrowserRouter>
