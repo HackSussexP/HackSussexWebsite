@@ -1,22 +1,22 @@
 import React from "react";
 import PhotoModal from "./PhotoModal";
 
-import h1 from '../assets/Gallery/h1.png';
-import h2 from '../assets/Gallery/h2.png';
-import h3 from '../assets/Gallery/h3.png';
-import h4 from '../assets/Gallery/h4.png';
-import h5 from '../assets/Gallery/h5.png';
-import h6 from '../assets/Gallery/h6.png';
-import h7 from '../assets/Gallery/h7.png';
-import h8 from '../assets/Gallery/h8.png';
-import h9 from '../assets/Gallery/h9.png';
-import h10 from '../assets/Gallery/h10.png';
-import h11 from '../assets/Gallery/h11.png';
-import h12 from '../assets/Gallery/h12.png';
-import h13 from '../assets/Gallery/h13.png';
-import h14 from '../assets/Gallery/h14.png';
-import h15 from '../assets/Gallery/h15.png';
-import h16 from '../assets/Gallery/h16.png';
+import h1 from '../assets/Gallery/h1.jpg';
+import h2 from '../assets/Gallery/h2.jpg';
+import h3 from '../assets/Gallery/h3.jpg';
+import h4 from '../assets/Gallery/h4.jpg';
+import h5 from '../assets/Gallery/h5.jpg';
+import h6 from '../assets/Gallery/h6.jpg';
+import h7 from '../assets/Gallery/h7.jpg';
+import h8 from '../assets/Gallery/h8.jpg';
+import h9 from '../assets/Gallery/h9.jpg';
+import h10 from '../assets/Gallery/h10.jpg';
+import h11 from '../assets/Gallery/h11.jpg';
+import h12 from '../assets/Gallery/h12.jpg';
+import h13 from '../assets/Gallery/h13.jpg';
+import h14 from '../assets/Gallery/h14.jpg';
+import h15 from '../assets/Gallery/h15.jpg';
+import h16 from '../assets/Gallery/h16.jpg';
 
 const HackthonGallery = () => {
     return (

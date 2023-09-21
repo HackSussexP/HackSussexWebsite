@@ -1,18 +1,18 @@
 import React from "react";
 import PhotoModal from "./PhotoModal";
 
-import cc1 from '../assets/Gallery/cc1.png';
-import cc2 from '../assets/Gallery/cc2.png';
-import cc3 from '../assets/Gallery/cc3.png';
-import cc4 from '../assets/Gallery/cc4.png';
-import cc5 from '../assets/Gallery/cc5.png';
-import cc6 from '../assets/Gallery/cc6.png';
-import cc7 from '../assets/Gallery/cc7.png';
-import cc8 from '../assets/Gallery/cc8.png';
-import cc9 from '../assets/Gallery/cc9.png';
-import cc10 from '../assets/Gallery/cc10.png';
-import cc11 from '../assets/Gallery/cc11.png';
-import cc12 from '../assets/Gallery/cc12.png';
+import cc1 from '../assets/Gallery/cc1.jpg';
+import cc2 from '../assets/Gallery/cc2.jpg';
+import cc3 from '../assets/Gallery/cc3.jpg';
+import cc4 from '../assets/Gallery/cc4.jpg';
+import cc5 from '../assets/Gallery/cc5.jpg';
+import cc6 from '../assets/Gallery/cc6.jpg';
+import cc7 from '../assets/Gallery/cc7.jpg';
+import cc8 from '../assets/Gallery/cc8.jpg';
+import cc9 from '../assets/Gallery/cc9.jpg';
+import cc10 from '../assets/Gallery/cc10.jpg';
+import cc11 from '../assets/Gallery/cc11.jpg';
+import cc12 from '../assets/Gallery/cc12.jpg';
 
 const CodersCupGallery = () => {
     return (
