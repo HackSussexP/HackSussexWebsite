@@ -14,7 +14,8 @@ const CodersCup = lazy(() => import("./views/events/CodersCup.js"));
 const CodeSocials = lazy(() => import("./views/events/CodeSocials.js"));
 const CaptureTheFlag = lazy(() => import("./views/events/CaptureTheFlag.js"));
 const GameJam = lazy(() => import("./views/events/GameJam.js"));
-const AllEvents = lazy(() => import("./views/AllEvents.js"));
+const AllEvents = lazy(() => import("./views/events/AllEvents.js"));
+const EventPage = lazy(() => import("./views/events/EventPage.js"));
 const Gallery = lazy(() => import("./views/Gallery.js"));
 const FAQ = lazy(() => import("./views/FAQ.js"));
 
@@ -42,6 +43,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/events" element={<AllEvents />} />
+          <Route path="/events/:date/:title" element={<EventPage />} />
           <Route path="/events/hackathon" element={<Hackathon />} />
           <Route path="/events/coderscup" element={<CodersCup />} />
           <Route path="/events/codesocials" element={<CodeSocials />} />
