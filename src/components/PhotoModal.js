@@ -13,7 +13,7 @@ const PhotoModal = (props) => {
                     <div className="modal-content">
                         <div className="modal-header">
                             <p className="modal-title h5 text-black" id="photoModalLabel">{props.description}</p>
-                            <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
