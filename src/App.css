@@ -194,11 +194,24 @@ html, body {
   z-index: 1;
 }
 
-.event-cards {
+.gradient {
   background-image: linear-gradient(to right, var(--lime), var(--blue));
 }
 
 .card {
   background-color: var(--darker-blue);
   color: var(--text);
+}
+
+.card:hover {
+  box-shadow: 0 0 10px var(--darker-blue);
+  transform: translateY(-1px) scale(1.02)
+}
+
+.dropdown-divider {
+  border-color: var(--text);
+}
+
+.events {
+  width: 70%;
 }
