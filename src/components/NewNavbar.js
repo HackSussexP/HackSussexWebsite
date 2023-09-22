@@ -66,12 +66,13 @@ const Navbar = (props) => {
                       Game Jam
                     </Link>
                   </li>
+                  <li className="dropdown-divider"></li>
+                  <li>
+                    <Link className="dropdown-item" to="/events" onClick={closeNavbar}>
+                      All Events
+                    </Link>
+                  </li>
                 </ul>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link px-5" to="/calendar" onClick={closeNavbar}>
-                  Calendar
-                </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link px-5" to="/gallery" onClick={closeNavbar}>

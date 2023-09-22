@@ -18,7 +18,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-dark text-light py-3">
+    <footer className="bg-dark text-light sticky-bottom py-3">
       <div className="container d-flex justify-content-between align-items-center">
         <div style={hackSussexStyle}>
           HackSussex 2023 ©

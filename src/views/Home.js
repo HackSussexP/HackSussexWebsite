@@ -6,7 +6,7 @@ import RotatingSponsorBanner from '../components/RotatingSponsorBanner';
 import SocialMediaBanner from '../components/SocialMediaBanner';
 import AboutHeader from '../components/AboutHeader'
 import HomeEvents from '../components/HomeEvents'
-import EventCards from '../components/EventCards'
+import UpcomingEvents from '../components/UpcomingEvents'
 
 import image1 from './../assets/index-carousel/image1.png'
 import image2 from './../assets/index-carousel/image2.png'
@@ -135,7 +135,7 @@ const Home = () => {
     
     <RotatingSponsorBanner />
     <AboutHeader />
-    <EventCards />
+    <UpcomingEvents />
     <HomeEvents />
     
     <SocialMediaBanner />
