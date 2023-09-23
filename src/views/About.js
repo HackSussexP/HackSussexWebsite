@@ -3,18 +3,35 @@ import styles from './About.module.css';
 
 import PhotoCard from './../components/PhotoCard'
 
-import adnan from '../assets/Committee/adnan.jpg'
+import jack from '../assets/Committee/jack.png'
+import adnan from '../assets/Committee/adnan.png'
+import amy from '../assets/Committee/amy.png'
+import tori from '../assets/Committee/tori.png'
+import anton from '../assets/Committee/anton.png'
+import ryu from '../assets/Committee/ryu.png'
+import josh from '../assets/Committee/josh.png'
+import tom from '../assets/Committee/tom.png'
+import jude from '../assets/Committee/jude.png'
+import charlotte from '../assets/Committee/charlotte.png'
+import henry from '../assets/Committee/henry.png'
+import patrick from '../assets/Committee/patrick.png'
+import lukas from '../assets/Committee/lukas.png'
+import richerd from '../assets/Committee/richerd.png'
+import david from '../assets/Committee/david.png'
+import kei from '../assets/Committee/kei.png'
+import emily from '../assets/Committee/emily.png'
+import jamie from '../assets/Committee/jamie.png'
 
 const About = () => {
 
   const committeeMembers = [
     {
-      imageUrl: adnan,
-      name: "Adnan Quisar",
-      role: "Vice President",
-      email: "adnan@hacksussex.co.uk",
-      githubLink: "https://github.com/adnantech",
-      linkedinLink: "https://linkedin.com/in/adnanquisar"
+      imageUrl: jack,
+      name: "Jack Speat",
+      role: "President",
+      email: "jack@hacksussex.co.uk",
+      githubLink: "https://github.com/Speaty",
+      linkedinLink: "https://www.linkedin.com/in/jack-speat-7333491b3/"
     },
     {
       imageUrl: adnan,
@@ -25,52 +42,132 @@ const About = () => {
       linkedinLink: "https://linkedin.com/in/adnanquisar"
     },
     {
-      imageUrl: adnan,
-      name: "Adnan Quisar",
+      imageUrl: amy,
+      name: "Amy Cho",
+      role: "Social Media",
+      email: "amy@hacksussex.co.uk",
+      githubLink: "https://github.com/kittyeartales",
+      linkedinLink: "https://www.linkedin.com/in/amy-cho-029989173/"
+    },
+    {
+      imageUrl: tori,
+      name: "Tori Nevins",
+      role: "Social Media",
+      email: "tori@hacksussex.co.uk",
+      githubLink: "https://github.com/adnantech",
+      linkedinLink: "https://www.linkedin.com/in/tori-nevins-686069197/"
+    },
+    {
+      imageUrl: anton,
+      name: "Anton Vasiljevs",
+      role: "Competitive Programming",
+      email: "anton@hacksussex.co.uk",
+      githubLink: "https://github.com/adnantech",
+      linkedinLink: "https://www.linkedin.com/in/antons-vasiljevs/"
+    },
+    {
+      imageUrl: ryu,
+      name: "Ryu Wong",
+      role: "Competitive Programming",
+      email: "ryu@hacksussex.co.uk",
+      githubLink: "https://github.com/SkollRyu",
+      linkedinLink: "https://www.linkedin.com/in/ryu-wong/"
+    },
+    {
+      imageUrl: josh,
+      name: "Josh Kybett",
+      role: "Odd Jobsman",
+      email: "josh@hacksussex.co.uk",
+      githubLink: "https://github.com/JKybett",
+      linkedinLink: "https://www.linkedin.com/in/jkybett/"
+    },
+    {
+      imageUrl: tom,
+      name: "Tom Harwood",
+      role: "Manager",
+      email: "tom@hacksussex.co.uk",
+      githubLink: "https://github.com/tomtehtom",
+      linkedinLink: "https://www.linkedin.com/in/teharwood/"
+    },
+    {
+      imageUrl: jude,
+      name: "Jude Birch",
+      role: "Game Development",
+      email: "jude@hacksussex.co.uk",
+      githubLink: "https://github.com/judebirch",
+      linkedinLink: "https://www.linkedin.com/in/jude-birch-1288a0193/"
+    },
+    {
+      imageUrl: charlotte,
+      name: "Charlotte Richardson",
+      role: "welfare Officer",
+      email: "charlotte@hacksussex.co.uk",
+      githubLink: "https://github.com/adnantech",
+      linkedinLink: "https://www.linkedin.com/in/charlotte-richardson-7673a11a2/"
+    },
+    {
+      imageUrl: henry,
+      name: "Henry Williams",
+      role: "Cyber Secruity",
+      email: "henry@hacksussex.co.uk",
+      githubLink: "https://github.com/Henry-Ash-Williams",
+      linkedinLink: "https://www.linkedin.com/in/henry-williams-49b7ab226/"
+    },
+    {
+      imageUrl: patrick,
+      name: "Patrick Culmer",
+      role: "Robotics",
+      email: "patrick@hacksussex.co.uk",
+      githubLink: "https://github.com/VeryCoolPatrick",
+      linkedinLink: "https://www.linkedin.com/in/patrick-culmer-982628195/"
+    },
+    {
+      imageUrl: lukas,
+      name: "Lukas Hastings",
+      role: "Robotics",
+      email: "lukas@hacksussex.co.uk",
+      githubLink: "https://github.com/adnantech",
+      linkedinLink: "https://www.linkedin.com/in/lukas-hastings-a9a055255/"
+    },
+    {
+      imageUrl: richerd,
+      name: "Richerd Joesph",
       role: "Vice President",
-      email: "adnan@hacksussex.co.uk",
+      email: "richerd@hacksussex.co.uk",
       githubLink: "https://github.com/adnantech",
       linkedinLink: "https://linkedin.com/in/adnanquisar"
     },
     {
-      imageUrl: adnan,
-      name: "Adnan Quisar",
+      imageUrl: david,
+      name: "David",
       role: "Vice President",
-      email: "adnan@hacksussex.co.uk",
+      email: "david@hacksussex.co.uk",
       githubLink: "https://github.com/adnantech",
       linkedinLink: "https://linkedin.com/in/adnanquisar"
     },
     {
-      imageUrl: adnan,
-      name: "Adnan Quisar",
-      role: "Vice President",
-      email: "adnan@hacksussex.co.uk",
+      imageUrl: kei,
+      name: "Kei",
+      role: "General Committee",
+      email: "kei@hacksussex.co.uk",
       githubLink: "https://github.com/adnantech",
       linkedinLink: "https://linkedin.com/in/adnanquisar"
     },
     {
-      imageUrl: adnan,
-      name: "Adnan Quisar",
-      role: "Vice President",
-      email: "adnan@hacksussex.co.uk",
+      imageUrl: emily,
+      name: "Emily",
+      role: "Merch Queen",
+      email: "emily@hacksussex.co.uk",
       githubLink: "https://github.com/adnantech",
       linkedinLink: "https://linkedin.com/in/adnanquisar"
     },
     {
-      imageUrl: adnan,
-      name: "Adnan Quisar",
-      role: "Vice President",
-      email: "adnan@hacksussex.co.uk",
+      imageUrl: jamie,
+      name: "Jamie Sage",
+      role: "General Committee",
+      email: "jamie@hacksussex.co.uk",
       githubLink: "https://github.com/adnantech",
-      linkedinLink: "https://linkedin.com/in/adnanquisar"
-    },
-    {
-      imageUrl: adnan,
-      name: "Adnan Quisar",
-      role: "Vice President",
-      email: "adnan@hacksussex.co.uk",
-      githubLink: "https://github.com/adnantech",
-      linkedinLink: "https://linkedin.com/in/adnanquisar"
+      linkedinLink: "https://www.linkedin.com/in/jamie-sage/"
     },
   ];
 
