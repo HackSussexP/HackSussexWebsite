@@ -11,6 +11,14 @@ import Sponsors from './../../components/Sponsors';
 import background from '../../assets/hackathon-background-darker.png';
 import hackathonLogo from '../../assets/hackathon-23-trans-gradient-small.png';
 
+const config = {
+  "timer": false,
+  "event": false,
+  "schedule": false,
+  "sponsors": false,
+  "date": "May 1, 2024, 0:0:0",
+}
+
 var schedule = {
   1: [
     {
@@ -104,17 +112,17 @@ const Hackathon = () => {
       <div className='container-fluid p-2' style={hackathonStyle}>
         <div className='row'>
           <div className='col p-5'>
-            <img src={hackathonLogo} className='img-fluid'></img>
+            <img src={hackathonLogo} className='img-fluid' alt="hackathon logo"></img>
           </div>
           <div className='col p-5'>
             <div className='container p-2 text-center'>Copy something goes here, text, graphic, dates, social media. just pad this out somehow</div>
           </div>
         </div>
       </div>
-      <Timer date={"May 1, 2024, 0:0:0"} />
+      {config.timer && <Timer date={config.date} />}
       <EventAbout />
-      <EventWhereWhen location="University of Sussex, Brighton" date="June 01, 2024, 10:00AM" />
-      <Schedule schedule={schedule} />
+      <EventWhereWhen location="University of Sussex, Brighton" date={config.timer === true ? config.date : null} />
+      {config.schedule && <Schedule schedule={schedule} />}
       <Sponsors sponsorData={sponsorData}/>
     </>
   );

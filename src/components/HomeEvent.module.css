@@ -1,20 +1,9 @@
 .container {
-  background-size: cover;
-  background-position: center;
-  background-color: #EEEEEE;
-  /* background-image: url('./../assets/sparse-icon-scatter-dark.png'); */
-  min-height: 100vh;
-  padding: 2rem 0;
-  margin: 0;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: black;
+  color: var(--text)
 }
 
 .container h2 {
-  color: black !important;
+  color: var(--electric-green);
 }
 
 .img-fluid {

@@ -4,7 +4,24 @@ import { FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 
 import styles from './EventWhereWhen.module.css';
 
-const EventWhereWhen = ({ date = "Jan 01, 2024, 9:00AM", location = "University of Sussex, Brighton" }) => {
+const EventWhereWhen = (props) => {
+
+  let date
+  let location
+
+  if (props.date === null) {
+    date = "TBD"
+  }
+  else {
+    date = props.date
+  }
+
+  if (props.location === null) {
+    location = "TBD"
+  }
+  else {
+    location = props.location
+  }
   return (
     <div className={`${styles['container-fluid']} py-4`}>
       <div className="container">
