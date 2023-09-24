@@ -9,6 +9,25 @@ import Schedule from './../../components/Schedule';
 import Sponsors from './../../components/Sponsors';
 
 import AboutSection from '../../components/AboutSection';
+import HallOfFame from '../../components/HallOfFame';
+
+import patrick from '../../assets/patrick.png';
+import guy from '../../assets/guy.png';
+
+const hallOfFameData = [
+  {
+    imageUrl: patrick,
+    title: "Patrick",
+    subheading: "Pizza Box Patrick",
+    paragraph: "A foundation year student showing all the masters that C++ will never be beaten by python. Came to Sussex so he could quit his job as a welder and hang around in a swivel chair drinking tea. Now a Hack Sussex committee member making clothing for poor impoverished robots. Can not resist obsolete apple tech in pawn shops."
+  },
+  {
+    imageUrl: guy,
+    title: "Guy",
+    subheading: "Who has two thumbs and loves to code?",
+    paragraph: "The early parts of Guy's life cycle involved burrowing into Wikipedia and the school library and producing code that went on floppy disks. He eventually metamorphosed into a semi-competent adult, taught maths to schoolkids who he remembers fondly, decided on a change of career, and came to Sussex to learn programming in a more structured way.\n\nStrengths: python, philosophy, using the microwave\nWeaknesses: cameras, large pebbles"
+  }
+];
 
 const config = {
   "timer": false,
@@ -133,6 +152,7 @@ const CodersCup = () => {
       <EventWhereWhen location="University of Sussex, Brighton" date={config.timer === true ? config.date : null} />
       {config.schedule && <Schedule schedule={schedule} />}
       {/* <Sponsors sponsorData={sponsorData}/> */}
+      <HallOfFame data={hallOfFameData} />
     </>
   );
 }
