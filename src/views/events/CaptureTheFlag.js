@@ -2,7 +2,7 @@ import React from 'react';
 import AboutHeader from '../../components/AboutHeader';
 import SocialMediaBanner from '../../components/SocialMediaBanner';
 import RotatingSponsorBanner from '../../components/RotatingSponsorBanner';
-import background from './../../assets/CTFbackground.png';
+import background from './../../assets/index-carousel/ctf-background.png';
 import pic from './../../assets/index-carousel/image2.png'
 
 var sectionStyle = {

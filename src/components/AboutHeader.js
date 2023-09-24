@@ -10,7 +10,7 @@ const AboutHeader = () => {
       <div className='container py-2 px-3'>
         <div className='row align-items-center px-4 py-4 text-center'>
           <div className={`col-12 col-md-8 offset-md-2 ${styles.contentCol}`}>
-            <h2 className='lead fs-4 mb-3 text-uppercase'>The Home of informatics at the University of Sussex</h2>
+            <h2 className='lead fs-4 mb-3 text-uppercase'>The Home of Informatics at the</h2>
             <h1 className='mb-3 fs-1 text-uppercase fw-bold'>University of Sussex</h1>
 
             <img 

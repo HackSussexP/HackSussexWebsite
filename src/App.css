@@ -25,7 +25,7 @@ html, body {
 }
 
 #root {
-  min-height: calc(100vh);
+  min-height: 100vh;
   max-height: 100%;
   font-size: 1.25rem;
   overflow-x: hidden;
@@ -95,29 +95,23 @@ html, body {
   align-items: center;
 }
 
-.carousel-item .img-fluid {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
+.carousel-caption {
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  bottom: initial !important;
 }
 
-.carousel-indicators button {
-  width: 20px !important;
-  height: 20px !important;
-  border: 5px solid var(--super-dark) !important;
-  border-radius: 100%;
-  background-color: var(--electric-green) !important;
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%2334d2c8%27%3e%3cpath d=%27M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z%27/%3e%3c/svg%3e") !important;
 }
 
-.carousel-inner {
-  position: relative;
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%2334d2c8%27%3e%3cpath d=%27M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e") !important;
 }
 
-#hackathonCarouselText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.carousel-item > img {
+  /* darken slightly */
+  filter: brightness(0.6);
 }
 
 .text-electric {

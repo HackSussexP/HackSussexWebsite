@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Carousel.module.css';
+import { Link } from 'react-router-dom';
 
 import HackathonBackground from './../assets/hackathon-background-darker.png';
 import HackathonLogo from '../assets/hackathon-23-trans-gradient-small.png';
@@ -20,163 +20,129 @@ const HomeCarousel = () => {
   return (
     <div className='container-fluid m-0 p-0'>
       <div className='row'>
-        <div className='col-12 p-0'>
-          <div id='homeCarousel' className='carousel slide' data-bs-ride='carousel'>
-            <div className="carousel-indicators mb-3 p-0">
-              <div className='row'>
-                <div className='col'>
-                  <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                </div>
-              </div>
-              <div className='row'>
-                <div className='col'>
-                  <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                </div>
-              </div>
-              <div className='row'>
-                <div className='col'>
-                  <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-              </div>
-              <div className='row'>
-                <div className='col'>
-                  <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                </div>
-              </div>
-              <div className='row'>
-                <div className='col'>
-                  <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                </div>
-              </div>
-            </div>
-            <div className='carousel-inner' role='listbox'>
-
+        <div className='col p-0'>
+          <div id='homeCarousel' className='carousel slide'data-bs-ride="carousel">
+            <div className='carousel-inner m-0'>
               {/* HACKATHON CAROUSEL */}
-              <a href="/events/hackathon" className={styles.carouselLink}>
-                <div className={`${styles.carouselItem} carousel-item active`}>
-                  <img src={HackathonBackground} className="d-block w-100 h-100 img-fluid" alt='Background' />
-                  <div className="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <div className="container">
-                      <div className="row align-items-center">
-
-                        <div className="col-md-5">
-                          <img src={HackathonLogo} alt="Logo" className="img-fluid mb-3" style={{ width: '125%' }} />
-                          <div style={{ textAlign: 'left' }}>
-                            <p>📅 18th - 19th February 2023 </p>
-                            <p>📍 Chichester building, University of Sussex, UK</p>
-                            <p>🌐 Hybrid</p>
-                          </div>
-                        </div>
-                        
-                        <div className="col-md-7 d-flex justify-content-center">
-                          <iframe 
-                            className="w-100 rounded" 
-                            src="https://www.youtube.com/embed/gmKBSb7kbTY" 
-                            style={{ aspectRatio: '16/9', maxWidth: '560px', borderRadius: '15px' }}
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowFullScreen
-                          ></iframe>
-                        </div>
-
+              <Link to="/events/hackathon" className="p-0">
+                <div className="carousel-item active">
+                  <img src={HackathonBackground} className="d-block w-100 img-fluid" alt='Hackathon background' />
+                  <div className="carousel-caption">
+                    <div className="row align-items-center">
+                      <div className="col-12 col-lg-6">
+                        <img src={HackathonLogo} alt="Hackathon Logo" className="img-fluid me-auto ms-auto d-block p-3" />
+                        <p className='text-wrap text-start d-none d-lg-block'>
+                          📅 18th - 19th February 2024 <br />
+                          📍 Chichester building, University of Sussex, UK <br />
+                          🌐 Hybrid
+                        </p>
+                      </div>
+                      <div className="col-6 d-none d-lg-block">
+                        <iframe 
+                          className="w-100 rounded" 
+                          src="https://www.youtube.com/embed/gmKBSb7kbTY" 
+                          style={{ aspectRatio: '16/9', maxWidth: '560px', borderRadius: '15px' }}
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                          allowFullScreen
+                          title="Hackathon Video"
+                        ></iframe>
                       </div>
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
+                
               {/* END HACKATHON CAROUSEL */}
 
               {/* GAME JAM CAROUSEL */}
-              <a href="/events/gamejam" className={styles.carouselLink}>
-                <div className={`${styles.carouselItem} carousel-item h-100`}>
+              <Link to="/events/gamejam" className="p-0">
+                <div className="carousel-item">
                   <img src={GameJamBackground} className="d-block w-100 h-100 img-fluid" alt='Background' />
-                  <div className={`${styles.carouselCaption} carousel-caption d-none d-md-block`}>
-                    <div className='container my-5'>
-                      <div className='row align-items-center justify-content-center'>
-                        <div className={`col-md-5 ${styles.leftColumn}`}>
-                          <img src={GameJamLogo} alt="Game Jam Logo" className='img-fluid mb-3'/>
-                          <div style={{ textAlign: 'left' }}>
-                            <p>📅 25th - 26th November 2023</p>
-                            <p>📍 Chichester building, University of Sussex, UK</p>
-                            <p>🌐 In-Person</p>
-                          </div>
+                  <div className="carousel-caption">
+                    <div className='row align-items-center'>
+                        <div className="col-12 col-lg-6">
+                          <img src={GameJamLogo} alt="Game Jam Logo" className='img-fluid me-auto ms-auto d-block p-3'/>
+                          <p className='text-wrap text-start d-none d-lg-block'>
+                            📅 25th - 26th November 2023<br />
+                            📍 Chichester building, University of Sussex, UK<br />
+                            🌐 In-Person
+                          </p>
                         </div>
-                        <div className='col-md-7 text-center'>
-                          <h1 className='font-weight-bold display-1'>HackSussex</h1>
-                          <h1 className='font-weight-bold display-4' style={{ color: '#34d2c8' }}>Game Jam Event Loading...</h1>
+                        <div className='col-lg-6 d-none d-lg-block'>
+                          <h1 className='fw-bold display-4 text-electric'>Game Jam Event Loading...</h1>
                           <div className='mt-3'>
                             <div className="progress" style={{ height: '30px', borderRadius: '15px', backgroundColor: '#222' }}>
                               <div className="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style={{ width: '50%' }} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <div className='text-center mt-2 text-light display-6'>40%</div>
+                            <div className='text-center mt-2 text-light display-6'>50%</div>
                           </div>
                         </div>
-                      </div>
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
               {/* END GAME JAM  CAROUSEL */}
 
               {/* CODERS CUP CAROUSEL */}
-              <a href="/events/coderscup" className={styles.carouselLink}>
-                <div className={`${styles.carouselItem} carousel-item h-100`}>
+              <Link to="/events/coderscup" className="p-0">
+                <div className="carousel-item">
                   <img src={CodersCupBackground} className="d-block w-100 h-100 img-fluid" alt='Background' />
-                  <div className="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <div className="container">
+                  <div className="carousel-caption">
                       <div className="row align-items-center">
-
-                        {/* Left Column */}
-                        <div className="col-md-5">
-                          <img src={CodersCupLogo} alt="Coders Cup Logo" className="img-fluid mb-3" style={{ width: '125%' }} />
-                          <h1 className='font-weight-bold display-2'>HackSussex</h1>
-                          <h1 className='font-weight-bold display-4' style={{ color: '#34d2c8' }}>Coders Cup</h1>
+                        <div className="col-12 col-lg-6">
+                          <img src={CodersCupLogo} alt="Coders Cup Logo" className="img-fluid me-auto ms-auto d-block p-5" />
+                          <h1 className='fw-bold display-2 d-none d-lg-block'>HackSussex</h1>
+                          <h1 className='fw-bold display-4 text-electric d-none d-lg-block'>Coders Cup</h1>
                         </div>
                         
-                        {/* Right Column */}
-                        <div className="col-md-7 d-flex justify-content-center">
+                        <div className="col-6 d-none d-lg-block">
                           <iframe 
                             className="w-100 rounded" 
                             src="https://www.youtube.com/embed/yPifHEfu4Qs?si=-9kvdIJc05nbL4IY" 
                             style={{ aspectRatio: '16/9', maxWidth: '560px', borderRadius: '15px' }}
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowFullScreen
+                            title="coder's cup video"
                           ></iframe>
                         </div>
 
                       </div>
-                    </div>
                   </div>
                 </div>
-              </a>
+              </Link>
               {/* END CODERS CUP CAROUSEL */}
 
               {/* CTF CAROUSEL */}
-              <a href="/events/ctf" className={styles.carouselLink}>
-                <div className={`${styles.carouselItem} carousel-item h-100`} style={{ position: 'relative' }}>
+              <Link to="/events/ctf" className="p-0">
+                <div className="carousel-item h-100">
                   <img src={CTFBackground} className="d-block w-100 h-100 img-fluid" alt='Background' />
-                  <div className={`${styles.carouselCaption} carousel-caption d-none d-md-block`}>
-                    <div className="d-flex justify-content-center align-items-center h-100" style={{ position: 'absolute', top: '0', left: '0', right: '0', bottom: '0', overflow: 'visible' }}>
-                      <img src={CTFLogo} alt="CTF Logo" className='img-fluid' style={{ width: '60%', height: 'auto' }} />
-                    </div>
+                  <div className="carousel-caption">
+                    <img src={CTFLogo} alt="CTF Logo" className='img-fluid ms-auto me-auto d-block p-3' />
                   </div>
                 </div>
-              </a>
+              </Link>
               {/* END CTF CAROUSEL */}
 
               {/* LEETCODING CAROUSEL */}
-              <a href="/events/leetcoding" className={styles.carouselLink}>
-                <div className={`${styles.carouselItem} carousel-item h-100`} style={{ position: 'relative' }}>
+              <Link to="/events/leetcoding" className="p-0">
+                <div className="carousel-item">
                   <img src={LeetcodingBackground} className="d-block w-100 h-100 img-fluid" alt='Background' />
-                  <div className={`${styles.carouselCaption} carousel-caption d-none d-md-block`}>
-                    <div className="d-flex justify-content-center align-items-center h-100" style={{ position: 'absolute', top: '0', left: '0', right: '0', bottom: '0', overflow: 'visible' }}>
-                      <img src={LeetcodingLogo} alt="Leetcoding Logo" className='img-fluid' style={{ width: '60%', height: 'auto' }} />
-                    </div>
+                  <div className="carousel-caption">
+                    <img src={LeetcodingLogo} alt="Leetcoding Logo" className='img-fluid ms-auto me-auto d-block p-3' style={{ width: '60%', height: 'auto' }} />
                   </div>
                 </div>
-              </a>
+              </Link>
               {/* END LEETCODING CAROUSEL */}
 
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
