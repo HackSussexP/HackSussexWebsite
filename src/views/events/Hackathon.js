@@ -99,7 +99,7 @@ const sponsorData = [
 const Hackathon = () => {
   return(
     <>
-      <div className="carousel-item active">
+      <div className="container-fluid p-0">
         <img src={HackathonBackground} className="d-block w-100 img-fluid" alt='Hackathon background' />
         <div className="carousel-caption">
           <div className="row align-items-center">
