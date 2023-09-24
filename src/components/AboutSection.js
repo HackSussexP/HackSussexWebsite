@@ -6,19 +6,17 @@ const AboutSection = (props) => {
         <>
             <div className='container p-4 pt-5'>
                 <div className='row'>
-                    <div className='col'>
-                    <p className='display-1'>About</p>
-                    </div>
+                    <h2 className='display-4 p-3 w-75 border-divider'>About</h2>
                 </div>
                 <div className='row'>
-                    <div className='col'>
-                        <p className='h6'>{props.description}</p>
-                    </div>
+                    <p>{props.description}</p>
                 </div>
                 <div className='row'>
-                    <div className='col-sm p-2'>
-                        <Link type='button' className='btn btn-light btn-lg rounded-5' style={{width: "10vw"}}>Register</Link>
-                        <Link type='button pl-3' className='btn btn-light btn-lg rounded-5' style={{width: "10vw"}}>FAQ</Link>
+                    <div className='col-auto p-2'>
+                        <Link type='button' className='btn btn-blue btn-lg' to="/event/hackathon/register">Register</Link>
+                    </div>
+                    <div className='col-auto p-2'>
+                        <Link type='button' className='btn btn-blue btn-lg' to="/event/hackathon/register">FAQ</Link>
                     </div>
                 </div>
             </div>

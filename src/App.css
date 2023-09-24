@@ -32,8 +32,8 @@ html, body {
 }
 
 .btn-blue {
-  background-color: var(--electric-green);
-  color: var(--super-dark);
+  background-color: var(--blue);
+  color: var(--text);
 }
 
 .btn-blue:hover {
