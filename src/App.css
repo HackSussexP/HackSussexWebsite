@@ -215,3 +215,8 @@ html, body {
   height: 300px;
   object-fit: cover;
 }
+
+.event-logo {
+  width: 300px;
+  height: 300px;
+}
