@@ -39,19 +39,19 @@ html, body {
 .btn-blue:hover {
   background-color: var(--electric-green) !important;
   color: var(--super-dark) !important;
-  text-decoration: underline !important;
+  text-decoration: none !important;
 }
 
 .btn-blue:active {
   background-color: var(--electric-green) !important;
   color: var(--super-dark) !important;
-  text-decoration: underline !important;
+  text-decoration: none !important;
 }
 
 .btn-blue:focus {
   background-color: var(--electric-green);
   color: var(--super-dark);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .navbar {
@@ -214,4 +214,9 @@ html, body {
   width: 200px;
   height: 300px;
   object-fit: cover;
+}
+
+.event-logo {
+  width: 300px;
+  height: 300px;
 }

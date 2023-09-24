@@ -27,7 +27,7 @@ const HomeEvents = () => {
           </p>
         </div>
         <div className='col-12 col-lg-6 p-5 m-auto text-center text-lg-start'>
-          <img src={Hackathon} alt="hackathon" className='img-fluid rounded'></img>
+          <img src={Hackathon} alt="hackathon" className='img-fluid rounded event-logo'></img>
         </div>
       </div>
       <div className='row mb-3'>
@@ -43,7 +43,7 @@ const HomeEvents = () => {
           </p>
         </div>
         <div className='col-12 col-lg-6 p-5 m-auto order-2 order-lg-1 text-center text-lg-end'>
-          <img src={Gamejam} alt="hackathon" className='img-fluid rounded'></img>
+          <img src={Gamejam} alt="hackathon" className='img-fluid rounded event-logo'></img>
         </div>
       </div>
       <div className='row mb-3'>
@@ -59,7 +59,7 @@ const HomeEvents = () => {
           </p>
         </div>
         <div className='col-12 col-lg-6 p-5 m-auto text-center text-lg-start'>
-          <img src={CodersCup} alt="hackathon" className='img-fluid rounded'></img>
+          <img src={CodersCup} alt="hackathon" className='img-fluid rounded event-logo'></img>
         </div>    
       </div>
       <div className='row mb-3'>
@@ -75,7 +75,7 @@ const HomeEvents = () => {
           </p>
         </div>  
         <div className='col-12 col-lg-6 p-5 m-auto order-2 order-lg-1 text-center text-lg-end'>
-          <img src={Pwnsussex} alt="hackathon" className='img-fluid rounded'></img>
+          <img src={Pwnsussex} alt="hackathon" className='img-fluid rounded event-logo'></img>
         </div>  
       </div>
     </div>
