@@ -10,7 +10,7 @@ const HomeEvents = () => {
   return (
     <div className={`container ${styles.container} mt-5 ms-auto me-auto`}>
       <div className='row m-0'>
-        <h2 className='display-4 fw-bold text-light text-center'>
+        <h2 className='display-4 fw-bold text-light text-center w-75 border-bottom ms-auto me-auto pb-3'>
           Our Events
         </h2>
       </div>

@@ -19,17 +19,17 @@ const AboutHeader = () => {
               className={`${styles.logoImage} mb-4`}
             />
 
-            <div className='d-flex justify-content-center mb-3'>
+            <div className='row justify-content-center mb-3 gap-3'>
               <Link 
                 type="button" 
-                className={`btn btn-blue btn-lg ${styles.largeButton} ${styles.buttonSpace}`} 
+                className={`btn btn-blue btn-lg col-auto ${styles.largeButton}`} 
                 to='/about'
               >
                 About
               </Link>
               <Link 
                 type="button" 
-                className={`btn btn-blue btn-lg ${styles.largeButton}`} 
+                className={`btn btn-blue btn-lg col-auto ${styles.largeButton}`} 
                 to='/gallery'
               >
                 Gallery

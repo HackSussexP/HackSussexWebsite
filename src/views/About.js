@@ -21,6 +21,7 @@ import david from '../assets/Committee/david.png'
 import kei from '../assets/Committee/kei.png'
 import emily from '../assets/Committee/emily.png'
 import jamie from '../assets/Committee/jamie.png'
+import elias from '../assets/Committee/elias.png'
 
 const About = () => {
 
@@ -40,6 +41,30 @@ const About = () => {
       email: "adnan@hacksussex.co.uk",
       githubLink: "https://github.com/adnantech",
       linkedinLink: "https://linkedin.com/in/adnanquisar"
+    },
+    {
+      imageUrl: tom,
+      name: "Tom Harwood",
+      role: "Manager",
+      email: "tom@hacksussex.co.uk",
+      githubLink: "https://github.com/tomtehtom",
+      linkedinLink: "https://www.linkedin.com/in/teharwood/"
+    },
+    {
+      imageUrl: charlotte,
+      name: "Charlotte Richardson",
+      role: "Welfare Officer & Web Development",
+      email: "charlotte@hacksussex.co.uk",
+      githubLink: "https://github.com/Charlotte-R-01134",
+      linkedinLink: "https://www.linkedin.com/in/charlotte-richardson-7673a11a2/"
+    },
+    {
+      imageUrl: henry,
+      name: "Henry Williams",
+      role: "Cyber Secruity & Secretary",
+      email: "henry@hacksussex.co.uk",
+      githubLink: "https://github.com/Henry-Ash-Williams",
+      linkedinLink: "https://www.linkedin.com/in/henry-williams-49b7ab226/"
     },
     {
       imageUrl: amy,
@@ -74,44 +99,12 @@ const About = () => {
       linkedinLink: "https://www.linkedin.com/in/ryu-wong/"
     },
     {
-      imageUrl: josh,
-      name: "Josh Kybett",
-      role: "Odd Jobsman",
-      email: "josh@hacksussex.co.uk",
-      githubLink: "https://github.com/JKybett",
-      linkedinLink: "https://www.linkedin.com/in/jkybett/"
-    },
-    {
-      imageUrl: tom,
-      name: "Tom Harwood",
-      role: "Manager",
-      email: "tom@hacksussex.co.uk",
-      githubLink: "https://github.com/tomtehtom",
-      linkedinLink: "https://www.linkedin.com/in/teharwood/"
-    },
-    {
       imageUrl: jude,
       name: "Jude Birch",
       role: "Game Development",
       email: "jude@hacksussex.co.uk",
       githubLink: "https://github.com/judebirch",
       linkedinLink: "https://www.linkedin.com/in/jude-birch-1288a0193/"
-    },
-    {
-      imageUrl: charlotte,
-      name: "Charlotte Richardson",
-      role: "welfare Officer",
-      email: "charlotte@hacksussex.co.uk",
-      githubLink: "https://github.com/adnantech",
-      linkedinLink: "https://www.linkedin.com/in/charlotte-richardson-7673a11a2/"
-    },
-    {
-      imageUrl: henry,
-      name: "Henry Williams",
-      role: "Cyber Secruity",
-      email: "henry@hacksussex.co.uk",
-      githubLink: "https://github.com/Henry-Ash-Williams",
-      linkedinLink: "https://www.linkedin.com/in/henry-williams-49b7ab226/"
     },
     {
       imageUrl: patrick,
@@ -126,47 +119,63 @@ const About = () => {
       name: "Lukas Hastings",
       role: "Robotics",
       email: "lukas@hacksussex.co.uk",
-      githubLink: "https://github.com/adnantech",
+      githubLink: "",
       linkedinLink: "https://www.linkedin.com/in/lukas-hastings-a9a055255/"
     },
     {
       imageUrl: richerd,
       name: "Richerd Joesph",
-      role: "Vice President",
+      role: "Events Management",
       email: "richerd@hacksussex.co.uk",
-      githubLink: "https://github.com/adnantech",
-      linkedinLink: "https://linkedin.com/in/adnanquisar"
+      githubLink: "",
+      linkedinLink: ""
+    },
+    {
+      imageUrl: josh,
+      name: "Josh Kybett",
+      role: "Odd Jobsman",
+      email: "josh@hacksussex.co.uk",
+      githubLink: "https://github.com/JKybett",
+      linkedinLink: "https://www.linkedin.com/in/jkybett/"
     },
     {
       imageUrl: david,
       name: "David",
-      role: "Vice President",
+      role: "Web Development",
       email: "david@hacksussex.co.uk",
-      githubLink: "https://github.com/adnantech",
-      linkedinLink: "https://linkedin.com/in/adnanquisar"
+      githubLink: "",
+      linkedinLink: ""
     },
     {
       imageUrl: kei,
       name: "Kei",
       role: "General Committee",
       email: "kei@hacksussex.co.uk",
-      githubLink: "https://github.com/adnantech",
-      linkedinLink: "https://linkedin.com/in/adnanquisar"
+      githubLink: "",
+      linkedinLink: ""
     },
     {
       imageUrl: emily,
-      name: "Emily",
-      role: "Merch Queen",
+      name: "Emily-mae Neame",
+      role: "General Committee",
       email: "emily@hacksussex.co.uk",
-      githubLink: "https://github.com/adnantech",
-      linkedinLink: "https://linkedin.com/in/adnanquisar"
+      githubLink: "",
+      linkedinLink: ""
+    },
+    {
+      imageUrl: elias,
+      name: "Elias",
+      role: "General Committee",
+      email: "elias@hacksussex.co.uk",
+      githubLink: "",
+      linkedinLink: ""
     },
     {
       imageUrl: jamie,
       name: "Jamie Sage",
       role: "General Committee",
       email: "jamie@hacksussex.co.uk",
-      githubLink: "https://github.com/adnantech",
+      githubLink: "",
       linkedinLink: "https://www.linkedin.com/in/jamie-sage/"
     },
   ];
@@ -176,7 +185,7 @@ const About = () => {
     <div className="container mt-5">
       <div className="row">
         <div className="col text-center">
-          <h1 className="display-3 font-weight-bold">Hi, we are HackSussex</h1>
+          <h1 className="display-3 fw-bold">Hi, we are HackSussex</h1>
         </div>
       </div>
       <div className="row mt-4">
@@ -191,7 +200,7 @@ const About = () => {
     
     <div className={styles.meetCommitteeSection}>
         <div className="container mt-5">
-          <h1 className={styles.titleSpacing + " text-center mb-5"}>Meet the Committee</h1>
+          <h1 className="text-center mb-5 text fw-bold display-4 border-bottom w-75 ms-auto me-auto pb-3">Meet the Committee</h1>
           {Array(Math.ceil(committeeMembers.length / 5)).fill().map((_, rowIndex) => (
             <div className="row d-flex justify-content-center"  key={rowIndex}>
               {committeeMembers.slice(rowIndex * 5, (rowIndex + 1) * 5).map(member => (

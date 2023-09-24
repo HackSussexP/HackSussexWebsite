@@ -1,25 +1,21 @@
-.meetCommitteeSection {
-  background-color: #EEEEEE;
-  background-image: url("./../assets/sparse-icon-scatter-dark.png");
-}
-
-.blackText {
-  color: black;
+h5 {
+  color: var(--electric-green);
 }
 
 .icon {
-  color: black;
+  color: var(--text);
   transition: transform 0.3s;
   font-size: 2rem;
 }
 
 .icon:hover {
   transform: scale(1.5);
+  color: var(--electric-green);
 }
 
 .emailLink {
   text-decoration: none;
-  color: black;
+  color: var(--text);
   font-size: 1rem;
   transition: text-decoration 0.3s, color 0.3s;
 }
@@ -31,6 +27,8 @@
 
 .roleText {
   font-size: 1rem;
+  color: var(--text);
+  font-style: italic;
 }
 
 .titleSpacing {

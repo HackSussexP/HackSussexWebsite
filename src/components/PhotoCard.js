@@ -5,18 +5,22 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const PhotoCard = ({ imageUrl, name, role, email, githubLink, linkedinLink }) => {
   return (
-    <div className="text-center mb-4">
-      <img src={imageUrl} alt={`${name}'s photo`} style={{ width: '80%', maxWidth: '200px', height: 'auto', maxHeight: '340px', borderRadius: '5px' }} />
-      <h5 className={styles.blackText + " mt-3 font-weight-bold"}>{name}</h5>
-      <div className={styles.roleText + " font-weight-bold"} style={{ color: 'black'}}>{role}</div>
+    <div className="text-center mb-4 about-images">
+      <img src={imageUrl} alt={`${name}`} className="rounded-3" />
+      <h5 className={styles.blackText + " mt-3 fw-bold"}>{name}</h5>
+      <div className={styles.roleText + " fw-bold"}>{role}</div>
       <a href={`mailto:${email}`} className={styles.emailLink}>{email}</a>
       <div className="d-flex justify-content-center mt-2">
-        <a href={githubLink} target="_blank" rel="noopener noreferrer" className="mx-2">
-          <FaGithub className={styles.icon} />
-        </a>
-        <a href={linkedinLink} target="_blank" rel="noopener noreferrer" className="mx-2">
-          <FaLinkedin className={styles.icon} />
-        </a>
+        {githubLink !== "" &&
+          <a href={githubLink} target="_blank" rel="noopener noreferrer" className="mx-2">
+            <FaGithub className={styles.icon} />
+          </a>
+        }
+        {linkedinLink !== "" &&
+          <a href={linkedinLink} target="_blank" rel="noopener noreferrer" className="mx-2">
+            <FaLinkedin className={styles.icon} />
+          </a>
+        }
       </div>
     </div>
   );
