@@ -24,7 +24,7 @@ const Home = () => {
     <>
       <Carousel />
       <AboutHeader />
-      <RotatingSponsorBanner />
+      {/* <RotatingSponsorBanner /> */}
       <HomeEvents />
       <UpcomingEvents />
       <SocialMediaBanner />
