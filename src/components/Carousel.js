@@ -105,7 +105,6 @@ const HomeCarousel = () => {
                             title="coder's cup video"
                           ></iframe>
                         </div>
-
                       </div>
                   </div>
                 </div>
