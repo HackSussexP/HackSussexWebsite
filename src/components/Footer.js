@@ -8,28 +8,30 @@ const Footer = () => {
     fontWeight: 'bold'
   };
 
-  const linkStyle = {
-    textDecoration: 'none'
-  };
-
-  const linkHoverStyle = {
-    textDecoration: 'none',
-    color: '#FF0000'
-  };
-
   return (
-    <footer className="bg-dark text-light sticky-bottom py-3">
-      <div className="container d-flex justify-content-between align-items-center">
-        <div style={hackSussexStyle}>
-          HackSussex 2023 ©
-        </div>
-        <div>
-          <Link to="/" className="text-light mx-2" style={linkStyle} onMouseEnter={() => linkHoverStyle} onMouseLeave={() => linkStyle}>Home</Link>
-          <Link to="/about" className="text-light mx-2" style={linkStyle} onMouseEnter={() => linkHoverStyle} onMouseLeave={() => linkStyle}>About</Link>
-          <Link to="/events/hackathon" className="text-light mx-2" style={linkStyle} onMouseEnter={() => linkHoverStyle} onMouseLeave={() => linkStyle}>Events</Link>
-          <Link to="/gallery" className="text-light mx-2" style={linkStyle} onMouseEnter={() => linkHoverStyle} onMouseLeave={() => linkStyle}>Gallery</Link>
+    <footer className="bg-dark text-light py-3">
+      <div className="container">
+        <div className="row justify-content-between align-items-center">
+          <div className="col-12 col-md-4 text-center text-md-left mb-3 mb-md-0" style={hackSussexStyle}>
+            HackSussex 2023 ©
+          </div>
+          <div className="col-12 col-md-6 offset-md-2 text-center text-md-right">
+            <Link to="/" className="text-light mx-2 footer-link">Home</Link>
+            <Link to="/about" className="text-light mx-2 footer-link">About</Link>
+            <Link to="/events" className="text-light mx-2 footer-link">Events</Link>
+            <Link to="/gallery" className="text-light mx-2 footer-link">Gallery</Link>
+          </div>
         </div>
       </div>
+      <style jsx>{`
+        .footer-link {
+          text-decoration: none;
+          transition: color 0.3s;
+        }
+        .footer-link:hover {
+          color: #FF0000;
+        }
+      `}</style>
     </footer>
   );
 };
