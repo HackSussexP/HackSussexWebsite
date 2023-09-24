@@ -1,8 +1,12 @@
 import React from 'react'
+import Resources from '../../components/Resources'
 
 const Leetcoding = () => {
   return (
-    <h1>Leetcoding</h1>
+    <>
+      <Resources />
+    </>
+
   )
 }
 
