@@ -36,14 +36,14 @@ const AboutSection = (props) => {
                         </>
                     }
                 </div>
-                <div className='row'>
+                {/* <div className='row'>
                     <div className='col-auto p-2'>
                         <Link type='button' className='btn btn-blue btn-lg' to="/event/hackathon/register">Register</Link>
                     </div>
                     <div className='col-auto p-2'>
                         <Link type='button' className='btn btn-blue btn-lg' to="/event/hackathon/register">FAQ</Link>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )

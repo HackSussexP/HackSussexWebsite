@@ -142,7 +142,7 @@ const Hackathon = () => {
                   list={["24 Hours of project building", "Win exciting prizes", "Free swag", "Free Food and Drinks", "Workshops to learn skills"]} />
       <EventWhereWhen location="University of Sussex, Brighton" date={config.timer === true ? config.date : null} />
       {config.schedule && <Schedule schedule={schedule} />}
-      <Sponsors sponsorData={sponsorData}/>
+      {/* <Sponsors sponsorData={sponsorData}/> */}
     </>
   );
 }
