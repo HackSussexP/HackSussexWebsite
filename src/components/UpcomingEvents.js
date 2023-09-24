@@ -29,7 +29,7 @@ const UpcomingEvents = () => {
   return (
     <div className="container-fluid mb-5 p-3 gradient">
       <div>
-        <h1 className="text-center mb-5 text-dark fw-bold display-4 border-bottom w-75 ms-auto me-auto pb-3">Upcoming Events</h1>
+        <h1 className="text-center mb-5 text-dark fw-bold display-4 border-bottom w-75 ms-auto me-auto pb-3 mt-2">Upcoming Events</h1>
       </div>
       <div className="container align-items-center events">
         <div className="row align-items-center">
@@ -69,7 +69,7 @@ const UpcomingEvents = () => {
         <div className="text-center">
           <Link 
             type="button" 
-            className={`btn btn-blue btn-lg col-auto mt-3`} 
+            className={`btn btn-blue btn-lg col-auto mt-3 mb-1`} 
             to="/events"
           >
             <strong>
