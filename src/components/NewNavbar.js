@@ -51,11 +51,11 @@ const Navbar = (props) => {
                       Coders Cup
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link className="dropdown-item" to="/events/codesocials" onClick={closeNavbar}>
                       Code Socials
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link className="dropdown-item" to="/events/pwnsussex" onClick={closeNavbar}>
                       PwnSussex

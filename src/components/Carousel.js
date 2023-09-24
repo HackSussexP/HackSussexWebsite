@@ -10,8 +10,8 @@ import CodersCupLogo from '../assets/coders-cup-logo-white-23.png';
 import GameJamLogo from './../assets/index-carousel/gamejam-logo.png';
 import GameJamBackground from './../assets/index-carousel/gamejam-background.png';
 
-import CTFLogo from './../assets/index-carousel/ctf-logo.png';
-import CTFBackground from './../assets/index-carousel/ctf-background.png';
+import PwnSussexLogo from './../assets/index-carousel/PwnSussex-logo.png';
+import PwnSussexBackground from './../assets/index-carousel/PwnSussex-background.png';
 
 import LeetcodingLogo from './../assets/index-carousel/leetcoding-logo.png';
 import LeetcodingBackground from './../assets/index-carousel/leetcoding-background.png';
@@ -112,16 +112,16 @@ const HomeCarousel = () => {
               </Link>
               {/* END CODERS CUP CAROUSEL */}
 
-              {/* CTF CAROUSEL */}
-              <Link to="/events/ctf" className="p-0">
+              {/* PwnSussex CAROUSEL */}
+              <Link to="/events/pwnsussex" className="p-0">
                 <div className="carousel-item h-100">
-                  <img src={CTFBackground} className="d-block w-100 h-100 img-fluid" alt='Background' />
+                  <img src={PwnSussexBackground} className="d-block w-100 h-100 img-fluid" alt='Background' />
                   <div className="carousel-caption">
-                    <img src={CTFLogo} alt="CTF Logo" className='img-fluid ms-auto me-auto d-block p-3' />
+                    <img src={PwnSussexLogo} alt="PwnSussex Logo" className='img-fluid ms-auto me-auto d-block p-3' />
                   </div>
                 </div>
               </Link>
-              {/* END CTF CAROUSEL */}
+              {/* END PwnSussex CAROUSEL */}
 
               {/* LEETCODING CAROUSEL */}
               <Link to="/events/leetcoding" className="p-0">
