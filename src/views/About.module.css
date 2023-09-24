@@ -3,7 +3,7 @@ h5 {
 }
 
 .icon {
-  color: var(--text);
+  color: var(--blue);
   transition: transform 0.3s;
   font-size: 2rem;
 }
