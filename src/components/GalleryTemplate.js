@@ -38,6 +38,14 @@ function GalleryTemplate(props) {
     backdropFilter: 'blur(5px)'
   };
 
+  const largeButtonStyle = {
+    backgroundColor: '#3498db',
+    color: '#fff',
+    border: 'none',
+    transition: '0.3s ease',
+    textDecoration: 'none !important',
+  };
+  
   const handleBackdropClick = (e) => {
     if (!modalContentRef.current.contains(e.target)) {
       setExpandedImage(null);
@@ -57,7 +65,8 @@ function GalleryTemplate(props) {
         {props.events.map((event) => (
           <div key={event.id} className="col-6 col-md-4 col-lg-3 mb-3">
             <button
-              className="btn btn-primary w-100"
+              className="btn w-100 btn-blue"
+              style={largeButtonStyle} 
               onClick={() => setSelectedEvent(event.id)}
             >
               {event.name}
