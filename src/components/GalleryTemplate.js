@@ -22,15 +22,15 @@ function GalleryTemplate(props) {
     background: 'transparent',
     border: 'none',
     fontSize: '2rem',
-    color: '#333'
+    color: 'var(--super-dark)'
   };
 
   const modalTitleStyle = {
-    color: 'black'
+    color: 'var(--super-dark)'
   };
 
   const modalContentStyle = {
-    backgroundColor: '#EEEEEE'
+    backgroundColor: 'var(--text)'
   };
 
   const modalBackdropStyle = {
@@ -39,8 +39,6 @@ function GalleryTemplate(props) {
   };
 
   const largeButtonStyle = {
-    backgroundColor: '#3498db',
-    color: '#fff',
     border: 'none',
     transition: '0.3s ease',
     textDecoration: 'none !important',
@@ -81,6 +79,7 @@ function GalleryTemplate(props) {
             style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
             src={`https://www.youtube.com/embed/${eventVideo.videoId}`} 
             allowFullScreen
+            title="YouTube video player"
           ></iframe>
         </div>
       )}
