@@ -1,14 +1,18 @@
 import React from 'react';
-import AboutHeader from '../../components/AboutHeader';
-import RotatingSponsorBanner from '../../components/RotatingSponsorBanner';
+import CodersCupBackground from './../../assets/index-carousel/coderscup-background.png';
+import CodersCupLogo from './../../assets/coders-cup-logo-white-23.png';
 
 const CodersCup = () => {
-  return(
+  return (
     <>
-      <RotatingSponsorBanner />
-      <AboutHeader />
+      <div className="container-fluid p-0">
+        <img src={CodersCupBackground} className="d-block w-100 h-100 img-fluid" alt='Background' />
+        <div className="carousel-caption">
+          <img src={CodersCupLogo} alt="CodersCup Logo" className='img-fluid ms-auto me-auto d-block p-3' style={{ width: '60%', height: 'auto' }} />
+        </div>
+      </div>
     </>
-  );
+  )
 }
 
 export default CodersCup;
