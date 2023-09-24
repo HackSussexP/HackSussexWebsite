@@ -1,39 +1,35 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaCalendarAlt, FaClock, FaMapMarkerAlt, FaArrowRight } from 'react-icons/fa';
 
-import events from './../events.js'
+import events from './../events.js';
 
 function dateFormat(date) {
-  let dateObj = new Date(date)
-  let month = dateObj.toLocaleString('default', { month: 'long' })
-  let day = dateObj.getDate()
-  let year = dateObj.getFullYear()
-  return day + " " + month + " " + year
+  let dateObj = new Date(date);
+  let month = dateObj.toLocaleString('default', { month: 'long' });
+  let day = dateObj.getDate();
+  let year = dateObj.getFullYear();
+  return day + " " + month + " " + year;
 }
 
 const UpcomingEvents = () => {
-  let date = new Date()
-  let upcoming = []
-  // filter out past events
+  let date = new Date();
+  let upcoming = [];
+
   events.forEach((event) => {
-    let eventDate = new Date(event.date)
+    let eventDate = new Date(event.date);
     if (eventDate > date) {
-      upcoming.push(event)
+      upcoming.push(event);
     }
-  })
-  // sort by date
-  upcoming.sort((a,b) => {
-    let dateA = new Date(a.date)
-    let dateB = new Date(b.date)
-    return dateA - dateB;
-  })
-  // only show 3
-  upcoming = upcoming.slice(0,3)
+  });
+
+  upcoming.sort((a, b) => new Date(a.date) - new Date(b.date));
+  upcoming = upcoming.slice(0, 3);
 
   return (
     <div className="container-fluid mb-5 p-3 gradient">
-      <div className="">
-        <h2 className="text-center text-dark display-6">Upcoming Events</h2>
+      <div>
+        <h1 className="text-center mb-5 text-dark fw-bold display-4 border-bottom w-75 ms-auto me-auto pb-3 mt-2">Upcoming Events</h1>
       </div>
       <div className="container align-items-center events">
         <div className="row align-items-center">
@@ -47,39 +43,44 @@ const UpcomingEvents = () => {
                   </h2>
                   <p className="card-text">
                     <span className='me-2'>
-                      <i className="fas fa-calendar-alt"></i>
+                      <FaCalendarAlt />
                     </span>
                     {dateFormat(event.date)}
                   </p>
                   <p className="card-text">
                     <span className='me-2'>
-                      <i className="fas fa-clock"></i>
+                      <FaClock />
                     </span>
                     {event.time}
                   </p>
                   <p className="card-text">
                     <span className='me-2'>
-                      <i className="fas fa-map-marker-alt"></i>
+                      <FaMapMarkerAlt />
                     </span>
                     {event.location}
                   </p>
-                  <Link to={"/events/"+event.date+'/'+event.title} className="btn btn-blue">View Event</Link>
+                  <Link to={"/events/" + event.date + '/' + event.title} className="btn btn-blue">View Event</Link>
                 </div>
               </div>
             </div>
           ))}
         </div>
+
         <div className="text-center">
-          <Link to="/events" className="btn">
+          <Link 
+            type="button" 
+            className={`btn btn-blue btn-lg col-auto mt-3 mb-1`} 
+            to="/events"
+          >
             <strong>
               View More
-              <i className="fas fa-arrow-right ms-2"></i>
+              <FaArrowRight className="ms-3" />
             </strong>
-            </Link>
+          </Link>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default UpcomingEvents;
