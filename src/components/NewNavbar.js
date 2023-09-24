@@ -84,11 +84,11 @@ const Navbar = (props) => {
                   Gallery
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link px-5" to="/faq" onClick={closeNavbar}>
                   FAQ
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
