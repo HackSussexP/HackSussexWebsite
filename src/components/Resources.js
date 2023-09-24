@@ -9,37 +9,37 @@ const Resources = () => {
                         <p className="h1">Resources</p>
                     </div>
                     <div className="row">
-                        <p className="h5">[Hackers Arise] (<a className="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.hackers-arise.com">https://www.hackers-arise.com</a>)</p>
+                        <a className="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.hackers-arise.com">Hackers Arise</a>
                     </div>
                     <div className="row">
-                        <p className="h5">[HackTheBox] (<a className="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.hackthebox.com">https://www.hackthebox.com</a>)</p>
+                        <a className="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.hackthebox.com">HackTheBox</a>
                     </div>
                     <div className="row">
-                        <p className="h5">[TryHackMe] (<a className="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.tryhackme.com">https://www.tryhackme.com</a>)</p>
+                        <a className="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.tryhackme.com">TryHackMe</a>
                     </div>
                     <div className="row">
-                        <p className="h5">[picoCTF] (<a className="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.picoctf.com">https://www.picoctf.com</a>)</p>
+                        <a className="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.picoctf.com">picoCTF</a>
                     </div>
                     <div className="row">
-                        <p className="h5">[MalDev Academy (paid)] (<a className="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.maldevacademy.com">https://www.maldevacademy.com</a>)</p>
+                        <a className="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.maldevacademy.com">MalDev Academy(paid)</a>
                     </div>
                     <div className="row">
-                        <p className="h5">[pwn college] (<a className="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.pwn.college">https://www.pwn.college</a>)</p>
+                        <a className="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.pwn.college">pwn college</a>
                     </div>
                     <div className="row">
-                        <p className="h5">[roppers] (<a className="link-dark llink-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.hoppersroppers.org">https://www.hoppersroppers.org</a>)</p>
+                        <a className="link-dark llink-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.hoppersroppers.org">roppers</a>
                     </div>
                     <div className="row">
-                        <p className="h5">[liveoverflow] (<a className="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.hliveoverflow.com/">https://www.hliveoverflow.com/</a>)</p>
+                        <a className="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.hliveoverflow.com/">liveoverflow</a>
                     </div>
                     <div className="row">
-                        <p className="h5">[John Hammond (yt channel)] (<a className="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.youtube.com/channel/UCVeW9qkBjo3zosnqUbG7CFw">https://www.youtube.com/channel/UCVeW9qkBjo3zosnqUbG7CFw</a>)</p>
+                        <a className="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.youtube.com/channel/UCVeW9qkBjo3zosnqUbG7CFw">John Hammond</a>
                     </div>
                     <div className="row">
-                        <p className="h5">[pwnfunction (yt channel)] (<a className="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.youtube.com/@PwnFunction">https://www.youtube.com/@PwnFunction</a>)</p>
+                        <a className="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.youtube.com/@PwnFunction">pwnfunction</a>
                     </div>
                     <div className="row p-4">
-                        <p className="h5">Plenty more resources on our discord server (<a className="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://discord.gg/h7JD9mjfWY">https://discord.gg/h7JD9mjfWY</a>)!</p>
+                        <a className="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://discord.gg/h7JD9mjfWY">https://discord.gg/h7JD9mjfWY</a>
                     </div>
                 </div>
             </div>
