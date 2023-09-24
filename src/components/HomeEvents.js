@@ -26,8 +26,8 @@ const HomeEvents = () => {
             HackSussex runs a weekend-long hackathon annually on Sussex campus. The hackathon is an event where passionate programmers and designers from all across the country come down to build the best tech inventions and solutions they can in just 24 hours, with many prizes for the winning teams.
           </p>
         </div>
-        <div className='col-12 col-lg-6 p-5 m-auto'>
-          <img src={image1} alt="hackathon" className='img-fluid rounded'></img>
+        <div className='col-12 col-lg-6 p-5 m-auto text-center text-lg-start'>
+          <img src={Hackathon} alt="hackathon" className='img-fluid rounded'></img>
         </div>
       </div>
       <div className='row mb-3'>
@@ -42,8 +42,8 @@ const HomeEvents = () => {
           This year, we are running a brand-new event called the HackSussex Game Jam. Participants will have the opportunity to showcase their skills & innovative ideas in designing and developing games within 24 hours.
           </p>
         </div>
-        <div className='col-12 col-lg-6 p-5 m-auto order-2 order-lg-1'>
-          <img src={image2} alt="hackathon" className='img-fluid rounded'></img>
+        <div className='col-12 col-lg-6 p-5 m-auto order-2 order-lg-1 text-center text-lg-end'>
+          <img src={Gamejam} alt="hackathon" className='img-fluid rounded'></img>
         </div>
       </div>
       <div className='row mb-3'>
@@ -58,8 +58,8 @@ const HomeEvents = () => {
             An annual programming competition where all programmers studying at the University of Sussex compete to answer algorithmic coding puzzles. If you manage to qualify for the finals, you will go toe to toe with other programmers in an 8 player knockout competition, which will be streamed online. There is a prize pool involved for the winners of the competition.
           </p>
         </div>
-        <div className='col-12 col-lg-6 p-5 m-auto'>
-          <img src={image3} alt="hackathon" className='img-fluid rounded'></img>
+        <div className='col-12 col-lg-6 p-5 m-auto text-center text-lg-start'>
+          <img src={CodersCup} alt="hackathon" className='img-fluid rounded'></img>
         </div>    
       </div>
       <div className='row mb-3'>
@@ -74,8 +74,8 @@ const HomeEvents = () => {
             Run by PwnSussex, we also participate in Capture The Flag (CTF) events, where players in a team need to find as many flags as possible, of which are hidden behind cybersecurity challenges in order to score points.
           </p>
         </div>  
-        <div className='col-12 col-lg-6 p-5 m-auto order-2 order-lg-1'>
-          <img src={image3} alt="hackathon" className='img-fluid rounded'></img>
+        <div className='col-12 col-lg-6 p-5 m-auto order-2 order-lg-1 text-center text-lg-end'>
+          <img src={Pwnsussex} alt="hackathon" className='img-fluid rounded'></img>
         </div>  
       </div>
     </div>
