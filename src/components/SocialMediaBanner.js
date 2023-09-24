@@ -52,6 +52,7 @@ const SocialMediaBanner = () => {
           transition: color 0.5s;
         }
         .discord-icon:hover,
+        .twitter-icon:hover,
         .instagram-icon:hover,
         .linkedin-icon:hover,
         .youtube-icon:hover,
