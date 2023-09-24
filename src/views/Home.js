@@ -23,10 +23,10 @@ const Home = () => {
   return (
     <>
       <Carousel />
-      <RotatingSponsorBanner />
       <AboutHeader />
-      <UpcomingEvents />
+      <RotatingSponsorBanner />
       <HomeEvents />
+      <UpcomingEvents />
       <SocialMediaBanner />
     </>
   );
