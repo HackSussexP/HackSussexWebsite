@@ -1,8 +1,6 @@
 .container-fluid {
   background-size: cover;
   background-position: center;
-  background-color: #EEEEEE;
-  background-image: url('./../assets/sparse-icon-scatter-dark.png');
   padding: 4rem 4rem;
 }
 

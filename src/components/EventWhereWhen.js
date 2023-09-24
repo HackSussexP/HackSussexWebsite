@@ -23,7 +23,7 @@ const EventWhereWhen = (props) => {
     location = props.location
   }
   return (
-    <div className={`${styles['container-fluid']} py-4`}>
+    <div className={`${styles['container-fluid']} gradient py-4`}>
       <div className="container">
         <div className="row align-items-center">
 
