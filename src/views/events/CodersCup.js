@@ -5,7 +5,7 @@ import CodersCupLogo from './../../assets/coders-cup-logo-white-23.png';
 const CodersCup = () => {
   return (
     <>
-      <div className="container-fluid p-0">
+      <div className="carousel-inner p-0">
       <img src={CodersCupBackground} className="d-block w-100 h-100 img-fluid" alt='Background' />
         <div className="carousel-caption">
             <div className="row align-items-center">

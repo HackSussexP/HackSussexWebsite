@@ -4,7 +4,7 @@ import GameJamBackground from './../../assets/index-carousel/gamejam-background.
 
 const GameJam = () => {
   return(
-    <div className="container-fluid p-0">
+    <div className="carousel-inner p-0">
       <img src={GameJamBackground} className="d-block w-100 h-100 img-fluid" alt='Background' />
       <div className="carousel-caption">
         <div className='row align-items-center'>

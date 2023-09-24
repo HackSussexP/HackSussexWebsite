@@ -4,12 +4,37 @@ import { Link } from "react-router-dom";
 const AboutSection = (props) => {
     return (
         <>
-            <div className='container p-4 pt-5'>
+            <div className='container p-5 pt-5'>
                 <div className='row'>
-                    <h2 className='display-4 p-3 w-75 border-divider'>About</h2>
+                    <h2 className='display-4 fw-bold mt-3 w-75'>About</h2>
                 </div>
-                <div className='row'>
-                    <p>{props.description}</p>
+                <div className='row mt-0'>
+                    {props.list !== undefined &&
+                        <>
+                            <div class="col-12 col-lg-8">
+                                {props.description}
+                            </div>
+                            <div className="col-12 col-lg-4 mb-3">
+                                {(props.list).map((item, index) => (
+                                    <div className="row">
+                                        <div className="col-1">
+                                            ✅
+                                        </div>
+                                        <div className="col-11">
+                                            {item}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </>
+                    }
+                    {!props.list &&
+                        <>
+                            <div class="col-12">
+                                {props.description}
+                            </div>
+                        </>
+                    }
                 </div>
                 <div className='row'>
                     <div className='col-auto p-2'>

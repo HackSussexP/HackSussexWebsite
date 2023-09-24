@@ -3,10 +3,10 @@ import React from 'react';
 import RotatingSponsorBanner from './../../components/RotatingSponsorBanner';
 import EventWhereWhen from '../../components/EventWhereWhen'; 
 import Timer from './../../components/Timer';
-import EventAbout from './../../components/EventAbout';
 import Schedule from './../../components/Schedule';
 import Sponsors from './../../components/Sponsors';
 
+import AboutSection from '../../components/AboutSection';
 
 import HackathonBackground from '../../assets/hackathon-background-darker.png';
 import HackathonLogo from '../../assets/hackathon-23-trans-gradient-small.png';
@@ -99,7 +99,7 @@ const sponsorData = [
 const Hackathon = () => {
   return(
     <>
-      <div className="container-fluid p-0">
+      <div className="carousel-inner p-0">
         <img src={HackathonBackground} className="d-block w-100 img-fluid" alt='Hackathon background' />
         <div className="carousel-caption">
           <div className="row align-items-center">
@@ -125,7 +125,21 @@ const Hackathon = () => {
         </div>
       </div>
       {config.timer && <Timer date={config.date} />}
-      <EventAbout />
+      <AboutSection description={<>
+                  <p>
+                  What happens at one of our 24 hour hackathons?
+                  This is an opportunity for students of all abilities to collaborate, learn new skills, and build something cool using technology. 
+                  It's a great way for people with similar interests to work together on exciting projects in a fast-paced, creative environment.</p>
+
+
+                  <p>This is a fantastic opportunity to enjoy yourself, boost your CV, and above all learn something new. Be it tech and software skills or teamwork experience. There's room for both the competitive and the laid back, and a chance for people of any level of experience to win prizes. The event is entirely free and paid for by our lovely sponsors.</p>
+
+                  <p>Once again, this year  HackSussex 2023 will be going Hybrid! In addition to the in-person experience, you will be able to take part online!
+                  Thanks to our partners at the Media Technology Lab, we will be running a professional live stream throughout the event to allow our digital attendees to ask questions, speak to sponsors, attend workshops and take part in the hack!
+                  HackSussex 2023 is run in accordance with the MLH Code of Conduct and the Hackathons UK Code of Conduct.
+                  </p>
+                  </>}
+                  list={["24 Hours of project building", "Win exciting prizes", "Free swag", "Free Food and Drinks", "Workshops to learn skills"]} />
       <EventWhereWhen location="University of Sussex, Brighton" date={config.timer === true ? config.date : null} />
       {config.schedule && <Schedule schedule={schedule} />}
       <Sponsors sponsorData={sponsorData}/>
