@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from "react";
+import { FaDiscord } from 'react-icons/fa';
 
 import Resources from '../../components/Resources'
 import AboutSection from '../../components/AboutSection';
@@ -7,7 +8,32 @@ import EventWhereWhen from '../../components/EventWhereWhen';
 import PwnSussexLogo from './../../assets/index-carousel/PwnSussex-logo.png';
 import PwnSussexBackground from './../../assets/index-carousel/PwnSussex-background.png';
 
+const linksData = [
+  { name: "Hackers Arise", url: "https://www.hackers-arise.com" },
+  { name: "HackTheBox", url: "https://www.hackthebox.com" },
+  { name: "TryHackMe", url: "https://www.tryhackme.com" },
+  { name: "picoCTF", url: "https://www.picoctf.com" },
+  { name: "MalDev Academy (Paid)", url: "https://www.maldevacademy.com" },
+  { name: "pwn college", url: "https://www.pwn.college" },
+  { name: "roppers", url: "https://www.hoppersroppers.org" },
+  { name: "liveoverflow", url: "https://www.hliveoverflow.com/" },
+  { name: "John Hammond", url: "https://www.youtube.com/channel/UCVeW9qkBjo3zosnqUbG7CFw" },
+  { name: "pwnfunction", url: "https://www.youtube.com/@PwnFunction" },
+];
+
 const CaptureTheFlag = () => {
+  const [hoveredDiscord, setHoveredDiscord] = useState(false);
+
+  const defaultStyle = {
+    textDecoration: "none",
+    color: "white"
+  };
+
+  const hoverStyle = {
+    textDecoration: "none",
+    color: "#34d2c8"
+  };
+
   return (
     <>
       <div className="carousel-inner p-0">
@@ -33,7 +59,22 @@ const CaptureTheFlag = () => {
           </div>
         </div>
       </div>
-      <Resources />
+      <Resources links={linksData} />
+
+      <div className="row p-4 justify-content-center">
+        <p className="fs-4 text-center">
+          Plenty more resources on our{' '}
+          <a 
+             style={hoveredDiscord ? hoverStyle : defaultStyle}
+             onMouseEnter={() => setHoveredDiscord(true)}
+             onMouseLeave={() => setHoveredDiscord(false)}
+             href="https://discord.gg/h7JD9mjfWY">
+             <FaDiscord /> Discord 
+          </a>
+          {' '}server!
+        </p>
+      </div>
+
     </>
   )
 }
