@@ -9,7 +9,7 @@ import Sponsors from './../../components/Sponsors';
 import AboutSection from '../../components/AboutSection';
 
 import HackathonBackground from '../../assets/hackathon-background-darker.png';
-import HackathonLogo from '../../assets/hackathon-23-trans-gradient-small.png';
+import HackathonLogo from '../../assets/hackathon-2024.png';
 
 const config = {
   "timer": false,

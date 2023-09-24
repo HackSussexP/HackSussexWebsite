@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import HackathonBackground from './../assets/hackathon-background-darker.png';
-import HackathonLogo from '../assets/hackathon-23-trans-gradient-small.png';
+import HackathonLogo from '../assets/hackathon-2024.png';
 
 import CodersCupBackground from './../assets/index-carousel/coderscup-background.png';
 import CodersCupLogo from '../assets/coders-cup-logo-white-23.png';
