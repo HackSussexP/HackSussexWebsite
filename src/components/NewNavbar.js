@@ -57,13 +57,18 @@ const Navbar = (props) => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/events/capturetheflag" onClick={closeNavbar}>
-                      Capture the Flag
+                    <Link className="dropdown-item" to="/events/pwnsussex" onClick={closeNavbar}>
+                      PwnSussex
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/events/gamejam" onClick={closeNavbar}>
                       Game Jam
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/events/leetcoding" onClick={closeNavbar}>
+                      Leetcoding
                     </Link>
                   </li>
                   <li className="dropdown-divider"></li>

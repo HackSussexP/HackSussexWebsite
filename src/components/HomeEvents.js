@@ -65,7 +65,7 @@ const HomeEvents = () => {
       <div className='row mb-3'>
         <div className='col-12 col-lg-6 m-auto text-lg-start px-3 order-1 order-lg-2'>
           <h2 className='display-6 fw-bold text-electric'>
-            Capture The Flag
+            PwnSussex
           </h2>
           <p className='fs-4'>
             Cybersecruity Puzzles for our HackerSussexers
