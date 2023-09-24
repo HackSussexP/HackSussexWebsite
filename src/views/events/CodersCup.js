@@ -1,6 +1,97 @@
 import React from 'react';
+
 import CodersCupBackground from './../../assets/index-carousel/coderscup-background.png';
 import CodersCupLogo from './../../assets/coders-cup-logo-white-23.png';
+
+import EventWhereWhen from '../../components/EventWhereWhen'; 
+import Timer from './../../components/Timer';
+import Schedule from './../../components/Schedule';
+import Sponsors from './../../components/Sponsors';
+
+import AboutSection from '../../components/AboutSection';
+
+const config = {
+  "timer": false,
+  "event": false,
+  "schedule": false,
+  "sponsors": false,
+  "date": "May 1, 2024, 0:0:0",
+}
+
+var schedule = {
+  1: [
+    {
+      time: "10:00",
+      event: "Registration Opens",
+      location: "Chichester Lecture Theatre",
+    },
+    {
+      time: "11:00 - 12:00",
+      event: "Opening Ceremony",
+      location: "Chichester Lecture Theatre",
+    },
+    {
+      time: "12:00",
+      event: "Hacking Begins",
+      location: "The beginning of the journey",
+    },
+    {
+      time: "1:00PM",
+      event: "Event 4",
+      location: "Location 1",
+    }
+  ],
+  2: [
+    {
+      time: "10:00AM",
+      event: "Event 1",
+      location: "Location 1",
+    },
+    {
+      time: "11:00AM",
+      event: "Event 2",
+      location: "Location 1",
+    },
+    {
+      time: "12:00PM",
+      event: "Event 3",
+      location: "Location 1",
+    },
+    {
+      time: "1:00PM",
+      event: "Event 4",
+      location: "Location 1",
+    }
+  ],
+}
+
+const sponsorData = [
+  {
+    title: "Title Sponsor",
+    size: "80%",
+    logos: [CodersCupLogo]
+  },
+  {
+    title: "Gold Sponsors",
+    size: "40%",
+    logos: [CodersCupLogo, CodersCupLogo]
+  },
+  {
+    title: "Silver Sponsors",
+    size: "30%",
+    logos: [CodersCupLogo, CodersCupLogo, CodersCupLogo]
+  },
+  {
+    title: "Bronze Sponsors",
+    size: "20%",
+    logos: [CodersCupLogo, CodersCupLogo, CodersCupLogo, CodersCupLogo]
+  },
+  {
+    title: "Partners",
+    size: "20%",
+    logos: [CodersCupLogo, CodersCupLogo, CodersCupLogo, CodersCupLogo]
+  },
+];
 
 const CodersCup = () => {
   return (
@@ -28,8 +119,22 @@ const CodersCup = () => {
             </div>
         </div>
       </div>
+      {config.timer && <Timer date={config.date} />}
+      <AboutSection description={<>
+                  <p>
+                  HackSussex also run an annual programming competition where all programmers studying at the University of Sussex compete to 
+                  answer algorithmic coding puzzles. The first stage is a HackerRank competition where you can flex your knowledge of data 
+                  structures and algorithms to answer as many questions as you can within a week! The next stage is a 8 player knockout competition
+                   where you will go toe to toe with other programmers, which will be streamed online. There is a prize pool involved for the 
+                   winners of the competition.
+                  </p>
+                  </>}
+                  list={[]} />
+      <EventWhereWhen location="University of Sussex, Brighton" date={config.timer === true ? config.date : null} />
+      {config.schedule && <Schedule schedule={schedule} />}
+      {/* <Sponsors sponsorData={sponsorData}/> */}
     </>
-  )
+  );
 }
 
 export default CodersCup;
