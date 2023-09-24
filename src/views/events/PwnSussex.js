@@ -64,7 +64,8 @@ const CaptureTheFlag = () => {
       <div className="row p-4 justify-content-center">
         <p className="fs-4 text-center">
           Plenty more resources on our{' '}
-          <a 
+          <a
+             className="discord-link"
              style={hoveredDiscord ? hoverStyle : defaultStyle}
              onMouseEnter={() => setHoveredDiscord(true)}
              onMouseLeave={() => setHoveredDiscord(false)}
@@ -75,6 +76,13 @@ const CaptureTheFlag = () => {
         </p>
       </div>
 
+      <style jsx>{`
+        @media (max-width: 767.98px) {
+          .discord-link {
+            color: #34d2c8 !important;
+          }
+        }
+      `}</style>
     </>
   )
 }
