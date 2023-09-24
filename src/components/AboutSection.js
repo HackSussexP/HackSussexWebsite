@@ -30,7 +30,7 @@ const AboutSection = (props) => {
                     }
                     {!props.list &&
                         <>
-                            <div class="col-12">
+                            <div class="col-12 mb-3">
                                 {props.description}
                             </div>
                         </>
