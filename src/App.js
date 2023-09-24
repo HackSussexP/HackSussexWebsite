@@ -76,7 +76,7 @@ const App = () => {
           <Route path="/events/gamejam" element={<GameJam />} />
           <Route path="/events/leetcoding" element={<Leetcoding />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/faq" element={<FAQ />} />
+          {/* <Route path="/faq" element={<FAQ />} /> */}
           <Route path="*" element={<NoMatch />} />
         </Routes>
         <Footer />
