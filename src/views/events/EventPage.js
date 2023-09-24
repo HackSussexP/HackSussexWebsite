@@ -1,63 +1,63 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { FaCalendarAlt, FaClock, FaMapMarkerAlt, FaPoundSign } from 'react-icons/fa';
 
-import events from './../../events.js'
+import events from './../../events.js';
 
 function dateFormat(date) {
-  let dateObj = new Date(date)
-  let month = dateObj.toLocaleString('default', { month: 'long' })
-  let day = dateObj.getDate()
-  let year = dateObj.getFullYear()
-  return day + " " + month + " " + year
+  let dateObj = new Date(date);
+  let month = dateObj.toLocaleString('default', { month: 'long' });
+  let day = dateObj.getDate();
+  let year = dateObj.getFullYear();
+  return day + " " + month + " " + year;
 }
 
 const EventPage = () => {
 
-  let date = useParams().date
-  let title = useParams().title
-
-  // find event with matching date and title
+  let date = useParams().date;
+  let title = useParams().title;
 
   let event = events.find((event) => {
-    return event.date === date && event.title === title
-  })
+    return event.date === date && event.title === title;
+  });
+
   return (
     <div className="container mb-5 p-3">
       <div className="card">
         <div className="card-body row">
           <div className="col-6">
-              <h2 className="card-title display-5 mb-2">
-                {event.title}
-              </h2>
-              <p className="card-text">
-                {event.description}
-              </p>
-            </div>
+            <h2 className="card-title display-5 mb-2">
+              {event.title}
+            </h2>
+            <p className="card-text">
+              {event.description}
+            </p>
+          </div>
           <div className="col-6">
             <div className="ratio ratio-16x9 mb-3">
               <img src={event.image} className="img-fluid rounded" alt="..." />
             </div>
             <p className="card-text">
               <span className='me-2'>
-                <i className="fas fa-calendar-alt"></i>
+                <FaCalendarAlt />
               </span>
               {dateFormat(event.date)}
             </p>
             <p className="card-text">
               <span className='me-2'>
-                <i className="fas fa-clock"></i>
+                <FaClock />
               </span>
               {event.time}
             </p>
             <p className="card-text">
               <span className='me-2'>
-                <i className="fas fa-map-marker-alt"></i>
+                <FaMapMarkerAlt />
               </span>
               {event.location}
             </p>
             <p className="card-text">
               <span className='me-2'>
-                <i className="fas fa-pound-sign"></i>
+                <FaPoundSign />
               </span>
               {event.cost}
             </p>
@@ -65,7 +65,7 @@ const EventPage = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default EventPage;
