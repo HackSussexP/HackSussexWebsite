@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from './HomeEvent.module.css';
 
-import image1 from './../assets/index-carousel/image1.png'
-import image2 from './../assets/index-carousel/image2.png'
-import image3 from './../assets/index-carousel/image3.png'
+import Hackathon from './../assets/Home/hackathon.png';
+import Gamejam from './../assets/Home/gamejam.png';
+import CodersCup from './../assets/Home/coders-cup.png';
+import Pwnsussex from './../assets/Home/pwnsussex.png';
 
 const HomeEvents = () => {
   return (
