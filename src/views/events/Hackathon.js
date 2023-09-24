@@ -8,8 +8,8 @@ import Schedule from './../../components/Schedule';
 import Sponsors from './../../components/Sponsors';
 
 
-import background from '../../assets/hackathon-background-darker.png';
-import hackathonLogo from '../../assets/hackathon-23-trans-gradient-small.png';
+import HackathonBackground from '../../assets/hackathon-background-darker.png';
+import HackathonLogo from '../../assets/hackathon-23-trans-gradient-small.png';
 
 const config = {
   "timer": false,
@@ -70,52 +70,57 @@ const sponsorData = [
   {
     title: "Title Sponsor",
     size: "80%",
-    logos: [hackathonLogo]
+    logos: [HackathonLogo]
   },
   {
     title: "Gold Sponsors",
     size: "40%",
-    logos: [hackathonLogo, hackathonLogo]
+    logos: [HackathonLogo, HackathonLogo]
   },
   {
     title: "Silver Sponsors",
     size: "30%",
-    logos: [hackathonLogo, hackathonLogo, hackathonLogo]
+    logos: [HackathonLogo, HackathonLogo, HackathonLogo]
   },
   {
     title: "Bronze Sponsors",
     size: "20%",
-    logos: [hackathonLogo, hackathonLogo, hackathonLogo, hackathonLogo]
+    logos: [HackathonLogo, HackathonLogo, HackathonLogo, HackathonLogo]
   },
   {
     title: "Partners",
     size: "20%",
-    logos: [hackathonLogo, hackathonLogo, hackathonLogo, hackathonLogo]
+    logos: [HackathonLogo, HackathonLogo, HackathonLogo, HackathonLogo]
   },
 ];
 
 <Sponsors sponsorData={sponsorData} />
 
-
-var hackathonStyle = {
-  backgroundImage: `url(${background})`,
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-  backgroundRepeat: 'no-repeat',
-  height: '100%',
-  width: '100%',
-};
-
 const Hackathon = () => {
   return(
     <>
-      <div className='container-fluid p-2' style={hackathonStyle}>
-        <div className='row'>
-          <div className='col p-5'>
-            <img src={hackathonLogo} className='img-fluid' alt="hackathon logo"></img>
-          </div>
-          <div className='col p-5'>
-            <div className='container p-2 text-center'>Copy something goes here, text, graphic, dates, social media. just pad this out somehow</div>
+      <div className="carousel-item active">
+        <img src={HackathonBackground} className="d-block w-100 img-fluid" alt='Hackathon background' />
+        <div className="carousel-caption">
+          <div className="row align-items-center">
+            <div className="col-12 col-lg-6">
+              <img src={HackathonLogo} alt="Hackathon Logo" className="img-fluid me-auto ms-auto d-block p-3" />
+              <p className='text-wrap text-start d-none d-lg-block'>
+                📅 18th - 19th February 2024 <br />
+                📍 Chichester building, University of Sussex, UK <br />
+                🌐 Hybrid
+              </p>
+            </div>
+            <div className="col-6 d-none d-lg-block">
+              <iframe 
+                className="w-100 rounded" 
+                src="https://www.youtube.com/embed/gmKBSb7kbTY" 
+                style={{ aspectRatio: '16/9', maxWidth: '560px', borderRadius: '15px' }}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+                title="Hackathon Video"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
