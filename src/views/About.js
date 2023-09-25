@@ -79,7 +79,7 @@ const About = () => {
       name: "Tori Nevins",
       role: "Social Media",
       email: "tori@hacksussex.com",
-      githubLink: "https://github.com/adnantech",
+      githubLink: "",
       linkedinLink: "https://www.linkedin.com/in/tori-nevins-686069197/"
     },
     {
@@ -87,7 +87,7 @@ const About = () => {
       name: "Anton Vasiljevs",
       role: "Competitive Programming",
       email: "anton@hacksussex.com",
-      githubLink: "https://github.com/adnantech",
+      githubLink: "https://github.com/TonyRikun",
       linkedinLink: "https://www.linkedin.com/in/antons-vasiljevs/"
     },
     {
@@ -128,7 +128,7 @@ const About = () => {
       role: "Events Management",
       email: "richerd@hacksussex.com",
       githubLink: "",
-      linkedinLink: ""
+      linkedinLink: "https://www.linkedin.com/in/richerd-joseph-479492223/"
     },
     {
       imageUrl: josh,
@@ -143,7 +143,7 @@ const About = () => {
       name: "David",
       role: "Web Development",
       email: "david@hacksussex.com",
-      githubLink: "",
+      githubLink: "https://github.com/davidfrommont",
       linkedinLink: ""
     },
     {
@@ -151,7 +151,7 @@ const About = () => {
       name: "Kei",
       role: "General Committee",
       email: "kei@hacksussex.com",
-      githubLink: "",
+      githubLink: "https://github.com/JohnSanDesu",
       linkedinLink: ""
     },
     {
@@ -168,7 +168,7 @@ const About = () => {
       role: "General Committee",
       email: "elias@hacksussex.com",
       githubLink: "",
-      linkedinLink: ""
+      linkedinLink: "https://www.linkedin.com/in/eliaslassalle/"
     },
     {
       imageUrl: jamie,
