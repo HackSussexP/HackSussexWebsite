@@ -9,7 +9,7 @@ const SocialMediaBanner = () => {
 
   return (
     <>
-      <div className="container-fluid social-media-banner p-3 text-center">
+      <div className="container-fluid social-media-banner p-3 text-center gradient">
         <div className="row text-center">
           <h2 className="col-12">Find us on Social Media</h2>
         </div>
@@ -48,7 +48,7 @@ const SocialMediaBanner = () => {
       </div>
       <style jsx>{`
         .social-icon {
-          color: #3498db;
+          color: #00;
           transition: color 0.5s;
         }
         .discord-icon:hover,
@@ -57,7 +57,7 @@ const SocialMediaBanner = () => {
         .linkedin-icon:hover,
         .youtube-icon:hover,
         .tiktok-icon:hover {
-          color: #34d2c8;
+          color: #fff;
         }
         @media (max-width: 768px) {
           .mobile-big {

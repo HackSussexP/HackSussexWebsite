@@ -25,9 +25,9 @@ const Home = () => {
       <Carousel />
       <AboutHeader />
       {/* <RotatingSponsorBanner /> */}
-      <HomeEvents />
-      <UpcomingEvents />
       <SocialMediaBanner />
+      <HomeEvents />
+      {/* <UpcomingEvents /> */}
     </>
   );
 }
