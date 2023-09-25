@@ -27,7 +27,7 @@ const Home = () => {
       {/* <RotatingSponsorBanner /> */}
       <SocialMediaBanner />
       <HomeEvents />
-      {/* <UpcomingEvents /> */}
+      <UpcomingEvents />
     </>
   );
 }
