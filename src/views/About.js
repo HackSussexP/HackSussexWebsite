@@ -30,7 +30,7 @@ const About = () => {
       imageUrl: jack,
       name: "Jack Speat",
       role: "President",
-      email: "jack@hacksussex.co.uk",
+      email: "jack@hacksussex.com",
       githubLink: "https://github.com/Speaty",
       linkedinLink: "https://www.linkedin.com/in/jack-speat-7333491b3/"
     },
@@ -38,7 +38,7 @@ const About = () => {
       imageUrl: adnan,
       name: "Adnan Quisar",
       role: "Vice President",
-      email: "adnan@hacksussex.co.uk",
+      email: "adnan@hacksussex.com",
       githubLink: "https://github.com/adnantech",
       linkedinLink: "https://linkedin.com/in/adnanquisar"
     },
@@ -46,7 +46,7 @@ const About = () => {
       imageUrl: tom,
       name: "Tom Harwood",
       role: "Manager",
-      email: "tom@hacksussex.co.uk",
+      email: "tom@hacksussex.com",
       githubLink: "https://github.com/tomtehtom",
       linkedinLink: "https://www.linkedin.com/in/teharwood/"
     },
@@ -54,7 +54,7 @@ const About = () => {
       imageUrl: charlotte,
       name: "Charlotte Richardson",
       role: "Welfare Officer & Web Development",
-      email: "charlotte@hacksussex.co.uk",
+      email: "charlotte@hacksussex.com",
       githubLink: "https://github.com/Charlotte-R-01134",
       linkedinLink: "https://www.linkedin.com/in/charlotte-richardson-7673a11a2/"
     },
@@ -62,7 +62,7 @@ const About = () => {
       imageUrl: henry,
       name: "Henry Williams",
       role: "Cyber Secruity & Secretary",
-      email: "henry@hacksussex.co.uk",
+      email: "henry@hacksussex.com",
       githubLink: "https://github.com/Henry-Ash-Williams",
       linkedinLink: "https://www.linkedin.com/in/henry-williams-49b7ab226/"
     },
@@ -70,7 +70,7 @@ const About = () => {
       imageUrl: amy,
       name: "Amy Cho",
       role: "Social Media",
-      email: "amy@hacksussex.co.uk",
+      email: "amy@hacksussex.com",
       githubLink: "https://github.com/kittyeartales",
       linkedinLink: "https://www.linkedin.com/in/amy-cho-029989173/"
     },
@@ -78,7 +78,7 @@ const About = () => {
       imageUrl: tori,
       name: "Tori Nevins",
       role: "Social Media",
-      email: "tori@hacksussex.co.uk",
+      email: "tori@hacksussex.com",
       githubLink: "https://github.com/adnantech",
       linkedinLink: "https://www.linkedin.com/in/tori-nevins-686069197/"
     },
@@ -86,7 +86,7 @@ const About = () => {
       imageUrl: anton,
       name: "Anton Vasiljevs",
       role: "Competitive Programming",
-      email: "anton@hacksussex.co.uk",
+      email: "anton@hacksussex.com",
       githubLink: "https://github.com/adnantech",
       linkedinLink: "https://www.linkedin.com/in/antons-vasiljevs/"
     },
@@ -94,7 +94,7 @@ const About = () => {
       imageUrl: ryu,
       name: "Ryu Wong",
       role: "Competitive Programming",
-      email: "ryu@hacksussex.co.uk",
+      email: "ryu@hacksussex.com",
       githubLink: "https://github.com/SkollRyu",
       linkedinLink: "https://www.linkedin.com/in/ryu-wong/"
     },
@@ -102,7 +102,7 @@ const About = () => {
       imageUrl: jude,
       name: "Jude Birch",
       role: "Game Development",
-      email: "jude@hacksussex.co.uk",
+      email: "jude@hacksussex.com",
       githubLink: "https://github.com/judebirch",
       linkedinLink: "https://www.linkedin.com/in/jude-birch-1288a0193/"
     },
@@ -110,7 +110,7 @@ const About = () => {
       imageUrl: patrick,
       name: "Patrick Culmer",
       role: "Robotics",
-      email: "patrick@hacksussex.co.uk",
+      email: "patrick@hacksussex.com",
       githubLink: "https://github.com/VeryCoolPatrick",
       linkedinLink: "https://www.linkedin.com/in/patrick-culmer-982628195/"
     },
@@ -118,7 +118,7 @@ const About = () => {
       imageUrl: lukas,
       name: "Lukas Hastings",
       role: "Robotics",
-      email: "lukas@hacksussex.co.uk",
+      email: "lukas@hacksussex.com",
       githubLink: "",
       linkedinLink: "https://www.linkedin.com/in/lukas-hastings-a9a055255/"
     },
@@ -126,7 +126,7 @@ const About = () => {
       imageUrl: richerd,
       name: "Richerd Joesph",
       role: "Events Management",
-      email: "richerd@hacksussex.co.uk",
+      email: "richerd@hacksussex.com",
       githubLink: "",
       linkedinLink: ""
     },
@@ -134,7 +134,7 @@ const About = () => {
       imageUrl: josh,
       name: "Josh Kybett",
       role: "Odd Jobsman",
-      email: "josh@hacksussex.co.uk",
+      email: "josh@hacksussex.com",
       githubLink: "https://github.com/JKybett",
       linkedinLink: "https://www.linkedin.com/in/jkybett/"
     },
@@ -142,7 +142,7 @@ const About = () => {
       imageUrl: david,
       name: "David",
       role: "Web Development",
-      email: "david@hacksussex.co.uk",
+      email: "david@hacksussex.com",
       githubLink: "",
       linkedinLink: ""
     },
@@ -150,7 +150,7 @@ const About = () => {
       imageUrl: kei,
       name: "Kei",
       role: "General Committee",
-      email: "kei@hacksussex.co.uk",
+      email: "kei@hacksussex.com",
       githubLink: "",
       linkedinLink: ""
     },
@@ -158,7 +158,7 @@ const About = () => {
       imageUrl: emily,
       name: "Emily-mae Neame",
       role: "General Committee",
-      email: "emily@hacksussex.co.uk",
+      email: "emily@hacksussex.com",
       githubLink: "",
       linkedinLink: ""
     },
@@ -166,7 +166,7 @@ const About = () => {
       imageUrl: elias,
       name: "Elias",
       role: "General Committee",
-      email: "elias@hacksussex.co.uk",
+      email: "elias@hacksussex.com",
       githubLink: "",
       linkedinLink: ""
     },
@@ -174,7 +174,7 @@ const About = () => {
       imageUrl: jamie,
       name: "Jamie Sage",
       role: "General Committee",
-      email: "jamie@hacksussex.co.uk",
+      email: "jamie@hacksussex.com",
       githubLink: "",
       linkedinLink: "https://www.linkedin.com/in/jamie-sage/"
     },
