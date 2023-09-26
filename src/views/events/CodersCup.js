@@ -13,6 +13,7 @@ import HallOfFame from '../../components/HallOfFame';
 
 import patrick from '../../assets/patrick.png';
 import guy from '../../assets/guy.png';
+import jude from '../../assets/jude.png';
 
 const hallOfFameData = [
   {
@@ -26,6 +27,12 @@ const hallOfFameData = [
     title: "Guy",
     subheading: "Who has two thumbs and loves to code?",
     paragraph: "The early parts of Guy's life cycle involved burrowing into Wikipedia and the school library and producing code that went on floppy disks. He eventually metamorphosed into a semi-competent adult, taught maths to schoolkids who he remembers fondly, decided on a change of career, and came to Sussex to learn programming in a more structured way.\n\nStrengths: python, philosophy, using the microwave\nWeaknesses: cameras, large pebbles"
+  },
+  {
+    imageUrl: jude,
+    title: "Jude",
+    subheading: "Mr Yeet Man",
+    paragraph: "A CS student who's composed of 50% vanilla bubble tea. He started making games with Scratch 10 years ago and now wields the power of Unity, peaking in his game dev career with Yeet Man (https://jkit.itch.io/yeet-man). After completing a study abroad year in Japan, he's now a HackSussex committee member during his final year.\n\nInterests:\n• Piano\n• Tennis\n• Joe Hisaishi"
   }
 ];
 
