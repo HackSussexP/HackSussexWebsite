@@ -32,11 +32,11 @@ const UpcomingEvents = () => {
         <h1 className="text-center mb-5 text-dark fw-bold display-4 border-bottom w-75 ms-auto me-auto pb-3 mt-2">Upcoming Events</h1>
       </div>
       <div className="container align-items-center events">
-        <div className="row align-items-center">
+        <div className="row align-items-start">
           {upcoming.map((event, index) => (
             <div className="col-12 col-md-6 col-lg-4 my-3 ms-auto me-auto">
               <div className="card">
-                <img src={event.image} className="card-img-top" alt="..." />
+                <img src={event.image} className="card-img-top event-img" alt="..." />
                 <div className="card-body">
                   <h2 className="card-title text-center display-5 mb-2">
                     {event.title}

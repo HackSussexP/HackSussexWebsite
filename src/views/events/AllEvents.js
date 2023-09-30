@@ -34,11 +34,11 @@ const PastEvents = () => {
       <div className="container-fluid mb-3 p-3">
         <h2 className="text-center display-6 border-bottom w-75 me-auto ms-auto pb-3">Upcoming Events</h2>
         <div className="container align-items-center events">
-          <div className="row align-items-center">
+          <div className="row align-items-start">
             {upcoming.map((event, index) => (
               <div className="col-12 col-md-6 col-lg-4 my-3">
                 <div className="card">
-                  <img src={event.image} className="card-img-top" alt="..." />
+                  <img src={event.image} className="card-img-top event-img" alt="..." />
                   <div className="card-body">
                     <h2 className="card-title text-center display-5 mb-2">
                       {event.title}
@@ -72,11 +72,11 @@ const PastEvents = () => {
       <div className="container-fluid mb-3 p-3">
         <h2 className="text-center display-6 border-bottom w-75 me-auto ms-auto pb-3">Past Events</h2>
         <div className="container align-items-center events">
-          <div className="row align-items-center">
+          <div className="row align-items-start">
             {past.map((event, index) => (
               <div className="col-12 col-md-6 col-lg-4 my-3">
                 <div className="card">
-                  <img src={event.image} className="card-img-top" alt="..." />
+                  <img src={event.image} className="card-img-top event-img" alt="..." />
                   <div className="card-body">
                     <h2 className="card-title text-center display-5 mb-2">
                       {event.title}
