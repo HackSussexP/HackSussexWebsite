@@ -75,7 +75,37 @@ const PastEvents = () => {
           <div className="row align-items-start">
             {past.map((event, index) => (
               <div className="col-12 col-md-6 col-lg-4 my-3">
-                <div className="card">
+                {event.date !== null &&
+                  <div className="card">
+                    <img src={event.image} className="card-img-top event-img" alt="..." />
+                    <div className="card-body">
+                      <h2 className="card-title text-center display-5 mb-2">
+                        {event.title}
+                      </h2>
+                      <p className="card-text">
+                        <span className='me-2'>
+                          <FaCalendarAlt />
+                        </span>
+                        {dateFormat(event.date)}
+                      </p>
+                      <p className="card-text">
+                        <span className='me-2'>
+                          <FaClock />
+                        </span>
+                        {event.time}
+                      </p>
+                      <p className="card-text">
+                        <span className='me-2'>
+                          <FaMapMarkerAlt />
+                        </span>
+                        {event.location}
+                      </p>
+                      <Link to={"/events/" + event.date + "/" + event.title} className="btn btn-blue">View Event</Link>
+                    </div>
+                  </div>
+                }
+                {event.date === null &&
+                  <div className="card">
                   <img src={event.image} className="card-img-top event-img" alt="..." />
                   <div className="card-body">
                     <h2 className="card-title text-center display-5 mb-2">
@@ -85,7 +115,7 @@ const PastEvents = () => {
                       <span className='me-2'>
                         <FaCalendarAlt />
                       </span>
-                      {dateFormat(event.date)}
+                      Other
                     </p>
                     <p className="card-text">
                       <span className='me-2'>
@@ -99,9 +129,10 @@ const PastEvents = () => {
                       </span>
                       {event.location}
                     </p>
-                    <Link to={"/events/" + event.date + "/" + event.title} className="btn btn-blue">View Event</Link>
+                    <Link to={"/events/" + event.date + "/" + event.title} className="btn btn-blue disabled">View Event</Link>
                   </div>
                 </div>
+                }
               </div>
             ))}
           </div>
