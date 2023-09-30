@@ -25,7 +25,7 @@ const EventPage = () => {
     <div className="container mb-5 p-3">
       <div className="card">
         <div className="card-body row">
-          <div className="col-6">
+          <div className="col-12 col-sm-6 mb-3">
             <h2 className="card-title display-5 mb-2">
               {event.title}
             </h2>
@@ -33,7 +33,7 @@ const EventPage = () => {
               {event.description}
             </p>
           </div>
-          <div className="col-6">
+          <div className="col-12 col-sm-6">
             <div className="ratio ratio-16x9 mb-3">
               <img src={event.image} className="img-fluid rounded" alt="..." />
             </div>
