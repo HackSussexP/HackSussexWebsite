@@ -123,7 +123,7 @@ const CodersCup = () => {
   return (
     <>
       <div className="carousel-inner p-0">
-      <img src={CodersCupBackground} className="d-block w-100 h-100 img-fluid" alt='Background' />
+      <img src={CodersCupBackground} className="d-block w-100 h-100 img-fluid splash" alt='Background' />
         <div className="carousel-caption">
             <div className="row align-items-center">
               <div className="col-12 col-lg-6">

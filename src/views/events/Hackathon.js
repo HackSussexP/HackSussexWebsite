@@ -100,7 +100,7 @@ const Hackathon = () => {
   return(
     <>
       <div className="carousel-inner p-0">
-        <img src={HackathonBackground} className="d-block w-100 img-fluid" alt='Hackathon background' />
+        <img src={HackathonBackground} className="d-block w-100 img-fluid splash" alt='Hackathon background' />
         <div className="carousel-caption">
           <div className="row align-items-center">
             <div className="col-12 col-lg-6">
