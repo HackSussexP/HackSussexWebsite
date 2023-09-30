@@ -18,6 +18,24 @@ const Navbar = (props) => {
     <>   
       <nav class="navbar navbar-expand-xl navbar-dark p-0 navbar-blur">
         <div className="container-fluid py-2 px-5">
+
+          {/* MLH Flag */}
+          <a 
+            id="mlh-trust-badge" 
+            className="d-none d-lg-block"
+            style={{display: 'block', maxWidth: '100px', minWidth: '60px', position: 'fixed', right: '100px', top: '0', width: '10%', zIndex: 10000}} 
+            href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=blue" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <img 
+              src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-blue.svg" 
+              alt="Major League Hacking 2024 Hackathon Season" 
+              style={{width: '100%'}} 
+            />
+          </a>
+          {/* End MLH Flag */}
+
           <Link class="navbar-brand" to="/" onClick={closeNavbar}>
             <img src={logo} alt="logo" width="100" height="50" />
           </Link>
