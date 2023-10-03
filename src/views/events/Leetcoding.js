@@ -17,7 +17,7 @@ const linksData = [
   // Website - Misc
   { name: "Visualgo", url: "https://visualgo.net/en" },
   { name: "Tech Interview Handbook", url: "https://www.techinterviewhandbook.org/grind75" },
-  { name: "Neeetcode", url: "https://neetcode.io/" },
+  { name: "Neetcode", url: "https://neetcode.io/" },
   { name: "LeetCode The Hard Way", url: "https://leetcodethehardway.com/" },
   { name: "USACO Guide", url: "https://usaco.guide/" },
   { name: "CP Algorithms", url: "https://cp-algorithms.com/index.html" },
@@ -42,7 +42,7 @@ const Leetcoding = () => {
         </div>
       </div>
       <AboutSection description={`Welcome to HackSussex's weekly Leetcoding sessions! Our sessions are open to programmers of all levels, and they offer a chance to tackle a variety of engaging coding challenges. After taking a shot at these challenges, participants have the opportunity to discuss their approaches and solutions with fellow coders in a relaxed and friendly atmosphere. These sessions are an excellent way to enhance your problem-solving skills and prepare for technical job interviews in a comfortable and inclusive environment. Feel free to use your preferred programming language, and we look forward to having you join us on this coding journey at HackSussex!`} />
-      <EventWhereWhen location="Future Technologies Lab, University of Sussex" date={null} />
+      <EventWhereWhen location="Future Technologies Lab, University of Sussex" date="Every Wednesday, 13:00 to 14:00" />
       <Resources links={linksData} />
       <div className='mb-5'></div>
     </>
