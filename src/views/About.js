@@ -124,7 +124,7 @@ const About = () => {
     },
     {
       imageUrl: richerd,
-      name: "Richerd Joesph",
+      name: "Richerd Joseph",
       role: "Events Management",
       email: "richerd@hacksussex.com",
       githubLink: "",
@@ -140,7 +140,7 @@ const About = () => {
     },
     {
       imageUrl: david,
-      name: "David",
+      name: "David Frommont",
       role: "Web Development",
       email: "david@hacksussex.com",
       githubLink: "https://github.com/davidfrommont",
@@ -148,7 +148,7 @@ const About = () => {
     },
     {
       imageUrl: kei,
-      name: "Kei",
+      name: "Kei Tsujie",
       role: "General Committee",
       email: "kei@hacksussex.com",
       githubLink: "https://github.com/JohnSanDesu",
@@ -164,7 +164,7 @@ const About = () => {
     },
     {
       imageUrl: elias,
-      name: "Elias",
+      name: "Elias Lasselle",
       role: "General Committee",
       email: "elias@hacksussex.com",
       githubLink: "",
