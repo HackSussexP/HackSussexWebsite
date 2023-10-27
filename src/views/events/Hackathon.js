@@ -136,7 +136,7 @@ const Hackathon = () => {
 
                   <p>Once again, this year  HackSussex 2023 will be going Hybrid! In addition to the in-person experience, you will be able to take part online!
                   Thanks to our partners at the Media Technology Lab, we will be running a professional live stream throughout the event to allow our digital attendees to ask questions, speak to sponsors, attend workshops and take part in the hack!
-                  HackSussex 2023 is run in accordance with the MLH Code of Conduct and the Hackathons UK Code of Conduct.
+                  HackSussex 2023 is run in accordance with the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" rel="noopener noreferrer">MLH Code of Conduct</a> and the <a href="https://assets.ctfassets.net/8qdadmww1gdd/5BgY4Ty3TIdtfisJAhRQFO/909f3f37b89f046cafbe001feacbf670/Code_of_Conduct.pdf" target="_blank" rel="noopener noreferrer">Hackathons UK Code of Conduct</a>.
                   </p>
                   </>}
                   list={["24 Hours of project building", "Win exciting prizes", "Free swag", "Free Food and Drinks", "Workshops to learn skills"]} />
