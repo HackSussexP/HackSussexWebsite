@@ -112,9 +112,9 @@ const GameJam = () => {
               <h1 className='fw-bold display-4 text-electric'>Game Jam Event Loading...</h1>
               <div className='mt-3'>
                 <div className="progress" style={{ height: '30px', borderRadius: '15px', backgroundColor: '#222' }}>
-                  <div className="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style={{ width: '50%' }} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div className="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style={{ width: '70%' }} aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                <div className='text-center mt-2 text-light display-6'>50%</div>
+                <div className='text-center mt-2 text-light display-6'>70%</div>
               </div>
             </div>
         </div>
@@ -128,7 +128,7 @@ const GameJam = () => {
                   compete in tracks to inspire game design and win prizes.If you are looking for an opportunity to collaborate with others and 
                   experience trial and error throughout the game development process, this event would be a good match for you. Also, it will 
                   be great for those who are looking for a place to have exploration of new technologies in the realm of game development. The 
-                  event is entirely free and paid for by our lovely sponsors.
+                  event is entirely free and paid for by our lovely sponsors. HackSussex GameJam 2023 is run in accordance with the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" rel="noopener noreferrer">MLH Code of Conduct</a>.
                   </p>
                   </>}
                   list={["24 Hours of project building", "Win exciting prizes", "Free swag", "Free Food and Drinks", "Workshops to learn skills"]} />
