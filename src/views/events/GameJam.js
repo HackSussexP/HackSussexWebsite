@@ -7,15 +7,19 @@ import EventWhereWhen from '../../components/EventWhereWhen';
 import Timer from './../../components/Timer';
 import Schedule from './../../components/Schedule';
 import Sponsors from './../../components/Sponsors';
+import TicketSection from '../../components/TicketSection';
 
 import AboutSection from '../../components/AboutSection';
 
 const config = {
-  "timer": false,
+  "timer": true,
   "event": false,
   "schedule": false,
   "sponsors": false,
-  "date": "May 1, 2024, 0:0:0",
+  "date": "Nov 25, 2023, 11:00:00",
+  "title": "2023 Game Jam",
+  "tickets": true,
+  "url": "https://pretix.eu/HackSussex2023/register/"
 }
 
 var schedule = {
@@ -120,7 +124,8 @@ const GameJam = () => {
         </div>
       </div>
     </div>
-    {config.timer && <Timer date={config.date} />}
+    {config.tickets && <TicketSection url={config.url} />}
+    {config.timer && <Timer date={config.date} title={config.title} />}
     <AboutSection description={<>
                   <p>
                   This year, we are hosting our first GameJam. Collaborating with many of the local studios surrounding Brighton to focus 

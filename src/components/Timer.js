@@ -38,7 +38,7 @@ const Timer = (props) => {
                     </div>
                 ) : (
                     <>
-                        <h1 id="headline">Countdown to the 2024 Hackathon</h1>
+                        <h1 id="headline">Countdown to the {props.title}</h1>
                         <div className='row justify-content-center text-center'>
                             <div className='col-auto'>
                                 <div className='row justify-content-center text-green'>

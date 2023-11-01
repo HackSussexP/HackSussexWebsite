@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const AboutSection = (props) => {
     return (
         <>
-            <div className='container p-5 pt-5'>
+            <div className='container p-5 pt-3'>
                 <div className='row'>
                     <h2 className='display-4 fw-bold mt-3 w-75'>About</h2>
                 </div>
