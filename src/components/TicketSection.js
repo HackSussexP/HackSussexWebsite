@@ -7,7 +7,7 @@ const TicketSection = (props) => {
         <h2 className="display-3 text-center fw-bold">Tickets are now live!</h2>
       </div>
       <div className='row pt-3'>
-        <button type='button' className='btn btn-blue btn-lg p-3 w-auto me-auto ms-auto' onClick={() => window.open(props.url, '_blank')}><span className="h3 fw-bold">Buy Tickets</span></button>
+        <button type='button' className='btn btn-blue btn-lg p-3 w-auto me-auto ms-auto' onClick={() => window.open(props.url, '_blank')}><span className="h3 fw-bold">Get Tickets</span></button>
       </div>
     </div>
   );

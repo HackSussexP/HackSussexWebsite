@@ -1,7 +1,7 @@
 import './App.css';
 
-import React, { Suspense, lazy } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { Suspense, lazy, useEffect } from "react";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import ScrollToTop from './components/ScrollToTop';
 import { Link } from 'react-router-dom';
 
@@ -62,27 +62,41 @@ const App = () => {
       </div>
       }>
       <BrowserRouter>
-        <ScrollToTop />
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/events" element={<AllEvents />} />
-          <Route path="/events/:date/:title" element={<EventPage />} />
-          <Route path="/events/hackathon" element={<Hackathon />} />
-          <Route path="/events/coderscup" element={<CodersCup />} />
-          {/* <Route path="/events/codesocials" element={<CodeSocials />} /> */}
-          <Route path="/events/pwnsussex" element={<PwnSussex />} />
-          <Route path="/events/gamejam" element={<GameJam />} />
-          <Route path="/events/leetcoding" element={<Leetcoding />} />
-          <Route path="/gallery" element={<Gallery />} />
-          {/* <Route path="/faq" element={<FAQ />} /> */}
-          <Route path="*" element={<NoMatch />} />
-        </Routes>
-        <Footer />
+        <RouterReload />
       </BrowserRouter>
     </Suspense>
   );
+}
+
+function RouterReload() {
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (window.location.pathname === "/") {
+      navigate("/events/gamejam");
+    }
+  }, []);
+  return (
+    <>
+      <ScrollToTop />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/events" element={<AllEvents />} />
+        <Route path="/events/:date/:title" element={<EventPage />} />
+        <Route path="/events/hackathon" element={<Hackathon />} />
+        <Route path="/events/coderscup" element={<CodersCup />} />
+        {/* <Route path="/events/codesocials" element={<CodeSocials />} /> */}
+        <Route path="/events/pwnsussex" element={<PwnSussex />} />
+        <Route path="/events/gamejam" element={<GameJam />} />
+        <Route path="/events/leetcoding" element={<Leetcoding />} />
+        <Route path="/gallery" element={<Gallery />} />
+        {/* <Route path="/faq" element={<FAQ />} /> */}
+        <Route path="*" element={<NoMatch />} />
+      </Routes>
+      <Footer />
+    </>
+  )
 }
 
 export default App;
