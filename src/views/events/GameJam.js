@@ -23,8 +23,8 @@ import AboutSection from '../../components/AboutSection';
 const config = {
   "timer": true,
   "event": false,
-  "schedule": false,
-  "sponsors": false,
+  "schedule": true,
+  "sponsors": true,
   "date": "Nov 25, 2023, 11:00:00",
   "title": "2023 Game Jam",
   "tickets": true,
@@ -36,46 +36,91 @@ var schedule = {
     {
       time: "10:00",
       event: "Registration Opens",
-      location: "Chichester Lecture Theatre",
+      location: "Chichester 1",
     },
     {
-      time: "11:00 - 12:00",
+      time: "11:00",
       event: "Opening Ceremony",
-      location: "Chichester Lecture Theatre",
+      location: "Chichester 1 Lecture Theatre",
     },
     {
       time: "12:00",
-      event: "Hacking Begins",
-      location: "The beginning of the journey",
+      event: "Jam Begins",
+      location: "Chichester 1 Labs",
     },
     {
       time: "1:00PM",
-      event: "Event 4",
-      location: "Location 1",
+      event: "Lunch",
+      location: "Chichester 1",
+    },
+    {
+      time: "3:30PM",
+      event: "Workshop/Talk",
+      location: "Chichester 1 Lecture Theatre",
+    },
+    {
+      time: "4:30PM",
+      event: "Cup Stacking Contest",
+      location: "Chichester 1 FTL",
+    },
+    {
+      time: "5:30PM",
+      event: "MLH Minigame",
+      location: "Chichester 1",
+    },
+    {
+      time: "6:30PM",
+      event: "Dinner",
+      location: "Chichester 1",
+    },
+    {
+      time: "10:00PM",
+      event: "Minecraft Games",
+      location: "Chichester 1",
     }
   ],
-  2: [
+  2:[
     {
-      time: "10:00AM",
-      event: "Event 1",
-      location: "Location 1",
+      time: "12:00AM",
+      event: "Midnight Snack",
+      location: "Chichester 1",
+    },
+    {
+      time: "1:00AM",
+      event: "Movie",
+      location: "Chichester 1 Lecture Theatre",
+    },
+    {
+      time: "8:30AM",
+      event: "Breakfast",
+      location: "Breakfast",
     },
     {
       time: "11:00AM",
-      event: "Event 2",
-      location: "Location 1",
+      event: "Soft Deadline",
+      location: "Chichester 1",
     },
     {
       time: "12:00PM",
-      event: "Event 3",
-      location: "Location 1",
+      event: "Jam Finishes + Science Fair",
+      location: "Chichester 1",
     },
     {
       time: "1:00PM",
-      event: "Event 4",
-      location: "Location 1",
+      event: "Lunch",
+      location: "Chichester 1",
+    },
+    {
+      time: "2:00PM",
+      event: "Presentations",
+      location: "Chichester 1",
+    },
+    {
+      time: "4:00PM",
+      event: "Closing Ceremony",
+      location: "Chichester 1 Lecture Theatre",
     }
-  ],
+  ]
 }
 
 const sponsorData = [
@@ -163,7 +208,7 @@ const GameJam = () => {
                   list={["24 Hours of project building", "Win exciting prizes", "Free swag", "Free Food and Drinks", "Workshops to learn skills"]} />
     <EventWhereWhen location="University of Sussex, Brighton" date={"25 November 2023"} />
     {config.schedule && <Schedule schedule={schedule} />}
-    <Sponsors sponsorData={sponsorData}/>
+    {config.sponsors && <Sponsors sponsorData={sponsorData} />}
     </>
   );
 }
