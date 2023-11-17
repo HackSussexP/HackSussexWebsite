@@ -6,8 +6,8 @@ import GameJamBackground from './../../assets/index-carousel/gamejam-background.
 import RotoVRLogo from './../../assets/SponsorLogos/GameJam/rotovr.png';
 import BCSLogo from './../../assets/SponsorLogos/GameJam/BCSDark.png';
 import GitHubLogo from './../../assets/SponsorLogos/GameJam/GitHubDarkTall.png';
-import HackathonsUKLogo from './../../assets/SponsorLogos/GameJam/hackathonsUK.png';
-import MLHLogo from './../../assets/SponsorLogos/GameJam/mlh.png';
+import HackathonsUKLogo from './../../assets/SponsorLogos/GameJam/HUK.jpg';
+import MLHLogo from './../../assets/SponsorLogos/GameJam/mlh2.png';
 import RedbullLogo from './../../assets/SponsorLogos/GameJam/RedBull.png';
 import SussexLogo from './../../assets/SponsorLogos/GameJam/UoS.png';
 import TeachFirstLogo from './../../assets/SponsorLogos/GameJam/TeachFirstDark.png';
@@ -95,7 +95,7 @@ const sponsorData = [
   // },
   {
     title: "Silver Sponsors",
-    size: "35%",
+    size: "80%",
     logos: [
       { src: GitHubLogo, url: "https://github.com" },
       { src: BCSLogo, url: "https://www.bcs.org" }
@@ -103,7 +103,7 @@ const sponsorData = [
   },
   {
     title: "Bronze Sponsors",
-    size: "30%",
+    size: "80%",
     logos: [
       { src: TeachFirstLogo, url: "https://www.teachfirst.org.uk" },
       { src: RedbullLogo, url: "https://www.redbull.com" }
@@ -111,7 +111,7 @@ const sponsorData = [
   },
   {
     title: "Partners",
-    size: "20%",
+    size: "50%",
     logos: [
       { src: SussexLogo, url: "https://www.sussex.ac.uk" },
       { src: HackathonsUKLogo, url: "https://hackathons.org.uk" },
