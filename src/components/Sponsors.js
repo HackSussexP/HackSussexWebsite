@@ -2,7 +2,7 @@ import React from 'react';
 
 const SponsorSection = ({ title, size, logos }) => (
   <div className="mb-4">
-    {/* <h3 className="mb-3">{title}</h3> */}
+    <h3 className="mb-3">{title}</h3>
     <div className="d-flex justify-content-center flex-wrap">
       {logos.map((logo, index) => (
         <Sponsor key={title + index} size={size} logo={logo} />
@@ -23,7 +23,6 @@ const Sponsor = ({ size, logo }) => {
     </div>
   );
 };
-
 
 const Sponsors = ({ sponsorData }) => {
   return (
