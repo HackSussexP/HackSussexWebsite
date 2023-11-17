@@ -1,20 +1,21 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';  // Assuming global Bootstrap CSS
 
 const SponsorSection = ({ title, size, logos }) => (
   <div className="mb-4">
     <h3 className="mb-3">{title}</h3>
     <div className="d-flex justify-content-center flex-wrap">
-      {logos.map(logo => <Sponsor key={logo} size={size} logo={logo} />)}
+      {logos.map((logo, index) => (
+        <Sponsor key={title + index} size={size} logo={logo} />
+      ))}
     </div>
   </div>
 );
 
 const Sponsor = ({ size, logo }) => (
   <div className={`m-4 d-flex justify-content-center`} style={{ width: size }}>
-    <div className="bg-white rounded d-flex align-items-center justify-content-center p-3">
-      <img src={logo} alt="Sponsor Logo" className="w-50" />
-    </div>
+    <a href={logo.url} target="_blank" rel="noopener noreferrer" className="bg-white rounded d-flex align-items-center justify-content-center p-4" style={{ width: '100%', height: '100%' }}>
+      <img src={logo.src} alt="Sponsor Logo" style={{ maxWidth: '70%', height: 'auto' }} />
+    </a>
   </div>
 );
 
@@ -23,8 +24,8 @@ const Sponsors = ({ sponsorData }) => {
     <div className="container-fluid mt-5">
       <h1 className="text-center mb-5 display-4 fw-bold border-bottom pb-3 w-75 ms-auto me-auto">Sponsors</h1>
       <div className="container">
-        {sponsorData.map(section => (
-          <SponsorSection key={section.title} title={section.title} size={section.size} logos={section.logos} />
+        {sponsorData.map((section, index) => (
+          <SponsorSection key={section.title + index} title={section.title} size={section.size} logos={section.logos} />
         ))}
       </div>
     </div>

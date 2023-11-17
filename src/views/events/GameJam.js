@@ -3,6 +3,15 @@ import React from 'react';
 import GameJamLogo from './../../assets/index-carousel/gamejam-logo.png';
 import GameJamBackground from './../../assets/index-carousel/gamejam-background.png';
 
+import RotoVRLogo from './../../assets/SponsorLogos/GameJam/rotovr.png';
+import BCSLogo from './../../assets/SponsorLogos/GameJam/BCSDark.png';
+import GitHubLogo from './../../assets/SponsorLogos/GameJam/GitHubDarkTall.png';
+import HackathonsUKLogo from './../../assets/SponsorLogos/GameJam/hackathonsUK.png';
+import MLHLogo from './../../assets/SponsorLogos/GameJam/mlh.png';
+import RedbullLogo from './../../assets/SponsorLogos/GameJam/RedBull.png';
+import SussexLogo from './../../assets/SponsorLogos/GameJam/UoS.png';
+import TeachFirstLogo from './../../assets/SponsorLogos/GameJam/TeachFirstDark.png';
+
 import EventWhereWhen from '../../components/EventWhereWhen'; 
 import Timer from './../../components/Timer';
 import Schedule from './../../components/Schedule';
@@ -71,31 +80,46 @@ var schedule = {
 
 const sponsorData = [
   {
-    title: "Title Sponsor",
-    size: "80%",
-    logos: [GameJamLogo]
+    title: "Gold Sponsor",
+    size: "100%",
+    logos: [
+      { src: RotoVRLogo, url: "https://www.rotovr.com" }
+    ]
   },
-  {
-    title: "Gold Sponsors",
-    size: "40%",
-    logos: [GameJamLogo, GameJamLogo]
-  },
+  // {
+  //   title: "Gold Sponsors",
+  //   size: "70%",
+  //   logos: [
+  //     { src: RotoVRLogo, url: "https://www.rotovr.com" }
+  //   ]
+  // },
   {
     title: "Silver Sponsors",
-    size: "30%",
-    logos: [GameJamLogo, GameJamLogo, GameJamLogo]
+    size: "35%",
+    logos: [
+      { src: GitHubLogo, url: "https://github.com" },
+      { src: BCSLogo, url: "https://www.bcs.org" }
+    ]
   },
   {
     title: "Bronze Sponsors",
-    size: "20%",
-    logos: [GameJamLogo, GameJamLogo, GameJamLogo, GameJamLogo]
+    size: "30%",
+    logos: [
+      { src: TeachFirstLogo, url: "https://www.teachfirst.org.uk" },
+      { src: RedbullLogo, url: "https://www.redbull.com" }
+    ]
   },
   {
     title: "Partners",
     size: "20%",
-    logos: [GameJamLogo, GameJamLogo, GameJamLogo, GameJamLogo]
+    logos: [
+      { src: SussexLogo, url: "https://www.sussex.ac.uk" },
+      { src: HackathonsUKLogo, url: "https://hackathons.org.uk" },
+      { src: MLHLogo, url: "https://mlh.io" }
+    ]
   },
 ];
+
 
 const GameJam = () => {
   return (
@@ -139,7 +163,7 @@ const GameJam = () => {
                   list={["24 Hours of project building", "Win exciting prizes", "Free swag", "Free Food and Drinks", "Workshops to learn skills"]} />
     <EventWhereWhen location="University of Sussex, Brighton" date={"25 November 2023"} />
     {config.schedule && <Schedule schedule={schedule} />}
-    {/* <Sponsors sponsorData={sponsorData}/> */}
+    <Sponsors sponsorData={sponsorData}/>
     </>
   );
 }
