@@ -24,6 +24,14 @@ html, body {
   scroll-behavior: smooth;
 }
 
+.gamejam-body {
+  background-image: none !important;
+}
+
+.gamejam {
+  background-image: url("assets/background-gamejam.png");
+}
+
 #root {
   min-height: 100vh;
   max-height: 100%;
