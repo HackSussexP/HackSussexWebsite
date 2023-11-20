@@ -161,9 +161,15 @@ const sponsorData = [
       { src: SussexLogo, url: "https://www.sussex.ac.uk" },
       { src: HackathonsUKLogo, url: "https://hackathons.org.uk" },
       { src: MLHLogo, url: "https://mlh.io" },
-      { src: RedbullLogo, url: "https://www.redbull.com" }
     ]
   },
+  {
+    title: "Supporters",
+    size: "80%",
+    logos: [
+      { src: RedbullLogo, url: "https://www.redbull.com" },
+    ]
+  }
 ];
 
 
