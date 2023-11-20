@@ -152,7 +152,6 @@ const sponsorData = [
     size: "80%",
     logos: [
       { src: TeachFirstLogo, url: "https://www.teachfirst.org.uk" },
-      { src: RedbullLogo, url: "https://www.redbull.com" }
     ]
   },
   {
@@ -161,7 +160,8 @@ const sponsorData = [
     logos: [
       { src: SussexLogo, url: "https://www.sussex.ac.uk" },
       { src: HackathonsUKLogo, url: "https://hackathons.org.uk" },
-      { src: MLHLogo, url: "https://mlh.io" }
+      { src: MLHLogo, url: "https://mlh.io" },
+      { src: RedbullLogo, url: "https://www.redbull.com" }
     ]
   },
 ];
