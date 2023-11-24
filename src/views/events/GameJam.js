@@ -55,8 +55,13 @@ var schedule = {
       location: "Chichester 1",
     },
     {
+      time: "2:00PM",
+      event: "Roto Workshop",
+      location: "Chichester 1 Lecture Theatre",
+    },
+    {
       time: "3:30PM",
-      event: "Workshop/Talk",
+      event: "Unity - VR Talk",
       location: "Chichester 1 Lecture Theatre",
     },
     {
@@ -66,13 +71,13 @@ var schedule = {
     },
     {
       time: "5:30PM",
-      event: "MLH Minigame",
-      location: "Chichester 1",
+      event: "MS Paint w/ Bob Ross",
+      location: "Chichester 1 Lecture Theatre",
     },
     {
       time: "6:30PM",
-      event: "Dinner",
-      location: "Chichester 1",
+      event: "Dinner + Doctor Who",
+      location: "Chichester 1 Lecture Theatre",
     },
     {
       time: "10:00PM",
@@ -83,7 +88,7 @@ var schedule = {
   2:[
     {
       time: "12:00AM",
-      event: "Midnight Snack",
+      event: "Midnight Pizza",
       location: "Chichester 1",
     },
     {
