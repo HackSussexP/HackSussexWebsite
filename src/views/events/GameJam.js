@@ -22,13 +22,13 @@ import AboutSection from '../../components/AboutSection';
 
 
 const config = {
-  "timer": true,
+  "timer": false,
   "event": false,
   "schedule": true,
   "sponsors": true,
   "date": "Nov 25, 2023, 11:00:00",
   "title": "2023 Game Jam",
-  "tickets": true,
+  "tickets": false,
   "url": "https://pretix.eu/HackSussex2023/register/"
 }
 
@@ -206,9 +206,9 @@ const GameJam = () => {
                 <h1 className='fw-bold display-4 text-electric'>Game Jam Event Loading...</h1>
                 <div className='mt-3'>
                   <div className="progress" style={{ height: '30px', borderRadius: '15px', backgroundColor: '#222' }}>
-                    <div className="progress-barprogress-bar-animated bg-success" role="progressbar" style={{ width: '90%' }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div className="progress-barprogress-bar-animated bg-success" role="progressbar" style={{ width: '100%' }} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
-                  <div className='text-center mt-2 text-light display-6'>90%</div>
+                  <div className='text-center mt-2 text-light display-6'>100%</div>
                 </div>
               </div>
           </div>
