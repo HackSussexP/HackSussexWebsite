@@ -5,7 +5,7 @@ import PhotoCard from './../components/PhotoCard'
 
 import jack from '../assets/Committee/jack.png'
 import adnan from '../assets/Committee/adnan.png'
-import amy from '../assets/Committee/amy.png'
+import amy from '../assets/Committee/amy.jpg'
 import tori from '../assets/Committee/tori.png'
 import anton from '../assets/Committee/anton.png'
 import ryu from '../assets/Committee/ryu.png'
@@ -14,12 +14,12 @@ import tom from '../assets/Committee/tom.png'
 import jude from '../assets/Committee/jude.png'
 import charlotte from '../assets/Committee/charlotte.png'
 import henry from '../assets/Committee/henry.png'
-import patrick from '../assets/Committee/patrick.png'
-import lukas from '../assets/Committee/lukas.png'
-import richerd from '../assets/Committee/richerd.png'
+import patrick from '../assets/Committee/patrick.jpg'
+import lukas from '../assets/Committee/lukas.jpg'
+import richerd from '../assets/Committee/richerd.jpg'
 import david from '../assets/Committee/david.png'
 import kei from '../assets/Committee/kei.png'
-import emily from '../assets/Committee/emily.png'
+import emily from '../assets/Committee/emily.jpg'
 import jamie from '../assets/Committee/jamie.png'
 import elias from '../assets/Committee/elias.png'
 
@@ -144,7 +144,7 @@ const About = () => {
       role: "Web Development",
       email: "david@hacksussex.com",
       githubLink: "https://github.com/davidfrommont",
-      linkedinLink: ""
+      linkedinLink: "https://www.linkedin.com/in/david-frommont/"
     },
     {
       imageUrl: kei,

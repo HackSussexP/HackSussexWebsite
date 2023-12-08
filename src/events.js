@@ -92,7 +92,7 @@ const events = [
     "cost": "Free"
   },
   {
-    "image": require("./assets/events/gamejam23.png"),
+    "image": require("./assets/events/gamejam23.jpg"),
     "title": "Game Jam",
     "description": "Our newest annual event, the HackSussex Gamejam, aims to focus in on the game design, development and publishing scene to allow many of our amazing local studios to share their expertise with our jammers and allow them to flex their skills in game design and development. \n\nMuch like our hackathon, the game jam provides full meals throughout the weekend, allowing teams to focus on their project and produce the best indie games and tools to showcase to the judging panel at the end of the event and take home some amazing prizes.",
     "location": "Sussex Campus - Chichester 1 Building",
@@ -101,7 +101,7 @@ const events = [
     "cost": "Free"
   },
   {
-    "image": require("./assets/events/robotics.png"),
+    "image": require("./assets/events/robotics.jpg"),
     "title": "Robotics",
     "description": "New this year! We are hosting weekly robotics sessions, aimed at introducing students to simple robotics projects. Throughout which you will learn many of the basics of electronic signalling and control. This will cover motors, sensors, micro controller circuitry and more! \n\n Interested in giving it a try? Check out our discord section on robotics and turn up to the weekly sessions to get stuck in!",
     "location": "Sussex Campus, Chichester 1 Building, Future Technology Lab (FTL)",
