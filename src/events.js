@@ -11,7 +11,7 @@ const events = [
     "cost": "Free"
   },
   {
-    "image": require("./assets/events/hs23.png"),
+    "image": require("./assets/events/hs23.jpg"),
     "title": "Hackathon 2023",
     "description": "Our annual hackathon. Join us for a free weekend of coding, eating and winning prizes!\n\nEvery year, HackSussex hosts its main event, the hackathon!\n\nWe provide a free event for students and graduates to stretch their skills and win prizes across a wide range of technical areas, such as robotics, fintech, artifical intelligence, games development and more.\n\n Meals are provided throughout the event to ensure our hackers are well fed and powered up to produce the best projects over the course of a weekend. \n\nOnce submission close, each team will present their project to our panel of judges to decide who will win each track, along with the grand prize winner of the entire hackathon.",
     "location": "Sussex Campus - Chichester 1 Building",
@@ -20,7 +20,7 @@ const events = [
     "cost": "Free"
   },
   {
-    "image": require("./assets/events/hs23.png"),
+    "image": require("./assets/events/hs23.jpg"),
     "title": "Hackathon 2024",
     "description": "Our annual hackathon. Join us for a free weekend of coding, eating and winning prizes!\n\nEvery year, HackSussex hosts its main event, the hackathon!\n\nWe provide a free event for students and graduates to stretch their skills and win prizes across a wide range of technical areas, such as robotics, fintech, artifical intelligence, games development and more.\n\n Meals are provided throughout the event to ensure our hackers are well fed and powered up to produce the best projects over the course of a weekend. \n\nOnce submission close, each team will present their project to our panel of judges to decide who will win each track, along with the grand prize winner of the entire hackathon.",
     "location": "Sussex Campus - Chichester 1 Building",
