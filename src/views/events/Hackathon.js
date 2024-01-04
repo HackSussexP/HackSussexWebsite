@@ -18,7 +18,7 @@ const config = {
   "event": false,
   "schedule": false,
   "sponsors": false,
-  "date": "Feb 18, 2024, 0:0:0",
+  "date": "Feb 17, 2024, 0:0:0",
   "title": "2024 Hackathon",
   "tickets": true,
   "url": "/"
