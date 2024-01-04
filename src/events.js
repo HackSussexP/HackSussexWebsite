@@ -106,7 +106,7 @@ const events = [
     "description": "New this year! We are hosting weekly robotics sessions, aimed at introducing students to simple robotics projects. Throughout which you will learn many of the basics of electronic signalling and control. This will cover motors, sensors, micro controller circuitry and more! \n\n Interested in giving it a try? Check out our discord section on robotics and turn up to the weekly sessions to get stuck in!",
     "location": "Sussex Campus, Chichester 1 Building, Future Technology Lab (FTL)",
     "date": null,
-    "time": "TBC",
+    "time": "2.30pm - 4:00pm",
     "cost": "Free"
   }
 ]

@@ -89,6 +89,11 @@ const Navbar = (props) => {
                       Leetcoding
                     </Link>
                   </li>
+                  <li>
+                    <Link className="dropdown-item" to="/events/robotics" onClick={closeNavbar}>
+                      Robotics
+                    </Link>
+                  </li>
                   <li className="dropdown-divider"></li>
                   <li>
                     <Link className="dropdown-item" to="/events" onClick={closeNavbar}>
