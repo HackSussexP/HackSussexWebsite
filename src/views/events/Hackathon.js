@@ -5,18 +5,23 @@ import EventWhereWhen from '../../components/EventWhereWhen';
 import Timer from './../../components/Timer';
 import Schedule from './../../components/Schedule';
 import Sponsors from './../../components/Sponsors';
+import TicketSection from '../../components/TicketSection';
 
 import AboutSection from '../../components/AboutSection';
 
 import HackathonBackground from '../../assets/hackathon-background-darker.png';
 import HackathonLogo from '../../assets/hackathon-2024.png';
 
+
 const config = {
-  "timer": false,
+  "timer": true,
   "event": false,
   "schedule": false,
   "sponsors": false,
-  "date": "May 1, 2024, 0:0:0",
+  "date": "Feb 18, 2024, 0:0:0",
+  "title": "2024 Hackathon",
+  "tickets": true,
+  "url": "/"
 }
 
 var schedule = {
@@ -124,7 +129,8 @@ const Hackathon = () => {
           </div>
         </div>
       </div>
-      {config.timer && <Timer date={config.date} />}
+      {config.tickets && <TicketSection url={config.url} />}
+      {config.timer && <Timer date={config.date} title={config.title} />}
       <AboutSection description={<>
                   <p>
                   What happens at one of our 24 hour hackathons?
