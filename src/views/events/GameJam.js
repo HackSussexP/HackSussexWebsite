@@ -17,6 +17,7 @@ import Timer from './../../components/Timer';
 import Schedule from './../../components/Schedule';
 import Sponsors from './../../components/Sponsors';
 import TicketSection from '../../components/TicketSection';
+import CodesOfConduct from '../../components/CodesOfConduct';
 
 import AboutSection from '../../components/AboutSection';
 
@@ -177,6 +178,11 @@ const sponsorData = [
   }
 ];
 
+const codes = [
+  { name: "Major League Hacking", url: "https://static.mlh.io/docs/mlh-code-of-conduct.pdf" },
+  { name: "Hackthons UK", url: "https://www.hackathons.org.uk/code-of-conduct" }
+];
+
 
 const GameJam = () => {
   useEffect(() => {
@@ -229,6 +235,7 @@ const GameJam = () => {
                     list={["24 Hours of project building", "Win exciting prizes", "Free swag", "Free Food and Drinks", "Workshops to learn skills"]} />
       <EventWhereWhen location="University of Sussex, Brighton" date={"25 November 2023"} />
       {config.schedule && <Schedule schedule={schedule} />}
+      <CodesOfConduct links={codes} />
       {config.sponsors && <Sponsors sponsorData={sponsorData} />}
     </div>
     </>

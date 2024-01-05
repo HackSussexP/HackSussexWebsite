@@ -6,6 +6,7 @@ import Timer from './../../components/Timer';
 import Schedule from './../../components/Schedule';
 import Sponsors from './../../components/Sponsors';
 import TicketSection from '../../components/TicketSection';
+import CodesOfConduct from '../../components/CodesOfConduct';
 
 import AboutSection from '../../components/AboutSection';
 
@@ -99,7 +100,10 @@ const sponsorData = [
   },
 ];
 
-<Sponsors sponsorData={sponsorData} />
+const codes = [
+  { name: "Major League Hacking", url: "https://static.mlh.io/docs/mlh-code-of-conduct.pdf" },
+  { name: "Hackthons UK", url: "https://www.hackathons.org.uk/code-of-conduct" }
+];
 
 const Hackathon = () => {
   return(
@@ -138,6 +142,7 @@ const Hackathon = () => {
                   <p>This is a fantastic opportunity to enjoy yourself, boost your CV, and above all learn something new. Be it tech and software skills or teamwork experience. There's room for both the competitive and the laid back, and a chance for people of any level of experience to win prizes. The event is entirely free and paid for by our lovely sponsors.</p>
                   </>}
                   list={["24 Hours of project building", "Win exciting prizes", "Free swag", "Free Food and Drinks", "Workshops to learn skills"]} />
+      <CodesOfConduct links={codes} />
       <EventWhereWhen location="University of Sussex, Brighton" date={"17 February 2024"} />
       {config.schedule && <Schedule schedule={schedule} />}
       {/* <Sponsors sponsorData={sponsorData}/> */}
