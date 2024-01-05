@@ -22,7 +22,7 @@ const config = {
   "date": "Feb 17, 2024, 0:0:0",
   "title": "2024 Hackathon",
   "tickets": true,
-  "url": "/"
+  "url": "https://tickets.hacksussex.com/"
 }
 
 var schedule = {
