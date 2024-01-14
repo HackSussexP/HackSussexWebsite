@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react'
 
-//Timer on mobile view is all pressed together so change this
-
 const Timer = (props) => {
 
     const [days, setDays ] = useState(0)

@@ -93,7 +93,7 @@ function RouterReload() {
         <Route path="/events/leetcoding" element={<Leetcoding />} />
         <Route path="/events/robotics" element={<Robotics />} />
         <Route path="/gallery" element={<Gallery />} />
-        {/* <Route path="/faq" element={<FAQ />} /> */}
+        <Route path="/faq" element={<FAQ />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
       <Footer />
