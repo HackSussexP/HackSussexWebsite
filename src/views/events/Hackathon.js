@@ -13,12 +13,21 @@ import AboutSection from '../../components/AboutSection';
 import HackathonBackground from '../../assets/hackathon-background-darker.png';
 import HackathonLogo from '../../assets/hackathon-2024.png';
 
+import RotoVRLogo from './../../assets/SponsorLogos/GameJam/rotovr.png';
+import Hastings from './.././../assets/SponsorLogos/hastings-direct-logo.png';
+import paxton from './../../assets/SponsorLogos/paxton-logo.png';
+import electricsqaure from './../../assets/SponsorLogos/ElectricSquare.png';
+import teachFirst from './../../assets/SponsorLogos/GameJam/TeachFirst.png';
+import bcs from './../../assets/SponsorLogos/BCS.png';
+import github from './../../assets/SponsorLogos/GitHub.png';
+import mlh from './../../assets/SponsorLogos/GameJam/mlh.jpg';
+import huk from './../../assets/SponsorLogos/GameJam/HUK.jpg';
 
 const config = {
   "timer": true,
   "event": false,
   "schedule": false,
-  "sponsors": false,
+  "sponsors": true,
   "date": "Feb 17, 2024, 0:0:0",
   "title": "2024 Hackathon",
   "tickets": true,
@@ -74,29 +83,37 @@ var schedule = {
 
 const sponsorData = [
   {
-    title: "Title Sponsor",
-    size: "80%",
-    logos: [HackathonLogo]
-  },
-  {
     title: "Gold Sponsors",
-    size: "40%",
-    logos: [HackathonLogo, HackathonLogo]
+    size: "100%",
+    logos: [
+      { src: RotoVRLogo, url: "https://github.com" },
+      { src: Hastings, url: "https://github.com" },
+    ]
   },
   {
     title: "Silver Sponsors",
-    size: "30%",
-    logos: [HackathonLogo, HackathonLogo, HackathonLogo]
+    size: "80%",
+    logos: [
+      { src: paxton, url: "https://github.com" },
+      { src: electricsqaure, url: "https://github.com" },
+    ]
   },
   {
     title: "Bronze Sponsors",
-    size: "20%",
-    logos: [HackathonLogo, HackathonLogo, HackathonLogo, HackathonLogo]
+    size: "60%",
+    logos: [
+      { src: teachFirst, url: "https://github.com" },
+      { src: bcs, url: "https://github.com" },
+      { src: github, url: "https://github.com" },
+    ]
   },
   {
     title: "Partners",
-    size: "20%",
-    logos: [HackathonLogo, HackathonLogo, HackathonLogo, HackathonLogo]
+    size: "40%",
+    logos: [
+      { src: mlh, url: "https://github.com" },
+      { src: huk, url: "https://github.com" },
+    ]
   },
 ];
 
@@ -145,7 +162,7 @@ const Hackathon = () => {
       <CodesOfConduct links={codes} />
       <EventWhereWhen location="University of Sussex, Brighton" date={"17 February 2024"} />
       {config.schedule && <Schedule schedule={schedule} />}
-      {/* <Sponsors sponsorData={sponsorData}/> */}
+      <Sponsors sponsorData={sponsorData}/>
     </>
   );
 }
