@@ -14,12 +14,12 @@ import HackathonBackground from '../../assets/hackathon-background-darker.png';
 import HackathonLogo from '../../assets/hackathon-2024.png';
 
 import RotoVRLogo from './../../assets/SponsorLogos/GameJam/rotovr.png';
-import Hastings from './.././../assets/SponsorLogos/hastings-direct-logo.png';
-import paxton from './../../assets/SponsorLogos/paxton-logo.png';
-import electricsqaure from './../../assets/SponsorLogos/ElectricSquare.png';
+import Hastings from './.././../assets/SponsorLogos/hastongs.png';
+import paxton from './../../assets/SponsorLogos/paxton-logo.svg';
+import electricsqaure from './../../assets/SponsorLogos/electricSqaure.png';
 import teachFirst from './../../assets/SponsorLogos/GameJam/TeachFirst.png';
 import bcs from './../../assets/SponsorLogos/BCS.png';
-import github from './../../assets/SponsorLogos/GitHub.png';
+import github from './../../assets/SponsorLogos/GameJam/GitHubDark.png';
 import mlh from './../../assets/SponsorLogos/GameJam/mlh.jpg';
 import huk from './../../assets/SponsorLogos/GameJam/HUK.jpg';
 
@@ -84,7 +84,7 @@ var schedule = {
 const sponsorData = [
   {
     title: "Gold Sponsors",
-    size: "100%",
+    size: "80%",
     logos: [
       { src: RotoVRLogo, url: "https://github.com" },
       { src: Hastings, url: "https://github.com" },
@@ -95,7 +95,6 @@ const sponsorData = [
     size: "80%",
     logos: [
       { src: paxton, url: "https://github.com" },
-      { src: electricsqaure, url: "https://github.com" },
     ]
   },
   {
@@ -159,10 +158,10 @@ const Hackathon = () => {
                   <p>This is a fantastic opportunity to enjoy yourself, boost your CV, and above all learn something new. Be it tech and software skills or teamwork experience. There's room for both the competitive and the laid back, and a chance for people of any level of experience to win prizes. The event is entirely free and paid for by our lovely sponsors.</p>
                   </>}
                   list={["24 Hours of project building", "Win exciting prizes", "Free swag", "Free Food and Drinks", "Workshops to learn skills"]} />
-      <CodesOfConduct links={codes} />
       <EventWhereWhen location="University of Sussex, Brighton" date={"17 February 2024"} />
       {config.schedule && <Schedule schedule={schedule} />}
       <Sponsors sponsorData={sponsorData}/>
+      <CodesOfConduct links={codes} />
     </>
   );
 }
