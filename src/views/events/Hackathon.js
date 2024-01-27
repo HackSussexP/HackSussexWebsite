@@ -11,17 +11,17 @@ import CodesOfConduct from '../../components/CodesOfConduct';
 import AboutSection from '../../components/AboutSection';
 
 import HackathonBackground from '../../assets/hackathon-background-darker.png';
-import HackathonLogo from '../../assets/hackathon-2024.png';
+import HackathonLogo from '../../assets/events/hs24.png';
 
-import RotoVRLogo from './../../assets/SponsorLogos/GameJam/rotovr.png';
-import Hastings from './.././../assets/SponsorLogos/hastongs.png';
-import paxton from './../../assets/SponsorLogos/paxton-logo.svg';
-import electricsqaure from './../../assets/SponsorLogos/electricSqaure.png';
+import RotoVRLogo from './../../assets/SponsorLogos/rotovr.png';
+import Hastings from './.././../assets/SponsorLogos/hastings.png';
+import paxton from './../../assets/SponsorLogos/paxton-logo.png';
 import teachFirst from './../../assets/SponsorLogos/GameJam/TeachFirst.png';
 import bcs from './../../assets/SponsorLogos/BCS.png';
 import github from './../../assets/SponsorLogos/GameJam/GitHubDark.png';
-import mlh from './../../assets/SponsorLogos/GameJam/mlh.jpg';
-import huk from './../../assets/SponsorLogos/GameJam/HUK.jpg';
+import mlh from './../../assets/SponsorLogos/Mlh-logo.png';
+import huk from './../../assets/SponsorLogos/GameJam/hackathonsUK.png';
+import UoS from './../../assets/SponsorLogos/UoS.png';
 
 const config = {
   "timer": true,
@@ -84,7 +84,7 @@ var schedule = {
 const sponsorData = [
   {
     title: "Gold Sponsors",
-    size: "80%",
+    size: "125px",
     logos: [
       { src: RotoVRLogo, url: "https://github.com" },
       { src: Hastings, url: "https://github.com" },
@@ -92,26 +92,27 @@ const sponsorData = [
   },
   {
     title: "Silver Sponsors",
-    size: "80%",
+    size: "110px",
     logos: [
       { src: paxton, url: "https://github.com" },
+      { src: bcs, url: "https://github.com" }
     ]
   },
   {
     title: "Bronze Sponsors",
-    size: "60%",
+    size: "100px",
     logos: [
       { src: teachFirst, url: "https://github.com" },
-      { src: bcs, url: "https://github.com" },
       { src: github, url: "https://github.com" },
     ]
   },
   {
     title: "Partners",
-    size: "40%",
+    size: "100px",
     logos: [
       { src: mlh, url: "https://github.com" },
       { src: huk, url: "https://github.com" },
+      { src: UoS, url: "https://github.com" },
     ]
   },
 ];
@@ -152,12 +153,10 @@ const Hackathon = () => {
       {config.timer && <Timer date={config.date} title={config.title} />}
       <AboutSection description={<>
                   <p>
-                  What happens at one of our 24 hour hackathons?
-                  This is an opportunity for students of all abilities to collaborate, learn new skills, and build something cool using technology. 
-                  It's a great way for people with similar interests to work together on exciting projects in a fast-paced, creative environment.</p>
-                  <p>This is a fantastic opportunity to enjoy yourself, boost your CV, and above all learn something new. Be it tech and software skills or teamwork experience. There's room for both the competitive and the laid back, and a chance for people of any level of experience to win prizes. The event is entirely free and paid for by our lovely sponsors.</p>
+                  The 2024 Hackathon is almost upon us! This unique event is hosted over a full weekend including 24 hours of non-stop coding, workshops hosted by our sponsors, 5 mouth-wateringly tasty meals from local Brighton caterers, snacks and drinks, and an exclusive Hackathon 2024 t-shirt, <strong>all for free!</strong></p>
+                  <p>Your project can enter multiple of our many prize tracks, with a prize pool worth over £3,000! If you don't have a team, find your family-for-the-weekend in our team building event! Together you'll create a game, some software or something electronic. Have you never coded before? Have you been coding since you were conceived? Are you competitive? Are you laid back? Want to boost your CV while having fun? Join us for our best hackathon yet - you won't want to miss this! <strong>Get your free ticket now!</strong></p>
                   </>}
-                  list={["24 Hours of project building", "Win exciting prizes", "Free swag", "Free Food and Drinks", "Workshops to learn skills"]} />
+                  list={["24 Hours of team project building", "£3,000+ worth of exciting prizes", "Free swag", "Free Food and Drinks", "Workshops and entertainment"]} />
       <EventWhereWhen location="University of Sussex, Brighton" date={"17 February 2024"} />
       {config.schedule && <Schedule schedule={schedule} />}
       <Sponsors sponsorData={sponsorData}/>

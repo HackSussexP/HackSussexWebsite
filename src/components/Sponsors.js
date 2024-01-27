@@ -1,9 +1,9 @@
 import React from 'react';
 
 const SponsorSection = ({ title, size, logos }) => (
-  <div className="mb-4">
-    <h3 className="mb-3">{title}</h3>
-    <div className="d-flex justify-content-center flex-wrap">
+  <div className="mb-4 bg-transparent-white p-3 rounded">
+    <h3 className="mb-5 text-dark text-center display-6 text-decoration-underline fw-bold">{title}</h3>
+    <div className="row justify-content-center align-items-center">
       {logos.map((logo, index) => (
         <Sponsor key={title + index} size={size} logo={logo} />
       ))}
@@ -12,13 +12,10 @@ const SponsorSection = ({ title, size, logos }) => (
 );
 
 const Sponsor = ({ size, logo }) => {
-  const isGoldSponsor = size === '100%'; // Check if it's a Gold sponsor
-
   return (
-    <div className={`m-4 d-flex justify-content-center ${isGoldSponsor ? '' : 'col-12 col-md-6 col-lg-4'}`}>
-      <a href={logo.url} target="_blank" rel="noopener noreferrer" className="bg-white rounded d-flex align-items-center justify-content-center p-4" 
-         style={{ width: isGoldSponsor ? size : size, height: 'auto' }}>
-        <img src={logo.src} alt="Sponsor Logo" style={{ maxWidth: isGoldSponsor ? '60%' : '70%', height: 'auto' }} />
+    <div className="col-8 col-md-6 col-lg-auto text-center p-4 mx-3 mb-4">
+      <a href={logo.url} target="_blank" rel="noopener noreferrer" className="p-2">
+        <img src={logo.src} alt="Sponsor Logo"  className="img-fluid img-sponsors p-2" style={{height: size}}  />
       </a>
     </div>
   );

@@ -234,3 +234,11 @@ html, body {
   height: 200px;
   object-fit: cover;
 }
+
+.bg-transparent-white {
+  background-color: rgb(255, 255, 255);
+}
+
+.img-sponsors {
+  object-fit: contain !important;
+}
