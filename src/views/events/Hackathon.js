@@ -9,6 +9,7 @@ import TicketSection from '../../components/TicketSection';
 import CodesOfConduct from '../../components/CodesOfConduct';
 
 import AboutSection from '../../components/AboutSection';
+import HackathonAbout from '../../components/HackathonAbout';
 
 import HackathonBackground from '../../assets/hackathon-background-darker.png';
 import HackathonLogo from '../../assets/events/hs24.png';
@@ -151,12 +152,7 @@ const Hackathon = () => {
       </div>
       {config.tickets && <TicketSection url={config.url} />}
       {config.timer && <Timer date={config.date} title={config.title} />}
-      <AboutSection description={<>
-                  <p>
-                  The 2024 Hackathon is almost upon us! This unique event is hosted over a full weekend including 24 hours of non-stop coding, workshops hosted by our sponsors, 5 mouth-wateringly tasty meals from local Brighton caterers, snacks and drinks, and an exclusive Hackathon 2024 t-shirt, <strong>all for free!</strong></p>
-                  <p>Your project can enter multiple of our many prize tracks, with a prize pool worth over £3,000! If you don't have a team, find your family-for-the-weekend in our team building event! Together you'll create a game, some software or something electronic. Have you never coded before? Have you been coding since you were conceived? Are you competitive? Are you laid back? Want to boost your CV while having fun? Join us for our best hackathon yet - you won't want to miss this! <strong>Get your free ticket now!</strong></p>
-                  </>}
-                  list={["24 Hours of team project building", "£3,000+ worth of exciting prizes", "Free swag", "Free Food and Drinks", "Workshops and entertainment"]} />
+      <HackathonAbout />
       <EventWhereWhen location="University of Sussex, Brighton" date={"17 February 2024"} />
       {config.schedule && <Schedule schedule={schedule} />}
       <Sponsors sponsorData={sponsorData}/>

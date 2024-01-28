@@ -38,8 +38,8 @@ const Robotics = () => {
                 <p className='display-4' style={{color: "var(--electric-green)"}}>Robotics</p> {/* Get me sized correctly or replaced */}
             </div>
         </div>
-        <AboutSection description={`Welcome to HackSussex's Weekly Robotics workshops! Our workshops are open to anyone with an interest and offer the chance to learn the basics of electronics, mechanics, coding and robotics through a hands-on session. These sessions give you a great understanding about how designing, You’ll get a quick introduction to the topic at the start of every session, then in small groups, go through custom worksheets with provided hardware gradually building in difficulty over the year.`} />
-        <EventWhereWhen location="JCW, University of Sussex" date="Every Wednesday, 14:30 to 16:00" />
+        <AboutSection description={[`Welcome to HackSussex's Weekly Robotics workshops! Our workshops are open to anyone with an interest and offer the chance to learn the basics of electronics, mechanics, coding and robotics through a series of hands-on sessions. These sessions offer something for everyone, from beginners to hobbyists, you'll learn how to use and apply many different components like micro-controllers, motors and sensors. `,  `At every teaching session you'll get a quick introduction to the topic at the start, then in small groups, go through custom worksheets and hardware kits to learn whilst building. We also plan to host weekly open workshop sessions where you get access to a wide variety of tools and resources to make anything you can think of. Sign up to get notified bellow!`]} />
+        <EventWhereWhen location="TBA" date="TBA" />
         <Resources links={linksData} />
     </>
   );
