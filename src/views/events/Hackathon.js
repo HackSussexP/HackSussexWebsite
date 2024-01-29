@@ -119,7 +119,7 @@ const sponsorData = [
 ];
 
 const codes = [
-  { name: "Major League Hacking", url: "https://static.mlh.io/docs/mlh-code-of-conduct.pdf" },
+  ///{ name: "Major League Hacking", url: "https://static.mlh.io/docs/mlh-code-of-conduct.pdf" },
   { name: "Hackthons UK", url: "https://www.hackathons.org.uk/code-of-conduct" }
 ];
 
