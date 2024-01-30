@@ -17,7 +17,7 @@ const CodesOfConduct = ({ links }) => {
     <div className="container-fluid text-center text-white my-4" style={{backgroundColor: "var(--darker-blue)"}}>
         <div className="row p-2 justify-content-center">
           <div className="col-auto">
-            <h1 className="pb-1 text fw-bold h3 ms-auto me-auto">This event is run is accordance with the following codes of conduct:</h1>
+            <h1 className="pb-1 text fw-bold h3 ms-auto me-auto">{links.length > 1 ? "This event is run is accordance with the following codes of conduct:" :"This event is run is accordance with the following code of conduct:"}</h1>
           </div>
             {links.map((link, index) => (
                 <div key={index} className="col-auto">
@@ -28,7 +28,7 @@ const CodesOfConduct = ({ links }) => {
                         className="fs-4"
                         href={link.url}
                     >
-                      {index > 0 ? link.name : link.name + ","}
+                      {index > 0 ? link.name + ", " : link.name}
                     </a>
                 </div>
             ))}
