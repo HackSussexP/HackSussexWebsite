@@ -111,7 +111,6 @@ const sponsorData = [
     title: "Partners",
     size: "100px",
     logos: [
-      { src: mlh, url: "https://github.com" },
       { src: huk, url: "https://github.com" },
       { src: UoS, url: "https://github.com" },
     ]
@@ -119,7 +118,6 @@ const sponsorData = [
 ];
 
 const codes = [
-  ///{ name: "Major League Hacking", url: "https://static.mlh.io/docs/mlh-code-of-conduct.pdf" },
   { name: "Hackthons UK", url: "https://www.hackathons.org.uk/code-of-conduct" }
 ];
 
