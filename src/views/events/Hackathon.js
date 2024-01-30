@@ -87,32 +87,31 @@ const sponsorData = [
     title: "Gold Sponsors",
     size: "125px",
     logos: [
-      { src: RotoVRLogo, url: "https://github.com" },
-      { src: Hastings, url: "https://github.com" },
+      { src: RotoVRLogo, url: "https://www.rotovr.com/" },
+      { src: Hastings, url: "https://www.hastingsdirect.com/" },
     ]
   },
   {
     title: "Silver Sponsors",
     size: "110px",
     logos: [
-      { src: paxton, url: "https://github.com" },
-      { src: bcs, url: "https://github.com" }
+      { src: paxton, url: "https://www.paxton-access.com/" },
+      { src: bcs, url: "https://www.bcs.org/" }
     ]
   },
   {
     title: "Bronze Sponsors",
     size: "100px",
     logos: [
-      { src: teachFirst, url: "https://github.com" },
-      { src: github, url: "https://github.com" },
+      { src: teachFirst, url: "https://www.teachfirst.org.uk/" }
     ]
   },
   {
     title: "Partners",
     size: "100px",
     logos: [
-      { src: huk, url: "https://github.com" },
-      { src: UoS, url: "https://github.com" },
+      { src: huk, url: "https://www.hackathons.org.uk/" },
+      { src: UoS, url: "https://www.sussex.ac.uk/ei/" },
     ]
   },
 ];
