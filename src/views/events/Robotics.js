@@ -43,7 +43,7 @@ const Robotics = () => {
           Sign up to get notified <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5fJVzFHijuOZrM6zirnidI43eSzg1SHWd9dZTJLJIFSAwQw/viewform?fbzx=6198511734001577115&pli=1">here</a>!
         </div>
         <EventWhereWhen location="TBA" date="TBA" />
-        <Resources links={linksData} />
+        {/* <Resources links={linksData} /> */}
     </>
   );
 }
