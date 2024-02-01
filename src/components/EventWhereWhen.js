@@ -30,10 +30,10 @@ const EventWhereWhen = (props) => {
           {/* Leftmost Column */}
           <div className="col-md-4">
             <div className="row align-items-center">
-              <div className="col-3 text-center">
+              <div className="col-3 col-md-5 text-center">
                 <FaClock className={styles['icon']} />
               </div>
-              <div className="col-9">
+              <div className="col-9 col-md-7">
                 <h3 className={styles['header']}>When</h3>
                 <p className={styles['text']}>{date}</p>
               </div>
@@ -43,10 +43,10 @@ const EventWhereWhen = (props) => {
           {/* Middle Column */}
           <div className="col-md-4">
             <div className="row align-items-center">
-              <div className="col-3 text-center">
+              <div className="col-3 col-md-5 text-center">
                 <FaMapMarkerAlt className={styles['icon']} />
               </div>
-              <div className="col-9">
+              <div className="col-9 col-md-7">
                 <h3 className={styles['header']}>Where</h3>
                 <p className={styles['text']}>{location}</p>
               </div>

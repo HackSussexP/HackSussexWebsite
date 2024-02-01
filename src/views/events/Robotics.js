@@ -38,9 +38,12 @@ const Robotics = () => {
                 <p className='display-4' style={{color: "var(--electric-green)"}}>Robotics</p> {/* Get me sized correctly or replaced */}
             </div>
         </div>
-        <AboutSection description={[`Welcome to HackSussex's Weekly Robotics workshops! Our workshops are open to anyone with an interest and offer the chance to learn the basics of electronics, mechanics, coding and robotics through a series of hands-on sessions. These sessions offer something for everyone, from beginners to hobbyists, you'll learn how to use and apply many different components like micro-controllers, motors and sensors. `,  `At every teaching session you'll get a quick introduction to the topic at the start, then in small groups, go through custom worksheets and hardware kits to learn whilst building. We also plan to host weekly open workshop sessions where you get access to a wide variety of tools and resources to make anything you can think of. Sign up to get notified bellow!`]} />
+        <AboutSection description={[`Welcome to HackSussex's Weekly Robotics workshops! Our workshops are open to anyone with an interest and offer the chance to learn the basics of electronics, mechanics, coding and robotics through a series of hands-on sessions. These sessions offer something for everyone, from beginners to hobbyists, you'll learn how to use and apply many different components like micro-controllers, motors and sensors. `,  `At every teaching session you'll get a quick introduction to the topic at the start, then in small groups, go through custom worksheets and hardware kits to learn whilst building. We also plan to host weekly open workshop sessions where you get access to a wide variety of tools and resources to make anything you can think of.`]} />
+        <div className="container p-5 pt-0">
+          Sign up to get notified <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5fJVzFHijuOZrM6zirnidI43eSzg1SHWd9dZTJLJIFSAwQw/viewform?fbzx=6198511734001577115&pli=1">here</a>!
+        </div>
         <EventWhereWhen location="TBA" date="TBA" />
-        <Resources links={linksData} />
+        {/* <Resources links={linksData} /> */}
     </>
   );
 }

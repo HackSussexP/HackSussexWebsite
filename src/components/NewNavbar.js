@@ -112,6 +112,11 @@ const Navbar = (props) => {
                   FAQ
                 </Link>
               </li>
+              {/* <li className="nav-item">
+                <Link className="nav-link px-5" to="https://hacksussex.square.site/" onClick={closeNavbar}>
+                  Merch Store
+                </Link>
+              </li> */}
             </ul>
           </div>
         </div>
