@@ -233,7 +233,7 @@ const GameJam = () => {
                     </p>
                     </>}
                     list={["24 Hours of project building", "Win exciting prizes", "Free swag", "Free Food and Drinks", "Workshops to learn skills"]} />
-      <EventWhereWhen location="University of Sussex, Brighton" date={"25 November 2023"} />
+      <EventWhereWhen location="University of Sussex, Brighton" date={"25 November 2023"} link={null} />
       {config.schedule && <Schedule schedule={schedule} />}
       <CodesOfConduct links={codes} />
       {config.sponsors && <Sponsors sponsorData={sponsorData} />}

@@ -8,6 +8,7 @@ const EventWhereWhen = (props) => {
 
   let date
   let location
+  let link
 
   if (props.date === null) {
     date = "TBD"
@@ -22,6 +23,12 @@ const EventWhereWhen = (props) => {
   else {
     location = props.location
   }
+
+  if (props.link === null) {
+    link = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5036.0026193352405!2d-0.0830064!3d50.8681755!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487589b282984cd1%3A0xc03298cc1ca33ee1!2sHackSussex!5e0!3m2!1sen!2suk!4v1694815748321!5m2!1sen!2suk"
+  } else {
+    link = props.link
+  }
   return (
     <div className={`${styles['container-fluid']} gradient py-4`}>
       <div className="container">
@@ -29,8 +36,8 @@ const EventWhereWhen = (props) => {
 
           {/* Leftmost Column */}
           <div className="col-md-4">
-            <div className="row align-items-center">
-              <div className="col-3 col-md-5 text-center">
+            <div className="row align-items-center justify-contents-center">
+              <div className="col-auto text-center">
                 <FaClock className={styles['icon']} />
               </div>
               <div className="col-9 col-md-7">
@@ -42,8 +49,8 @@ const EventWhereWhen = (props) => {
 
           {/* Middle Column */}
           <div className="col-md-4">
-            <div className="row align-items-center">
-              <div className="col-3 col-md-5 text-center">
+            <div className="row align-items-center justify-content-center">
+              <div className="col-auto text-center">
                 <FaMapMarkerAlt className={styles['icon']} />
               </div>
               <div className="col-9 col-md-7">
@@ -57,7 +64,7 @@ const EventWhereWhen = (props) => {
           <div className="col-md-4">
             <iframe 
               title="Event Location" 
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5036.0026193352405!2d-0.0830064!3d50.8681755!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487589b282984cd1%3A0xc03298cc1ca33ee1!2sHackSussex!5e0!3m2!1sen!2suk!4v1694815748321!5m2!1sen!2suk"
+              src={link}
               className={styles['map']}
               allowFullScreen="" 
               loading="lazy">
