@@ -164,10 +164,7 @@ const Hackathon = () => {
       {config.timer && <Timer date={config.date} title={config.title} />}
       <HackathonAbout />
       <EventWhereWhen location="University of Sussex, Brighton" date={"17 February 2024"} link={null} />
-      {config.schedule && <Schedule schedule={schedule} />}
-      <Sponsors sponsorData={sponsorData}/>
-      <CodesOfConduct links={codes} />
-      <div className='container-fluid border rounded-2 text-center text-dark' style={{backgroundColor: "var(--lime)"}}>
+      <div className='container-fluid rounded-4 my-2 text-center text-dark' style={{backgroundColor: "var(--lime)"}}>
         <p className='display-6 text-decoration-underline'>Upcoming Train Strikes and Engineering Work</p>
         <p className='h5 lh-lg'>Please note the following:</p>
         <ul className='list-group-flush'>
@@ -181,9 +178,11 @@ const Hackathon = () => {
           onMouseLeave={() => setHoveredLink(false)}
           className="fs-4"
           href='https://www.southernrailway.com/travel-information/plan-your-journey/planned-engineering-work'
-        >Please click the following link for more information.</a>
+        >Click here for more information.</a>
       </div>
-      {/* Train stikes day after but no trains past three bridges both days */}
+      {config.schedule && <Schedule schedule={schedule} />}
+      <Sponsors sponsorData={sponsorData}/>
+      <CodesOfConduct links={codes} />
     </>
   );
 }
