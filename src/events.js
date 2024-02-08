@@ -8,7 +8,8 @@ const events = [
     "location": "Hybrid/Sussex Media Technology Lab",
     "date": "2022-06-01",
     "time": "12pm - 2pm",
-    "cost": "Free"
+    "cost": "Free",
+    "repeating": false,
   },
   {
     "image": require("./assets/events/hs23.jpg"),
@@ -17,7 +18,8 @@ const events = [
     "location": "Sussex Campus - Chichester 1 Building",
     "date": "2023-02-18",
     "time": "10am - 6pm",
-    "cost": "Free"
+    "cost": "Free",
+    "repeating": false,
   },
   {
     "image": require("./assets/events/hs23.jpg"),
@@ -26,7 +28,8 @@ const events = [
     "location": "Sussex Campus - Chichester 1 Building",
     "date": "2024-02-17",
     "time": "10am - 6pm",
-    "cost": "Free"
+    "cost": "Free",
+    "repeating": false,
   },
   {
     "image": require("./assets/events/cc23.jpg"),
@@ -35,16 +38,18 @@ const events = [
     "location": "Sussex Media Technoloy Lab",
     "date": "2023-05-04",
     "time": "12pm - 2pm",
-    "cost": "Free"
+    "cost": "Free",
+    "repeating": false,
   },
   {
     "image": require("./assets/events/code-social.JPEG"),
     "title": "Weekly Code Social",
     "description": "Every week of term, we hold a social to meet and chat with fellow students, no coding, no stress, just free snacks and soft drink provided.\n\nGrab a drink, sit back, play some games and meet new people.",
     "location": "Sussex Campus, Chichester 1 Building, Future Technology Lab (FTL)",
-    "date": "2023-09-27",
+    "date": "2024-01-31",
     "time": "6pm - 8pm",
-    "cost": "Free"
+    "cost": "Free",
+    "repeating": true,
   },
   {
     "image": require("./assets/events/dylan-beatie.jpg"),
@@ -53,16 +58,8 @@ const events = [
     "location": "Sussex Campus, Chichester 1 Lecture Theatre, Future Technology Lab (FTL)",
     "date": "2023-10-04",
     "time": "5pm - 6pm",
-    "cost": "Free"
-  },
-  {
-    "image": require("./assets/events/code-social.JPEG"),
-    "title": "Weekly Code Social",
-    "description": "Every week of term, we hold a social to meet and chat with fellow students, no coding, no stress, just free snacks and soft drink provided.\n\nGrab a drink, sit back, play some games and meet new people.",
-    "location": "Sussex Campus, Chichester 1 Building, Future Technology Lab (FTL)",
-    "date": "2023-10-04",
-    "time": "7pm - 8pm",
-    "cost": "Free"
+    "cost": "Free",
+    "repeating": false,
   },
   {
     "image": require("./assets/events/merch.jpg"),
@@ -71,25 +68,28 @@ const events = [
     "location": "Sussex Campus, Chichester 1 Building, Future Technology Lab (FTL)",
     "date": "2023-09-27",
     "time": "7pm",
-    "cost": "Free"
+    "cost": "Free",
+    "repeating": false,
   },
   {
     "image": require("./assets/events/leetcoding.jpg"),
     "title": "Leetcoding",
     "description": "Each week, join us for programming help sessions focused on leetcoding. Leetcoding questions are simple algorithmic problems to get you using your most efficient and effective programming techniques. Complete the challenge with 10+ IF-statements, lose some marks, complete it in 1 line, you are winning!",
     "location": "Sussex Campus, Chichester 1 Building, Future Technology Lab (FTL)",
-    "date": null,
-    "time": "TBC",
-    "cost": "Free"
+    "date": "2024-02-07",
+    "time": "2pm",
+    "cost": "Free",
+    "repeating": true,
   },
   {
     "image": require("./assets/events/cybersec.jpg"),
     "title": "Cyber Security",
     "description": "Our Cyber Security team PwnSussex focus on completing HackTheBox challenges as well as entering competitions throughout the year. These challenges focus on common vulnerabilities and cracking codes within systems in an ethical and legal way. \n\nInterested in joining the team? Join our discord and head to our cyber security channel.",
     "location": "Sussex Campus, Chichester 1 Building, Future Technology Lab (FTL)",
-    "date": null,
-    "time": "TBC",
-    "cost": "Free"
+    "date": "2024-02-07",
+    "time": "5pm",
+    "cost": "Free",
+    "repeating": true,
   },
   {
     "image": require("./assets/events/gamejam23.jpg"),
@@ -98,16 +98,28 @@ const events = [
     "location": "Sussex Campus - Chichester 1 Building",
     "date": "2023-11-25",
     "time": "10am - 6pm",
-    "cost": "Free"
+    "cost": "Free",
+    "repeating": false,
   },
   {
     "image": require("./assets/events/robotics.jpg"),
-    "title": "Robotics",
+    "title": "Robotics (Wednesday session)",
     "description": "New this year! We are hosting weekly robotics sessions, aimed at introducing students to simple robotics projects. Throughout which you will learn many of the basics of electronic signalling and control. This will cover motors, sensors, micro controller circuitry and more! \n\n Interested in giving it a try? Check out our discord section on robotics and turn up to the weekly sessions to get stuck in!",
-    "location": "Sussex Campus, Chichester 1 Building, Future Technology Lab (FTL)",
-    "date": null,
-    "time": "2.30pm - 4:00pm",
-    "cost": "Free"
+    "location": "Sussex Campus, John Clifford West building, Room G3",
+    "date": "2024-02-07",
+    "time": "12pm - 2:00pm",
+    "cost": "Free",
+    "repeating": true,
+  },
+  {
+    "image": require("./assets/events/robotics.jpg"),
+    "title": "Robotics (Friday session)",
+    "description": "New this year! We are hosting weekly robotics sessions, aimed at introducing students to simple robotics projects. Throughout which you will learn many of the basics of electronic signalling and control. This will cover motors, sensors, micro controller circuitry and more! \n\n Interested in giving it a try? Check out our discord section on robotics and turn up to the weekly sessions to get stuck in!",
+    "location": "Sussex Campus, John Clifford West building, Room G3",
+    "date": "2024-02-02",
+    "time": "2:00pm - 4:00pm",
+    "cost": "Free",
+    "repeating": true,
   }
 ]
 

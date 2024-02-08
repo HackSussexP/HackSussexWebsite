@@ -19,7 +19,17 @@ const PastEvents = () => {
 
   Events.forEach((event) => {
     let eventDate = new Date(event.date);
-    if (eventDate > date) {
+    let eventTime = new Date(event.date).getTime();
+    if (event.repeating) {
+      let time = eventDate.getTime();
+      while (time < new Date().getTime()) {
+        time += (1000*60*60*24*7);
+      }
+      eventTime = time;
+      eventDate = new Date(time);
+    }
+    event.date = eventDate
+    if (eventTime >= date.getTime()) {
       upcoming.push(event);
     } else {
       past.push(event);
@@ -61,7 +71,7 @@ const PastEvents = () => {
                       </span>
                       {event.location}
                     </p>
-                    <Link to={"/events/" + event.date + "/" + event.title} className="btn btn-blue">View Event</Link>
+                    {/* <Link to={"/events/" + event.date + "/" + event.title} className="btn btn-blue">View Event</Link> -- this throws errors so it's commented out until someone with more brain power can resovlve the issue */}
                   </div>
                 </div>
               </div>
