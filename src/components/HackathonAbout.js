@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import AboutSection from './AboutSection';
 
 const HackathonAbout = () => {
 
+    const [hoveredLink, setHoveredLink] = useState(null);
+
+    const config = {
+        "video": true,
+    }
     const styles = {
         "pcVideo": { aspectRatio: '16/9', maxWidth: '50%', borderRadius: '15px' },
         "mobileVideo": { aspectRatio: '9/16', maxWidth: '80%', borderRadius: '15px' },
-        "title": {color: "var(--electric-green)"}
+        "title": {color: "var(--electric-green)"},
+        "defaultStyle": { textDecoration: "none", color: "white" },
+        "hoverStyle": { textDecoration: "none", color: "var(--teal)" }
     }
 
     return (
@@ -17,12 +24,15 @@ const HackathonAbout = () => {
                 <p className='col m-2 p-2 text-light text-center display-4'>What actually is a hackathon?</p>
             </div>
             <AboutSection description={<>
-                    <p>
-                    The 2024 Hackathon is almost upon us! This unique event is hosted over a full weekend including 24 hours of non-stop coding, workshops hosted by our sponsors, 5 mouth-wateringly tasty meals from local Brighton caterers, snacks and drinks, and an exclusive Hackathon 2024 t-shirt, <strong>all for free!</strong></p>
-                    <p>Your project can enter multiple of our many prize tracks, with a prize pool worth over £3,000! If you don't have a team, find your family-for-the-weekend in our team building event! Together you'll create a game, some software or something electronic. Have you never coded before? Have you been coding since you were conceived? Are you competitive? Are you laid back? Want to boost your CV while having fun? Join us for our best hackathon yet - you won't want to miss this! <strong>Get your free ticket now!</strong></p>
-                    </>}
-            list={["24 Hours of team project building", "£3,000+ worth of exciting prizes", "Free swag", "Free Food and Drinks", "Workshops and entertainment"]} />
-            <div className='row d-none d-sm-flex m-3 justify-content-center'>
+                <p>With only a few days until the Hacksussex Hackathon 2024, we hope that you are just as excited as we are! To ensure that you are having the best experience during your time developing, we have gathered all the important information regarding the event.</p>
+                <p>In-person registration for the hackathon will begin at 10am on the 17th of February. It will take place at <a href="https://www.google.com/maps/place/50%C2%B051'56.4%22N+0%C2%B005'13.5%22W/@50.865676,-0.08709,17z/data=!3m1!4b1!4m4!3m3!8m2!3d50.865676!4d-0.08709?entry=ttu" style={hoveredLink === true ? styles.hoverStyle : styles.defaultStyle} onMouseEnter={() => setHoveredLink(true)} onMouseLeave={() => setHoveredLink(false)}>Chichester 1, University of Sussex</a>. The event will end at 6pm on the 18th of February.</p>
+                <p>If coming from Falmer Station, keep an eye out for HackSussex signs guiding the way. If you are coming via the 25 or 23 bus from Brighton, hop off at the North South Road stop.</p>
+                <p>If you are not coming with a team, you can find your team-for-the-weekend in our team building event on Saturday morning.</p>
+                <p>Please be aware that by attending the Hackathon 2024, you are acknowledging that images, (audio, visual, photographic) may be taken of you. All content may be used by HackSussex, The University of Sussex and companies involved with Hackathon 2024.</p>
+                <p>We also ask that you do not bring any nut products because there are attendees with severe allergies.</p>
+            </>}
+            list={["A laptop with a charger", "HDMI cable (we have monitors that you can use)", "Any peripherals you want to use in a project", "Any necessary hardware or tools, if you plan on working on a proecjt with them", "Water bottle and reusbale cup for hot drinks", "Toiletries and any mediacation you require"]} />
+            {config.video && <div className='row d-none d-sm-flex m-3 justify-content-center'>
                 <iframe 
                     className="w-100 rounded" 
                     src="https://www.youtube.com/embed/X0D1yNHRXoI" 

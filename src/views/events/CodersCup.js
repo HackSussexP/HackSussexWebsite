@@ -156,7 +156,7 @@ const CodersCup = () => {
                   </p>
                   </>}
                   list={[]} />
-      <EventWhereWhen location="University of Sussex, Brighton" date={config.timer === true ? config.date : null} />
+      <EventWhereWhen location="University of Sussex, Brighton" date={config.timer === true ? config.date : null} link={null} />
       {config.schedule && <Schedule schedule={schedule} />}
       {/* <Sponsors sponsorData={sponsorData}/> */}
       <HallOfFame data={hallOfFameData} />

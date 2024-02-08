@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from "react";
 
 import RotatingSponsorBanner from './../../components/RotatingSponsorBanner';
 import EventWhereWhen from '../../components/EventWhereWhen'; 
@@ -121,6 +121,19 @@ const codes = [
 ];
 
 const Hackathon = () => {
+
+  const [hoveredLink, setHoveredLink] = useState(null);
+
+  const defaultStyle = {
+    textDecoration: "none",
+    color: "black"
+  };
+
+  const hoverStyle = {
+    textDecoration: "none",
+    color: "white"
+  };
+
   return(
     <>
       <div className="carousel-inner p-0">
@@ -150,7 +163,23 @@ const Hackathon = () => {
       {config.tickets && <TicketSection url={config.url} />}
       {config.timer && <Timer date={config.date} title={config.title} />}
       <HackathonAbout />
-      <EventWhereWhen location="University of Sussex, Brighton" date={"17 February 2024"} />
+      <EventWhereWhen location="University of Sussex, Brighton" date={"17 February 2024"} link={null} />
+      <div className='container-fluid rounded-4 my-2 text-center text-dark' style={{backgroundColor: "var(--lime)"}}>
+        <p className='display-6 text-decoration-underline'>Upcoming Train Strikes and Engineering Work</p>
+        <p className='h5 lh-lg'>Please note the following:</p>
+        <ul className='list-group-flush'>
+          <li className='list-group-item'>- There are no train running between Three Bridges and Brighton on both days of the hackathon.</li>
+          <li className='list-group-item'>- There are no train's between Three Bridges and Brighton in the early morning and late night Monday 12th to Friday 16th February.</li>
+        </ul>
+        <p className='h5'>There are further strikes and engineering work planned around this time so please check with your rail travel provider before travelling.</p>
+        <a
+          style={hoveredLink === true ? hoverStyle : defaultStyle}
+          onMouseEnter={() => setHoveredLink(true)}
+          onMouseLeave={() => setHoveredLink(false)}
+          className="fs-4"
+          href='https://www.southernrailway.com/travel-information/plan-your-journey/planned-engineering-work'
+        >Click here for more information.</a>
+      </div>
       {config.schedule && <Schedule schedule={schedule} />}
       <Sponsors sponsorData={sponsorData}/>
       <CodesOfConduct links={codes} />
