@@ -32,7 +32,7 @@ const HackathonAbout = () => {
                 <p>We also ask that you do not bring any nut products because there are attendees with severe allergies.</p>
             </>}
             list={["A laptop with a charger", "HDMI cable (we have monitors that you can use)", "Any peripherals you want to use in a project", "Any necessary hardware or tools, if you plan on working on a proecjt with them", "Water bottle and reusbale cup for hot drinks", "Toiletries and any mediacation you require"]} />
-            {config.video && <div className='row d-none d-sm-flex m-3 justify-content-center'>
+            <div className='row d-none d-sm-flex m-3 justify-content-center'>
                 <iframe 
                     className="w-100 rounded" 
                     src="https://www.youtube.com/embed/X0D1yNHRXoI" 
