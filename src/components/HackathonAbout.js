@@ -4,9 +4,6 @@ import AboutSection from './AboutSection';
 
 const HackathonAbout = () => {
 
-    const config = {
-        "video": true,
-    }
     const styles = {
         "pcVideo": { aspectRatio: '16/9', maxWidth: '50%', borderRadius: '15px' },
         "mobileVideo": { aspectRatio: '9/16', maxWidth: '80%', borderRadius: '15px' },
@@ -15,7 +12,7 @@ const HackathonAbout = () => {
 
     return (
     <>
-        <div className='container-fluid'>
+        <div className='container w-75'>
             <div className='row'>
                 <p className='col m-2 p-2 text-light text-center display-4'>What actually is a hackathon?</p>
             </div>
@@ -25,7 +22,7 @@ const HackathonAbout = () => {
                     <p>Your project can enter multiple of our many prize tracks, with a prize pool worth over £3,000! If you don't have a team, find your family-for-the-weekend in our team building event! Together you'll create a game, some software or something electronic. Have you never coded before? Have you been coding since you were conceived? Are you competitive? Are you laid back? Want to boost your CV while having fun? Join us for our best hackathon yet - you won't want to miss this! <strong>Get your free ticket now!</strong></p>
                     </>}
             list={["24 Hours of team project building", "£3,000+ worth of exciting prizes", "Free swag", "Free Food and Drinks", "Workshops and entertainment"]} />
-            {config.video && <div className='row d-none d-sm-flex m-3 justify-content-center'>
+            <div className='row d-none d-sm-flex m-3 justify-content-center'>
                 <iframe 
                     className="w-100 rounded" 
                     src="https://www.youtube.com/embed/X0D1yNHRXoI" 
@@ -34,8 +31,8 @@ const HackathonAbout = () => {
                     allowFullScreen
                     title="Hackathon Video"
                 ></iframe>
-            </div>}
-            {config.video && <div className='row d-flex d-sm-none p-2 mb-3 justify-content-center'> {/* Mobile video */}
+            </div>
+            <div className='row d-flex d-sm-none p-2 mb-3 justify-content-center'> {/* Mobile video */}
                 <iframe 
                     className="w-100 rounded" 
                     src="https://www.youtube.com/embed/X0D1yNHRXoI" 
@@ -44,7 +41,7 @@ const HackathonAbout = () => {
                     allowFullScreen
                     title="Hackathon Video"
                 ></iframe>
-            </div>}
+            </div>
             <div className='row d-none d-sm-flex justify-content-evenly m-3 mt-5'>
                 <div className="col mx-3 ms-5">
                     <p id="example-title" className="display-3 text-start fw-bold" style={styles.title}>Food</p>
