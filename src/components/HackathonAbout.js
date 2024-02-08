@@ -19,7 +19,7 @@ const HackathonAbout = () => {
 
     return (
     <>
-        <div className='container-fluid'>
+        <div className='container w-75'>
             <div className='row'>
                 <p className='col m-2 p-2 text-light text-center display-4'>What actually is a hackathon?</p>
             </div>
@@ -32,7 +32,7 @@ const HackathonAbout = () => {
                 <p>We also ask that you do not bring any nut products because there are attendees with severe allergies.</p>
             </>}
             list={["A laptop with a charger", "HDMI cable (we have monitors that you can use)", "Any peripherals you want to use in a project", "Any necessary hardware or tools, if you plan on working on a proecjt with them", "Water bottle and reusbale cup for hot drinks", "Toiletries and any mediacation you require"]} />
-            {config.video && <div className='row d-none d-sm-flex m-3 justify-content-center'>
+            <div className='row d-none d-sm-flex m-3 justify-content-center'>
                 <iframe 
                     className="w-100 rounded" 
                     src="https://www.youtube.com/embed/X0D1yNHRXoI" 
@@ -41,8 +41,8 @@ const HackathonAbout = () => {
                     allowFullScreen
                     title="Hackathon Video"
                 ></iframe>
-            </div>}
-            {config.video && <div className='row d-flex d-sm-none p-2 mb-3 justify-content-center'> {/* Mobile video */}
+            </div>
+            <div className='row d-flex d-sm-none p-2 mb-3 justify-content-center'> {/* Mobile video */}
                 <iframe 
                     className="w-100 rounded" 
                     src="https://www.youtube.com/embed/X0D1yNHRXoI" 
@@ -51,7 +51,7 @@ const HackathonAbout = () => {
                     allowFullScreen
                     title="Hackathon Video"
                 ></iframe>
-            </div>}
+            </div>
             <div className='row d-none d-sm-flex justify-content-evenly m-3 mt-5'>
                 <div className="col mx-3 ms-5">
                     <p id="example-title" className="display-3 text-start fw-bold" style={styles.title}>Food</p>

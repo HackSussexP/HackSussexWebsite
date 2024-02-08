@@ -18,10 +18,11 @@ import patrick from '../assets/Committee/patrick.jpg'
 import lukas from '../assets/Committee/lukas.jpg'
 import richerd from '../assets/Committee/richerd.jpg'
 import david from '../assets/Committee/david.png'
-import kei from '../assets/Committee/kei.png'
 import emily from '../assets/Committee/emily.jpg'
 import jamie from '../assets/Committee/jamie.png'
 import elias from '../assets/Committee/elias.png'
+import amyS from '../assets/Committee/amyS.png'
+import keagan from '../assets/Committee/keagan.png'
 
 const About = () => {
 
@@ -33,14 +34,6 @@ const About = () => {
       email: "jack@hacksussex.com",
       githubLink: "https://github.com/Speaty",
       linkedinLink: "https://www.linkedin.com/in/jack-speat-7333491b3/"
-    },
-    {
-      imageUrl: adnan,
-      name: "Adnan Quisar",
-      role: "Vice President",
-      email: "adnan@hacksussex.com",
-      githubLink: "https://github.com/adnantech",
-      linkedinLink: "https://linkedin.com/in/adnanquisar"
     },
     {
       imageUrl: tom,
@@ -57,6 +50,14 @@ const About = () => {
       email: "charlotte@hacksussex.com",
       githubLink: "https://github.com/Charlotte-R-01134",
       linkedinLink: "https://www.linkedin.com/in/charlotte-richardson-7673a11a2/"
+    },
+    {
+      imageUrl: adnan,
+      name: "Adnan Quisar",
+      role: "Competetive Coding",
+      email: "adnan@hacksussex.com",
+      githubLink: "https://github.com/adnantech",
+      linkedinLink: "https://linkedin.com/in/adnanquisar"
     },
     {
       imageUrl: henry,
@@ -147,14 +148,6 @@ const About = () => {
       linkedinLink: "https://www.linkedin.com/in/david-frommont/"
     },
     {
-      imageUrl: kei,
-      name: "Kei Tsujie",
-      role: "General Committee",
-      email: "kei@hacksussex.com",
-      githubLink: "https://github.com/JohnSanDesu",
-      linkedinLink: ""
-    },
-    {
       imageUrl: emily,
       name: "Emily-mae Neame",
       role: "General Committee",
@@ -173,11 +166,28 @@ const About = () => {
     {
       imageUrl: jamie,
       name: "Jamie Sage",
-      role: "General Committee",
+      role: "Social Media",
       email: "jamie@hacksussex.com",
       githubLink: "",
       linkedinLink: "https://www.linkedin.com/in/jamie-sage/"
     },
+    {
+      imageUrl: amyS,
+      name: "Amy Scott",
+      role: "Social Media",
+      email: "",
+      githubLink: "",
+      linkedinLink: "https://www.linkedin.com/in/amy-scott-ba6038221/"
+    },
+    {
+      imageUrl: keagan,
+      name: "Keagan Kozlowski",
+      role: "Sponsors",
+      email: "keagan@hacksussex.com",
+      githubLink: "https://github.com/KeaganKozlowski",
+      linkedinLink: "https://www.linkedin.com/in/keagankozlowski/"
+    },
+    //amy, eddie, fin, john, keagan
   ];
 
   return (
