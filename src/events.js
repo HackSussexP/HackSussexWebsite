@@ -107,7 +107,7 @@ const events = [
     "description": "New this year! We are hosting weekly robotics sessions, aimed at introducing students to simple robotics projects. Throughout which you will learn many of the basics of electronic signalling and control. This will cover motors, sensors, micro controller circuitry and more! \n\n Interested in giving it a try? Check out our discord section on robotics and turn up to either of the weekly sessions to get stuck in!",
     "location": "Sussex Campus, John Clifford West building, Room G3",
     "date": "2024-02-07",
-    "time": "12pm - 2:00pm",
+    "time": "12pm - 2pm",
     "cost": "Free",
     "repeating": true,
   },
