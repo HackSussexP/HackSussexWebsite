@@ -139,14 +139,14 @@ const Gallery = () => {
     { id: 52, url: gj3, description: 'MEMBERS OF OUR COMMUNITY WAITING FOR THE OPENING CEREMONY INCLUDNG LECTURER RON GRAU AND HEAD OF E&I AT SUSSEX, IAN WAKEMAN', event: 'gamejam23' },
     { id: 53, url: gj4, description: 'A TEAM SHOWING OFF THE GAME TO OUR JUDGES, INCLUDING UNIVERSITY LECTURER RON GRAU', event: 'gamejam23' },
     { id: 54, url: gj5, description: 'PROGRAMMER PLAY TESTING THEIR GAME ON THE ROTOVR CHAIR', event: 'gamejam23' },
-    { id: 55, url: gj6, description: 'ONE OUR CATERERS, OUICREPERIE, SETUP OUTSIDE CHICHESTER BUILDING MORNING OF DAY 2', event: 'gamejam23' },
-    { id: 56, url: gj7, description: 'A PROGRAMEMR HARD AT WORK AT THEIR GREAT GAME', event: 'gamejam23' },
-    { id: 57, url: gj8, description: 'PEOPLE ENJOYING MIDNIGHT PIZZA FROM PIZZAME DURING THE NIGHT OF THE GAMEJAM', event: 'gamejam23' },
-    { id: 58, url: gj9, description: 'A QUEUUE OF PEOPLE GETTING READY TO ENJOY THEIR DINNER FROM TUNTUNS', event: 'gamejam23' },
-    { id: 59, url: gj10, description: 'MEMBERS OF OUR COMMUNITY HARD AT WORK', event: 'gamejam23' },
+    { id: 55, url: gj6, description: 'ONE OUR CATERERS, OUICREPERIE, OUTSIDE CHICHESTER BUILDING MORNING OF DAY 2', event: 'gamejam23' },
+    { id: 56, url: gj7, description: 'PEOPLE ENJOYING MIDNIGHT PIZZA FROM PIZZAME DURING THE NIGHT OF THE GAMEJAM', event: 'gamejam23' },
+    { id: 57, url: gj8, description: 'A PROGRAMEMR HARD AT WORK AT THEIR GREAT GAME', event: 'gamejam23' },
+    { id: 58, url: gj9, description: 'A QUEUE OF PEOPLE GETTING READY TO ENJOY THEIR DINNER FROM TUNTUNS', event: 'gamejam23' },
+    { id: 59, url: gj10, description: 'MEMBERS OF OUR COMMUNITY HARD AT WORK AT HACKSUSSEX 2023', event: 'gamejam23' },
     { id: 60, url: gj11, description: 'THE CEO OF ROTOVR, ELLIOTT MYERS, HELPING A STUDENT TO GET SETUP WITH THE ROTOVR CHAIR', event: 'gamejam23' },
-    { id: 61, url: gj12, description: 'LECTURER RONGRAU TESTING OUT THE ROTOVR CHAIRS SPIN WITH A STEERING WHEEL', event: 'gamejam23' },
-    { id: 62, url: gj13, description: 'ONE OF COMMITTEE THE NIGHT BEFORE PAINFULLY ORGANISING THE LANYARDS FOR THE MORNING', event: 'gamejam23' },
+    { id: 61, url: gj12, description: 'LECTURER RON GRAU TESTING OUT THE ROTOVR CHAIRS SPIN WITH A STEERING WHEEL', event: 'gamejam23' },
+    { id: 62, url: gj13, description: 'ONE OF COMMITTEE THE NIGHT BEFORE HACKSUSSEX 2023 PAINFULLY ORGANISING THE LANYARDS FOR THE MORNING', event: 'gamejam23' },
 
   ];
   
