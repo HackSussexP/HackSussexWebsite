@@ -20,7 +20,7 @@ const Navbar = (props) => {
         <div className="container-fluid py-2 px-5">
 
           {/* MLH Flag */}
-          <a 
+          {/* <a 
             id="mlh-trust-badge" 
             className="d-none d-lg-block"
             style={{display: 'block', maxWidth: '100px', minWidth: '60px', position: 'fixed', right: '100px', top: '0', width: '10%', zIndex: 10000}} 
@@ -33,7 +33,7 @@ const Navbar = (props) => {
               alt="Major League Hacking 2024 Hackathon Season" 
               style={{width: '100%'}} 
             />
-          </a>
+          </a> */}
           {/* End MLH Flag */}
 
           <Link class="navbar-brand" to="/" onClick={closeNavbar}>
