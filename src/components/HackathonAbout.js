@@ -31,9 +31,9 @@ const HackathonAbout = () => {
                 <p>Please be aware that by attending the Hackathon 2024, you are acknowledging that images, (audio, visual, photographic) may be taken of you. All content may be used by HackSussex, The University of Sussex and companies involved with Hackathon 2024.</p>
                 <p>We also ask that you do not bring any nut products because there are attendees with severe allergies.</p>
             </>}
-            list={["A laptop with a charger", "HDMI cable (we have monitors that you can use)", "Any peripherals you want to use in a project", "Any necessary hardware or tools, if you plan on working on a proecjt with them", "Water bottle and reusbale cup for hot drinks", "Toiletries and any mediacation you require"]} />
+            list={["A laptop with a charger", "HDMI cable (we have monitors that you can use)", "Any peripherals you want to use in a project", "Any necessary hardware or tools, if you plan on working on a project with them", "Water bottle and reusbale cup for hot drinks", "Toiletries and any medication you require"]} />
             <div className='row d-none d-sm-flex m-3 justify-content-center'>
-                <iframe 
+                <iframe
                     className="w-100 rounded" 
                     src="https://www.youtube.com/embed/X0D1yNHRXoI" 
                     style={styles.pcVideo}
