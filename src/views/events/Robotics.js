@@ -42,7 +42,7 @@ const Robotics = () => {
         <div className="container p-5 pt-0">
           Sign up to get notified <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5fJVzFHijuOZrM6zirnidI43eSzg1SHWd9dZTJLJIFSAwQw/viewform?fbzx=6198511734001577115&pli=1">here</a>!
         </div>
-        <EventWhereWhen location="John Clifford West Building, G3" date="Wed 12:00 - 14:00 and Fri 14:00 - 16:00" link="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1101.727418582699!2d-0.08451!3d50.8664128!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487588c9d45d9f39%3A0xd978d75146afc343!2sJohn%20Clifford%20West!5e1!3m2!1sen!2suk!4v1707213743681!5m2!1sen!2suk"/>
+        <EventWhereWhen location="John Clifford West Building, G3" date="Mon 12:00 - 14:00 and Wed 12:00 - 14:00" link="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1101.727418582699!2d-0.08451!3d50.8664128!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487588c9d45d9f39%3A0xd978d75146afc343!2sJohn%20Clifford%20West!5e1!3m2!1sen!2suk!4v1707213743681!5m2!1sen!2suk"/>
         {/* <Resources links={linksData} /> */}
     </>
   );
