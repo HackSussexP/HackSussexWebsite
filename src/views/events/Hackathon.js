@@ -38,17 +38,17 @@ const config = {
 var schedule = {
   1: [
     {
-      time: "10:00",
+      time: "10:00AM",
       event: "Registration Opens",
       location: "Chichester 1",
     },
     {
-      time: "11:00",
+      time: "11:00AM",
       event: "Opening Ceremony",
       location: "Chichester 1 Lecture Theatre",
     },
     {
-      time: "12:00",
+      time: "12:00PM",
       event: "Hacking Begins",
       location: "Chichester 1 Labs",
     },
