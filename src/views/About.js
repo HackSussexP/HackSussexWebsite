@@ -54,7 +54,7 @@ const About = () => {
     {
       imageUrl: adnan,
       name: "Adnan Quisar",
-      role: "Competetive Coding",
+      role: "Competitive Coding",
       email: "adnan@hacksussex.com",
       githubLink: "https://github.com/adnantech",
       linkedinLink: "https://linkedin.com/in/adnanquisar"
@@ -62,7 +62,7 @@ const About = () => {
     {
       imageUrl: henry,
       name: "Henry Williams",
-      role: "Cyber Secruity & Secretary",
+      role: "Cyber Security & Secretary",
       email: "henry@hacksussex.com",
       githubLink: "https://github.com/Henry-Ash-Williams",
       linkedinLink: "https://www.linkedin.com/in/henry-williams-49b7ab226/"
