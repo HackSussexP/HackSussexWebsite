@@ -3,9 +3,6 @@ import React, { useState } from 'react';
 import AboutSection from './AboutSection';
 
 const HackathonAbout = () => {
-
-    const [hoveredLink, setHoveredLink] = useState(null);
-
     const config = {
         "video": true,
     }
@@ -16,6 +13,18 @@ const HackathonAbout = () => {
         "defaultStyle": { textDecoration: "none", color: "white" },
         "hoverStyle": { textDecoration: "none", color: "var(--teal)" }
     }
+
+    const [hoveredLink, setHoveredLink] = useState(null);
+
+    const defaultStyle = {
+        textDecoration: "none",
+        color: "black"
+    };
+
+    const hoverStyle = {
+        textDecoration: "none",
+        color: "white"
+    };
 
     return (
     <>
@@ -32,6 +41,25 @@ const HackathonAbout = () => {
                 <p>We also ask that you do not bring any nut products because there are attendees with severe allergies.</p>
             </>}
             list={["A laptop with a charger", "HDMI cable (we have monitors that you can use)", "Any peripherals you want to use in a project", "Any necessary hardware or tools, if you plan on working on a project with them", "Water bottle and reusbale cup for hot drinks", "Toiletries and any medication you require"]} />
+            <div className='container row rounded-4 my-2 mb-5 text-center text-dark' style={{backgroundColor: "var(--lime)"}}>
+                <p className='display-6 text-decoration-underline'>Upcoming Train Strikes and Engineering Work</p>
+                <p className='h5 lh-lg'>Please note the following:</p>
+                <ul className='list-group-flush'>
+                <li className='list-group-item'>- There are no trains running between Three Bridges and Brighton on both days of the hackathon.</li>
+                <li className='list-group-item'>- There is a bus replacement service between Three Bridges and Brighton in the early morning and late night Monday 12th to Friday 16th (week before Hackathon).</li>
+                <li className='list-group-item'>- There is a bus replacement service between Haywards Heath/Brighton and Eastbourne Monday 19th to Friday 23rd (week after Hackathon).</li>
+                </ul>
+                <p className='h5'>There are further strikes and engineering work planned around this time so please check with your rail travel provider before travelling.</p>
+                <a
+                style={hoveredLink === true ? hoverStyle : defaultStyle}
+                onMouseEnter={() => setHoveredLink(true)}
+                onMouseLeave={() => setHoveredLink(false)}
+                className="fs-4"
+                href='https://www.southernrailway.com/travel-information/plan-your-journey/planned-engineering-work'
+                target="_blank"
+                rel="noreferrer"
+                >Click here for more information.</a>
+            </div>
             <div className='row d-none d-sm-flex m-3 justify-content-center'>
                 <iframe
                     className="w-100 rounded" 
@@ -113,6 +141,25 @@ const HackathonAbout = () => {
                     allowFullScreen
                     title="Hackathon Video"
                 ></iframe>
+            </div>
+            <div className='container row rounded-4 my-2 mb-5 text-center text-dark' style={{backgroundColor: "var(--lime)"}}>
+                <p className='display-6 text-decoration-underline'>Upcoming Train Strikes and Engineering Work</p>
+                <p className='h5 lh-lg'>Please note the following:</p>
+                <ul className='list-group-flush'>
+                <li className='list-group-item'>- There are no trains running between Three Bridges and Brighton on both days of the hackathon.</li>
+                <li className='list-group-item'>- There is a bus replacement service between Three Bridges and Brighton in the early morning and late night Monday 12th to Friday 16th (week before Hackathon).</li>
+                <li className='list-group-item'>- There is a bus replacement service between Haywards Heath/Brighton and Eastbourne Monday 19th to Friday 23rd (week after Hackathon).</li>
+                </ul>
+                <p className='h5'>There are further strikes and engineering work planned around this time so please check with your rail travel provider before travelling.</p>
+                <a
+                style={hoveredLink === true ? hoverStyle : defaultStyle}
+                onMouseEnter={() => setHoveredLink(true)}
+                onMouseLeave={() => setHoveredLink(false)}
+                className="fs-4"
+                href='https://www.southernrailway.com/travel-information/plan-your-journey/planned-engineering-work'
+                target="_blank"
+                rel="noreferrer"
+                >Click here for more information.</a>
             </div>
             <div className='row d-none d-sm-flex justify-content-evenly m-3 mt-5'>
                 <div className="col mx-3 ms-5">
