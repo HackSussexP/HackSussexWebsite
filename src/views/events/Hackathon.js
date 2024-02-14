@@ -27,7 +27,7 @@ import UoS from './../../assets/SponsorLogos/UoS.png';
 const config = {
   "timer": true,
   "event": false,
-  "schedule": false,
+  "schedule": true,
   "sponsors": true,
   "date": "Feb 17, 2024, 0:0:0",
   "title": "2024 Hackathon",
@@ -40,46 +40,91 @@ var schedule = {
     {
       time: "10:00",
       event: "Registration Opens",
-      location: "Chichester Lecture Theatre",
+      location: "Chichester 1",
     },
     {
-      time: "11:00 - 12:00",
+      time: "11:00",
       event: "Opening Ceremony",
-      location: "Chichester Lecture Theatre",
+      location: "Chichester 1 Lecture Theatre",
     },
     {
       time: "12:00",
       event: "Hacking Begins",
-      location: "The beginning of the journey",
+      location: "Chichester 1 Labs",
     },
     {
       time: "1:00PM",
-      event: "Event 4",
-      location: "Location 1",
+      event: "Lunch",
+      location: "Chichester 1",
+    },
+    {
+      time: "2:00PM",
+      event: "Hasting Direct Event",
+      location: "Chichester 1 Lecture Theatre",
+    },
+    {
+      time: "3:30PM",
+      event: "Roto event",
+      location: "Chichester 1 Lecture Theatre",
+    },
+    {
+      time: "7:00PM",
+      event: "Cup Stacking",
+      location: "Chichester 1 FTL",
+    },
+    {
+      time: "6:30PM",
+      event: "Dinner",
+      location: "Chichester 1 Lecture Theatre",
+    },
+    {
+      time: "10:00PM",
+      event: "Minecraft Games",
+      location: "Chichester 1",
     }
   ],
-  2: [
+  2:[
     {
-      time: "10:00AM",
-      event: "Event 1",
-      location: "Location 1",
+      time: "12:00AM",
+      event: "Midnight Pizza",
+      location: "Chichester 1",
+    },
+    {
+      time: "1:00AM",
+      event: "Movie",
+      location: "Chichester 1 Lecture Theatre",
+    },
+    {
+      time: "8:30AM",
+      event: "Breakfast",
+      location: "Breakfast",
     },
     {
       time: "11:00AM",
-      event: "Event 2",
-      location: "Location 1",
+      event: "Soft Deadline",
+      location: "Chichester 1",
     },
     {
       time: "12:00PM",
-      event: "Event 3",
-      location: "Location 1",
+      event: "Hacking Ends",
+      location: "Chichester 1",
+    },
+    {
+      time: "12:00PM",
+      event: "Lunch",
+      location: "Chichester 1",
     },
     {
       time: "1:00PM",
-      event: "Event 4",
-      location: "Location 1",
+      event: "Presentations",
+      location: "Chichester 1",
+    },
+    {
+      time: "4:00PM",
+      event: "Closing Ceremony",
+      location: "Chichester 1 Lecture Theatre",
     }
-  ],
+  ]
 }
 
 const sponsorData = [
@@ -121,19 +166,6 @@ const codes = [
 ];
 
 const Hackathon = () => {
-
-  const [hoveredLink, setHoveredLink] = useState(null);
-
-  const defaultStyle = {
-    textDecoration: "none",
-    color: "black"
-  };
-
-  const hoverStyle = {
-    textDecoration: "none",
-    color: "white"
-  };
-
   return(
     <>
       <div className="carousel-inner p-0">
@@ -150,7 +182,7 @@ const Hackathon = () => {
             <div className="col-6 d-none d-lg-block">
               <iframe 
                 className="w-100 rounded" 
-                src="https://www.youtube.com/embed/gmKBSb7kbTY" 
+                src="https://www.youtube.com/embed/t4C3swUo0AA?si=PIXr2hwe3q7ghHEk" 
                 style={{ aspectRatio: '16/9', maxWidth: '560px', borderRadius: '15px' }}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen
@@ -164,24 +196,6 @@ const Hackathon = () => {
       {config.timer && <Timer date={config.date} title={config.title} />}
       <HackathonAbout />
       <EventWhereWhen location="University of Sussex, Brighton" date={"17 February 2024"} link={null} />
-      <div className='container-fluid rounded-4 my-2 text-center text-dark' style={{backgroundColor: "var(--lime)"}}>
-        <p className='display-6 text-decoration-underline'>Upcoming Train Strikes and Engineering Work</p>
-        <p className='h5 lh-lg'>Please note the following:</p>
-        <ul className='list-group-flush'>
-          <li className='list-group-item'>- There are no trains running between Three Bridges and Brighton on both days of the hackathon.</li>
-          <li className='list-group-item'>- There is a bus replacement service between Three Bridges and Brighton in the early morning and late night Monday 12th to Friday 16th (week before Hackathon).</li>
-          <li className='list-group-item'>- There is a bus replacement service between Haywards Heath/Brighton and Eastbourne Monday 19th to Friday 23rd (week after Hackathon).</li>
-        </ul>
-        <p className='h5'>There are further strikes and engineering work planned around this time so please check with your rail travel provider before travelling.</p>
-        <a
-          style={hoveredLink === true ? hoverStyle : defaultStyle}
-          onMouseEnter={() => setHoveredLink(true)}
-          onMouseLeave={() => setHoveredLink(false)}
-          className="fs-4"
-          href='https://www.southernrailway.com/travel-information/plan-your-journey/planned-engineering-work'
-          target="_blank"
-        >Click here for more information.</a>
-      </div>
       {config.schedule && <Schedule schedule={schedule} />}
       <Sponsors sponsorData={sponsorData}/>
       <CodesOfConduct links={codes} />
