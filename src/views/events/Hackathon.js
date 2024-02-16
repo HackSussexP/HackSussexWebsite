@@ -29,7 +29,7 @@ const config = {
   "event": false,
   "schedule": true,
   "sponsors": true,
-  "date": "Feb 17, 2024, 0:0:0",
+  "date": "Feb 17, 2024, 10:00:00",
   "title": "2024 Hackathon",
   "tickets": true,
   "url": "https://tickets.hacksussex.com/"
@@ -68,7 +68,7 @@ var schedule = {
       location: "Chichester 1 Lecture Theatre",
     },
     {
-      time: "7:00PM",
+      time: "5:00PM",
       event: "Cup Stacking",
       location: "Chichester 1 FTL",
     },
