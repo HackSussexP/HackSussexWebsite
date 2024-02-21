@@ -120,7 +120,17 @@ const events = [
     "time": "12pm - 2pm",
     "cost": "Free",
     "repeating": true,
-  }
+  },
+  {
+    "image": require("./assets/Gallery/all/a2.jpg"),
+    "title": "Competitive Programming",
+    "description": "Come along to practice solving more advanced questions, twist your brain and prepare for competition!",
+    "location": "Sussex Campus, Chichester I, Meeting Room 2",
+    "date": "2024-02-14",
+    "time": "3pm - 4pm",
+    "cost": "Free",
+    "repeating": true,
+  },
 ]
 
 export default events
