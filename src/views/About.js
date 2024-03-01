@@ -23,6 +23,7 @@ import jamie from '../assets/Committee/jamie.png'
 import elias from '../assets/Committee/elias.png'
 import amyS from '../assets/Committee/amyS.png'
 import keagan from '../assets/Committee/keagan.png'
+import eddie from '../assets/Committee/Eddie.png'
 
 const About = () => {
 
@@ -186,6 +187,14 @@ const About = () => {
       email: "keagan@hacksussex.com",
       githubLink: "https://github.com/KeaganKozlowski",
       linkedinLink: "https://www.linkedin.com/in/keagankozlowski/"
+    },
+    {
+      imageUrl: eddie,
+      name: "Eddie",
+      role: "General Committee",
+      email: "",
+      githubLink: "",
+      linkedinLink: ""
     },
     //amy, eddie, fin, john, keagan
   ];
