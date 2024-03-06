@@ -4,7 +4,6 @@ import styles from './About.module.css';
 import PhotoCard from './../components/PhotoCard'
 
 import jack from '../assets/Committee/jack.png'
-import adnan from '../assets/Committee/adnan.png'
 import amy from '../assets/Committee/amy.jpg'
 import tori from '../assets/Committee/tori.png'
 import anton from '../assets/Committee/anton.png'
@@ -23,6 +22,8 @@ import jamie from '../assets/Committee/jamie.png'
 import elias from '../assets/Committee/elias.png'
 import amyS from '../assets/Committee/amyS.png'
 import keagan from '../assets/Committee/keagan.png'
+import finn from '../assets/Committee/Finn.png'
+import eddie from '../assets/Committee/eddie.png'
 
 const About = () => {
 
@@ -50,14 +51,6 @@ const About = () => {
       email: "charlotte@hacksussex.com",
       githubLink: "https://github.com/Charlotte-R-01134",
       linkedinLink: "https://www.linkedin.com/in/charlotte-richardson-7673a11a2/"
-    },
-    {
-      imageUrl: adnan,
-      name: "Adnan Quisar",
-      role: "Competitive Coding",
-      email: "adnan@hacksussex.com",
-      githubLink: "https://github.com/adnantech",
-      linkedinLink: "https://linkedin.com/in/adnanquisar"
     },
     {
       imageUrl: henry,
@@ -187,7 +180,24 @@ const About = () => {
       githubLink: "https://github.com/KeaganKozlowski",
       linkedinLink: "https://www.linkedin.com/in/keagankozlowski/"
     },
-    //amy, eddie, fin, john, keagan
+    {
+      imageUrl: finn,
+      name: "Finn Hudson",
+      role: "General Committee",
+      email: "",
+      githubLink: "",
+      linkedinLink: ""
+    },
+    
+    {
+      imageUrl: eddie,
+      name: "Eddie Lynch",
+      role: "General Committee",
+      email: "",
+      githubLink: "",
+      linkedinLink: ""
+    },
+    //john, 
   ];
 
   return (
