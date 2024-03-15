@@ -23,6 +23,7 @@ import elias from '../assets/Committee/elias.png'
 import amyS from '../assets/Committee/amyS.png'
 import keagan from '../assets/Committee/keagan.png'
 import finn from '../assets/Committee/Finn.png'
+import eddie from '../assets/Committee/eddie.png'
 
 const About = () => {
 
@@ -181,6 +182,14 @@ const About = () => {
     },
     {
       imageUrl: finn,
+      name: "Finn Hudson",
+      role: "General Committee",
+      email: "",
+      githubLink: "",
+      linkedinLink: ""
+    },
+    {
+      imageUrl: eddie,
       name: "Finn Hudson",
       role: "General Committee",
       email: "",
