@@ -27,6 +27,20 @@ const Timer = (props) => {
       return () => clearInterval(interval);
     }, []);
 
+    // if time has reached 0, don't go negative
+    if (days < 0) {
+        setDays(0)
+    }
+    if (hours < 0) {
+        setHours(0)
+    }
+    if (minutes < 0) {
+        setMinutes(0)
+    }
+    if (seconds < 0) {
+        setSeconds(0)
+    }
+
     return (
         <>
             <div className='container-fluid text-center p-3' style={{backgroundColor: "var(--darker-blue)"}}>

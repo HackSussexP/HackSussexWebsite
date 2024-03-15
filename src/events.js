@@ -93,7 +93,7 @@ const events = [
   },
   {
     "image": require("./assets/events/gamejam23.jpg"),
-    "title": "Game Jam",
+    "title": "Game Jam 2023",
     "description": "Our newest annual event, the HackSussex Gamejam, aims to focus in on the game design, development and publishing scene to allow many of our amazing local studios to share their expertise with our jammers and allow them to flex their skills in game design and development. \n\nMuch like our hackathon, the game jam provides full meals throughout the weekend, allowing teams to focus on their project and produce the best indie games and tools to showcase to the judging panel at the end of the event and take home some amazing prizes.",
     "location": "Sussex Campus - Chichester 1 Building",
     "date": "2023-11-25",
@@ -113,14 +113,34 @@ const events = [
   },
   {
     "image": require("./assets/events/robotics.jpg"),
-    "title": "Robotics (Monday session)",
+    "title": "Robotics (Friday session)",
     "description": "New this year! We are hosting weekly robotics sessions, aimed at introducing students to simple robotics projects. Throughout which you will learn many of the basics of electronic signalling and control. This will cover motors, sensors, micro controller circuitry and more! \n\n Interested in giving it a try? Check out our discord section on robotics and turn up to either of the weekly sessions to get stuck in!",
     "location": "Sussex Campus, John Clifford West building, Room G3",
-    "date": "2024-01-29",
+    "date": "2024-03-22",
     "time": "12pm - 2pm",
     "cost": "Free",
     "repeating": true,
-  }
+  },
+  {
+    "image": require("./assets/Gallery/all/a2.jpg"),
+    "title": "Competitive Programming - O(1)",
+    "description": "Come along to practice solving more advanced questions, twist your brain and prepare for UKIEPC competition!",
+    "location": "Sussex Campus, Chichester I, Meeting Room 2",
+    "date": "2024-02-14",
+    "time": "3pm - 4pm",
+    "cost": "Free",
+    "repeating": true,
+  },
+  {
+    "image": require("./assets/Gallery/coderscup23/cc3.jpg"),
+    "title": "Coders Cup 2024",
+    "description": "HackSussex also run an annual programming competition where all programmers studying at the University of Sussex compete to answer algorithmic coding puzzles. The first stage is a HackerRank competition where you can flex your knowledge of data structures and algorithms to answer as many questions as you can within a week! The next stage is a 8 player knockout competition where you will go toe to toe with other programmers, which will be streamed online. There is a prize pool involved for the winners of the competition.",
+    "location": "Sussex Campus, Chichester I, Meeting Room 2",
+    "date": "2024-05-10",
+    "time": "12pm",
+    "cost": "Free",
+    "repeating": false,
+  },
 ]
 
 export default events

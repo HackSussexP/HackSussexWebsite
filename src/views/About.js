@@ -4,7 +4,6 @@ import styles from './About.module.css';
 import PhotoCard from './../components/PhotoCard'
 
 import jack from '../assets/Committee/jack.png'
-import adnan from '../assets/Committee/adnan.png'
 import amy from '../assets/Committee/amy.jpg'
 import tori from '../assets/Committee/tori.png'
 import anton from '../assets/Committee/anton.png'
@@ -23,7 +22,8 @@ import jamie from '../assets/Committee/jamie.png'
 import elias from '../assets/Committee/elias.png'
 import amyS from '../assets/Committee/amyS.png'
 import keagan from '../assets/Committee/keagan.png'
-import eddie from '../assets/Committee/Eddie.png'
+import finn from '../assets/Committee/Finn.png'
+import eddie from '../assets/Committee/eddie.png'
 
 const About = () => {
 
@@ -53,17 +53,9 @@ const About = () => {
       linkedinLink: "https://www.linkedin.com/in/charlotte-richardson-7673a11a2/"
     },
     {
-      imageUrl: adnan,
-      name: "Adnan Quisar",
-      role: "Competetive Coding",
-      email: "adnan@hacksussex.com",
-      githubLink: "https://github.com/adnantech",
-      linkedinLink: "https://linkedin.com/in/adnanquisar"
-    },
-    {
       imageUrl: henry,
       name: "Henry Williams",
-      role: "Cyber Secruity & Secretary",
+      role: "Cyber Security & Secretary",
       email: "henry@hacksussex.com",
       githubLink: "https://github.com/Henry-Ash-Williams",
       linkedinLink: "https://www.linkedin.com/in/henry-williams-49b7ab226/"
@@ -189,14 +181,23 @@ const About = () => {
       linkedinLink: "https://www.linkedin.com/in/keagankozlowski/"
     },
     {
-      imageUrl: eddie,
-      name: "Eddie",
+      imageUrl: finn,
+      name: "Finn Hudson",
       role: "General Committee",
       email: "",
       githubLink: "",
       linkedinLink: ""
     },
-    //amy, eddie, fin, john, keagan
+    
+    {
+      imageUrl: eddie,
+      name: "Eddie Lynch",
+      role: "General Committee",
+      email: "",
+      githubLink: "",
+      linkedinLink: ""
+    },
+    //john, 
   ];
 
   return (
