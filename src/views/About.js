@@ -190,7 +190,7 @@ const About = () => {
     },
     {
       imageUrl: eddie,
-      name: "Finn Hudson",
+      name: "Eddie Lynch",
       role: "General Committee",
       email: "",
       githubLink: "",
