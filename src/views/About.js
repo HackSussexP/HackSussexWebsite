@@ -23,7 +23,7 @@ import elias from '../assets/Committee/elias.png'
 import amyS from '../assets/Committee/amyS.png'
 import keagan from '../assets/Committee/keagan.png'
 import finn from '../assets/Committee/Finn.png'
-import eddie from '../assets/Committee/eddieL.png'
+import eddie from '../assets/Committee/eddieL.png' 
 
 const About = () => {
 
