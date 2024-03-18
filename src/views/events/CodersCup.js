@@ -39,7 +39,7 @@ const hallOfFameData = [
 const config = {
   "timer": false,
   "event": false,
-  "schedule": false,
+  "schedule": true,
   "sponsors": false,
   "date": "May 1, 2024, 0:0:0",
 }
@@ -47,46 +47,19 @@ const config = {
 var schedule = {
   1: [
     {
-      time: "10:00",
-      event: "Registration Opens",
-      location: "Chichester Lecture Theatre",
+      time: "25th March",
+      event: "Qualifications Open",
+      location: "HackerRank",
     },
     {
-      time: "11:00 - 12:00",
-      event: "Opening Ceremony",
-      location: "Chichester Lecture Theatre",
+      time: "15th April",
+      event: "Qualifications Close",
+      location: "HackerRank",
     },
     {
-      time: "12:00",
-      event: "Hacking Begins",
-      location: "The beginning of the journey",
-    },
-    {
-      time: "1:00PM",
-      event: "Event 4",
-      location: "Location 1",
-    }
-  ],
-  2: [
-    {
-      time: "10:00AM",
-      event: "Event 1",
-      location: "Location 1",
-    },
-    {
-      time: "11:00AM",
-      event: "Event 2",
-      location: "Location 1",
-    },
-    {
-      time: "12:00PM",
-      event: "Event 3",
-      location: "Location 1",
-    },
-    {
-      time: "1:00PM",
-      event: "Event 4",
-      location: "Location 1",
+      time: "10 May",
+      event: "Live Final",
+      location: "Online",
     }
   ],
 }
@@ -146,19 +119,10 @@ const CodersCup = () => {
         </div>
       </div>
       {config.timer && <Timer date={config.date} />}
-      <AboutSection description={<>
-                  <p>
-                  HackSussex also run an annual programming competition where all programmers studying at the University of Sussex compete to 
-                  answer algorithmic coding puzzles. The first stage is a HackerRank competition where you can flex your knowledge of data 
-                  structures and algorithms to answer as many questions as you can within a week! The next stage is a 8 player knockout competition
-                   where you will go toe to toe with other programmers, which will be streamed online. There is a prize pool involved for the 
-                   winners of the competition.
-                  </p>
-                  </>}
-                  list={[]} />
+      <AboutSection description={[`Join us once again for our annual programming competition, the Coders Cup! Livestreamed from the campus studio we bring you a number of experienced seriosu programmers battling each other to see who is the best competitive programmer that sussex can offer.`, `Want to come watch for yourself? This event will be livestreamed on our youtube and a small number of seats will be available in the studio on the day for friends and family of our competitors.`, ]}/>
       <EventWhereWhen location="University of Sussex, Brighton" date={config.timer === true ? config.date : null} link={null} />
-      {config.schedule && <Schedule schedule={schedule} />}
-      {/* <Sponsors sponsorData={sponsorData}/> */}
+      {config.schedule && <Schedule schedule={schedule} multi_day={false} />}
+      {config.sponsors && <Sponsors sponsorData={sponsorData}/>}
       <HallOfFame data={hallOfFameData} />
     </>
   );
