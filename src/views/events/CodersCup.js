@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import CodersCupBackground from './../../assets/index-carousel/coderscup-background.png';
 import CodersCupLogo from './../../assets/coders-cup-logo-white-23.png';
@@ -41,6 +42,7 @@ const config = {
   "event": false,
   "schedule": true,
   "sponsors": false,
+  "open": false,
   "date": "May 1, 2024, 0:0:0",
 }
 
@@ -93,6 +95,19 @@ const sponsorData = [
 ];
 
 const CodersCup = () => {
+
+  const [hoveredLink, setHoveredLink] = useState(false);
+
+  const defaultStyle = {
+      textDecoration: "none",
+      color: "white"
+  };
+
+  const hoverStyle = {
+      textDecoration: "none",
+      color: "var(--teal)"
+  };
+
   return (
     <>
       <div className="carousel-inner p-0">
@@ -124,6 +139,9 @@ const CodersCup = () => {
       {config.schedule && <Schedule schedule={schedule} multi_day={false} />}
       {config.sponsors && <Sponsors sponsorData={sponsorData}/>}
       <HallOfFame data={hallOfFameData} />
+      {config.open && <div className='container-fluid d-flex justify-content-center'> {/* Awaiting lik to competition */}
+        <Link className='rounded text-center display-2 p-3' to={"/events"} style={hoveredLink === true ? hoverStyle : defaultStyle} onMouseEnter={() => setHoveredLink(true)} onMouseLeave={() => setHoveredLink(false)}>Want to take part?</Link>
+      </div>}
     </>
   );
 }
