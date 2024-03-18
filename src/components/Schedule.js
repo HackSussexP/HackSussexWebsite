@@ -2,6 +2,7 @@ import React, { useState } from "react"
 
 const Schedule = (props) => {
   const schedule = props.schedule
+  const multi_day = false
 
   const days = Object.keys(schedule).length
   
@@ -17,13 +18,13 @@ const Schedule = (props) => {
         <h1 className="display-3">Schedule</h1>
       </div>
       {/* days buttons */}
-      <div className="container-fluid p-3 text-center justify-content-center">
+      {multi_day && <div className="container-fluid p-3 text-center justify-content-center">
         {Array.from(Array(days).keys()).map((day, index) => {
           return (
             <button className={`btn schedule mx-2 fs-3 ${activeDay === index+1 ? 'active' : ''}`} onClick={() => changeDay(index+1)}>Day {index+1}</button>
           )
         })}
-      </div>
+      </div>}
       {/* schedule */}
       <div className="container-fluid p-3 mb-5" id="schedule">
         <div className="row">
