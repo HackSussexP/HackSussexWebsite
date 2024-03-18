@@ -38,12 +38,13 @@ const hallOfFameData = [
 ];
 
 const config = {
-  "timer": false,
+  "timer": true,
   "event": false,
   "schedule": true,
   "sponsors": false,
   "open": false,
-  "date": "May 1, 2024, 0:0:0",
+  "date": "May 10, 2024, 12:0:0",
+  "title": "Coders Cup 2024",
 }
 
 var schedule = {
@@ -133,7 +134,7 @@ const CodersCup = () => {
             </div>
         </div>
       </div>
-      {config.timer && <Timer date={config.date} />}
+      {config.timer && <Timer date={config.date} title={config.title} />}
       <AboutSection description={[`Join us once again for our annual programming competition, the Coders Cup! Livestreamed from the campus studio we bring you a number of experienced seriosu programmers battling each other to see who is the best competitive programmer that sussex can offer.`, `Want to come watch for yourself? This event will be livestreamed on our youtube and a small number of seats will be available in the studio on the day for friends and family of our competitors.`, ]}/>
       <EventWhereWhen location="University of Sussex, Brighton" date={config.timer === true ? config.date : null} link={null} />
       {config.schedule && <Schedule schedule={schedule} multi_day={false} />}
