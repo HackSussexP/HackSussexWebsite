@@ -2,7 +2,7 @@ import React, { useState } from "react"
 
 const Schedule = (props) => {
   const schedule = props.schedule
-  const multi_day = false
+  const multi_day = props.multi_day
 
   const days = Object.keys(schedule).length
   
