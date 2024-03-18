@@ -94,6 +94,11 @@ const Navbar = (props) => {
                       Robotics
                     </Link>
                   </li>
+                  <li>
+                    <Link className="dropdown-item" to="/events/competitiveProgramming" onClick={closeNavbar}>
+                      Competitive Programming
+                    </Link>
+                  </li>
                   <li className="dropdown-divider"></li>
                   <li>
                     <Link className="dropdown-item" to="/events" onClick={closeNavbar}>
