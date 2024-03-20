@@ -118,8 +118,13 @@ const Navbar = (props) => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link px-5" to="https://hacksussex.square.site/" onClick={closeNavbar}>
+                <Link className="nav-link px-5" to="https://hacksussex.square.site/" target="_blank" onClick={closeNavbar}>
                   Merch Store
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link px-5" to="https://www.instagram.com/minesocsussex/" target="_blank" onClick={closeNavbar}>
+                  MineSoc
                 </Link>
               </li>
             </ul>
