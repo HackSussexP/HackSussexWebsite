@@ -42,7 +42,7 @@ const config = {
   "event": false,
   "schedule": true,
   "sponsors": false,
-  "open": false,
+  "open": true,
   "date": "May 10, 2024, 12:0:0",
   "title": "Coders Cup 2024",
 }
@@ -101,11 +101,13 @@ const CodersCup = () => {
 
   const defaultStyle = {
       textDecoration: "none",
+      backgroundColor: "var(--dark-gunmetal)",
       color: "white"
   };
 
   const hoverStyle = {
       textDecoration: "none",
+      backgroundColor: "var(--dark-gunmetal)",
       color: "var(--teal)"
   };
 
@@ -141,7 +143,7 @@ const CodersCup = () => {
       {config.sponsors && <Sponsors sponsorData={sponsorData}/>}
       <HallOfFame data={hallOfFameData} />
       {config.open && <div className='container-fluid d-flex justify-content-center'> {/* Awaiting lik to competition */}
-        <Link className='rounded text-center display-2 p-3' to={"/events"} style={hoveredLink === true ? hoverStyle : defaultStyle} onMouseEnter={() => setHoveredLink(true)} onMouseLeave={() => setHoveredLink(false)}>Want to take part?</Link>
+        <Link className='rounded text-center display-2 p-3' to={"https://www.hackerrank.com/coders-cup-2024-qualifiers"} target={"_blank"} style={hoveredLink === true ? hoverStyle : defaultStyle} onMouseEnter={() => setHoveredLink(true)} onMouseLeave={() => setHoveredLink(false)}>Want to take part?</Link>
       </div>}
     </>
   );
