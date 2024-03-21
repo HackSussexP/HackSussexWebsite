@@ -139,12 +139,12 @@ const CodersCup = () => {
       {config.timer && <Timer date={config.date} title={config.title} />}
       <AboutSection description={[`Join us once again for our annual programming competition, the Coders Cup! Livestreamed from the campus studio we bring you a number of experienced seriosu programmers battling each other to see who is the best competitive programmer that sussex can offer.`, `Want to come watch for yourself? This event will be livestreamed on our youtube and a small number of seats will be available in the studio on the day for friends and family of our competitors.`, ]}/>
       <EventWhereWhen location="University of Sussex, Brighton" date={config.timer === true ? config.date : null} link={null} />
+      {config.open && <div className='container-fluid d-flex justify-content-center my-3'> {/* Awaiting lik to competition */}
+        <Link className='rounded text-center display-2 p-3' to={"https://www.hackerrank.com/coders-cup-2024-qualifiers"} target={"_blank"} style={hoveredLink === true ? hoverStyle : defaultStyle} onMouseEnter={() => setHoveredLink(true)} onMouseLeave={() => setHoveredLink(false)}>Want to take part?</Link>
+      </div>}
       {config.schedule && <Schedule schedule={schedule} multi_day={false} />}
       {config.sponsors && <Sponsors sponsorData={sponsorData}/>}
       <HallOfFame data={hallOfFameData} />
-      {config.open && <div className='container-fluid d-flex justify-content-center'> {/* Awaiting lik to competition */}
-        <Link className='rounded text-center display-2 p-3' to={"https://www.hackerrank.com/coders-cup-2024-qualifiers"} target={"_blank"} style={hoveredLink === true ? hoverStyle : defaultStyle} onMouseEnter={() => setHoveredLink(true)} onMouseLeave={() => setHoveredLink(false)}>Want to take part?</Link>
-      </div>}
     </>
   );
 }
