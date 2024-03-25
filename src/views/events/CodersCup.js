@@ -113,9 +113,6 @@ const CodersCup = () => {
 
   return (
     <>
-    {config.open && <div className='container-fluid d-flex justify-content-center my-3'> {/* Awaiting lik to competition */}
-      <Link className='rounded text-center display-5 p-3' to={"https://www.hackerrank.com/coders-cup-2024-qualifiers"} target={"_blank"} style={hoveredLink === true ? hoverStyle : defaultStyle} onMouseEnter={() => setHoveredLink(true)} onMouseLeave={() => setHoveredLink(false)}>Join the qualifiers</Link>
-    </div>}
       <div className="carousel-inner p-0">
       <img src={CodersCupBackground} className="d-block w-100 h-100 img-fluid splash" alt='Background' />
         <div className="carousel-caption">
@@ -138,6 +135,9 @@ const CodersCup = () => {
             </div>
         </div>
       </div>
+ {config.open && <div className='container-fluid d-flex justify-content-center mt-3'> {/* Awaiting lik to competition */}
+      <Link className=   'rounded text-center display-4 p-3' to={"https://www.hackerrank.com/coders-cup-2024-qualifiers"} target={"_blank"} style={hoveredLink === true ? hoverStyle : defaultStyle} onMouseEnter={() => setHoveredLink(true)} onMouseLeave={() => setHoveredLink(false)}>Join the qualifiers</Link>
+    </div>}
       {/* {config.timer && <Timer date={config.date} title={config.title} />} */}
       <AboutSection description={[`Join us once again for our annual programming competition, the Coders Cup! Livestreamed from the campus studio we bring you a number of experienced seriosu programmers battling each other to see who is the best competitive programmer that sussex can offer.`, `Want to come watch for yourself? This event will be livestreamed on our youtube and a small number of seats will be available in the studio on the day for friends and family of our competitors.`, ]}/>
       <EventWhereWhen location="University of Sussex, Brighton" date={config.timer === true ? config.date : null} link={null} />
