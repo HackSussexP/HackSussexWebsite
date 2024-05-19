@@ -122,7 +122,7 @@ const events = [
     "repeating": true,
   },
   {
-    "image": require("./assets/Gallery/coderscup24/cc3.jpg"),
+    "image": require("./assets/Gallery/coderscup23/cc3.jpg"),
     "title": "Coders Cup 2024",
     "description": "HackSussex also run an annual programming competition where all programmers studying at the University of Sussex compete to answer algorithmic coding puzzles. The first stage is a HackerRank competition where you can flex your knowledge of data structures and algorithms to answer as many questions as you can within a week! The next stage is a 8 player knockout competition where you will go toe to toe with other programmers, which will be streamed online. There is a prize pool involved for the winners of the competition.",
     "location": "MTL, UNiversity of Sussex",

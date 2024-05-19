@@ -125,7 +125,7 @@ const CodersCup = () => {
               <div className="col-6 d-none d-lg-block">
                 <iframe 
                   className="w-100 rounded" 
-                  src="https://www.youtube.com/embed/yPifHEfu4Qs?si=-9kvdIJc05nbL4IY" 
+                  src="https://www.youtube.com/embed/VixYfv0UEyE?si=e42MsxP4N-bxhGQe" 
                   style={{ aspectRatio: '16/9', maxWidth: '560px', borderRadius: '15px' }}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                   allowFullScreen
