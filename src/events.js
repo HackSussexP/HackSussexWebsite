@@ -49,7 +49,7 @@ const events = [
     "date": "2024-01-31",
     "time": "6pm - 8pm",
     "cost": "Free",
-    "repeating": true,
+    "repeating": false,
   },
   {
     "image": require("./assets/events/dylan-beatie.jpg"),
@@ -79,7 +79,7 @@ const events = [
     "date": "2024-02-07",
     "time": "2pm",
     "cost": "Free",
-    "repeating": true,
+    "repeating": false,
   },
   {
     "image": require("./assets/events/cybersec.jpg"),
@@ -89,7 +89,7 @@ const events = [
     "date": "2024-02-07",
     "time": "5pm",
     "cost": "Free",
-    "repeating": true,
+    "repeating": false,
   },
   {
     "image": require("./assets/events/gamejam23.jpg"),
@@ -109,7 +109,7 @@ const events = [
     "date": "2024-02-07",
     "time": "12pm - 2pm",
     "cost": "Free",
-    "repeating": true,
+    "repeating": false,
   },
   {
     "image": require("./assets/Gallery/all/a2.jpg"),
@@ -119,7 +119,7 @@ const events = [
     "date": "2024-02-14",
     "time": "3pm - 4pm",
     "cost": "Free",
-    "repeating": true,
+    "repeating": false,
   },
   {
     "image": require("./assets/Gallery/coderscup23/cc3.jpg"),
@@ -150,6 +150,16 @@ const events = [
     "time": "6pm - 8pm",
     "cost": "Free",
     "repeating": false,
+  },
+  {
+    "image": require("./assets/Committee_happy.JPG"),
+    "title": "Summer break",
+    "description": "Following a long busy year full of amazing events, our committee are taking a well earned break.",
+    "location": "We will see you in September",
+    "date": "2024-09-01",
+    "time": "All day, every day",
+    "cost": "Free",
+    "repeating": true,
   },
 ]
 
