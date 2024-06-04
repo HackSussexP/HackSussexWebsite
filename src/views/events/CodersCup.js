@@ -15,8 +15,15 @@ import HallOfFame from '../../components/HallOfFame';
 import patrick from '../../assets/patrick.png';
 import guy from '../../assets/guy.png';
 import jude from '../../assets/jude.png';
+import layton from '../../assets/layton.jpg'
 
 const hallOfFameData = [
+  {
+    imageUrl: layton,
+    title: "Layton",
+    subheading: "2024 winner and beater of last years's winner Patrick in a bonus round",
+    paragraph: "A final year CS student and champion who proved his worth in this years competition. Layton can commonly be found due to his big orange hair and height of 6'2. When not being super friendly, Layton can be found working on coursework and helping other students with their assignments."
+  },
   {
     imageUrl: patrick,
     title: "Patrick",
