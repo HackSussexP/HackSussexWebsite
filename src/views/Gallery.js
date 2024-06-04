@@ -69,6 +69,30 @@ import gj11 from '../assets/Gallery/gamejam23/gj11.jpeg';
 import gj12 from '../assets/Gallery/gamejam23/gj12.jpeg';
 import gj13 from '../assets/Gallery/gamejam23/gj13.jpeg';
 
+import i1 from '../assets/Gallery/hackathon24/i1.jpg';
+import i2 from '../assets/Gallery/hackathon24/i2.jpg';
+import i3 from '../assets/Gallery/hackathon24/i3.jpg';
+import i4 from '../assets/Gallery/hackathon24/i4.jpg';
+import i5 from '../assets/Gallery/hackathon24/i5.jpg';
+import i6 from '../assets/Gallery/hackathon24/i6.jpg';
+import i7 from '../assets/Gallery/hackathon24/i7.jpg';
+import i8 from '../assets/Gallery/hackathon24/i8.jpg';
+import i9 from '../assets/Gallery/hackathon24/i9.jpg';
+import i10 from '../assets/Gallery/hackathon24/i10.jpg';
+import i11 from '../assets/Gallery/hackathon24/i11.jpg';
+import i12 from '../assets/Gallery/hackathon24/i12.jpg';
+import i13 from '../assets/Gallery/hackathon24/i13.jpg';
+import i14 from '../assets/Gallery/hackathon24/i14.jpg';
+import i15 from '../assets/Gallery/hackathon24/i15.jpg';
+import i17 from '../assets/Gallery/hackathon24/i17.jpg';
+import i18 from '../assets/Gallery/hackathon24/i18.jpg';
+import i19 from '../assets/Gallery/hackathon24/i19.jpg';
+import i20 from '../assets/Gallery/hackathon24/i20.jpg';
+import i21 from '../assets/Gallery/hackathon24/i21.jpg';
+import i22 from '../assets/Gallery/hackathon24/i22.jpg';
+import i23 from '../assets/Gallery/hackathon24/i23.jpg';
+import i24 from '../assets/Gallery/hackathon24/i24.jpg';
+
 const Gallery = () => {
   const events = [
     { id: 'all', name: 'All' },
@@ -77,6 +101,8 @@ const Gallery = () => {
     { id: 'gamejam23', name: 'GameJam 2023'},
     { id: 'codesocials', name: 'Code Socials' },
     { id: 'workshops', name: 'Workshops' },
+    { id: 'coderscup24', name: 'Coders Cup 2024' },
+    { id: 'hackathon24', name: 'Hackathon 2024' }
   ];
 
   const images = [
@@ -148,11 +174,36 @@ const Gallery = () => {
     { id: 61, url: gj12, description: 'LECTURER RON GRAU TESTING OUT THE ROTOVR CHAIRS SPIN WITH A STEERING WHEEL', event: 'gamejam23' },
     { id: 62, url: gj13, description: 'ONE OF COMMITTEE THE NIGHT BEFORE HACKSUSSEX 2023 PAINFULLY ORGANISING THE LANYARDS FOR THE MORNING', event: 'gamejam23' },
 
+    { id: 63, url: i1, description: 'ONE OF THE WINNING GROUPS CELEBRATING THEIR ACHIVEMENTS', event: 'hackathon24' },
+    { id: 64, url: i2, description: 'LOCAL BCS CHAPTER LEADER, BLAY WHITBY, PREPARING A SPONSOR VIDEO OF THE EVENT', event: 'hackathon24' },
+    { id: 65, url: i3, description: 'HEAD OF SCHOOL OF E&I IAN MACKIE OPENING THE HACKATHON', event: 'hackathon24' },
+    { id: 66, url: i4, description: 'QUEUE OF HUNGRY ATTENDEES GETTING FOOD FROM LOCAL CATERER HAPPYGOSOUVLAKI', event: 'hackathon24' },
+    { id: 67, url: i5, description: 'A PAIR OF ATTENDEES DEVELOPING A ROBOTIC HAND', event: 'hackathon24' },
+    { id: 68, url: i6, description: 'LOCAL CATERER OUI CREPERIE SET UP AT THE EVENT', event: 'hackathon24' },
+    { id: 69, url: i7, description: 'COMMITTEE MEMBERS, VOLUNTEERS AND HACKATHONS UK REPRESENTATIVE HOLLY TAKING PART IN KARAOKE AND JUST DANCE', event: 'hackathon24' },
+    { id: 70, url: i8, description: 'EVENT ATTENDEES WAITING FOR THE OPENING CEREMONY TO BEGIN', event: 'hackathon24' },
+    { id: 71, url: i9, description: 'A TEAM OF SUSSEX STUDENTS DEMNSTRATING THEIR PROJECT', event: 'hackathon24' },
+    { id: 72, url: i10, description: 'AN ATENDEE AND COMMITTEE MEMBER LOOKING VERY EXCITED FOR THE EVENT TO BEGIN', event: 'hackathon24' },
+    { id: 73, url: i11, description: 'THE AUDIENCE OF OUR OPENING CEREMONY', event: 'hackathon24' },
+    { id: 74, url: i12, description: 'THE MESSY DESK OF A TEAM WHO HAD DEVELOPED A SEMIPHORE TRANSMISSION SCHEME', event: 'hackathon24' },
+    { id: 75, url: i13, description: 'THE TALLEST TOWER PRODUCED DURING THE CUP STACKING COMPETITION', event: 'hackathon24' },
+    { id: 76, url: i14, description: 'MAYHEM AS PAIRS FROM ALL OVER THE EVENT ATTEMPT TO MAKE CUP STACKS AND DESTROY OTHER PAIRS STACKS AT THE SAME TIME', event: 'hackathon24' },
+    { id: 77, url: i15, description: 'A TRIO OF ATTENDEES LOOKING VERY RELAXED DURING THE HACKATHON', event: 'hackathon24' },
+    { id: 79, url: i17, description: 'PIZZA ALWAYS MAKES THINGS BETTER', event: 'hackathon24' },
+    { id: 80, url: i18, description: 'SOCIETY PRESIDENT JACK HELPER A TEAM WITH THEIR IDEAS', event: 'hackathon24' },
+    { id: 81, url: i19, description: 'EVEN IN THE MIDDLE OF THE NIGHT, SOME ATTENDEES ARE STILL FULL OF ENERGY', event: 'hackathon24' },
+    { id: 82, url: i20, description: 'HACKATHONS UK REPRESENTATIVE HOLLY PREPARING FOR THE CUP STACKING COMPETITION', event: 'hackathon24' },
+    { id: 83, url: i21, description: 'AN ATENDEE HARD AT WORK ON THEIR PROJECT', event: 'hackathon24' },
+    { id: 84, url: i22, description: 'A TEAM MEMBER BRIEFING THEIR TEAM MATES ON THE PRIZE TRACKS AT THE EVENT', event: 'hackathon24' },
+    { id: 85, url: i23, description: 'THE PRIDE FELT BY THIS TEAM FOR WINNING A TRACK IS OBVIOUS', event: 'hackathon24' },
+    { id: 86, url: i24, description: 'THE TRUE MAIN PRIZE OF THE EVENT FROM HACKATHONS UK, A BLAHAJ', event: 'hackathon24' },
+
   ];
   
   const videos = [
     { event: 'hackathon23', videoId: 'gmKBSb7kbTY' },
-    { event: 'coderscup23', videoId: 'yPifHEfu4Qs?si=-9kvdIJc05nbL4IY' }
+    { event: 'coderscup23', videoId: 'yPifHEfu4Qs?si=-9kvdIJc05nbL4IY' },
+    { event: 'coderscup24', videoId: 'VixYfv0UEyE?si=jeuLHFM450D_AHO9' }
   ];
 
   return (
