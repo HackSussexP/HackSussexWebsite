@@ -133,7 +133,7 @@ var schedule = {
 const sponsorData = [
   {
     title: "Gold Sponsor",
-    size: "100%",
+    size: "50%",
     logos: [
       { src: RotoVRLogo, url: "https://www.rotovr.com" }
     ]
@@ -147,7 +147,7 @@ const sponsorData = [
   // },
   {
     title: "Silver Sponsors",
-    size: "80%",
+    size: "30%",
     logos: [
       { src: GitHubLogo, url: "https://github.com" },
       { src: BCSLogo, url: "https://www.bcs.org" }
@@ -155,14 +155,14 @@ const sponsorData = [
   },
   {
     title: "Bronze Sponsors",
-    size: "80%",
+    size: "30%",
     logos: [
       { src: TeachFirstLogo, url: "https://www.teachfirst.org.uk" },
     ]
   },
   {
     title: "Partners",
-    size: "50%",
+    size: "30%",
     logos: [
       { src: SussexLogo, url: "https://www.sussex.ac.uk" },
       { src: HackathonsUKLogo, url: "https://hackathons.org.uk" },
@@ -171,7 +171,7 @@ const sponsorData = [
   },
   {
     title: "Supporters",
-    size: "80%",
+    size: "20%",
     logos: [
       { src: RedbullLogo, url: "https://www.redbull.com" },
     ]

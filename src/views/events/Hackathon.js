@@ -31,7 +31,7 @@ const config = {
   "sponsors": true,
   "date": "Feb 17, 2024, 10:00:00",
   "title": "2024 Hackathon",
-  "tickets": true,
+  "tickets": false,
   "url": "https://tickets.hacksussex.com/"
 }
 
