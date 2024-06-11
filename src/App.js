@@ -95,7 +95,7 @@ function RouterReload() {
         <Route path="/events/robotics" element={<Robotics />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/faq" element={<FAQ />} />
-        {/* <Route path="/testing" element={<Testing />} /> */}
+        <Route path="/testing" element={<Testing />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
       <Footer />
