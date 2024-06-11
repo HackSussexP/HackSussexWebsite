@@ -39,6 +39,18 @@ const Testing = () => {
   const [selectedEvent, setSelectedEvent] = useState("all")
   const [selectedYear, setSelectedYear] = useState(null)
 
+  const eventDisplayNames = {
+    "all": "All",
+    "coderscup": "Coders' Cup",
+    "codesocials": "Code Socials",
+    "gamejam": "Game Jam",
+    "hackathon": "Hackathon",
+    "leetcoding": "Leetcoding",
+    "misc": "Miscellaneous",
+    "pwnsussex": "PwnSussex",
+    "robotics": "Robotics"
+  }
+
   const getData = async () => {
     const octokit = new Octokit();
     const response = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
@@ -127,7 +139,7 @@ const Testing = () => {
                     setSelectedYear(null); // Reset selected year when a new event is selected
                   }}
                 >
-                  {event}
+                  {eventDisplayNames[event] || event}
                 </button>
               </div>
             )
@@ -156,11 +168,23 @@ const Testing = () => {
 
       <div className="container mt-4">
         <div className="row">
-          {images.map(image => (
-            <div key={image} className="col-md-4 mb-4" style={containerStyle}>
-              <img src={`https://github.com/HackSussexP/public/blob/main/gallery/${image}?raw=true`} style={coverImageStyle} alt="test" />
-            </div>
-          ))}
+          {images.map(image => {
+            // Extract event and year from the image path
+            const imagePathParts = image.split('/');
+            const event = imagePathParts[0];
+            const year = imagePathParts[1];
+
+            // Check if the image matches the selected event and year
+            if ((selectedEvent === "all" || event === events[selectedEvent]) && (selectedYear === null || year === selectedYear)) {
+              return (
+                <div key={image} className="col-md-4 mb-4" style={containerStyle}>
+                  <img src={`https://github.com/HackSussexP/public/blob/main/gallery/${image}?raw=true`} style={coverImageStyle} alt="test" />
+                </div>
+              );
+            } else {
+              return null; // Render nothing if the image doesn't match the selected event and year
+            }
+          })}
         </div>
       </div>
     </>
@@ -168,11 +192,3 @@ const Testing = () => {
 }
 
 export default Testing;
-
-{/* <div className="row">
-        {images.map(image => (
-          <div key={image} className="col-md-4 mb-4" style={containerStyle}>
-            <img src={`https://github.com/HackSussexP/public/blob/main/gallery/${image}?raw=true`} style={coverImageStyle} alt="test" />
-          </div>
-        ))}
-      </div> */}
