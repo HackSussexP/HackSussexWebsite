@@ -242,3 +242,19 @@ html, body {
 .img-sponsors {
   object-fit: contain !important;
 }
+
+/* Blur the background */
+.modal-backdrop.show {
+  backdrop-filter: blur(50px);
+  background-color: rgba(0, 0, 0, 1);
+}
+
+#modalImage {
+  width: 100%;
+  height: auto;
+}
+
+.modal-body {
+  padding: 0;
+  box-shadow: 0 0 10px var(--darker-blue);
+}
