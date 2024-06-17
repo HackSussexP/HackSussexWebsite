@@ -1,44 +1,44 @@
-import React, { useEffect, useState } from 'react';
-import { Octokit } from 'octokit';
+import React, { useEffect, useState } from 'react'
+import { Octokit } from 'octokit'
 import placeholderImage from '../assets/Gallery Placeholder.png'
 
 const Testing = () => {
   const containerStyle = {
     height: '200px',
     overflow: 'hidden',
-  };
+  }
 
   const coverImageStyle = {
     height: '100%',
     width: '100%',
     objectFit: 'cover',
     cursor: 'pointer',
-  };
+  }
 
   const largeButtonStyle = {
     border: 'none',
     transition: '0.3s ease',
     textDecoration: 'none !important',
-  };
+  }
 
   const activeButtonStyle = {
     ...largeButtonStyle,
     backgroundColor: 'var(--electric-green)',
-  };
+  }
 
   const filterButtonStyle = {
     backgroundColor: 'var(--light-blue)',
     border: 'none',
     boxShadow: 'none',
-  };
+  }
 
-  const [images, setImages] = useState([]);
-  const [events, setEvents] = useState([]);
-  const [years, setYears] = useState([]);
-  const [selectedEvent, setSelectedEvent] = useState("all");
-  const [selectedYear, setSelectedYear] = useState(null);
-  const [modalImageSrc, setModalImageSrc] = useState('');
-  const url = "https://cdn.jsdelivr.net/gh/HackSussexP/public_assets@main/assets/Gallery/";
+  const [images, setImages] = useState([])
+  const [events, setEvents] = useState([])
+  const [years, setYears] = useState([])
+  const [selectedEvent, setSelectedEvent] = useState("all")
+  const [selectedYear, setSelectedYear] = useState(null)
+  const [modalImageSrc, setModalImageSrc] = useState('')
+  const url = "https://cdn.jsdelivr.net/gh/HackSussexP/public_assets@main/assets/Gallery/"
 
   const eventDisplayNames = {
     all: "All",
@@ -50,68 +50,72 @@ const Testing = () => {
     misc: "Miscellaneous",
     pwnsussex: "PwnSussex",
     robotics: "Robotics",
-  };
+  }
 
   const getData = async () => {
-    const octokit = new Octokit();
+    const octokit = new Octokit()
     const response = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
       owner: 'HackSussexP',
       repo: 'public_assets',
       path: 'assets',
-    });
+    })
 
     // find the gallery folder
-    const res = response.data.filter((item) => item.name === "Gallery");
+    const res = response.data.filter((item) => item.name === "Gallery")
 
     const children = await octokit.request('GET /repos/{owner}/{repo}/git/trees/{tree_sha}?recursive=1', {
       owner: 'HackSussexP',
       repo: 'public_assets',
       tree_sha: res[0].sha,
-    });
+    })
 
-    const path_list = {};
+    const path_list = {}
     children.data.tree.forEach((item) => {
       if (item.type === "tree") {
-        const paths = item.path.split('/');
-        let current = path_list;
+        const paths = item.path.split('/')
+        let current = path_list
 
         paths.forEach((path) => {
           if (!current[path]) {
-            current[path] = {};
+            current[path] = {}
           }
-          current = current[path];
-        });
+          current = current[path]
+        })
       }
-    });
+    })
 
-    const events = Object.keys(path_list);
-    setEvents(events);
+    const events = Object.keys(path_list)
+    setEvents(events)
 
-    const years = events.map((event) => Object.keys(path_list[event]));
-    setYears(years);
+    const years = events.map((event) => Object.keys(path_list[event]))
+    setYears(years)
 
-    const images_list = children.data.tree.filter((item) => item.type === "blob");
+    const images_list = children.data.tree.filter((item) => item.type === "blob")
 
     const imageUrls = images_list.map((image) => {
       if (image.path) {
-        return image.path;
+        return image.path
       }
-      return null;
-    }).filter(Boolean);
-    setImages(imageUrls);
-  };
+      return null
+    }).filter(Boolean)
+    setImages(imageUrls)
+  }
 
   useEffect(() => {
-    getData();
-  }, []);
+    getData()
+  }, [])
 
   const handleError = (e) => {
-    e.target.src = placeholderImage;
-  };
+    e.target.src = placeholderImage
+    // set style to not be clickable
+    e.target.style.cursor = 'default'
+    e.target.style.pointerEvents = 'none'
+
+  }
 
   const handleShowModal = (imageSrc) => {
-    setModalImageSrc(imageSrc);
-  };
+    setModalImageSrc(imageSrc)
+  }
 
   return (
     <>
@@ -122,7 +126,11 @@ const Testing = () => {
               <button
                 className="btn w-100 btn-blue"
                 style={selectedEvent === "all" ? activeButtonStyle : largeButtonStyle}
-                onClick={() => setSelectedEvent("all")}
+                onClick={() => {
+                    setSelectedEvent("all")
+                    setSelectedYear(null)
+                  }
+                }
               >
                 All
               </button>
@@ -135,8 +143,8 @@ const Testing = () => {
                   className="btn w-100 btn-blue"
                   style={selectedEvent === index ? activeButtonStyle : largeButtonStyle}
                   onClick={() => {
-                    setSelectedEvent(index);
-                    setSelectedYear(null);
+                    setSelectedEvent(index)
+                    setSelectedYear(null)
                   }}
                 >
                   {eventDisplayNames[event] || event}
@@ -174,9 +182,9 @@ const Testing = () => {
       <div className="container mt-4">
         <div className="row">
           {images.map((image) => {
-            const imagePathParts = image.split('/');
-            const event = imagePathParts[0];
-            const year = imagePathParts[1];
+            const imagePathParts = image.split('/')
+            const event = imagePathParts[0]
+            const year = imagePathParts[1]
 
             if ((selectedEvent === "all" || event === events[selectedEvent]) && (selectedYear === null || year === selectedYear)) {
               return (
@@ -192,9 +200,9 @@ const Testing = () => {
                     onClick={() => handleShowModal(`${url}/${image}`)}
                   />
                 </div>
-              );
+              )
             }
-            return null;
+            return null
           })}
         </div>
       </div>
@@ -203,13 +211,13 @@ const Testing = () => {
         <div className="modal-dialog modal-dialog-centered modal-xl custom-modal">
           <div className="modal-content">
             <div className="modal-body rounded">
-              <img id="modalImage" className="imf-fluid rounded" src={modalImageSrc} alt="Gallery" onError={handleError} />
+              <img id="modalImage" className="imf-fluid rounded" src={modalImageSrc} alt="Gallery" />
             </div>
           </div>
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Testing;
+export default Testing
