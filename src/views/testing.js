@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Octokit } from 'octokit';
+import placeholderImage from '../assets/Gallery Placeholder.png'
 
 const Testing = () => {
-
   const containerStyle = {
     height: '200px',
-    overflow: 'hidden'
+    overflow: 'hidden',
   };
 
   const coverImageStyle = {
     height: '100%',
     width: '100%',
     objectFit: 'cover',
-    cursor: 'pointer'
+    cursor: 'pointer',
   };
 
   const largeButtonStyle = {
@@ -29,7 +29,7 @@ const Testing = () => {
   const filterButtonStyle = {
     backgroundColor: 'var(--light-blue)',
     border: 'none',
-    boxShadow: 'none'
+    boxShadow: 'none',
   };
 
   const [images, setImages] = useState([]);
@@ -37,40 +37,45 @@ const Testing = () => {
   const [years, setYears] = useState([]);
   const [selectedEvent, setSelectedEvent] = useState("all");
   const [selectedYear, setSelectedYear] = useState(null);
+  const [modalImageSrc, setModalImageSrc] = useState('');
+  const url = "https://cdn.jsdelivr.net/gh/HackSussexP/public_assets@main/assets/Gallery/";
 
   const eventDisplayNames = {
-    "all": "All",
-    "coderscup": "Coders' Cup",
-    "codesocials": "Code Socials",
-    "gamejam": "Game Jam",
-    "hackathon": "Hackathon",
-    "leetcoding": "Leetcoding",
-    "misc": "Miscellaneous",
-    "pwnsussex": "PwnSussex",
-    "robotics": "Robotics"
+    all: "All",
+    coderscup: "Coders' Cup",
+    codesocials: "Code Socials",
+    gamejam: "Game Jam",
+    hackathon: "Hackathon",
+    leetcoding: "Leetcoding",
+    misc: "Miscellaneous",
+    pwnsussex: "PwnSussex",
+    robotics: "Robotics",
   };
 
   const getData = async () => {
     const octokit = new Octokit();
     const response = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
       owner: 'HackSussexP',
-      repo: 'public',
-      path: ''
+      repo: 'public_assets',
+      path: 'assets',
     });
+
+    // find the gallery folder
+    const res = response.data.filter((item) => item.name === "Gallery");
 
     const children = await octokit.request('GET /repos/{owner}/{repo}/git/trees/{tree_sha}?recursive=1', {
       owner: 'HackSussexP',
-      repo: 'public',
-      tree_sha: response.data[0].sha
+      repo: 'public_assets',
+      tree_sha: res[0].sha,
     });
 
     const path_list = {};
-    children.data.tree.forEach(item => {
+    children.data.tree.forEach((item) => {
       if (item.type === "tree") {
         const paths = item.path.split('/');
         let current = path_list;
 
-        paths.forEach(path => {
+        paths.forEach((path) => {
           if (!current[path]) {
             current[path] = {};
           }
@@ -79,29 +84,20 @@ const Testing = () => {
       }
     });
 
-    let events = [];
-    Object.keys(path_list).forEach(key => {
-      events.push(key);
-    });
+    const events = Object.keys(path_list);
     setEvents(events);
 
-    let years = [];
-    Object.keys(path_list).forEach(key => {
-      let year_list = [];
-      Object.keys(path_list[key]).forEach(year => {
-        year_list.push(year);
-      });
-      years.push(year_list);
-    });
+    const years = events.map((event) => Object.keys(path_list[event]));
     setYears(years);
 
-    const images_list = children.data.tree.filter(item => item.type === "blob");
+    const images_list = children.data.tree.filter((item) => item.type === "blob");
 
-    const imageUrls = images_list.map(image => {
+    const imageUrls = images_list.map((image) => {
       if (image.path) {
         return image.path;
       }
-    });
+      return null;
+    }).filter(Boolean);
     setImages(imageUrls);
   };
 
@@ -110,14 +106,11 @@ const Testing = () => {
   }, []);
 
   const handleError = (e) => {
-    import('../assets/Gallery Placeholder.png').then(src => e.target.src = src.default);
+    e.target.src = placeholderImage;
   };
 
   const handleShowModal = (imageSrc) => {
-    const modalImage = document.getElementById('modalImage');
-    if (modalImage) {
-      modalImage.src = imageSrc;
-    }
+    setModalImageSrc(imageSrc);
   };
 
   return (
@@ -126,7 +119,13 @@ const Testing = () => {
         <div className="row justify-content-center">
           {events.length > 1 && (
             <div className="col-6 col-md-4 col-lg-3 mb-3">
-              <button className="btn w-100 btn-blue" style={selectedEvent === "all" ? activeButtonStyle : largeButtonStyle} onClick={() => setSelectedEvent("all")}>All</button>
+              <button
+                className="btn w-100 btn-blue"
+                style={selectedEvent === "all" ? activeButtonStyle : largeButtonStyle}
+                onClick={() => setSelectedEvent("all")}
+              >
+                All
+              </button>
             </div>
           )}
           {events.map((event, index) => (
@@ -146,18 +145,24 @@ const Testing = () => {
             )
           ))}
         </div>
-        
+
         <hr className="my-4" />
-        
+
         <div className="row justify-content-end">
           <div className="col-auto mb-3">
             <div className="dropdown">
-              <button className="btn text-end btn-blue dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              <button
+                className="btn text-end btn-blue dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 Filter
               </button>
               <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <li><button className="dropdown-item" onClick={() => setSelectedYear(null)}>All</button></li>
-                {years[selectedEvent]?.map(year => (
+                {years[selectedEvent]?.map((year) => (
                   <li key={year}><button className="dropdown-item" onClick={() => setSelectedYear(year)}>{year}</button></li>
                 ))}
               </ul>
@@ -168,7 +173,7 @@ const Testing = () => {
 
       <div className="container mt-4">
         <div className="row">
-          {images.map(image => {
+          {images.map((image) => {
             const imagePathParts = image.split('/');
             const event = imagePathParts[0];
             const year = imagePathParts[1];
@@ -177,33 +182,32 @@ const Testing = () => {
               return (
                 <div key={image} className="col-md-4 mb-4" style={containerStyle}>
                   <img
-                    src={`https://github.com/HackSussexP/public/blob/main/gallery/${image}?raw=true`}
+                    src={`${url}/${image}`}
                     style={coverImageStyle}
                     alt="Gallery"
                     onError={handleError}
                     data-bs-toggle="modal"
                     data-bs-target="#galleryModal"
-                    data-bs-whatever={`https://github.com/HackSussexP/public/blob/main/gallery/${image}?raw=true`}
-                    onClick={() => handleShowModal(`https://github.com/HackSussexP/public/blob/main/gallery/${image}?raw=true`)}
+                    data-bs-whatever={`${url}/${image}`}
+                    onClick={() => handleShowModal(`${url}/${image}`)}
                   />
                 </div>
               );
-            } else {
-              return null;
             }
+            return null;
           })}
         </div>
       </div>
 
-      <div className='modal' tabIndex={-1} id='galleryModal'>
-        <div className='modal-dialog modal-dialog-centered modal-xl custom-modal'>
-            <div className='modal-content'>
-                <div className='modal-body rounded'>
-                    <img id='modalImage' className='imf-fluid rounded' alt='Gallery' />
-                </div>
+      <div className="modal" tabIndex={-1} id="galleryModal">
+        <div className="modal-dialog modal-dialog-centered modal-xl custom-modal">
+          <div className="modal-content">
+            <div className="modal-body rounded">
+              <img id="modalImage" className="imf-fluid rounded" src={modalImageSrc} alt="Gallery" onError={handleError} />
             </div>
+          </div>
         </div>
-    </div>
+      </div>
     </>
   );
 };
