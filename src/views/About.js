@@ -202,8 +202,8 @@ const About = () => {
       name: "Waripmamo-owei Dudafa",
       role: "Web Development",
       email: "wari@hacksussex.com",
-      githubLink: "",
-      linkedinLink: ""
+      githubLink: "https://github.com/Wari-Dudafa",
+      linkedinLink: "https://www.linkedin.com/in/waripamo-owei-dudafa-832130241/"
     },
     //john, 
   ];
