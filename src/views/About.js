@@ -200,7 +200,7 @@ const About = () => {
     {
       imageUrl: wari,
       name: "Waripmamo-owei Dudafa",
-      role: "Wevb Development",
+      role: "Web Development",
       email: "wari@hacksussex.com",
       githubLink: "",
       linkedinLink: ""
