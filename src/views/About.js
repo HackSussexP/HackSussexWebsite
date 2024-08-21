@@ -24,6 +24,7 @@ import amyS from '../assets/Committee/amyS.png'
 import keagan from '../assets/Committee/keagan.png'
 import finn from '../assets/Committee/Finn.png'
 import eddie from '../assets/Committee/eddie.png' 
+import wari from '../assets/Committee/wari.jpg'
 
 const About = () => {
 
@@ -183,9 +184,9 @@ const About = () => {
     {
       imageUrl: finn,
       name: "Finn Hudson",
-      role: "General Committee",
+      role: "Graphic Design",
       email: "",
-      githubLink: "",
+      githubLink: "https://github.com/NeverHave1Ever2",
       linkedinLink: ""
     },
     {
@@ -193,6 +194,14 @@ const About = () => {
       name: "Eddie Lynch",
       role: "General Committee",
       email: "",
+      githubLink: "",
+      linkedinLink: ""
+    },
+    {
+      imageUrl: wari,
+      name: "Waripmamo-owei Dudafa",
+      role: "Wevb Development",
+      email: "wari@hacksussex.com",
       githubLink: "",
       linkedinLink: ""
     },
