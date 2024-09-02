@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Octokit } from 'octokit'
 import placeholderImage from '../assets/Gallery Placeholder.png'
 
-const Testing = () => {
+const Gallery = () => {
   const containerStyle = {
     height: '200px',
     overflow: 'hidden',
@@ -220,4 +220,4 @@ const Testing = () => {
   )
 }
 
-export default Testing
+export default Gallery

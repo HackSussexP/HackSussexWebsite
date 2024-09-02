@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <>
       <Carousel />
-      <UpcomingEvents />
+      {/* <UpcomingEvents /> */}
       <AboutHeader />
       {/* <RotatingSponsorBanner /> */}
       <SocialMediaBanner />

@@ -31,7 +31,7 @@ const config = {
   "sponsors": true,
   "date": "Feb 17, 2024, 10:00:00",
   "title": "2024 Hackathon",
-  "tickets": true,
+  "tickets": false,
   "url": "https://tickets.hacksussex.com/"
 }
 
@@ -196,7 +196,7 @@ const Hackathon = () => {
       {config.timer && <Timer date={config.date} title={config.title} />}
       <HackathonAbout />
       <EventWhereWhen location="University of Sussex, Brighton" date={"17 February 2024"} link={null} />
-      {config.schedule && <Schedule schedule={schedule} />}
+      {config.schedule && <Schedule schedule={schedule} multi_day={true} />}
       <Sponsors sponsorData={sponsorData}/>
       <CodesOfConduct links={codes} />
     </>

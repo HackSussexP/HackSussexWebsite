@@ -25,3 +25,6 @@ yarn.lock
 
 # Local Netlify folder
 .netlify
+
+# Prevents prettier from reformatting files when saving (Jacopo)
+.prettierignore

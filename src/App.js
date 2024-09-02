@@ -21,6 +21,8 @@ const EventPage = lazy(() => import("./views/events/EventPage.js"));
 const Gallery = lazy(() => import("./views/Gallery.js"));
 const FAQ = lazy(() => import("./views/FAQ.js"));
 const Robotics = lazy(() => import("./views/events/Robotics"));
+const Testing = lazy(() => import("./views/testing.js"));
+const CompetitiveProgramming = lazy(() => import("./views/events/CompetitiveProgramming.js"));
 
 function NoMatch() {
   return (
@@ -71,11 +73,11 @@ const App = () => {
 
 function RouterReload() {
   const navigate = useNavigate();
-  useEffect(() => {
-    if (window.location.pathname === "/") {
-      navigate("/events/hackathon");
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (window.location.pathname === "/") {
+  //     navigate("/events/coderscup");
+  //   }
+  // }, []); {/* Update for specific events */}
   return (
     <>
       <ScrollToTop />
@@ -92,6 +94,7 @@ function RouterReload() {
         <Route path="/events/gamejam" element={<GameJam />} />
         <Route path="/events/leetcoding" element={<Leetcoding />} />
         <Route path="/events/robotics" element={<Robotics />} />
+        <Route path="/events/competitiveProgramming" element={<CompetitiveProgramming />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="*" element={<NoMatch />} />
