@@ -21,7 +21,6 @@ const EventPage = lazy(() => import("./views/events/EventPage.js"));
 const Gallery = lazy(() => import("./views/Gallery.js"));
 const FAQ = lazy(() => import("./views/FAQ.js"));
 const Robotics = lazy(() => import("./views/events/Robotics"));
-const Testing = lazy(() => import("./views/testing.js"));
 const CompetitiveProgramming = lazy(() => import("./views/events/CompetitiveProgramming.js"));
 
 function NoMatch() {
@@ -95,9 +94,8 @@ function RouterReload() {
         <Route path="/events/leetcoding" element={<Leetcoding />} />
         <Route path="/events/robotics" element={<Robotics />} />
         <Route path="/events/competitiveProgramming" element={<CompetitiveProgramming />} />
-        {/* <Route path="/gallery" element={<Gallery />} />*/}
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/faq" element={<FAQ />} />
-        {/* <Route path="/testing" element={<Testing />} /> */}
         <Route path="*" element={<NoMatch />} />
       </Routes>
       <Footer />
