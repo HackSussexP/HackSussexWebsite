@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import EventWhereWhen from '../../components/EventWhereWhen';
 import AboutSection from '../../components/AboutSection';
-import background from '../../assets/Gallery/all/a2 - Cropped.jpg';
+import background from '../../assets/events/a2 - Cropped-2.jpg';
 
 const CompetitiveProgramming = () => {
   const [hoveredLink, setHoveredLink] = useState(null);
