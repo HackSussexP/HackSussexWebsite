@@ -1,9 +1,4 @@
 import patrick from "../assets/Committee/patrick.jpg";
-import henry from "../assets/Committee/henry.png";
-import tori from "../assets/Committee/tori.png";
-import lukas from "../assets/Committee/lukas.jpg";
-import josh from "../assets/Committee/josh.png";
-import david from "../assets/Committee/david.png";
 import emily from "../assets/Committee/emily.jpg";
 import keagan from "../assets/Committee/keagan.jpg";
 import wari from "../assets/Committee/wari.jpg";
@@ -30,14 +25,6 @@ const committeeMembers = [
     role: "Welfare Officer",
   },
   {
-    imageUrl: henry,
-    name: "Henry Williams",
-    role: "Cyber Security & Secretary",
-    email: "henry@hacksussex.com",
-    githubLink: "https://github.com/Henry-Ash-Williams",
-    linkedinLink: "https://www.linkedin.com/in/henry-williams-49b7ab226/",
-  },
-  {
     imageUrl: keagan,
     name: "Keagan Kozlowski",
     role: "Finance Officer",
@@ -52,34 +39,10 @@ const committeeMembers = [
     linkedinLink: "https://www.linkedin.com/in/ella-bennison-7bab61254",
   },
   {
-    imageUrl: tori,
-    name: "Tori Nevins",
-    role: "Social Media",
-    email: "tori@hacksussex.com",
-    githubLink: "",
-    linkedinLink: "https://www.linkedin.com/in/tori-nevins-686069197/",
-  },
-  {
     imageUrl: amy,
     name: "Amy Scott",
     role: "Social Media",
     linkedinLink: "https://uk.linkedin.com/in/amy-scott-ba6038221",
-  },
-  {
-    imageUrl: lukas,
-    name: "Lukas Hastings",
-    role: "Robotics",
-    email: "lukas@hacksussex.com",
-    githubLink: "",
-    linkedinLink: "https://www.linkedin.com/in/lukas-hastings-a9a055255/",
-  },
-  {
-    imageUrl: david,
-    name: "David Frommont",
-    role: "Web Development",
-    email: "david@hacksussex.com",
-    githubLink: "https://github.com/davidfrommont",
-    linkedinLink: "https://www.linkedin.com/in/david-frommont/",
   },
   {
     imageUrl: jacopo,
@@ -121,14 +84,6 @@ const committeeMembers = [
     email: "emily@hacksussex.com",
     githubLink: "",
     linkedinLink: "",
-  },
-  {
-    imageUrl: josh,
-    name: "Josh Kybett",
-    role: "Odd Jobsman",
-    email: "josh@hacksussex.com",
-    githubLink: "https://github.com/JKybett",
-    linkedinLink: "https://www.linkedin.com/in/jkybett/",
   },
 ];
 
