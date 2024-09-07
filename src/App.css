@@ -243,7 +243,7 @@ html, body {
   object-fit: contain !important;
 }
 
-/* used in sponsorship's page: scales logos when in mobile */
+/* used in sponsorship's page to scales logos when in mobile */
 @media (max-width: 576px) {
     .old-sponsors-logo {
       transform: scale(0.7);
