@@ -1,214 +1,223 @@
-import React from 'react';
-import GalleryTemplate from '../components/GalleryTemplate';
-
-import h1 from '../assets/Gallery/hackathon23/h1.jpg';
-import h2 from '../assets/Gallery/hackathon23/h2.jpg';
-import h3 from '../assets/Gallery/hackathon23/h3.jpg';
-import h4 from '../assets/Gallery/hackathon23/h4.jpg';
-import h5 from '../assets/Gallery/hackathon23/h5.jpg';
-import h6 from '../assets/Gallery/hackathon23/h6.jpg';
-import h7 from '../assets/Gallery/hackathon23/h7.jpg';
-import h8 from '../assets/Gallery/hackathon23/h8.jpg';
-import h9 from '../assets/Gallery/hackathon23/h9.jpg';
-import h10 from '../assets/Gallery/hackathon23/h10.jpg';
-import h11 from '../assets/Gallery/hackathon23/h11.jpg';
-import h12 from '../assets/Gallery/hackathon23/h12.jpg';
-import h13 from '../assets/Gallery/hackathon23/h13.jpg';
-import h14 from '../assets/Gallery/hackathon23/h14.jpg';
-import h15 from '../assets/Gallery/hackathon23/h15.jpg';
-import h16 from '../assets/Gallery/hackathon23/h16.jpg';
-
-import cc1 from '../assets/Gallery/coderscup23/cc1.jpg';
-import cc2 from '../assets/Gallery/coderscup23/cc2.jpg';
-import cc3 from '../assets/Gallery/coderscup23/cc3.jpg';
-import cc4 from '../assets/Gallery/coderscup23/cc4.jpg';
-import cc5 from '../assets/Gallery/coderscup23/cc5.jpg';
-import cc6 from '../assets/Gallery/coderscup23/cc6.jpg';
-import cc7 from '../assets/Gallery/coderscup23/cc7.jpg';
-import cc8 from '../assets/Gallery/coderscup23/cc8.jpg';
-import cc9 from '../assets/Gallery/coderscup23/cc9.jpg';
-import cc10 from '../assets/Gallery/coderscup23/cc10.jpg';
-import cc11 from '../assets/Gallery/coderscup23/cc11.jpg';
-import cc12 from '../assets/Gallery/coderscup23/cc12.jpg';
-
-import cs1 from '../assets/Gallery/code-socials/cs1.jpg';
-import cs2 from '../assets/Gallery/code-socials/cs2.jpg';
-import cs3 from '../assets/Gallery/code-socials/cs3.jpg';
-import cs4 from '../assets/Gallery/code-socials/cs4.jpg';
-import cs5 from '../assets/Gallery/code-socials/cs5.jpg';
-import cs6 from '../assets/Gallery/code-socials/cs6.jpg';
-import cs7 from '../assets/Gallery/code-socials/cs7.jpg';
-import cs8 from '../assets/Gallery/code-socials/cs8.jpg';
-import cs9 from '../assets/Gallery/code-socials/cs9.jpg';
-
-import w1 from '../assets/Gallery/workshops/w1.jpg';
-import w3 from '../assets/Gallery/workshops/w3.jpg';
-import w4 from '../assets/Gallery/workshops/w4.jpg';
-import w5 from '../assets/Gallery/workshops/w5.jpg';
-import w6 from '../assets/Gallery/workshops/w6.jpg';
-import w7 from '../assets/Gallery/workshops/w7.jpg';
-import w8 from '../assets/Gallery/workshops/w8.jpg';
-
-import a1 from '../assets/Gallery/all/a1.jpg';
-import a2 from '../assets/Gallery/all/a2.jpg';
-import a3 from '../assets/Gallery/all/a3.jpg';
-import a4 from '../assets/Gallery/all/a4.jpg';
-import a5 from '../assets/Gallery/all/a5.jpg';
-
-import gj1 from '../assets/Gallery/gamejam23/gj1.jpeg';
-import gj2 from '../assets/Gallery/gamejam23/gj2.jpeg';
-import gj3 from '../assets/Gallery/gamejam23/gj3.jpeg';
-import gj4 from '../assets/Gallery/gamejam23/gj4.jpeg';
-import gj5 from '../assets/Gallery/gamejam23/gj5.jpeg';
-import gj6 from '../assets/Gallery/gamejam23/gj6.jpeg';
-import gj7 from '../assets/Gallery/gamejam23/gj8.jpeg';
-import gj8 from '../assets/Gallery/gamejam23/gj7.jpeg';
-import gj9 from '../assets/Gallery/gamejam23/gj9.jpeg';
-import gj10 from '../assets/Gallery/gamejam23/gj10.jpeg';
-import gj11 from '../assets/Gallery/gamejam23/gj11.jpeg';
-import gj12 from '../assets/Gallery/gamejam23/gj12.jpeg';
-import gj13 from '../assets/Gallery/gamejam23/gj13.jpeg';
-
-import i1 from '../assets/Gallery/hackathon24/i1.jpg';
-import i2 from '../assets/Gallery/hackathon24/i2.jpg';
-import i3 from '../assets/Gallery/hackathon24/i3.jpg';
-import i4 from '../assets/Gallery/hackathon24/i4.jpg';
-import i5 from '../assets/Gallery/hackathon24/i5.jpg';
-import i6 from '../assets/Gallery/hackathon24/i6.jpg';
-import i7 from '../assets/Gallery/hackathon24/i7.jpg';
-import i8 from '../assets/Gallery/hackathon24/i8.jpg';
-import i9 from '../assets/Gallery/hackathon24/i9.jpg';
-import i10 from '../assets/Gallery/hackathon24/i10.jpg';
-import i11 from '../assets/Gallery/hackathon24/i11.jpg';
-import i12 from '../assets/Gallery/hackathon24/i12.jpg';
-import i13 from '../assets/Gallery/hackathon24/i13.jpg';
-import i14 from '../assets/Gallery/hackathon24/i14.jpg';
-import i15 from '../assets/Gallery/hackathon24/i15.jpg';
-import i17 from '../assets/Gallery/hackathon24/i17.jpg';
-import i18 from '../assets/Gallery/hackathon24/i18.jpg';
-import i19 from '../assets/Gallery/hackathon24/i19.jpg';
-import i20 from '../assets/Gallery/hackathon24/i20.jpg';
-import i21 from '../assets/Gallery/hackathon24/i21.jpg';
-import i22 from '../assets/Gallery/hackathon24/i22.jpg';
-import i23 from '../assets/Gallery/hackathon24/i23.jpg';
-import i24 from '../assets/Gallery/hackathon24/i24.jpg';
+import React, { useEffect, useState } from 'react'
+import { Octokit } from 'octokit'
+import placeholderImage from '../assets/Gallery Placeholder.png'
 
 const Gallery = () => {
-  const events = [
-    { id: 'all', name: 'All' },
-    { id: 'hackathon23', name: 'Hackathon 2023' },
-    { id: 'coderscup23', name: 'Coders Cup 2023' },
-    { id: 'gamejam23', name: 'GameJam 2023'},
-    { id: 'codesocials', name: 'Code Socials' },
-    { id: 'workshops', name: 'Workshops' },
-    { id: 'coderscup24', name: 'Coders Cup 2024' },
-    { id: 'hackathon24', name: 'Hackathon 2024' }
-  ];
+  const containerStyle = {
+    height: '200px',
+    overflow: 'hidden',
+  }
 
-  const images = [
-    { id: 1, url: h1, description: 'HACKSUSSEX TEAM BEHIND 2023 HACKATHON', event: 'hackathon23' },
-    { id: 2, url: h2, description: '2023 HACKATHON BTS', event: 'hackathon23' },
-    { id: 3, url: h3, description: '2023 HACKATHON TEAM DISCUSSING PROJECT', event: 'hackathon23' },
-    { id: 4, url: h4, description: '2023 HACKATHON TEAM WORKING ON PROJECT', event: 'hackathon23' },
-    { id: 5, url: h5, description: 'INTRODUCING PRIZES TO 2023 HACKATHON ATTENDEES', event: 'hackathon23' },
-    { id: 6, url: h6, description: '2022 HACKATHON AUDIENCE', event: 'hackathon23' },
-    { id: 7, url: h7, description: '2022 HACKATHON AUDIENCE', event: 'hackathon23' },
-    { id: 8, url: h8, description: 'INTRODUCING HACKTHON TO 2021 ATTENDEES', event: 'hackathon23' },
-    { id: 9, url: h9, description: '2022 HACKATHON SPONSORS MIZUHO INTRODUCING THEMSELVES', event: 'hackathon23' },
-    { id: 10, url: h10, description: 'VARIOUS 2022 HACKATHON SPONSORS', event: 'hackathon23' },
-    { id: 11, url: h11, description: '2021 HACKATHON TEAM WORKING ON PROJECT', event: 'hackathon23' },
-    { id: 12, url: h12, description: '2023 HACKATHON LIVESTREAM BTS', event: 'hackathon23' },
-    { id: 13, url: h13, description: '2023 HACKATHON TEAM WORKING ON PROJECT', event: 'hackathon23' },
-    { id: 14, url: h14, description: 'TESTING SPEAKERS BEFORE 2023 HACKATHON', event: 'hackathon23' },
-    { id: 15, url: h15, description: '2023 HACKATHON TEAM SHOWING OFF CROQUETED CREATION', event: 'hackathon23' },
-    { id: 16, url: h16, description: '2022 HACKATHON TEAM AT START OF EVENT', event: 'hackathon23' },
+  const coverImageStyle = {
+    height: '100%',
+    width: '100%',
+    objectFit: 'cover',
+    cursor: 'pointer',
+  }
 
-    { id: 17, url: cc1, description: '2023 CODERS CUP BTS', event: 'coderscup23' },
-    { id: 18, url: cc2, description: 'AUDIENCE WATCHING 2022 CODERS CUP', event: 'coderscup23' },
-    { id: 19, url: cc3, description: '2023 CODERS CUP COMPETITORS', event: 'coderscup23' },
-    { id: 20, url: cc4, description: 'HACKSUSSEX TEAM VALIDATING COMPETITORS PROGRAMMING', event: 'coderscup23' },
-    { id: 21, url: cc5, description: '2023 CODERS CUP WINNER WITH PRIZES', event: 'coderscup23' },
-    { id: 22, url: cc6, description: '2023 CODERS CUP REHEARSAL', event: 'coderscup23' },
-    { id: 23, url: cc7, description: '2023 CODERS CUP TV STUDIO BTS', event: 'coderscup23' },
-    { id: 24, url: cc8, description: '2023 CODERS CUP COMPETITORS BATTLING EACH OTHER', event: 'coderscup23' },
-    { id: 25, url: cc9, description: '2023 CODERS CUP COMPETITORS BATTLING EACH OTHER', event: 'coderscup23' },
-    { id: 26, url: cc10, description: 'PREPARING TV STUDIO FOR 2023 CODERS CUP', event: 'coderscup23' },
-    { id: 27, url: cc11, description: '2023 CODERS CUP REHEARSAL', event: 'coderscup23' },
-    { id: 28, url: cc12, description: '2023 CODERS CUP BEHIND THE CAMERAS', event: 'coderscup23' },
+  const largeButtonStyle = {
+    border: 'none',
+    transition: '0.3s ease',
+    textDecoration: 'none !important',
+  }
 
-    { id: 29, url: cs1, description: '2021 CODE SOCIAL ENJOYING PIZZA', event: 'codesocials' },
-    { id: 30, url: cs2, description: '2022 CODE SOCIAL', event: 'codesocials' },
-    { id: 31, url: cs3, description: 'HACKSUSSEX LOVE PIZZA', event: 'codesocials' },
-    { id: 32, url: cs4, description: '2022 CODE SOCIAL GROUP ENJOYING A GAME', event: 'codesocials' },
-    { id: 33, url: cs5, description: '2022 CODE SOCIAL GROUP LOOKING A RC CARS', event: 'codesocials' },
-    { id: 34, url: cs6, description: 'THE FIRST CODE SOCIAL OF THE UNI YEAR, 2023', event: 'codesocials' },
-    { id: 35, url: cs7, description: 'HACKSUSSEX COMMITTEE STANDING OVER THE MERCH STALL AT A CODE SOCIAL', event: 'codesocials' },
-    { id: 36, url: cs8, description: 'OUR COMMITTEE HARD AT WORK PREPARING A CODE SOCIAL', event: 'codesocials' },
-    { id: 37, url: cs9, description: 'THE FIRST CODE SOCIAL OF 2024 AND THE NEW UNIVERSITY TERM', event: 'codesocials' },
-    
-    { id: 38, url: w1, description: 'INTRODUCTORY ROBOTICS WORKSHOP', event: 'workshops' },
-    { id: 39, url: w3, description: '2022 CAPTURE THE FLAG TEAM TAKING ON A CHALLENGE', event: 'workshops' },
-    { id: 40, url: w4, description: '2023 LEETCODING WORKSHOP', event: 'workshops' },
-    { id: 41, url: w5, description: '2023 ROBOTICS WORKSHOP', event: 'workshops' },
-    { id: 42, url: w6, description: 'INTRODUCTORY ROBOTICS WORKSHOP INSTRUCTIONS TO DEVELOP A CIRCUIT', event: 'workshops' },
-    { id: 43, url: w7, description: 'GROUP WORKING WITH SENSORS IN A ROBOTICS WORKSHOP', event: 'workshops' },
-    { id: 44, url: w8, description: '2 MEMBERS OF OUR COOMUNITY SHOWING OFF THEIR BUILD', event: 'workshops' },
+  const activeButtonStyle = {
+    ...largeButtonStyle,
+    backgroundColor: 'var(--electric-green)',
+  }
 
-    { id: 45, url: a1, description: 'HACKSUSSEX COMMITTEE RUNNING OUR STALL AT FRESHERS 2023', event: 'all' },
-    { id: 46, url: a2, description: 'A TEAM COMPETING IN THE REGIONAL QUALIFIER FOR UKIEPC 2023', event: 'all' },
-    { id: 47, url: a3, description: 'SOME OF OUR BEST PROGRAMMERS WORKING HARD TO SOLVE UKIEPC QUALIFYING PROBLEMS', event: 'all' },
-    { id: 48, url: a4, description: 'SOME COMMUNITY MEMBERS WORKING ON A PROJECT FOR THE GLOBAL GAMEJAM 2023 OF WHICH WE WERE THE LOCAL HOST', event: 'all' },
-    { id: 49, url: a5, description: 'A PROGRAMMER HARD AT WORK ON A GAME FOR THE GLOBAL GAMEJAM 2023', event: 'all' },
+  const filterButtonStyle = {
+    backgroundColor: 'var(--light-blue)',
+    border: 'none',
+    boxShadow: 'none',
+  }
 
-    { id: 50, url: gj1, description: 'ROTOVR CHAIRS BEING PREPPARED THE NIGHT BEFORE THE GAMEJAM', event: 'gamejam23' },
-    { id: 51, url: gj2, description: 'AN EXCITED TEAM WATCHING THE OPENING CEREMONY OF THE GAMEJAM', event: 'gamejam23' },
-    { id: 52, url: gj3, description: 'MEMBERS OF OUR COMMUNITY WAITING FOR THE OPENING CEREMONY INCLUDNG LECTURER RON GRAU AND HEAD OF E&I AT SUSSEX, IAN WAKEMAN', event: 'gamejam23' },
-    { id: 53, url: gj4, description: 'A TEAM SHOWING OFF THE GAME TO OUR JUDGES, INCLUDING UNIVERSITY LECTURER RON GRAU', event: 'gamejam23' },
-    { id: 54, url: gj5, description: 'PROGRAMMER PLAY TESTING THEIR GAME ON THE ROTOVR CHAIR', event: 'gamejam23' },
-    { id: 55, url: gj6, description: 'ONE OUR CATERERS, OUICREPERIE, OUTSIDE CHICHESTER BUILDING MORNING OF DAY 2', event: 'gamejam23' },
-    { id: 56, url: gj7, description: 'PEOPLE ENJOYING MIDNIGHT PIZZA FROM PIZZAME DURING THE NIGHT OF THE GAMEJAM', event: 'gamejam23' },
-    { id: 57, url: gj8, description: 'A PROGRAMEMR HARD AT WORK AT THEIR GREAT GAME', event: 'gamejam23' },
-    { id: 58, url: gj9, description: 'A QUEUE OF PEOPLE GETTING READY TO ENJOY THEIR DINNER FROM TUNTUNS', event: 'gamejam23' },
-    { id: 59, url: gj10, description: 'MEMBERS OF OUR COMMUNITY HARD AT WORK AT HACKSUSSEX 2023', event: 'gamejam23' },
-    { id: 60, url: gj11, description: 'THE CEO OF ROTOVR, ELLIOTT MYERS, HELPING A STUDENT TO GET SETUP WITH THE ROTOVR CHAIR', event: 'gamejam23' },
-    { id: 61, url: gj12, description: 'LECTURER RON GRAU TESTING OUT THE ROTOVR CHAIRS SPIN WITH A STEERING WHEEL', event: 'gamejam23' },
-    { id: 62, url: gj13, description: 'ONE OF COMMITTEE THE NIGHT BEFORE HACKSUSSEX 2023 PAINFULLY ORGANISING THE LANYARDS FOR THE MORNING', event: 'gamejam23' },
+  const [images, setImages] = useState([])
+  const [events, setEvents] = useState([])
+  const [years, setYears] = useState([])
+  const [selectedEvent, setSelectedEvent] = useState("all")
+  const [selectedYear, setSelectedYear] = useState(null)
+  const [modalImageSrc, setModalImageSrc] = useState('')
+  const url = "https://cdn.jsdelivr.net/gh/HackSussexP/public_assets@main/assets/Gallery/"
 
-    { id: 63, url: i1, description: 'ONE OF THE WINNING GROUPS CELEBRATING THEIR ACHIVEMENTS', event: 'hackathon24' },
-    { id: 64, url: i2, description: 'LOCAL BCS CHAPTER LEADER, BLAY WHITBY, PREPARING A SPONSOR VIDEO OF THE EVENT', event: 'hackathon24' },
-    { id: 65, url: i3, description: 'HEAD OF SCHOOL OF E&I IAN MACKIE OPENING THE HACKATHON', event: 'hackathon24' },
-    { id: 66, url: i4, description: 'QUEUE OF HUNGRY ATTENDEES GETTING FOOD FROM LOCAL CATERER HAPPYGOSOUVLAKI', event: 'hackathon24' },
-    { id: 67, url: i5, description: 'A PAIR OF ATTENDEES DEVELOPING A ROBOTIC HAND', event: 'hackathon24' },
-    { id: 68, url: i6, description: 'LOCAL CATERER OUI CREPERIE SET UP AT THE EVENT', event: 'hackathon24' },
-    { id: 69, url: i7, description: 'COMMITTEE MEMBERS, VOLUNTEERS AND HACKATHONS UK REPRESENTATIVE HOLLY TAKING PART IN KARAOKE AND JUST DANCE', event: 'hackathon24' },
-    { id: 70, url: i8, description: 'EVENT ATTENDEES WAITING FOR THE OPENING CEREMONY TO BEGIN', event: 'hackathon24' },
-    { id: 71, url: i9, description: 'A TEAM OF SUSSEX STUDENTS DEMNSTRATING THEIR PROJECT', event: 'hackathon24' },
-    { id: 72, url: i10, description: 'AN ATENDEE AND COMMITTEE MEMBER LOOKING VERY EXCITED FOR THE EVENT TO BEGIN', event: 'hackathon24' },
-    { id: 73, url: i11, description: 'THE AUDIENCE OF OUR OPENING CEREMONY', event: 'hackathon24' },
-    { id: 74, url: i12, description: 'THE MESSY DESK OF A TEAM WHO HAD DEVELOPED A SEMIPHORE TRANSMISSION SCHEME', event: 'hackathon24' },
-    { id: 75, url: i13, description: 'THE TALLEST TOWER PRODUCED DURING THE CUP STACKING COMPETITION', event: 'hackathon24' },
-    { id: 76, url: i14, description: 'MAYHEM AS PAIRS FROM ALL OVER THE EVENT ATTEMPT TO MAKE CUP STACKS AND DESTROY OTHER PAIRS STACKS AT THE SAME TIME', event: 'hackathon24' },
-    { id: 77, url: i15, description: 'A TRIO OF ATTENDEES LOOKING VERY RELAXED DURING THE HACKATHON', event: 'hackathon24' },
-    { id: 79, url: i17, description: 'PIZZA ALWAYS MAKES THINGS BETTER', event: 'hackathon24' },
-    { id: 80, url: i18, description: 'SOCIETY PRESIDENT JACK HELPER A TEAM WITH THEIR IDEAS', event: 'hackathon24' },
-    { id: 81, url: i19, description: 'EVEN IN THE MIDDLE OF THE NIGHT, SOME ATTENDEES ARE STILL FULL OF ENERGY', event: 'hackathon24' },
-    { id: 82, url: i20, description: 'HACKATHONS UK REPRESENTATIVE HOLLY PREPARING FOR THE CUP STACKING COMPETITION', event: 'hackathon24' },
-    { id: 83, url: i21, description: 'AN ATENDEE HARD AT WORK ON THEIR PROJECT', event: 'hackathon24' },
-    { id: 84, url: i22, description: 'A TEAM MEMBER BRIEFING THEIR TEAM MATES ON THE PRIZE TRACKS AT THE EVENT', event: 'hackathon24' },
-    { id: 85, url: i23, description: 'THE PRIDE FELT BY THIS TEAM FOR WINNING A TRACK IS OBVIOUS', event: 'hackathon24' },
-    { id: 86, url: i24, description: 'THE TRUE MAIN PRIZE OF THE EVENT FROM HACKATHONS UK, A BLAHAJ', event: 'hackathon24' },
+  const eventDisplayNames = {
+    all: "All",
+    coderscup: "Coders' Cup",
+    codesocials: "Code Socials",
+    gamejam: "Game Jam",
+    hackathon: "Hackathon",
+    leetcoding: "Leetcoding",
+    misc: "Miscellaneous",
+    pwnsussex: "PwnSussex",
+    robotics: "Robotics",
+  }
 
-  ];
-  
-  const videos = [
-    { event: 'hackathon23', videoId: 'gmKBSb7kbTY' },
-    { event: 'coderscup23', videoId: 'yPifHEfu4Qs?si=-9kvdIJc05nbL4IY' },
-    { event: 'coderscup24', videoId: 'VixYfv0UEyE?si=jeuLHFM450D_AHO9' }
-  ];
+  const getData = async () => {
+    const octokit = new Octokit()
+    const response = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
+      owner: 'HackSussexP',
+      repo: 'public_assets',
+      path: 'assets',
+    })
+
+    // find the gallery folder
+    const res = response.data.filter((item) => item.name === "Gallery")
+
+    const children = await octokit.request('GET /repos/{owner}/{repo}/git/trees/{tree_sha}?recursive=1', {
+      owner: 'HackSussexP',
+      repo: 'public_assets',
+      tree_sha: res[0].sha,
+    })
+
+    const path_list = {}
+    children.data.tree.forEach((item) => {
+      if (item.type === "tree") {
+        const paths = item.path.split('/')
+        let current = path_list
+
+        paths.forEach((path) => {
+          if (!current[path]) {
+            current[path] = {}
+          }
+          current = current[path]
+        })
+      }
+    })
+
+    const events = Object.keys(path_list)
+    setEvents(events)
+
+    const years = events.map((event) => Object.keys(path_list[event]))
+    setYears(years)
+
+    const images_list = children.data.tree.filter((item) => item.type === "blob")
+
+    const imageUrls = images_list.map((image) => {
+      if (image.path) {
+        return image.path
+      }
+      return null
+    }).filter(Boolean)
+    setImages(imageUrls)
+  }
+
+  useEffect(() => {
+    getData()
+  }, [])
+
+  const handleError = (e) => {
+    e.target.src = placeholderImage
+    // set style to not be clickable
+    e.target.style.cursor = 'default'
+    e.target.style.pointerEvents = 'none'
+
+  }
+
+  const handleShowModal = (imageSrc) => {
+    setModalImageSrc(imageSrc)
+  }
 
   return (
-    <GalleryTemplate events={events} images={images} videos={videos} />
-  );
+    <>
+      <div className="container mt-4">
+        <div className="row justify-content-center">
+          {events.length > 1 && (
+            <div className="col-6 col-md-4 col-lg-3 mb-3">
+              <button
+                className="btn w-100 btn-blue"
+                style={selectedEvent === "all" ? activeButtonStyle : largeButtonStyle}
+                onClick={() => {
+                    setSelectedEvent("all")
+                    setSelectedYear(null)
+                  }
+                }
+              >
+                All
+              </button>
+            </div>
+          )}
+          {events.map((event, index) => (
+            event !== "All" && (
+              <div key={event} className="col-6 col-md-4 col-lg-3 mb-3">
+                <button
+                  className="btn w-100 btn-blue"
+                  style={selectedEvent === index ? activeButtonStyle : largeButtonStyle}
+                  onClick={() => {
+                    setSelectedEvent(index)
+                    setSelectedYear(null)
+                  }}
+                >
+                  {eventDisplayNames[event] || event}
+                </button>
+              </div>
+            )
+          ))}
+        </div>
+
+        <hr className="my-4" />
+
+        <div className="row justify-content-end">
+          <div className="col-auto mb-3">
+            <div className="dropdown">
+              <button
+                className="btn text-end btn-blue dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Filter
+              </button>
+              <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><button className="dropdown-item" onClick={() => setSelectedYear(null)}>All</button></li>
+                {years[selectedEvent]?.map((year) => (
+                  <li key={year}><button className="dropdown-item" onClick={() => setSelectedYear(year)}>{year}</button></li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container mt-4">
+        <div className="row">
+          {images.map((image) => {
+            const imagePathParts = image.split('/')
+            const event = imagePathParts[0]
+            const year = imagePathParts[1]
+
+            if ((selectedEvent === "all" || event === events[selectedEvent]) && (selectedYear === null || year === selectedYear)) {
+              return (
+                <div key={image} className="col-md-4 mb-4" style={containerStyle}>
+                  <img
+                    src={`${url}/${image}`}
+                    style={coverImageStyle}
+                    alt="Gallery"
+                    onError={handleError}
+                    data-bs-toggle="modal"
+                    data-bs-target="#galleryModal"
+                    data-bs-whatever={`${url}/${image}`}
+                    onClick={() => handleShowModal(`${url}/${image}`)}
+                  />
+                </div>
+              )
+            }
+            return null
+          })}
+        </div>
+      </div>
+
+      <div className="modal" tabIndex={-1} id="galleryModal">
+        <div className="modal-dialog modal-dialog-centered modal-xl custom-modal">
+          <div className="modal-content">
+            <div className="modal-body rounded">
+              <img id="modalImage" className="imf-fluid rounded" src={modalImageSrc} alt="Gallery" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  )
 }
 
-export default Gallery;
+export default Gallery
