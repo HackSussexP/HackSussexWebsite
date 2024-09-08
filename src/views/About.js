@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./About.module.css";
 
-import PhotoCard from "./../components/PhotoCard";
 import committeeMembers from "../constants/CommitteeMembers";
+import Members from "../components/Members";
 
 const About = () => {
   return (
@@ -47,25 +47,11 @@ const About = () => {
 
       <div className={styles.meetCommitteeSection}>
         <div className="container mt-5">
-          <h1 className="text-center mb-5 text fw-bold display-4 border-bottom w-75 ms-auto me-auto pb-3">
-            Meet the Committee
-          </h1>
-          {Array(Math.ceil(committeeMembers.length / 5))
-            .fill()
-            .map((_, rowIndex) => (
-              <div className="row d-flex justify-content-center" key={rowIndex}>
-                {committeeMembers
-                  .slice(rowIndex * 5, (rowIndex + 1) * 5)
-                  .map((member) => (
-                    <div
-                      className="col-lg-2 col-md-3 col-sm-4 col-12 mb-5"
-                      key={member.name}
-                    >
-                      <PhotoCard {...member} />
-                    </div>
-                  ))}
-              </div>
-            ))}
+          {committeeMembers.map((value, index) => (
+            <div key={index}>
+              <Members year={value.year} committee={value.data} index={index} />
+            </div>
+          ))}
         </div>
       </div>
     </>
