@@ -45,17 +45,12 @@ const Navbar = (props) => {
           <div className={`collapse navbar-collapse ${navbar ? 'show' : ''}`}>
             <ul className="navbar-nav me-auto">
               <li className="nav-item">
-                <Link className="nav-link px-5" aria-current="page" to="/" onClick={closeNavbar}>
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link px-5" to="/about" onClick={closeNavbar}>
+                <Link className="nav-link px-4" to="/about" onClick={closeNavbar}>
                   About
                 </Link>
               </li>
               <li className="nav-item dropdown">
-                <Link className="nav-link dropdown-toggle px-5" to="#" id="navbarEventDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <Link className="nav-link dropdown-toggle px-4" to="#" id="navbarEventDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Events
                 </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarEventDropdown">
@@ -108,22 +103,27 @@ const Navbar = (props) => {
                 </ul>
               </li>
               <li className="nav-item">
-                <Link className="nav-link px-5" to="/gallery" onClick={closeNavbar}>
+                <Link className="nav-link px-4" to="/gallery" onClick={closeNavbar}>
                   Gallery
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link px-5" to="/faq" onClick={closeNavbar}>
+                <Link className="nav-link px-4" to="/sponsorship" onClick={closeNavbar}>
+                  Sponsors
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link px-4" to="/faq" onClick={closeNavbar}>
                   FAQ
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link px-5" to="https://hacksussex.square.site/" target="_blank" onClick={closeNavbar}>
+                <Link className="nav-link px-4" to="https://hacksussex.square.site/" target="_blank" onClick={closeNavbar}>
                   Merch Store
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link px-5" to="https://www.instagram.com/minesocsussex/" target="_blank" onClick={closeNavbar}>
+                <Link className="nav-link px-4" to="https://www.instagram.com/minesocsussex/" target="_blank" onClick={closeNavbar}>
                   MineSoc
                 </Link>
               </li>
