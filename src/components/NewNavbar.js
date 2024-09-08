@@ -45,11 +45,6 @@ const Navbar = (props) => {
           <div className={`collapse navbar-collapse ${navbar ? 'show' : ''}`}>
             <ul className="navbar-nav me-auto">
               <li className="nav-item">
-                <Link className="nav-link px-4" aria-current="page" to="/" onClick={closeNavbar}>
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
                 <Link className="nav-link px-4" to="/about" onClick={closeNavbar}>
                   About
                 </Link>
