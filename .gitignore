@@ -23,9 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 yarn.lock
 
-# personal notes
-/notes
-
 # Local Netlify folder
 .netlify
 
