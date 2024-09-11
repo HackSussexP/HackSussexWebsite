@@ -9,26 +9,7 @@ import bryn from "../assets/Committee/bryn.jpg";
 import luke from "../assets/Committee/luke.jpg";
 import edward from "../assets/Committee/edward.jpg";
 import amy_scott from "../assets/Committee/amy.png";
-import jack from "../assets/Committee/jack.png";
-import tom from "../assets/Committee/tom.png";
-import charlotte from "../assets/Committee/charlotte.png";
-import david from "../assets/Committee/david.png";
-import tori from "../assets/Committee/tori.png";
-import amy_cho from "../assets/Committee/amy.jpg";
-import elias from "../assets/Committee/elias.png";
-import ryu from "../assets/Committee/ryu.png";
-import anton from "../assets/Committee/anton.png";
-import henry from "../assets/Committee/henry.png";
-import richerd from "../assets/Committee/richerd.jpg";
-import jude from "../assets/Committee/jude.png";
-import josh from "../assets/Committee/josh.png";
-import adnan from "../assets/Committee/adnan.png";
-import lukas from "../assets/Committee/lukas.jpg";
-import jamie from "../assets/Committee/jamie.png";
-import eddie from "../assets/Committee/eddie.png";
-import rie from "../assets/Committee/josh.png"; // no image
-import louis from "../assets/Committee/josh.png"; // no image
-import dan from "../assets/Committee/josh.png"; // no image
+import john from "../assets/Committee/john.png";
 
 const committeeMembers = [
   {
@@ -44,7 +25,7 @@ const committeeMembers = [
       },
       {
         imageUrl: bryn,
-        name: "Bryn",
+        name: "Bryn Baker",
         role: "Welfare Officer",
       },
       {
@@ -83,7 +64,6 @@ const committeeMembers = [
         linkedinLink:
           "https://www.linkedin.com/in/waripamo-owei-dudafa-832130241/",
       },
-
       {
         imageUrl: finley,
         name: "Finley Hudson",
@@ -92,7 +72,7 @@ const committeeMembers = [
       },
       {
         imageUrl: luke,
-        name: "Luke S",
+        name: "Luke Shanks",
         role: "General Committee",
         githubLink: "https://github.com/LukeS03",
       },
@@ -106,8 +86,11 @@ const committeeMembers = [
         name: "Emily-mae Neame",
         role: "General Committee",
         email: "emily@hacksussex.com",
-        githubLink: "",
-        linkedinLink: "",
+      },
+      {
+        imageUrl: john,
+        name: "John Cory-Wright",
+        role: "General Committee",
       },
     ],
   },
@@ -115,109 +98,122 @@ const committeeMembers = [
     year: 2023,
     data: [
       {
-        imageUrl: jack,
         name: "Jack Speat",
         role: "President",
+        linkedinLink: "https://www.linkedin.com/in/jack-speat-7333491b3/",
+        githubLink: "https://github.com/Speaty",
       },
       {
-        imageUrl: tom,
         name: "Tom Harwood",
         role: "Manager",
+        linkedinLink: "https://www.linkedin.com/in/teharwood/",
+        githubLink: "https://github.com/tomtehtom",
       },
       {
-        imageUrl: charlotte,
         name: "Charlotte Richardson",
         role: "Welfare Officer and Web Development",
+        linkedinLink:
+          "https://www.linkedin.com/in/charlotte-richardson-7673a11a2/",
+        githubLink: "https://github.com/Charlotte-R-01134",
       },
       {
-        imageUrl: david,
-        name: "David",
+        name: "David Frommont",
         role: "Social Media and Web Development",
+        linkedinLink: "https://www.linkedin.com/in/david-frommont/",
+        githubLink: "https://github.com/davidfrommont",
       },
       {
-        imageUrl: tori,
         name: "Tori Nevins",
         role: "Social Media",
+        linkedinLink: "https://www.linkedin.com/in/tori-nevins-686069197/",
       },
       {
-        imageUrl: amy_cho,
         name: "Amy Cho",
         role: "Social Media",
+        linkedinLink: "https://www.linkedin.com/in/amy-cho-029989173/",
+        githubLink: "https://github.com/kittyeartales",
       },
       {
-        imageUrl: elias,
         name: "Elias Lassalle",
         role: "Video Production Officer",
+        linkedinLink: "https://www.linkedin.com/in/eliaslassalle/",
       },
       {
-        imageUrl: ryu,
         name: "Ryu Wong",
         role: "General Committee",
+        linkedinLink: "https://www.linkedin.com/in/ryu-wong/",
+        githubLink: "https://github.com/SkollRyu",
       },
       {
-        imageUrl: anton,
         name: "Anton Vasilijevs",
         role: "General Committee",
+        linkedinLink: "https://www.linkedin.com/in/antons-vasiljevs/",
+        githubLink: "https://github.com/TonyRikun",
       },
       {
-        imageUrl: henry,
         name: "Henry Ash Williams",
         role: "General Committee",
+        linkedinLink: "https://www.linkedin.com/in/henry-williams-49b7ab226/",
+        githubLink: "https://github.com/Henry-Ash-Williams",
       },
       {
-        imageUrl: richerd,
         name: "Richerd Joseph",
         role: "General Committee",
+        linkedinLink: "https://www.linkedin.com/in/richerd-joseph-479492223/",
       },
       {
-        imageUrl: jude,
         name: "Jude Birch",
         role: "General Committee",
+        linkedinLink: "https://www.linkedin.com/in/jude-birch-1288a0193/",
+        githubLink: "https://github.com/judebirch",
       },
       {
-        imageUrl: patrick,
         name: "Patrick Culmer",
         role: "General Committee",
+        linkedinLink: "https://www.linkedin.com/in/patrick-culmer-982628195/",
+        githubLink: "https://github.com/VeryCoolPatrick",
       },
       {
-        imageUrl: keagan,
         name: "Keagan Kozlowski",
         role: "General Committee",
+        linkedinLink: "https://www.linkedin.com/in/keagankozlowski/",
+        githubLink: "https://github.com/KeaganKozlowski",
       },
       {
-        imageUrl: josh,
         name: "Josh Kybett",
         role: "General Committee",
+        linkedinLink: "https://www.linkedin.com/in/jkybett/",
+        githubLink: "https://github.com/JKybett",
       },
       {
-        imageUrl: lukas,
         name: "Lukas Hastings",
         role: "General Committee",
+        linkedinLink: "https://www.linkedin.com/in/lukas-hastings-a9a055255/",
       },
       {
-        imageUrl: jamie,
         name: "Jamie Sage",
         role: "General Committee",
+        linkedinLink: "https://www.linkedin.com/in/jamie-sage/",
       },
       {
-        imageUrl: amy_scott,
         name: "Amy Scott",
         role: "Social Media",
+        linkedinLink: "https://www.linkedin.com/in/amy-scott-ba6038221/",
       },
       {
-        imageUrl: finley,
         name: "Finley Hudson",
         role: "Graphic Design",
+        githubLink: "https://github.com/NeverHave1Ever2",
       },
       {
-        imageUrl: eddie,
         name: "Eddie Lynch",
         role: "General Committee",
       },
       {
-        imageUrl: ella,
         name: "Ella Bennison",
         role: "General Committee",
+        linkedinLink: "https://www.linkedin.com/in/ella-bennison-7bab61254",
+        githubLink: "https://github.com/EllaCompSci",
       },
     ],
   },
@@ -225,59 +221,68 @@ const committeeMembers = [
     year: 2022,
     data: [
       {
-        imageUrl: josh,
         name: "Josh Kybett",
         role: "President",
+        linkedinLink: "https://www.linkedin.com/in/jkybett/",
+        githubLink: "https://github.com/JKybett",
       },
       {
-        imageUrl: rie,
         name: "Rie Tse",
         role: "Welfare Officer",
       },
       {
-        imageUrl: louis,
         name: "Louis Murphy",
         role: "Social Media",
       },
       {
-        imageUrl: adnan,
         name: "Adnan Quisar",
         role: "Web Development",
       },
       {
-        imageUrl: elias,
         name: "Elias Lassalle",
         role: "Video Production Officer",
+        linkedinLink: "https://www.linkedin.com/in/eliaslassalle/",
       },
       {
-        imageUrl: ryu,
         name: "Ryu Wong",
         role: "Social Events",
+        linkedinLink: "https://www.linkedin.com/in/ryu-wong/",
+        githubLink: "https://github.com/SkollRyu",
       },
       {
-        imageUrl: tom,
         name: "Tom Harwood",
         role: "General Committee",
+        linkedinLink: "https://www.linkedin.com/in/teharwood/",
+        githubLink: "https://github.com/tomtehtom",
       },
       {
-        imageUrl: jack,
         name: "Jack Speat",
         role: "General Committee",
+        linkedinLink: "https://www.linkedin.com/in/jack-speat-7333491b3/",
+        githubLink: "https://github.com/Speaty",
       },
       {
-        imageUrl: richerd,
         name: "Richerd Joseph",
         role: "General Committee",
+        linkedinLink: "https://www.linkedin.com/in/richerd-joseph-479492223/",
       },
       {
-        imageUrl: anton,
-        name: "Anton Vasiljevs",
+        name: "Anton Vasilijevs",
         role: "General Committee",
+        linkedinLink: "https://www.linkedin.com/in/antons-vasiljevs/",
+        githubLink: "https://github.com/TonyRikun",
       },
       {
-        imageUrl: henry,
         name: "Henry Ash Williams",
         role: "General Committee",
+        linkedinLink: "https://www.linkedin.com/in/henry-williams-49b7ab226/",
+        githubLink: "https://github.com/Henry-Ash-Williams",
+      },
+      {
+        name: "Jude Birch",
+        role: "General Committee",
+        linkedinLink: "https://www.linkedin.com/in/jude-birch-1288a0193/",
+        githubLink: "https://github.com/judebirch",
       },
     ],
   },
@@ -285,32 +290,26 @@ const committeeMembers = [
     year: 2021,
     data: [
       {
-        imageUrl: jude,
         name: "Jude Birch",
         role: "President",
       },
       {
-        imageUrl: tom,
         name: "Tom Harwood",
         role: "Vice President",
       },
       {
-        imageUrl: adnan,
         name: "Adnan Quisar",
         role: "Welfare Officer",
       },
       {
-        imageUrl: dan,
         name: "Dan Bates",
         role: "Secretary",
       },
       {
-        imageUrl: elias,
         name: "Elias Lassalle",
         role: "General Committee",
       },
       {
-        imageUrl: josh,
         name: "Josh Kybett",
         role: "General Committee",
       },

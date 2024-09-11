@@ -49,7 +49,12 @@ const About = () => {
         <div className="container mt-5">
           {committeeMembers.map((value, index) => (
             <div key={index}>
-              <Members year={value.year} committee={value.data} index={index} />
+              <Members
+                index={index}
+                year={value.year}
+                committee={value.data}
+                collapsable={index != 0}
+              />
             </div>
           ))}
         </div>
