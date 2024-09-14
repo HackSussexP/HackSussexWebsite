@@ -10,6 +10,7 @@ import luke from "../assets/Committee/luke.jpg";
 import edward from "../assets/Committee/edward.jpg";
 import amy_scott from "../assets/Committee/amy.png";
 import john from "../assets/Committee/john.png";
+import colin from "../assets/Committee/colin.jpg";
 
 const committeeMembers = [
   {
@@ -90,6 +91,11 @@ const committeeMembers = [
       {
         imageUrl: john,
         name: "John Cory-Wright",
+        role: "General Committee",
+      },
+      {
+        imageUrl: colin,
+        name: "Colin McCallum",
         role: "General Committee",
       },
     ],

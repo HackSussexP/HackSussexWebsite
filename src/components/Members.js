@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import PhotoCard from "./PhotoCard";
 
 const PreviousMembers = ({ year, committee, index, collapsable }) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div>
+    <div className="text-center">
       <a
-        class="text-center mb-5 text fw-bold display-4 border-bottom w-75 ms-auto me-auto pb-3 text-decoration-none text-light d-flex justify-content-between"
+        className="text-center mb-5 text fw-bold display-4 border-bottom w-75 ms-auto me-auto pb-3 text-decoration-none text-light d-flex align-items-center justify-content-center"
         data-bs-toggle={collapsable ? "collapse" : ""}
         href={"#previousMembers" + year}
         role="button"
@@ -18,17 +18,22 @@ const PreviousMembers = ({ year, committee, index, collapsable }) => {
           setExpanded(!expanded);
         }}
       >
-        <h1 className="text-center mb-0 text fw-bold display-4 me-3">
-          {index === 0 ? "Meet the Committee" : `${year}/${year + 1} Committee`}
+        <h1 className="mb-0 text fw-bold display-4 me-3">
+          {index === 0
+            ? "Meet the Committee"
+            : `${year}/${year + 1} Committee`}
         </h1>
         {collapsable ? (
-          <h1 className="text-center mb-0 text fw-bold display-4">
+          <h1 className="mb-0 text fw-bold display-4">
             {expanded ? "-" : "+"}
           </h1>
         ) : null}
       </a>
 
-      <div class={collapsable ? "collapse" : ""} id={"previousMembers" + year}>
+      <div
+        className={collapsable ? "collapse" : ""}
+        id={"previousMembers" + year}
+      >
         {Array(Math.ceil(committee.length / 5))
           .fill()
           .map((_, rowIndex) => (

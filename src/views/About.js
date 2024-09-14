@@ -53,7 +53,7 @@ const About = () => {
                 index={index}
                 year={value.year}
                 committee={value.data}
-                collapsable={index != 0}
+                collapsable={index !== 0}
               />
             </div>
           ))}
