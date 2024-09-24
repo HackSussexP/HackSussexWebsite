@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="container">
         <div className="row justify-content-between align-items-center">
           <div className="col-12 col-md-4 text-center text-md-left mb-3 mb-md-0" style={hackSussexStyle}>
-            HackSussex 2023 ©
+            HackSussex 2024 ©
           </div>
           <div className="col-12 col-md-6 offset-md-2 text-center text-md-right">
             <Link to="/" className="text-light mx-2 footer-link">Home</Link>

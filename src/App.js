@@ -22,6 +22,7 @@ const Gallery = lazy(() => import("./views/Gallery.js"));
 const FAQ = lazy(() => import("./views/FAQ.js"));
 const Robotics = lazy(() => import("./views/events/Robotics"));
 const CompetitiveProgramming = lazy(() => import("./views/events/CompetitiveProgramming.js"));
+const Sponsorship = lazy(() => import("./views/Sponsorship.js"));
 
 function NoMatch() {
   return (
@@ -84,6 +85,7 @@ function RouterReload() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/sponsorship" element={<Sponsorship />} />
         <Route path="/events" element={<AllEvents />} />
         <Route path="/events/:date/:title" element={<EventPage />} />
         <Route path="/events/hackathon" element={<Hackathon />} />
