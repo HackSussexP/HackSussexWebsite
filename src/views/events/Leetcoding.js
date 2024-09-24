@@ -42,7 +42,7 @@ const Leetcoding = () => {
         </div>
       </div>
       <AboutSection description={[`Welcome to HackSussex's weekly Leetcoding sessions! Our sessions are open to programmers of all levels, and they offer a chance to tackle a variety of engaging coding challenges. After taking a shot at these challenges, participants have the opportunity to discuss their approaches and solutions with fellow coders in a relaxed and friendly atmosphere. These sessions are an excellent way to enhance your problem-solving skills and prepare for technical job interviews in a comfortable and inclusive environment. Feel free to use your preferred programming language, and we look forward to having you join us on this coding journey at HackSussex!`]} />
-      <EventWhereWhen location="Future Technologies Lab, University of Sussex" date="Every Wednesday, 13:00 to 14:30" link={null} />
+      <EventWhereWhen location="Meeting rooms, Chichester 1" date="Wed, 1:00pm" link="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.1261731945247!2d-0.08990902304499236!3d50.865863857366044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487588b5f2f211b5%3A0xae77bf312760670c!2sChichester%20I%2C%20Falmer%2C%20Brighton%20BN1%209QJ!5e0!3m2!1sen!2suk!4v1710763477385!5m2!1sen!2suk" />
       <Resources links={linksData} />
       <div className='mb-5'></div>
     </>

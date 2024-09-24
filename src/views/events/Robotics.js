@@ -42,7 +42,7 @@ const Robotics = () => {
         <div className="container p-5 pt-0">
           Sign up to get notified <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5fJVzFHijuOZrM6zirnidI43eSzg1SHWd9dZTJLJIFSAwQw/viewform?fbzx=6198511734001577115&pli=1">here</a>!
         </div>
-        <EventWhereWhen location="John Clifford West Building, G3" date="Wed 12:00 - 14:00 and Fri 12:00 - 14:00" link="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1101.727418582699!2d-0.08451!3d50.8664128!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487588c9d45d9f39%3A0xd978d75146afc343!2sJohn%20Clifford%20West!5e1!3m2!1sen!2suk!4v1707213743681!5m2!1sen!2suk"/>
+        <EventWhereWhen location="Meetings rooms, Chichester 1" date="Wed 2:00pm" link="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.1261731945247!2d-0.08990902304499236!3d50.865863857366044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487588b5f2f211b5%3A0xae77bf312760670c!2sChichester%20I%2C%20Falmer%2C%20Brighton%20BN1%209QJ!5e0!3m2!1sen!2suk!4v1710763477385!5m2!1sen!2suk"/>
         {/* <Resources links={linksData} /> */}
     </>
   );
