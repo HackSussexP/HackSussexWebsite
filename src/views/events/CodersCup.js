@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import CodersCupBackground from './../../assets/index-carousel/coderscup-background.png';
-import CodersCupLogo from './../../assets/coders-cup-logo-white-23.png';
+import CodersCupBackground from './../../assets/events/CodersCup/CodersCupBackground.png';
+import CodersCupLogo from './../../assets/events/CodersCup/CodersCupLogo.png';
 
 import EventWhereWhen from '../../components/EventWhereWhen'; 
 import Timer from './../../components/Timer';
@@ -12,10 +12,10 @@ import Sponsors from './../../components/Sponsors';
 import AboutSection from '../../components/AboutSection';
 import HallOfFame from '../../components/HallOfFame';
 
-import patrick from '../../assets/patrick.png';
-import guy from '../../assets/guy.png';
-import jude from '../../assets/jude.png';
-import layton from '../../assets/layton.jpg'
+import patrick from '../../assets/events/CodersCup/winners/patrick.png';
+import guy from '../../assets/events/CodersCup/winners/guy.png';
+import jude from '../../assets/events/CodersCup/winners/jude.png';
+import layton from '../../assets/events/CodersCup/winners/layton.jpg'
 
 const hallOfFameData = [
   {

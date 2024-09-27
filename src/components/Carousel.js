@@ -1,27 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import HackathonBackground from './../assets/hackathon-background-darker.png';
-import HackathonLogo from '../assets/events/hs24.png';
+import HackathonBackground from './../assets/events/Hackathon/HSBackground.png';
+import HackathonLogo from '../assets/events/Hackathon/HS24Logo.png';
 
-import CodersCupBackground from './../assets/index-carousel/coderscup-background.png';
-import CodersCupLogo from '../assets/coders-cup-logo-white-23.png';
+import CodersCupBackground from './../assets/events/CodersCup/CodersCupBackground.png';
+import CodersCupLogo from '../assets/events/CodersCup/CodersCupLogo.png';
 
-import GameJamLogo from './../assets/index-carousel/gamejam-logo.png';
-import GameJamBackground from './../assets/index-carousel/gamejam-background.png';
+import GameJamLogo from './../assets/events/GameJam/GJLogo.png';
+import GameJamBackground from './../assets/events/GameJam/GJBackground.png';
 
-import PwnSussexLogo from './../assets/index-carousel/PwnSussex-logo.png';
-import PwnSussexBackground from './../assets/index-carousel/PwnSussex-background.png';
+import PwnSussexLogo from './../assets/events/PwnSussex/PwnSussexLogo.png';
+import PwnSussexBackground from './../assets/events/PwnSussex/PwnSussexBackground.png';
 
-import LeetcodingLogo from './../assets/index-carousel/leetcoding-logo.png';
-import LeetcodingBackground from './../assets/index-carousel/leetcoding-background.png';
+import LeetcodingLogo from './../assets/events/Leetcoding/LeetcodingLogo.png';
+import LeetcodingBackground from './../assets/events/Leetcoding/LeetcodingBackground.png';
 
-import RoboticsBackground from './../assets/roboticsBackground.png';
+import RoboticsBackground from './../assets/events/Robotics/RoboticsBackground.png';
 
-import CompetitiveCodingBackground from './../assets/events/a2 - Cropped-2.jpg';
+import CompetitiveCodingBackground from './../assets/events/CompetitiveProgramming/CompetitiveProgrammingBackground.jpg';
 
-import MinesocLogo from './../assets/events/minesoc/minesoclogo.png';
-import MinesocBackground from './../assets/events/minesoc/minesoc.png';
+import MineSocLogo from './../assets/events/MineSoc/MineSocLogo.png';
+import MineSocBackground from './../assets/events/MineSoc/MineSocBackground.png';
 
 const HomeCarousel = () => {
   return (
@@ -166,16 +166,16 @@ const HomeCarousel = () => {
               </Link>
               {/* END COMPETITIVE PROGRAMMING CAROUSEL */}
 
-              {/* MINESOC CAROUSEL */}
+              {/* MineSoc CAROUSEL */}
               <Link to="/events/leetcoding" className="p-0">
                 <div className="carousel-item">
-                  <img src={MinesocBackground} className="d-block w-100 h-100 img-fluid carousel-img" alt='Background' />
+                  <img src={MineSocBackground} className="d-block w-100 h-100 img-fluid carousel-img" alt='Background' />
                   <div className="carousel-caption">
-                    <img src={MinesocLogo} alt="Minesoc Logo" className='img-fluid ms-auto me-auto d-block p-3' style={{ width: '40%', height: 'auto' }} />
+                    <img src={MineSocLogo} alt="MineSoc Logo" className='img-fluid ms-auto me-auto d-block p-3' style={{ width: '40%', height: 'auto' }} />
                   </div>
                 </div>
               </Link>
-              {/* END MINESOC CAROUSEL */}
+              {/* END MineSoc CAROUSEL */}
 
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">

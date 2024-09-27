@@ -1,6 +1,3 @@
-import React, { useState } from "react";
-
-import RotatingSponsorBanner from './../../components/RotatingSponsorBanner';
 import EventWhereWhen from '../../components/EventWhereWhen'; 
 import Timer from './../../components/Timer';
 import Schedule from './../../components/Schedule';
@@ -8,19 +5,16 @@ import Sponsors from './../../components/Sponsors';
 import TicketSection from '../../components/TicketSection';
 import CodesOfConduct from '../../components/CodesOfConduct';
 
-import AboutSection from '../../components/AboutSection';
 import HackathonAbout from '../../components/HackathonAbout';
 
-import HackathonBackground from '../../assets/hackathon-background-darker.png';
-import HackathonLogo from '../../assets/events/hs24.png';
+import HackathonBackground from '../../assets/events/Hackathon/HSBackground.png';
+import HackathonLogo from '../../assets/events/Hackathon/HS24Logo.png';
 
 import RotoVRLogo from './../../assets/SponsorLogos/rotovr.png';
 import Hastings from './.././../assets/SponsorLogos/hastings.png';
 import paxton from './../../assets/SponsorLogos/paxton-logo.png';
 import teachFirst from './../../assets/SponsorLogos/GameJam/TeachFirst.png';
 import bcs from './../../assets/SponsorLogos/BCS.png';
-import github from './../../assets/SponsorLogos/GameJam/GitHubDark.png';
-import mlh from './../../assets/SponsorLogos/Mlh-logo.png';
 import huk from './../../assets/SponsorLogos/GameJam/hackathonsUK.png';
 import UoS from './../../assets/SponsorLogos/UoS.png';
 

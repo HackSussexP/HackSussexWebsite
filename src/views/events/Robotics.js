@@ -3,7 +3,7 @@ import React from 'react';
 import Resources from '../../components/Resources';
 import EventWhereWhen from '../../components/EventWhereWhen';
 import AboutSection from '../../components/AboutSection';
-import roboticsBackground from '../../assets/roboticsBackground.png';
+import RoboticsBackground from '../../assets/events/Robotics/RoboticsBackground.png';
 
 const linksData = [
     // Website - Online Practice
@@ -33,7 +33,7 @@ const Robotics = () => {
   return (
     <>
         <div className="carousel-inner p-0">
-            <img src={roboticsBackground} className="d-block w-100 img-fluid splash" alt='Background' />
+            <img src={RoboticsBackground} className="d-block w-100 img-fluid splash" alt='Background' />
             <div className="carousel-caption">
                 <p className='display-4' style={{color: "var(--electric-green)"}}>Robotics</p> {/* Get me sized correctly or replaced */}
             </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 
-import logo from "./../assets/logo-gradient.png";
+import logo from "./../assets/Logos/Gradient.png";
 
 const Navbar = (props) => {
   const [navbar, setNavbar] = useState(false)
@@ -95,8 +95,8 @@ const Navbar = (props) => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/events/minesoc" onClick={closeNavbar}>
-                      Minesoc
+                    <Link className="dropdown-item" to="/events/MineSoc" onClick={closeNavbar}>
+                      MineSoc
                     </Link>
                   </li>
                   <li className="dropdown-divider"></li>
