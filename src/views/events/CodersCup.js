@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import CodersCupBackground from './../../assets/events/CodersCup/CodersCupBackground.png';
-import CodersCupLogo from './../../assets/events/CodersCup/CodersCupLogo.png';
+import CodersCupBackground from './../../assets/Events/CodersCup/CodersCupBackground.png';
+import CodersCupLogo from './../../assets/Events/CodersCup/CodersCupLogo.png';
 
 import EventWhereWhen from '../../components/EventWhereWhen'; 
-import Timer from './../../components/Timer';
-import Schedule from './../../components/Schedule';
-import Sponsors from './../../components/Sponsors';
+import Timer from '../../components/Timer';
+import Schedule from '../../components/Schedule';
+import Sponsors from '../../components/Sponsors';
 
 import AboutSection from '../../components/AboutSection';
 import HallOfFame from '../../components/HallOfFame';
 
-import patrick from '../../assets/events/CodersCup/winners/patrick.png';
-import guy from '../../assets/events/CodersCup/winners/guy.png';
-import jude from '../../assets/events/CodersCup/winners/jude.png';
-import layton from '../../assets/events/CodersCup/winners/layton.jpg'
+import patrick from '../../assets/Events/CodersCup/winners/patrick.png';
+import guy from '../../assets/Events/CodersCup/winners/guy.png';
+import jude from '../../assets/Events/CodersCup/winners/jude.png';
+import layton from '../../assets/Events/CodersCup/winners/layton.jpg'
 
 const hallOfFameData = [
   {

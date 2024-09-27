@@ -1,7 +1,7 @@
 import React from "react";
 
-import CodersCupBackground from './../../assets/events/CodersCup/CodersCupBackground.png';
-import CodersCupLogo from './../../assets/events/CodersCup/CodersCupLogo.png';
+import CodersCupBackground from './../../assets/Events/CodersCup/CodersCupBackground.png';
+import CodersCupLogo from './../../assets/Events/CodersCup/CodersCupLogo.png';
 
 const CodeSocials = () => {
   return (

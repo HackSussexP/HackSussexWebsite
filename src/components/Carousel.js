@@ -1,27 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import HackathonBackground from './../assets/events/Hackathon/HSBackground.png';
-import HackathonLogo from '../assets/events/Hackathon/HS24Logo.png';
+import HackathonBackground from './../assets/Events/Hackathon/HSBackground.png';
+import HackathonLogo from '../assets/Events/Hackathon/HS24Logo.png';
 
-import CodersCupBackground from './../assets/events/CodersCup/CodersCupBackground.png';
-import CodersCupLogo from '../assets/events/CodersCup/CodersCupLogo.png';
+import CodersCupBackground from './../assets/Events/CodersCup/CodersCupBackground.png';
+import CodersCupLogo from '../assets/Events/CodersCup/CodersCupLogo.png';
 
-import GameJamLogo from './../assets/events/GameJam/GJLogo.png';
-import GameJamBackground from './../assets/events/GameJam/GJBackground.png';
+import GameJamLogo from './../assets/Events/GameJam/GJLogo.png';
+import GameJamBackground from './../assets/Events/GameJam/GJBackground.png';
 
-import PwnSussexLogo from './../assets/events/PwnSussex/PwnSussexLogo.png';
-import PwnSussexBackground from './../assets/events/PwnSussex/PwnSussexBackground.png';
+import PwnSussexLogo from './../assets/Events/PwnSussex/PwnSussexLogo.png';
+import PwnSussexBackground from './../assets/Events/PwnSussex/PwnSussexBackground.png';
 
-import LeetcodingLogo from './../assets/events/Leetcoding/LeetcodingLogo.png';
-import LeetcodingBackground from './../assets/events/Leetcoding/LeetcodingBackground.png';
+import LeetcodingLogo from './../assets/Events/Leetcoding/LeetcodingLogo.png';
+import LeetcodingBackground from './../assets/Events/Leetcoding/LeetcodingBackground.png';
 
-import RoboticsBackground from './../assets/events/Robotics/RoboticsBackground.png';
+import RoboticsBackground from './../assets/Events/Robotics/RoboticsBackground.png';
 
-import CompetitiveCodingBackground from './../assets/events/CompetitiveProgramming/CompetitiveProgrammingBackground.jpg';
+import CompetitiveCodingBackground from './../assets/Events/CompetitiveProgramming/CompetitiveProgrammingBackground.jpg';
 
-import MineSocLogo from './../assets/events/MineSoc/MineSocLogo.png';
-import MineSocBackground from './../assets/events/MineSoc/MineSocBackground.png';
+import MineSocLogo from './../assets/Events/MineSoc/MineSocLogo.png';
+import MineSocBackground from './../assets/Events/MineSoc/MineSocBackground.png';
 
 const HomeCarousel = () => {
   return (
@@ -31,7 +31,7 @@ const HomeCarousel = () => {
           <div id='homeCarousel' className='carousel slide'data-bs-ride="carousel">
             <div className='carousel-inner m-0'>
               {/* HACKATHON CAROUSEL */}
-              <Link to="/events/hackathon" className="p-0">
+              <Link to="/Events/hackathon" className="p-0">
                 <div className="carousel-item active">
                   <img src={HackathonBackground} className="d-block w-100 img-fluid carousel-img" alt='Hackathon background' />
                   <div className="carousel-caption">
@@ -62,7 +62,7 @@ const HomeCarousel = () => {
               {/* END HACKATHON CAROUSEL */}
 
               {/* GAME JAM CAROUSEL */}
-              <Link to="/events/gamejam" className="p-0">
+              <Link to="/Events/gamejam" className="p-0">
                 <div className="carousel-item">
                   <img src={GameJamBackground} className="d-block w-100 h-100 img-fluid carousel-img" alt='Background' />
                   <div className="carousel-caption">
@@ -91,7 +91,7 @@ const HomeCarousel = () => {
               {/* END GAME JAM  CAROUSEL */}
 
               {/* CODERS CUP CAROUSEL */}
-              <Link to="/events/coderscup" className="p-0">
+              <Link to="/Events/coderscup" className="p-0">
                 <div className="carousel-item">
                   <img src={CodersCupBackground} className="d-block w-100 h-100 img-fluid carousel-img" alt='Background' />
                   <div className="carousel-caption">
@@ -123,7 +123,7 @@ const HomeCarousel = () => {
               {/* END CODERS CUP CAROUSEL */}
 
               {/* PwnSussex CAROUSEL */}
-              <Link to="/events/pwnsussex" className="p-0">
+              <Link to="/Events/pwnsussex" className="p-0">
                 <div className="carousel-item h-100">
                   <img src={PwnSussexBackground} className="d-block w-100 h-100 img-fluid carousel-img" alt='Background' />
                   <div className="carousel-caption">
@@ -134,7 +134,7 @@ const HomeCarousel = () => {
               {/* END PwnSussex CAROUSEL */}
 
               {/* LEETCODING CAROUSEL */}
-              <Link to="/events/leetcoding" className="p-0">
+              <Link to="/Events/leetcoding" className="p-0">
                 <div className="carousel-item">
                   <img src={LeetcodingBackground} className="d-block w-100 h-100 img-fluid carousel-img" alt='Background' />
                   <div className="carousel-caption">
@@ -145,7 +145,7 @@ const HomeCarousel = () => {
               {/* END LEETCODING CAROUSEL */}
 
               {/* ROBOTICS CAROUSEL */}
-              <Link to="/events/leetcoding" className="p-0">
+              <Link to="/Events/leetcoding" className="p-0">
                 <div className="carousel-item">
                   <img src={RoboticsBackground} className="d-block w-100 h-100 img-fluid carousel-img" alt='Background' />
                   <div className="carousel-caption">
@@ -156,7 +156,7 @@ const HomeCarousel = () => {
               {/* END ROBOTICS CAROUSEL */}
 
               {/* COMPETITIVE PROGRAMMING CAROUSEL */}
-              <Link to="/events/leetcoding" className="p-0">
+              <Link to="/Events/leetcoding" className="p-0">
                 <div className="carousel-item">
                   <img src={CompetitiveCodingBackground} className="d-block w-100 h-100 img-fluid carousel-img" alt='Background' />
                   <div className="carousel-caption">
@@ -167,7 +167,7 @@ const HomeCarousel = () => {
               {/* END COMPETITIVE PROGRAMMING CAROUSEL */}
 
               {/* MineSoc CAROUSEL */}
-              <Link to="/events/leetcoding" className="p-0">
+              <Link to="/Events/leetcoding" className="p-0">
                 <div className="carousel-item">
                   <img src={MineSocBackground} className="d-block w-100 h-100 img-fluid carousel-img" alt='Background' />
                   <div className="carousel-caption">

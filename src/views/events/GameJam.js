@@ -1,14 +1,14 @@
 import {React, useEffect} from 'react';
 
-import GameJamLogo from './../../assets/events/GameJam/GJLogo.png';
-import GameJamBackground from './../../assets/events/GameJam/GJBackground.png';
+import GameJamLogo from './../../assets/Events/GameJam/GJLogo.png';
+import GameJamBackground from './../../assets/Events/GameJam/GJBackground.png';
 
 import EventWhereWhen from '../../components/EventWhereWhen'; 
-import Timer from './../../components/Timer';
-import Schedule from './../../components/Schedule';
+import Timer from '../../components/Timer';
+import Schedule from '../../components/Schedule';
 import TicketSection from '../../components/TicketSection';
 import CodesOfConduct from '../../components/CodesOfConduct';
-import Sponsors from './../../components/Sponsors';
+import Sponsors from '../../components/Sponsors';
 
 import AboutSection from '../../components/AboutSection';
 

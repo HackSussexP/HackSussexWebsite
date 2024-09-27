@@ -1,14 +1,14 @@
 import EventWhereWhen from '../../components/EventWhereWhen'; 
-import Timer from './../../components/Timer';
-import Schedule from './../../components/Schedule';
-import Sponsors from './../../components/Sponsors';
+import Timer from '../../components/Timer';
+import Schedule from '../../components/Schedule';
+import Sponsors from '../../components/Sponsors';
 import TicketSection from '../../components/TicketSection';
 import CodesOfConduct from '../../components/CodesOfConduct';
 
 import HackathonAbout from '../../components/HackathonAbout';
 
-import HackathonBackground from '../../assets/events/Hackathon/HSBackground.png';
-import HackathonLogo from '../../assets/events/Hackathon/HS24Logo.png';
+import HackathonBackground from '../../assets/Events/Hackathon/HSBackground.png';
+import HackathonLogo from '../../assets/Events/Hackathon/HS24Logo.png';
 
 import RotoVRLogo from './../../assets/SponsorLogos/rotovr.png';
 import Hastings from './.././../assets/SponsorLogos/hastings.png';

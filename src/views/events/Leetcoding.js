@@ -4,8 +4,8 @@ import Resources from '../../components/Resources'
 import AboutSection from '../../components/AboutSection';
 import EventWhereWhen from '../../components/EventWhereWhen';
 
-import LeetcodingLogo from './../../assets/events/Leetcoding/LeetcodingLogo.png'
-import LeetcodingBackground from './../../assets/events/Leetcoding/LeetcodingBackground.png'
+import LeetcodingLogo from './../../assets/Events/Leetcoding/LeetcodingLogo.png'
+import LeetcodingBackground from './../../assets/Events/Leetcoding/LeetcodingBackground.png'
 
 const linksData = [
   // Website - Online Practice
