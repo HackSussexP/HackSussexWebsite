@@ -236,7 +236,7 @@ const GameJam = () => {
       <EventWhereWhen location="University of Sussex, Brighton" date={"25 November 2023"} link={null} />
       {config.schedule && <Schedule schedule={schedule} multi_day={true} />}
       <CodesOfConduct links={codes} />
-      {config.sponsors && <Sponsors sponsorData={sponsorData} />}
+      {/* {config.sponsors && <Sponsors sponsorData={sponsorData} />} */}
     </div>
     </>
   );

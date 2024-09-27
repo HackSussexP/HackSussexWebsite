@@ -61,7 +61,7 @@ const Navbar = (props) => {
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/events/coderscup" onClick={closeNavbar}>
-                      Coders Cup
+                      Coders' Cup
                     </Link>
                   </li>
                   {/* <li>
@@ -94,6 +94,11 @@ const Navbar = (props) => {
                       Competitive Programming
                     </Link>
                   </li>
+                  <li>
+                    <Link className="dropdown-item" to="/events/minesoc" onClick={closeNavbar}>
+                      Minesoc
+                    </Link>
+                  </li>
                   <li className="dropdown-divider"></li>
                   <li>
                     <Link className="dropdown-item" to="/events" onClick={closeNavbar}>
@@ -120,11 +125,6 @@ const Navbar = (props) => {
               <li className="nav-item">
                 <Link className="nav-link px-4" to="https://hacksussex.square.site/" target="_blank" onClick={closeNavbar}>
                   Merch Store
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link px-4" to="https://www.instagram.com/minesocsussex/" target="_blank" onClick={closeNavbar}>
-                  MineSoc
                 </Link>
               </li>
             </ul>

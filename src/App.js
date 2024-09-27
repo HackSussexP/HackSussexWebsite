@@ -13,6 +13,7 @@ const About = lazy(() => import("./views/About.js"));
 const Hackathon = lazy(() => import("./views/events/Hackathon.js"));
 const CodersCup = lazy(() => import("./views/events/CodersCup.js"));
 const CodeSocials = lazy(() => import("./views/events/CodeSocials.js"));
+const Minesoc = lazy(() => import("./views/events/Minesoc.js"));
 const PwnSussex = lazy(() => import("./views/events/PwnSussex.js"));
 const GameJam = lazy(() => import("./views/events/GameJam.js"));
 const Leetcoding = lazy(() => import("./views/events/Leetcoding.js"));
@@ -91,6 +92,7 @@ function RouterReload() {
         <Route path="/events/hackathon" element={<Hackathon />} />
         <Route path="/events/coderscup" element={<CodersCup />} />
         {/* <Route path="/events/codesocials" element={<CodeSocials />} /> */}
+        <Route path="/events/minesoc" element={<Minesoc />} />
         <Route path="/events/pwnsussex" element={<PwnSussex />} />
         <Route path="/events/gamejam" element={<GameJam />} />
         <Route path="/events/leetcoding" element={<Leetcoding />} />

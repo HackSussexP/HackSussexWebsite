@@ -49,7 +49,7 @@ const HomeEvents = () => {
       <div className='row mb-3'>
         <div className='col-12 col-lg-6 m-auto text-lg-end px-3'>
           <h2 className='display-6 fw-bold text-electric'>
-            Coders Cup
+            Coders' Cup
           </h2>
           <p className='fs-4'>
             Algorithmic Coding Competition for Students!

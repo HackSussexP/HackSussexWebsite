@@ -3,8 +3,8 @@
 const events = [
   {
     "image": require("./assets/events/cc22.jpg"),
-    "title": "Coders Cup 2022",
-    "description": "Our 2nd Coders Cup! Held due to the pandemic cancelling our in-person events. Who will be crowned the best programmer at Sussex University!\n\nFollowing our online qualifiers, 8 contestants will go head to head in competing live on programming challenges. The winner moves onto the next rounds to decide who will be crowned the Coder's Cup champion!",
+    "title": "Coders' Cup 2022",
+    "description": "Our 2nd Coders' Cup! Held due to the pandemic cancelling our in-person events. Who will be crowned the best programmer at Sussex University!\n\nFollowing our online qualifiers, 8 contestants will go head to head in competing live on programming challenges. The winner moves onto the next rounds to decide who will be crowned the Coders' Cup champion!",
     "location": "Hybrid/Sussex Media Technology Lab",
     "date": "2022-06-01",
     "time": "12pm - 2pm",
@@ -33,8 +33,8 @@ const events = [
   },
   {
     "image": require("./assets/events/cc23.jpg"),
-    "title": "Coders Cup 2023",
-    "description": "Our 3rd Coders Cup! Held due to the pandemic cancelling our in-person events. Who will be crowned the best programmer at Sussex University!\n\nFollowing our online qualifiers, 8 contestants will go head to head in competing live on programming challenges. The winner moves onto the next rounds to decide who will be crowned the Coder's Cup champion!",
+    "title": "Coders' Cup 2023",
+    "description": "Our 3rd Coders' Cup! Held due to the pandemic cancelling our in-person events. Who will be crowned the best programmer at Sussex University!\n\nFollowing our online qualifiers, 8 contestants will go head to head in competing live on programming challenges. The winner moves onto the next rounds to decide who will be crowned the Coders' Cup champion!",
     "location": "Sussex Media Technoloy Lab",
     "date": "2023-05-04",
     "time": "12pm - 2pm",
@@ -123,7 +123,7 @@ const events = [
   },
   {
     "image": require("./assets/events/cc23.jpg"),
-    "title": "Coders Cup 2024",
+    "title": "Coders' Cup 2024",
     "description": "HackSussex also run an annual programming competition where all programmers studying at the University of Sussex compete to answer algorithmic coding puzzles. The first stage is a HackerRank competition where you can flex your knowledge of data structures and algorithms to answer as many questions as you can within a week! The next stage is a 8 player knockout competition where you will go toe to toe with other programmers, which will be streamed online. There is a prize pool involved for the winners of the competition.",
     "location": "MTL, UNiversity of Sussex",
     "date": "2024-05-10",
