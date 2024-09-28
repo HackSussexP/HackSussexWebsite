@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import HackathonBackground from './../assets/Events/Hackathon/HSBackground.png';
-import HackathonLogo from '../assets/Events/Hackathon/HS24Logo.png';
+import HackathonLogo from '../assets/Events/Hackathon/HSLogo.png';
 
 import CodersCupBackground from './../assets/Events/CodersCup/CodersCupBackground.png';
 import CodersCupLogo from '../assets/Events/CodersCup/CodersCupLogo.png';
@@ -47,7 +47,7 @@ const HomeCarousel = () => {
                       <div className="col-6 d-none d-lg-block">
                         <iframe 
                           className="w-100 rounded" 
-                          src="https://www.youtube.com/embed/gmKBSb7kbTY" 
+                          src="https://www.youtube.com/embed/I0szBuNtyLs?si=zrvUYJ0cMzRRywWV" 
                           style={{ aspectRatio: '16/9', maxWidth: '560px', borderRadius: '15px' }}
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                           allowFullScreen

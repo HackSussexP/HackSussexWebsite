@@ -8,7 +8,7 @@ import CodesOfConduct from '../../components/CodesOfConduct';
 import HackathonAbout from '../../components/HackathonAbout';
 
 import HackathonBackground from '../../assets/Events/Hackathon/HSBackground.png';
-import HackathonLogo from '../../assets/Events/Hackathon/HS24Logo.png';
+import HackathonLogo from '../../assets/Events/Hackathon/HSLogo.png';
 
 import RotoVRLogo from './../../assets/SponsorLogos/rotovr.png';
 import Hastings from './.././../assets/SponsorLogos/hastings.png';
@@ -176,7 +176,7 @@ const Hackathon = () => {
             <div className="col-6 d-none d-lg-block">
               <iframe 
                 className="w-100 rounded" 
-                src="https://www.youtube.com/embed/t4C3swUo0AA?si=PIXr2hwe3q7ghHEk" 
+                src="https://www.youtube.com/embed/I0szBuNtyLs?si=zrvUYJ0cMzRRywWV" 
                 style={{ aspectRatio: '16/9', maxWidth: '560px', borderRadius: '15px' }}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen
