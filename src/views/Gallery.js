@@ -26,12 +26,6 @@ const Gallery = () => {
     backgroundColor: 'var(--electric-green)',
   }
 
-  const filterButtonStyle = {
-    backgroundColor: 'var(--light-blue)',
-    border: 'none',
-    boxShadow: 'none',
-  }
-
   const [images, setImages] = useState([])
   const [events, setEvents] = useState([])
   const [years, setYears] = useState([])

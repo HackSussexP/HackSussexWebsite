@@ -3,7 +3,7 @@ import React from 'react';
 import Resources from '../../components/Resources';
 import EventWhereWhen from '../../components/EventWhereWhen';
 import AboutSection from '../../components/AboutSection';
-import roboticsBackground from '../../assets/roboticsBackground.png';
+import RoboticsBackground from '../../assets/Events/Robotics/RoboticsBackground.png';
 
 const linksData = [
     // Website - Online Practice
@@ -33,7 +33,7 @@ const Robotics = () => {
   return (
     <>
         <div className="carousel-inner p-0">
-            <img src={roboticsBackground} className="d-block w-100 img-fluid splash" alt='Background' />
+            <img src={RoboticsBackground} className="d-block w-100 img-fluid splash" alt='Background' />
             <div className="carousel-caption">
                 <p className='display-4' style={{color: "var(--electric-green)"}}>Robotics</p> {/* Get me sized correctly or replaced */}
             </div>
@@ -42,7 +42,7 @@ const Robotics = () => {
         <div className="container p-5 pt-0">
           Sign up to get notified <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5fJVzFHijuOZrM6zirnidI43eSzg1SHWd9dZTJLJIFSAwQw/viewform?fbzx=6198511734001577115&pli=1">here</a>!
         </div>
-        <EventWhereWhen location="Meetings rooms, Chichester 1" date="Wed 2:00pm" link="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.1261731945247!2d-0.08990902304499236!3d50.865863857366044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487588b5f2f211b5%3A0xae77bf312760670c!2sChichester%20I%2C%20Falmer%2C%20Brighton%20BN1%209QJ!5e0!3m2!1sen!2suk!4v1710763477385!5m2!1sen!2suk"/>
+        <EventWhereWhen location="FTL, Chichester 1" date="Wed 2:00pm" link="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.1261731945247!2d-0.08990902304499236!3d50.865863857366044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487588b5f2f211b5%3A0xae77bf312760670c!2sChichester%20I%2C%20Falmer%2C%20Brighton%20BN1%209QJ!5e0!3m2!1sen!2suk!4v1710763477385!5m2!1sen!2suk"/>
         {/* <Resources links={linksData} /> */}
     </>
   );

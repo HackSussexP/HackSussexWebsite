@@ -2,7 +2,7 @@
 
 const events = [
   {
-    "image": require("./assets/events/cc22.jpg"),
+    "image": require("./assets/Events/AllEvents/cc22.jpg"),
     "title": "Coders' Cup 2022",
     "description": "Our 2nd Coders' Cup! Held due to the pandemic cancelling our in-person events. Who will be crowned the best programmer at Sussex University!\n\nFollowing our online qualifiers, 8 contestants will go head to head in competing live on programming challenges. The winner moves onto the next rounds to decide who will be crowned the Coders' Cup champion!",
     "location": "Hybrid/Sussex Media Technology Lab",
@@ -12,7 +12,7 @@ const events = [
     "repeating": false,
   },
   {
-    "image": require("./assets/events/hs23.jpg"),
+    "image": require("./assets/Events/AllEvents/hs23.jpg"),
     "title": "Hackathon 2023",
     "description": "Our annual hackathon. Join us for a free weekend of coding, eating and winning prizes!\n\nEvery year, HackSussex hosts its main event, the hackathon!\n\nWe provide a free event for students and graduates to stretch their skills and win prizes across a wide range of technical areas, such as robotics, fintech, artifical intelligence, games development and more.\n\n Meals are provided throughout the event to ensure our hackers are well fed and powered up to produce the best projects over the course of a weekend. \n\nOnce submission close, each team will present their project to our panel of judges to decide who will win each track, along with the grand prize winner of the entire hackathon.",
     "location": "Sussex Campus - Chichester 1 Building",
@@ -22,7 +22,7 @@ const events = [
     "repeating": false,
   },
   {
-    "image": require("./assets/events/hs23.jpg"),
+    "image": require("./assets/Events/AllEvents/hs23.jpg"),
     "title": "Hackathon 2024",
     "description": "Our annual hackathon. Join us for a free weekend of coding, eating and winning prizes!\n\nEvery year, HackSussex hosts its main event, the hackathon!\n\nWe provide a free event for students and graduates to stretch their skills and win prizes across a wide range of technical areas, such as robotics, fintech, artifical intelligence, games development and more.\n\n Meals are provided throughout the event to ensure our hackers are well fed and powered up to produce the best projects over the course of a weekend. \n\nOnce submission close, each team will present their project to our panel of judges to decide who will win each track, along with the grand prize winner of the entire hackathon.",
     "location": "Sussex Campus - Chichester 1 Building",
@@ -32,7 +32,7 @@ const events = [
     "repeating": false,
   },
   {
-    "image": require("./assets/events/cc23.jpg"),
+    "image": require("./assets/Events/AllEvents/cc23.jpg"),
     "title": "Coders' Cup 2023",
     "description": "Our 3rd Coders' Cup! Held due to the pandemic cancelling our in-person events. Who will be crowned the best programmer at Sussex University!\n\nFollowing our online qualifiers, 8 contestants will go head to head in competing live on programming challenges. The winner moves onto the next rounds to decide who will be crowned the Coders' Cup champion!",
     "location": "Sussex Media Technoloy Lab",
@@ -42,7 +42,7 @@ const events = [
     "repeating": false,
   },
   {
-    "image": require("./assets/events/code-social.JPEG"),
+    "image": require("./assets/Events/AllEvents/code-social.jpeg"),
     "title": "Weekly Code Social",
     "description": "Every week of term, we hold a social to meet and chat with fellow students, no coding, no stress, just free snacks and soft drink provided.\n\nGrab a drink, sit back, play some games and meet new people.",
     "location": "Sussex Campus, Chichester 1 Building, Future Technology Lab (FTL)",
@@ -52,7 +52,7 @@ const events = [
     "repeating": false,
   },
   {
-    "image": require("./assets/events/dylan-beatie.jpg"),
+    "image": require("./assets/Events/AllEvents/dylan-beatie.jpg"),
     "title": "Guest Talk - Dylan Beattie",
     "description": "Join us for our first guest talk, with public speaker and programming enthusiast Dylan Beattie.",
     "location": "Sussex Campus, Chichester 1 Lecture Theatre, Future Technology Lab (FTL)",
@@ -62,7 +62,7 @@ const events = [
     "repeating": false,
   },
   {
-    "image": require("./assets/events/merch.jpg"),
+    "image": require("./assets/Events/AllEvents/merch.jpg"),
     "title": "Merch Drop",
     "description": "We are dropping our first hand-crafted merchandise. We will be drawing our raffle for some free items and launching our store.",
     "location": "Sussex Campus, Chichester 1 Building, Future Technology Lab (FTL)",
@@ -72,7 +72,7 @@ const events = [
     "repeating": false,
   },
   {
-    "image": require("./assets/events/leetcoding.jpg"),
+    "image": require("./assets/Events/AllEvents/leetcoding.jpg"),
     "title": "Leetcoding",
     "description": "Each week, join us for programming help sessions focused on leetcoding. Leetcoding questions are simple algorithmic problems to get you using your most efficient and effective programming techniques. Complete the challenge with 10+ IF-statements, lose some marks, complete it in 1 line, you are winning!",
     "location": "Sussex Campus, Chichester 1 Building, Future Technology Lab (FTL)",
@@ -82,7 +82,7 @@ const events = [
     "repeating": false,
   },
   {
-    "image": require("./assets/events/cybersec.jpg"),
+    "image": require("./assets/Events/AllEvents/cybersec.jpg"),
     "title": "Cyber Security",
     "description": "Our Cyber Security team PwnSussex focus on completing HackTheBox challenges as well as entering competitions throughout the year. These challenges focus on common vulnerabilities and cracking codes within systems in an ethical and legal way. \n\nInterested in joining the team? Join our discord and head to our cyber security channel.",
     "location": "Sussex Campus, Chichester 1 Building, Future Technology Lab (FTL)",
@@ -92,7 +92,7 @@ const events = [
     "repeating": false,
   },
   {
-    "image": require("./assets/events/gamejam23.jpg"),
+    "image": require("./assets/Events/AllEvents/gamejam23.jpg"),
     "title": "Game Jam 2023",
     "description": "Our newest annual event, the HackSussex Gamejam, aims to focus in on the game design, development and publishing scene to allow many of our amazing local studios to share their expertise with our jammers and allow them to flex their skills in game design and development. \n\nMuch like our hackathon, the game jam provides full meals throughout the weekend, allowing teams to focus on their project and produce the best indie games and tools to showcase to the judging panel at the end of the event and take home some amazing prizes.",
     "location": "Sussex Campus - Chichester 1 Building",
@@ -102,7 +102,7 @@ const events = [
     "repeating": false,
   },
   {
-    "image": require("./assets/events/robotics.jpg"),
+    "image": require("./assets/Events/AllEvents/robotics.jpg"),
     "title": "Robotics (Wednesday session)",
     "description": "New this year! We are hosting weekly robotics sessions, aimed at introducing students to simple robotics projects. Throughout which you will learn many of the basics of electronic signalling and control. This will cover motors, sensors, micro controller circuitry and more! \n\n Interested in giving it a try? Check out our discord section on robotics and turn up to either of the weekly sessions to get stuck in!",
     "location": "Sussex Campus, John Clifford West building, Room G3",
@@ -112,7 +112,7 @@ const events = [
     "repeating": false,
   },
   {
-    "image": require("./assets/events/leetcoding.jpg"),
+    "image": require("./assets/Events/AllEvents/leetcoding.jpg"),
     "title": "Competitive Programming - O(1)",
     "description": "Come along to practice solving more advanced questions, twist your brain and prepare for UKIEPC competition!",
     "location": "Sussex Campus, Chichester I, Meeting Room 2",
@@ -122,7 +122,7 @@ const events = [
     "repeating": false,
   },
   {
-    "image": require("./assets/events/cc23.jpg"),
+    "image": require("./assets/Events/AllEvents/cc23.jpg"),
     "title": "Coders' Cup 2024",
     "description": "HackSussex also run an annual programming competition where all programmers studying at the University of Sussex compete to answer algorithmic coding puzzles. The first stage is a HackerRank competition where you can flex your knowledge of data structures and algorithms to answer as many questions as you can within a week! The next stage is a 8 player knockout competition where you will go toe to toe with other programmers, which will be streamed online. There is a prize pool involved for the winners of the competition.",
     "location": "MTL, UNiversity of Sussex",
@@ -132,7 +132,7 @@ const events = [
     "repeating": false,
   },
   {
-    "image": require("./assets/events/leetcoding.jpg"),
+    "image": require("./assets/Events/AllEvents/leetcoding.jpg"),
     "title": "Python Workshops",
     "description": "Run with the Sussex Open Technologies Hub and Lecturer Andre Chagas, new this year we are bringing you a number of beginner python workshops designed to be followed by those who are not yet familar with python or programmign at all.",
     "location": "UoS Library",
@@ -142,7 +142,7 @@ const events = [
     "repeating": false,
   },
   {
-    "image": require("./assets/events/code-social.JPEG"),
+    "image": require("./assets/Events/AllEvents/code-social.jpeg"),
     "title": "Talk with Eastbourne",
     "description": "During this week's Code Social, Eastbourne will come in to talk to you about what the offer as a group, carrers in the compyuting and technologies industry and how yu can get involved.",
     "location": "Sussex Campus, Chichester 1 Building, Future Technology Lab (FTL)",
@@ -152,7 +152,7 @@ const events = [
     "repeating": false,
   },
   {
-    "image": require("./assets/Committee_happy.JPG"),
+    "image": require("./assets/Events/AllEvents/Committee_happy.jpg"),
     "title": "Summer break",
     "description": "Following a long busy year full of amazing events, our committee are taking a well earned break.",
     "location": "We will see you in September",

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 
-import logo from "./../assets/logo-gradient.png";
+import logo from "./../assets/Logos/Gradient.png";
 
 const Navbar = (props) => {
   const [navbar, setNavbar] = useState(false)
@@ -55,48 +55,48 @@ const Navbar = (props) => {
                 </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarEventDropdown">
                   <li>
-                    <Link className="dropdown-item" to="/events/hackathon" onClick={closeNavbar}>
+                    <Link className="dropdown-item" to="/Events/hackathon" onClick={closeNavbar}>
                       Hackathon
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/events/coderscup" onClick={closeNavbar}>
+                    <Link className="dropdown-item" to="/Events/coderscup" onClick={closeNavbar}>
                       Coders' Cup
                     </Link>
                   </li>
                   {/* <li>
-                    <Link className="dropdown-item" to="/events/codesocials" onClick={closeNavbar}>
+                    <Link className="dropdown-item" to="/Events/codesocials" onClick={closeNavbar}>
                       Code Socials
                     </Link>
                   </li> */}
                   <li>
-                    <Link className="dropdown-item" to="/events/pwnsussex" onClick={closeNavbar}>
+                    <Link className="dropdown-item" to="/Events/pwnsussex" onClick={closeNavbar}>
                       PwnSussex
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/events/gamejam" onClick={closeNavbar}>
+                    <Link className="dropdown-item" to="/Events/gamejam" onClick={closeNavbar}>
                       Game Jam
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/events/leetcoding" onClick={closeNavbar}>
+                    <Link className="dropdown-item" to="/Events/leetcoding" onClick={closeNavbar}>
                       Leetcoding
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/events/robotics" onClick={closeNavbar}>
+                    <Link className="dropdown-item" to="/Events/robotics" onClick={closeNavbar}>
                       Robotics
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/events/competitiveProgramming" onClick={closeNavbar}>
+                    <Link className="dropdown-item" to="/Events/competitiveProgramming" onClick={closeNavbar}>
                       Competitive Programming
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/events/minesoc" onClick={closeNavbar}>
-                      Minesoc
+                    <Link className="dropdown-item" to="/Events/MineSoc" onClick={closeNavbar}>
+                      MineSoc
                     </Link>
                   </li>
                   <li className="dropdown-divider"></li>

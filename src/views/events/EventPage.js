@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { FaCalendarAlt, FaClock, FaMapMarkerAlt, FaPoundSign } from 'react-icons/fa';
 
-import events from './../../events.js';
+import events from '../../events.js';
 
 function dateFormat(date) {
   let dateObj = new Date(date);

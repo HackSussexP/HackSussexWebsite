@@ -5,8 +5,8 @@ import Resources from '../../components/Resources'
 import AboutSection from '../../components/AboutSection';
 import EventWhereWhen from '../../components/EventWhereWhen';
 
-import PwnSussexLogo from './../../assets/index-carousel/PwnSussex-logo.png';
-import PwnSussexBackground from './../../assets/index-carousel/PwnSussex-background.png';
+import PwnSussexLogo from './../../assets/Events/PwnSussex/PwnSussexLogo.png';
+import PwnSussexBackground from './../../assets/Events/PwnSussex/PwnSussexBackground.png';
 
 const linksData = [
   { name: "Hackers Arise", url: "https://www.hackers-arise.com" },

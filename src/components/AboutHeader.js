@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './AboutHeader.module.css';
 
-import hackathonLogo from '../assets/logo-gradient.png';
+import hackathonLogo from '../assets/Logos/Gradient.png';
 
 const AboutHeader = () => {
   return (

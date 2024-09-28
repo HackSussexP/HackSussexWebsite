@@ -1,23 +1,14 @@
 import {React, useEffect} from 'react';
 
-import GameJamLogo from './../../assets/index-carousel/gamejam-logo.png';
-import GameJamBackground from './../../assets/index-carousel/gamejam-background.png';
-
-import RotoVRLogo from './../../assets/SponsorLogos/GameJam/rotovr.png';
-import BCSLogo from './../../assets/SponsorLogos/GameJam/BCSDark.png';
-import GitHubLogo from './../../assets/SponsorLogos/GameJam/GitHubDarkTall.png';
-import HackathonsUKLogo from './../../assets/SponsorLogos/GameJam/HUK.jpg';
-import MLHLogo from './../../assets/SponsorLogos/GameJam/mlh2.png';
-import RedbullLogo from './../../assets/SponsorLogos/GameJam/RedBull.png';
-import SussexLogo from './../../assets/SponsorLogos/GameJam/UoS.png';
-import TeachFirstLogo from './../../assets/SponsorLogos/GameJam/TeachFirstDark.png';
+import GameJamLogo from './../../assets/Events/GameJam/GJLogo.png';
+import GameJamBackground from './../../assets/Events/GameJam/GJBackground.png';
 
 import EventWhereWhen from '../../components/EventWhereWhen'; 
-import Timer from './../../components/Timer';
-import Schedule from './../../components/Schedule';
-import Sponsors from './../../components/Sponsors';
+import Timer from '../../components/Timer';
+import Schedule from '../../components/Schedule';
 import TicketSection from '../../components/TicketSection';
 import CodesOfConduct from '../../components/CodesOfConduct';
+import Sponsors from '../../components/Sponsors';
 
 import AboutSection from '../../components/AboutSection';
 
@@ -25,10 +16,10 @@ import AboutSection from '../../components/AboutSection';
 const config = {
   "timer": false,
   "event": false,
-  "schedule": true,
-  "sponsors": true,
-  "date": "Nov 25, 2023, 11:00:00",
-  "title": "2023 Game Jam",
+  "schedule": false,
+  "sponsors": false,
+  "date": "Nov 30, 2024, 11:00:00",
+  "title": "2024 Game Jam",
   "tickets": false,
   "url": "https://pretix.eu/HackSussex2023/register/"
 }
@@ -135,53 +126,42 @@ const sponsorData = [
     title: "Gold Sponsor",
     size: "50%",
     logos: [
-      { src: RotoVRLogo, url: "https://www.rotovr.com" }
+      { src: "", url: "" },
     ]
   },
-  // {
-  //   title: "Gold Sponsors",
-  //   size: "70%",
-  //   logos: [
-  //     { src: RotoVRLogo, url: "https://www.rotovr.com" }
-  //   ]
-  // },
   {
     title: "Silver Sponsors",
     size: "30%",
     logos: [
-      { src: GitHubLogo, url: "https://github.com" },
-      { src: BCSLogo, url: "https://www.bcs.org" }
+      { src: "", url: "" },
     ]
   },
   {
     title: "Bronze Sponsors",
     size: "30%",
     logos: [
-      { src: TeachFirstLogo, url: "https://www.teachfirst.org.uk" },
+      { src: "", url: "" },
     ]
   },
   {
     title: "Partners",
     size: "30%",
     logos: [
-      { src: SussexLogo, url: "https://www.sussex.ac.uk" },
-      { src: HackathonsUKLogo, url: "https://hackathons.org.uk" },
-      { src: MLHLogo, url: "https://mlh.io" },
+      { src: "", url: "" },
     ]
   },
   {
     title: "Supporters",
     size: "20%",
     logos: [
-      { src: RedbullLogo, url: "https://www.redbull.com" },
+      { src: "", url: "" },
     ]
   }
 ];
 
 const codes = [
-  { name: "Major League Hacking", url: "https://static.mlh.io/docs/mlh-code-of-conduct.pdf" },
   { name: "Hackthons UK", url: "https://www.hackathons.org.uk/code-of-conduct" }
-];
+]
 
 
 const GameJam = () => {
@@ -236,7 +216,7 @@ const GameJam = () => {
       <EventWhereWhen location="University of Sussex, Brighton" date={"25 November 2023"} link={null} />
       {config.schedule && <Schedule schedule={schedule} multi_day={true} />}
       <CodesOfConduct links={codes} />
-      {/* {config.sponsors && <Sponsors sponsorData={sponsorData} />} */}
+      {config.sponsors && <Sponsors sponsorData={sponsorData} />}
     </div>
     </>
   );

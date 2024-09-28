@@ -1,26 +1,20 @@
-import React, { useState } from "react";
-
-import RotatingSponsorBanner from './../../components/RotatingSponsorBanner';
 import EventWhereWhen from '../../components/EventWhereWhen'; 
-import Timer from './../../components/Timer';
-import Schedule from './../../components/Schedule';
-import Sponsors from './../../components/Sponsors';
+import Timer from '../../components/Timer';
+import Schedule from '../../components/Schedule';
+import Sponsors from '../../components/Sponsors';
 import TicketSection from '../../components/TicketSection';
 import CodesOfConduct from '../../components/CodesOfConduct';
 
-import AboutSection from '../../components/AboutSection';
 import HackathonAbout from '../../components/HackathonAbout';
 
-import HackathonBackground from '../../assets/hackathon-background-darker.png';
-import HackathonLogo from '../../assets/events/hs24.png';
+import HackathonBackground from '../../assets/Events/Hackathon/HSBackground.png';
+import HackathonLogo from '../../assets/Events/Hackathon/HSLogo.png';
 
 import RotoVRLogo from './../../assets/SponsorLogos/rotovr.png';
 import Hastings from './.././../assets/SponsorLogos/hastings.png';
 import paxton from './../../assets/SponsorLogos/paxton-logo.png';
 import teachFirst from './../../assets/SponsorLogos/GameJam/TeachFirst.png';
 import bcs from './../../assets/SponsorLogos/BCS.png';
-import github from './../../assets/SponsorLogos/GameJam/GitHubDark.png';
-import mlh from './../../assets/SponsorLogos/Mlh-logo.png';
 import huk from './../../assets/SponsorLogos/GameJam/hackathonsUK.png';
 import UoS from './../../assets/SponsorLogos/UoS.png';
 
@@ -182,7 +176,7 @@ const Hackathon = () => {
             <div className="col-6 d-none d-lg-block">
               <iframe 
                 className="w-100 rounded" 
-                src="https://www.youtube.com/embed/t4C3swUo0AA?si=PIXr2hwe3q7ghHEk" 
+                src="https://www.youtube.com/embed/I0szBuNtyLs?si=zrvUYJ0cMzRRywWV" 
                 style={{ aspectRatio: '16/9', maxWidth: '560px', borderRadius: '15px' }}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen

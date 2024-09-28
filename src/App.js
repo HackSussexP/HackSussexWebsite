@@ -10,19 +10,19 @@ import Footer from "./components/Footer.js";
 
 const Home = lazy(() => import("./views/Home.js"));
 const About = lazy(() => import("./views/About.js"));
-const Hackathon = lazy(() => import("./views/events/Hackathon.js"));
-const CodersCup = lazy(() => import("./views/events/CodersCup.js"));
-const CodeSocials = lazy(() => import("./views/events/CodeSocials.js"));
-const Minesoc = lazy(() => import("./views/events/Minesoc.js"));
-const PwnSussex = lazy(() => import("./views/events/PwnSussex.js"));
-const GameJam = lazy(() => import("./views/events/GameJam.js"));
-const Leetcoding = lazy(() => import("./views/events/Leetcoding.js"));
-const AllEvents = lazy(() => import("./views/events/AllEvents.js"));
-const EventPage = lazy(() => import("./views/events/EventPage.js"));
+const Hackathon = lazy(() => import("./views/Events/Hackathon.js"));
+const CodersCup = lazy(() => import("./views/Events/CodersCup.js"));
+const CodeSocials = lazy(() => import("./views/Events/CodeSocials.js"));
+const MineSoc = lazy(() => import("./views/Events/MineSoc.js"));
+const PwnSussex = lazy(() => import("./views/Events/PwnSussex.js"));
+const GameJam = lazy(() => import("./views/Events/GameJam.js"));
+const Leetcoding = lazy(() => import("./views/Events/Leetcoding.js"));
+const AllEvents = lazy(() => import("./views/Events/AllEvents.js"));
+const EventPage = lazy(() => import("./views/Events/EventPage.js"));
 const Gallery = lazy(() => import("./views/Gallery.js"));
 const FAQ = lazy(() => import("./views/FAQ.js"));
-const Robotics = lazy(() => import("./views/events/Robotics"));
-const CompetitiveProgramming = lazy(() => import("./views/events/CompetitiveProgramming.js"));
+const Robotics = lazy(() => import("./views/Events/Robotics.js"));
+const CompetitiveProgramming = lazy(() => import("./views/Events/CompetitiveProgramming.js"));
 const Sponsorship = lazy(() => import("./views/Sponsorship.js"));
 
 function NoMatch() {
@@ -76,7 +76,7 @@ function RouterReload() {
   const navigate = useNavigate();
   // useEffect(() => {
   //   if (window.location.pathname === "/") {
-  //     navigate("/events/coderscup");
+  //     navigate("/Events/coderscup");
   //   }
   // }, []); {/* Update for specific events */}
   return (
@@ -88,16 +88,16 @@ function RouterReload() {
         <Route path="/about" element={<About />} />
         <Route path="/sponsorship" element={<Sponsorship />} />
         <Route path="/events" element={<AllEvents />} />
-        <Route path="/events/:date/:title" element={<EventPage />} />
-        <Route path="/events/hackathon" element={<Hackathon />} />
-        <Route path="/events/coderscup" element={<CodersCup />} />
-        {/* <Route path="/events/codesocials" element={<CodeSocials />} /> */}
-        <Route path="/events/minesoc" element={<Minesoc />} />
-        <Route path="/events/pwnsussex" element={<PwnSussex />} />
-        <Route path="/events/gamejam" element={<GameJam />} />
-        <Route path="/events/leetcoding" element={<Leetcoding />} />
-        <Route path="/events/robotics" element={<Robotics />} />
-        <Route path="/events/competitiveProgramming" element={<CompetitiveProgramming />} />
+        <Route path="/Events/:date/:title" element={<EventPage />} />
+        <Route path="/Events/hackathon" element={<Hackathon />} />
+        <Route path="/Events/coderscup" element={<CodersCup />} />
+        {/* <Route path="/Events/codesocials" element={<CodeSocials />} /> */}
+        <Route path="/Events/MineSoc" element={<MineSoc />} />
+        <Route path="/Events/pwnsussex" element={<PwnSussex />} />
+        <Route path="/Events/gamejam" element={<GameJam />} />
+        <Route path="/Events/leetcoding" element={<Leetcoding />} />
+        <Route path="/Events/robotics" element={<Robotics />} />
+        <Route path="/Events/competitiveProgramming" element={<CompetitiveProgramming />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="*" element={<NoMatch />} />

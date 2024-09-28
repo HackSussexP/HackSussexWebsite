@@ -19,7 +19,7 @@
 html, body {
   scroll-behavior: smooth;
   background-color: var(--dark-grey);
-  background-image: url("assets/background-scatter.png");
+  background-image: url("assets/Backgrounds/Background.png");
   color: var(--text);
   scroll-behavior: smooth;
 }
@@ -29,7 +29,7 @@ html, body {
 }
 
 .gamejam {
-  background-image: url("assets/background-gamejam.png");
+  background-image: url("assets/Backgrounds/GameJamBackground.png");
 }
 
 #root {
