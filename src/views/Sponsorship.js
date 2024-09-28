@@ -3,7 +3,7 @@ import sponsorsLogos from "../components/helpers/SponsorsHelper";
 
 const Sponsorship = () => {
   // change this link to sponsor video when ready, then uncomment i-frame
-  const videoUrl = "";
+  const videoUrl = "https://www.youtube.com/embed/XAIrb-ik6Xo?si=rKDsS7GpC8U7Mb6J";
   const prospectusUrl =
     "https://raw.githubusercontent.com/HackSussexP/public_assets/main/prospectus.pdf";
 
@@ -40,7 +40,7 @@ const Sponsorship = () => {
   return (
     <div className="container mt-5">
       <h1 className="display-3 fw-bold text-center mb-2">Partner with us</h1>
-      {/* <iframe
+      <iframe
         className="w-100 rounded p-2 mx-auto d-block"
         src={videoUrl}
         style={{
@@ -51,7 +51,7 @@ const Sponsorship = () => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
         title="Hackathon Video"
-      ></iframe> */}
+      ></iframe>
       <section className="p-4">
         <p>
           At HackSussex, we’re all about bringing together students who are
@@ -81,7 +81,7 @@ const Sponsorship = () => {
         </button>
       </section>
       <h2 className="display-4 fw-bold pb-3 mx-auto text-center border-bottom w-75">
-        Hall of Fame
+        Past Sponsors
       </h2>
       <section className="row px-5 my-5 justify-content-around align-items-center">
         {sponsorsLogos.map((company) => {

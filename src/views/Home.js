@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
 import Carousel from '../components/Carousel';
-import RotatingSponsorBanner from '../components/RotatingSponsorBanner';
 import SocialMediaBanner from '../components/SocialMediaBanner';
 import AboutHeader from '../components/AboutHeader';
 import HomeEvents from '../components/HomeEvents';
@@ -25,7 +24,6 @@ const Home = () => {
       <Carousel />
       {/* <UpcomingEvents /> */}
       <AboutHeader />
-      {/* <RotatingSponsorBanner /> */}
       <SocialMediaBanner />
       <HomeEvents />
     </>

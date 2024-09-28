@@ -71,7 +71,7 @@ const PastEvents = () => {
                       </span>
                       {event.location}
                     </p>
-                    {/* <Link to={"/events/" + event.date + "/" + event.title} className="btn btn-blue">View Event</Link> -- this throws errors so it's commented out until someone with more brain power can resovlve the issue */}
+                    {/* <Link to={"/Events/" + event.date + "/" + event.title} className="btn btn-blue">View Event</Link> -- this throws errors so it's commented out until someone with more brain power can resovlve the issue */}
                   </div>
                 </div>
               </div>
@@ -110,7 +110,7 @@ const PastEvents = () => {
                         </span>
                         {event.location}
                       </p>
-                      {/* <Link to={"/events/" + event.date + "/" + event.title} className="btn btn-blue">View Event</Link> <-- This throws an error*/}
+                      {/* <Link to={"/Events/" + event.date + "/" + event.title} className="btn btn-blue">View Event</Link> <-- This throws an error*/}
                     </div>
                   </div>
                 }
@@ -139,7 +139,7 @@ const PastEvents = () => {
                       </span>
                       {event.location}
                     </p>
-                    <Link to={"/events/" + event.date + "/" + event.title} className="btn btn-blue disabled">View Event</Link>
+                    <Link to={"/Events/" + event.date + "/" + event.title} className="btn btn-blue disabled">View Event</Link>
                   </div>
                 </div>
                 }

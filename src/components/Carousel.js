@@ -1,20 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import HackathonBackground from './../assets/hackathon-background-darker.png';
-import HackathonLogo from '../assets/events/hs24.png';
+import HackathonBackground from './../assets/Events/Hackathon/HSBackground.png';
+import HackathonLogo from '../assets/Events/Hackathon/HSLogo.png';
 
-import CodersCupBackground from './../assets/index-carousel/coderscup-background.png';
-import CodersCupLogo from '../assets/coders-cup-logo-white-23.png';
+import CodersCupBackground from './../assets/Events/CodersCup/CodersCupBackground.png';
+import CodersCupLogo from '../assets/Events/CodersCup/CodersCupLogo.png';
 
-import GameJamLogo from './../assets/index-carousel/gamejam-logo.png';
-import GameJamBackground from './../assets/index-carousel/gamejam-background.png';
+import GameJamLogo from './../assets/Events/GameJam/GJLogo.png';
+import GameJamBackground from './../assets/Events/GameJam/GJBackground.png';
 
-import PwnSussexLogo from './../assets/index-carousel/PwnSussex-logo.png';
-import PwnSussexBackground from './../assets/index-carousel/PwnSussex-background.png';
+import PwnSussexLogo from './../assets/Events/PwnSussex/PwnSussexLogo.png';
+import PwnSussexBackground from './../assets/Events/PwnSussex/PwnSussexBackground.png';
 
-import LeetcodingLogo from './../assets/index-carousel/leetcoding-logo.png';
-import LeetcodingBackground from './../assets/index-carousel/leetcoding-background.png';
+import LeetcodingLogo from './../assets/Events/Leetcoding/LeetcodingLogo.png';
+import LeetcodingBackground from './../assets/Events/Leetcoding/LeetcodingBackground.png';
+
+import RoboticsBackground from './../assets/Events/Robotics/RoboticsBackground.png';
+
+import CompetitiveCodingBackground from './../assets/Events/CompetitiveProgramming/CompetitiveProgrammingBackground.jpg';
+
+import MineSocLogo from './../assets/Events/MineSoc/MineSocLogo.png';
+import MineSocBackground from './../assets/Events/MineSoc/MineSocBackground.png';
 
 const HomeCarousel = () => {
   return (
@@ -24,23 +31,23 @@ const HomeCarousel = () => {
           <div id='homeCarousel' className='carousel slide'data-bs-ride="carousel">
             <div className='carousel-inner m-0'>
               {/* HACKATHON CAROUSEL */}
-              <Link to="/events/hackathon" className="p-0">
+              <Link to="/Events/hackathon" className="p-0">
                 <div className="carousel-item active">
-                  <img src={HackathonBackground} className="d-block w-100 img-fluid" alt='Hackathon background' />
+                  <img src={HackathonBackground} className="d-block w-100 img-fluid carousel-img" alt='Hackathon background' />
                   <div className="carousel-caption">
                     <div className="row align-items-center">
                       <div className="col-12 col-lg-6">
                         <img src={HackathonLogo} alt="Hackathon Logo" className="img-fluid me-auto ms-auto d-block p-3" />
                         <p className='text-wrap text-start d-none d-lg-block'>
-                          📅 17th - 18th February 2024 <br />
+                          📅 February 2025 <br />
                           📍 Chichester building, University of Sussex, UK <br />
-                          🌐 Hybrid
+                          🌐 In-Person
                         </p>
                       </div>
                       <div className="col-6 d-none d-lg-block">
                         <iframe 
                           className="w-100 rounded" 
-                          src="https://www.youtube.com/embed/gmKBSb7kbTY" 
+                          src="https://www.youtube.com/embed/I0szBuNtyLs?si=zrvUYJ0cMzRRywWV" 
                           style={{ aspectRatio: '16/9', maxWidth: '560px', borderRadius: '15px' }}
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                           allowFullScreen
@@ -55,15 +62,15 @@ const HomeCarousel = () => {
               {/* END HACKATHON CAROUSEL */}
 
               {/* GAME JAM CAROUSEL */}
-              <Link to="/events/gamejam" className="p-0">
+              <Link to="/Events/gamejam" className="p-0">
                 <div className="carousel-item">
-                  <img src={GameJamBackground} className="d-block w-100 h-100 img-fluid" alt='Background' />
+                  <img src={GameJamBackground} className="d-block w-100 h-100 img-fluid carousel-img" alt='Background' />
                   <div className="carousel-caption">
                     <div className='row align-items-center'>
                         <div className="col-12 col-lg-6">
                           <img src={GameJamLogo} alt="Game Jam Logo" className='img-fluid me-auto ms-auto d-block p-3'/>
                           <p className='text-wrap text-start d-none d-lg-block'>
-                            📅 25th - 26th November 2023<br />
+                            📅 November 2024<br />
                             📍 Chichester building, University of Sussex, UK<br />
                             🌐 In-Person
                           </p>
@@ -84,25 +91,29 @@ const HomeCarousel = () => {
               {/* END GAME JAM  CAROUSEL */}
 
               {/* CODERS CUP CAROUSEL */}
-              <Link to="/events/coderscup" className="p-0">
+              <Link to="/Events/coderscup" className="p-0">
                 <div className="carousel-item">
-                  <img src={CodersCupBackground} className="d-block w-100 h-100 img-fluid" alt='Background' />
+                  <img src={CodersCupBackground} className="d-block w-100 h-100 img-fluid carousel-img" alt='Background' />
                   <div className="carousel-caption">
                       <div className="row align-items-center">
                         <div className="col-12 col-lg-6">
-                          <img src={CodersCupLogo} alt="Coders Cup Logo" className="img-fluid me-auto ms-auto d-block p-5" />
-                          <h1 className='fw-bold display-2 d-none d-lg-block'>HackSussex</h1>
-                          <h1 className='fw-bold display-4 text-electric d-none d-lg-block'>Coders Cup</h1>
+                          <img src={CodersCupLogo} alt="Coders' Cup Logo" className="img-fluid me-auto ms-auto d-block p-3 pb-0" />
+                          <h1 className='fw-bold display-4 text-electric d-none d-lg-block'>Coders' Cup</h1>
+                          <p className='text-wrap text-start d-none d-lg-block'>
+                            📅 May 2025<br />
+                            📍 Live on Youtube<br />
+                            🌐 Online
+                          </p>
                         </div>
                         
                         <div className="col-6 d-none d-lg-block">
                           <iframe 
                             className="w-100 rounded" 
-                            src="https://www.youtube.com/embed/yPifHEfu4Qs?si=-9kvdIJc05nbL4IY" 
+                            src="https://www.youtube.com/embed/VixYfv0UEyE?si=_31x_WjbbMnXkbyM" 
                             style={{ aspectRatio: '16/9', maxWidth: '560px', borderRadius: '15px' }}
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowFullScreen
-                            title="coder's cup video"
+                            title="Coders' cup video"
                           ></iframe>
                         </div>
                       </div>
@@ -112,9 +123,9 @@ const HomeCarousel = () => {
               {/* END CODERS CUP CAROUSEL */}
 
               {/* PwnSussex CAROUSEL */}
-              <Link to="/events/pwnsussex" className="p-0">
+              <Link to="/Events/pwnsussex" className="p-0">
                 <div className="carousel-item h-100">
-                  <img src={PwnSussexBackground} className="d-block w-100 h-100 img-fluid" alt='Background' />
+                  <img src={PwnSussexBackground} className="d-block w-100 h-100 img-fluid carousel-img" alt='Background' />
                   <div className="carousel-caption">
                     <img src={PwnSussexLogo} alt="PwnSussex Logo" className='img-fluid ms-auto me-auto d-block p-3' />
                   </div>
@@ -123,15 +134,48 @@ const HomeCarousel = () => {
               {/* END PwnSussex CAROUSEL */}
 
               {/* LEETCODING CAROUSEL */}
-              <Link to="/events/leetcoding" className="p-0">
+              <Link to="/Events/leetcoding" className="p-0">
                 <div className="carousel-item">
-                  <img src={LeetcodingBackground} className="d-block w-100 h-100 img-fluid" alt='Background' />
+                  <img src={LeetcodingBackground} className="d-block w-100 h-100 img-fluid carousel-img" alt='Background' />
                   <div className="carousel-caption">
                     <img src={LeetcodingLogo} alt="Leetcoding Logo" className='img-fluid ms-auto me-auto d-block p-3' style={{ width: '60%', height: 'auto' }} />
                   </div>
                 </div>
               </Link>
               {/* END LEETCODING CAROUSEL */}
+
+              {/* ROBOTICS CAROUSEL */}
+              <Link to="/Events/leetcoding" className="p-0">
+                <div className="carousel-item">
+                  <img src={RoboticsBackground} className="d-block w-100 h-100 img-fluid carousel-img" alt='Background' />
+                  <div className="carousel-caption">
+                    <h1 className='text-light text-center'>Robotics</h1>
+                  </div>
+                </div>
+              </Link>
+              {/* END ROBOTICS CAROUSEL */}
+
+              {/* COMPETITIVE PROGRAMMING CAROUSEL */}
+              <Link to="/Events/leetcoding" className="p-0">
+                <div className="carousel-item">
+                  <img src={CompetitiveCodingBackground} className="d-block w-100 h-100 img-fluid carousel-img" alt='Background' />
+                  <div className="carousel-caption">
+                    <h1 className='text-light text-center'>Competitive Programming</h1>
+                  </div>
+                </div>
+              </Link>
+              {/* END COMPETITIVE PROGRAMMING CAROUSEL */}
+
+              {/* MineSoc CAROUSEL */}
+              <Link to="/Events/leetcoding" className="p-0">
+                <div className="carousel-item">
+                  <img src={MineSocBackground} className="d-block w-100 h-100 img-fluid carousel-img" alt='Background' />
+                  <div className="carousel-caption">
+                    <img src={MineSocLogo} alt="MineSoc Logo" className='img-fluid ms-auto me-auto d-block p-3' style={{ width: '40%', height: 'auto' }} />
+                  </div>
+                </div>
+              </Link>
+              {/* END MineSoc CAROUSEL */}
 
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">

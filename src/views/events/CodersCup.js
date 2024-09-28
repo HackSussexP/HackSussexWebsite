@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import CodersCupBackground from './../../assets/index-carousel/coderscup-background.png';
-import CodersCupLogo from './../../assets/coders-cup-logo-white-23.png';
+import CodersCupBackground from './../../assets/Events/CodersCup/CodersCupBackground.png';
+import CodersCupLogo from './../../assets/Events/CodersCup/CodersCupLogo.png';
 
 import EventWhereWhen from '../../components/EventWhereWhen'; 
-import Timer from './../../components/Timer';
-import Schedule from './../../components/Schedule';
-import Sponsors from './../../components/Sponsors';
+import Timer from '../../components/Timer';
+import Schedule from '../../components/Schedule';
+import Sponsors from '../../components/Sponsors';
 
 import AboutSection from '../../components/AboutSection';
 import HallOfFame from '../../components/HallOfFame';
 
-import patrick from '../../assets/patrick.png';
-import guy from '../../assets/guy.png';
-import jude from '../../assets/jude.png';
-import layton from '../../assets/layton.jpg'
+import patrick from '../../assets/Events/CodersCup/winners/patrick.png';
+import guy from '../../assets/Events/CodersCup/winners/guy.png';
+import jude from '../../assets/Events/CodersCup/winners/jude.png';
+import layton from '../../assets/Events/CodersCup/winners/layton.jpg'
 
 const hallOfFameData = [
   {
@@ -51,7 +51,7 @@ const config = {
   "sponsors": false,
   "open": true,
   "date": "May 10, 2024, 12:0:0",
-  "title": "Coders Cup 2024",
+  "title": "Coders' Cup 2024",
 }
 
 var schedule = {
@@ -125,9 +125,8 @@ const CodersCup = () => {
         <div className="carousel-caption">
             <div className="row align-items-center">
               <div className="col-12 col-lg-6">
-                <img src={CodersCupLogo} alt="Coders Cup Logo" className="img-fluid me-auto ms-auto d-block p-5" />
-                <h1 className='fw-bold display-2 d-none d-lg-block'>HackSussex</h1>
-                <h1 className='fw-bold display-4 text-electric d-none d-lg-block'>Coders Cup</h1>
+                <img src={CodersCupLogo} alt="Coders' Cup Logo" className="img-fluid me-auto ms-auto d-block p-5 pb-1" />
+                <h1 className='fw-bold display-4 text-electric d-none d-lg-block'>Coders' Cup</h1>
               </div>
               <div className="col-6 d-none d-lg-block">
                 <iframe 
@@ -136,7 +135,7 @@ const CodersCup = () => {
                   style={{ aspectRatio: '16/9', maxWidth: '560px', borderRadius: '15px' }}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                   allowFullScreen
-                  title="coder's cup video"
+                  title="Coders' cup video"
                 ></iframe>
               </div>
             </div>
@@ -146,7 +145,7 @@ const CodersCup = () => {
       <Link className='rounded text-center display-4 p-3' to={"https://www.youtube.com/watch?v=VixYfv0UEyE"} target={"_blank"} style={hoveredLink === true ? hoverStyle : defaultStyle} onMouseEnter={() => setHoveredLink(true)} onMouseLeave={() => setHoveredLink(false)}>Watch the live final here!</Link>
     </div>}
       {/* {config.timer && <Timer date={config.date} title={config.title} />} */}
-      <AboutSection description={[`Join us once again for our annual programming competition, the Coders Cup! Livestreamed from the campus studio we bring you a number of experienced seriosu programmers battling each other to see who is the best competitive programmer that sussex can offer.`, `Want to come watch for yourself? This event will be livestreamed on our youtube and a small number of seats will be available in the studio on the day for friends and family of our competitors.`, ]}/>
+      <AboutSection description={[`Join us once again for our annual programming competition, the Coders' Cup! Livestreamed from the campus studio we bring you a number of experienced seriosu programmers battling each other to see who is the best competitive programmer that sussex can offer.`, `Want to come watch for yourself? This event will be livestreamed on our youtube and a small number of seats will be available in the studio on the day for friends and family of our competitors.`, ]}/>
       <EventWhereWhen location="University of Sussex, Brighton" date={config.timer === true ? config.date : null} link={null} />
       {config.schedule && <Schedule schedule={schedule} multi_day={false} />}
       {config.sponsors && <Sponsors sponsorData={sponsorData}/>}
