@@ -1,22 +1,22 @@
 import React from "react";
 import AboutSection from '../../components/AboutSection';
 
-import MineSocBackground from './../../assets/Events/MineSoc/MineSocBackground.png';
-import MineSocLogo from './../../assets/Events/MineSoc/MineSocLogo.png';
+import MineSocBackground from './../../assets/events/MineSoc/MineSocBackground.png';
+import MineSocLogo from './../../assets/events/MineSoc/MineSocLogo.png';
 
 // images
-import Amex from './../../assets/Events/MineSoc/pics/Amex.png';
-import EastSlope from './../../assets/Events/MineSoc/pics/EastSlope_1.png';
-import FalmerHouse from './../../assets/Events/MineSoc/pics/FalmerHouse_2.png';
-import Freshers from './../../assets/Events/MineSoc/pics/Freshers.jpg';
-import Jubilee from './../../assets/Events/MineSoc/pics/Jubilee.png';
-import Library from './../../assets/Events/MineSoc/pics/Library.png';
-import survival_1 from './../../assets/Events/MineSoc/pics/survival_1.png';
-import survival_2 from './../../assets/Events/MineSoc/pics/survival_2.png';
-import survival_3 from './../../assets/Events/MineSoc/pics/survival_3.jpg';
-import survival_4 from './../../assets/Events/MineSoc/pics/survival_4.jpg';
-import survival_5 from './../../assets/Events/MineSoc/pics/survival_5.jpg';
-import survival_6 from './../../assets/Events/MineSoc/pics/survival_6.jpg';
+import Amex from './../../assets/events/MineSoc/pics/Amex.png';
+import EastSlope from './../../assets/events/MineSoc/pics/EastSlope_1.png';
+import FalmerHouse from './../../assets/events/MineSoc/pics/FalmerHouse_2.png';
+import Freshers from './../../assets/events/MineSoc/pics/Freshers.jpg';
+import Jubilee from './../../assets/events/MineSoc/pics/Jubilee.png';
+import Library from './../../assets/events/MineSoc/pics/Library.png';
+import survival_1 from './../../assets/events/MineSoc/pics/survival_1.png';
+import survival_2 from './../../assets/events/MineSoc/pics/survival_2.png';
+import survival_3 from './../../assets/events/MineSoc/pics/survival_3.jpg';
+import survival_4 from './../../assets/events/MineSoc/pics/survival_4.jpg';
+import survival_5 from './../../assets/events/MineSoc/pics/survival_5.jpg';
+import survival_6 from './../../assets/events/MineSoc/pics/survival_6.jpg';
 
 var images = [Amex, EastSlope, FalmerHouse, Freshers, Jubilee, Library, survival_1, survival_2, survival_3, survival_4, survival_5, survival_6];
 
