@@ -81,7 +81,7 @@ const Sponsorship = () => {
         </button>
       </section>
       <h2 className="display-4 fw-bold pb-3 mx-auto text-center border-bottom w-75">
-        Hall of Fame
+        Past Sponsors
       </h2>
       <section className="row px-5 my-5 justify-content-around align-items-center">
         {sponsorsLogos.map((company) => {
