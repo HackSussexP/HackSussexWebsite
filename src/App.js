@@ -10,19 +10,19 @@ import Footer from "./components/Footer.js";
 
 const Home = lazy(() => import("./views/Home.js"));
 const About = lazy(() => import("./views/About.js"));
-const Hackathon = lazy(() => import("./views/Events/Hackathon.js"));
-const CodersCup = lazy(() => import("./views/Events/CodersCup.js"));
-const CodeSocials = lazy(() => import("./views/Events/CodeSocials.js"));
-const MineSoc = lazy(() => import("./views/Events/MineSoc.js"));
-const PwnSussex = lazy(() => import("./views/Events/PwnSussex.js"));
-const GameJam = lazy(() => import("./views/Events/GameJam.js"));
-const Leetcoding = lazy(() => import("./views/Events/Leetcoding.js"));
-const AllEvents = lazy(() => import("./views/Events/AllEvents.js"));
-const EventPage = lazy(() => import("./views/Events/EventPage.js"));
+const Hackathon = lazy(() => import("./views/events/Hackathon.js"));
+const CodersCup = lazy(() => import("./views/events/CodersCup.js"));
+const CodeSocials = lazy(() => import("./views/events/CodeSocials.js"));
+const MineSoc = lazy(() => import("./views/events/MineSoc.js"));
+const PwnSussex = lazy(() => import("./views/events/PwnSussex.js"));
+const GameJam = lazy(() => import("./views/events/GameJam.js"));
+const Leetcoding = lazy(() => import("./views/events/Leetcoding.js"));
+const AllEvents = lazy(() => import("./views/events/AllEvents.js"));
+const EventPage = lazy(() => import("./views/events/EventPage.js"));
 const Gallery = lazy(() => import("./views/Gallery.js"));
 const FAQ = lazy(() => import("./views/FAQ.js"));
-const Robotics = lazy(() => import("./views/Events/Robotics.js"));
-const CompetitiveProgramming = lazy(() => import("./views/Events/CompetitiveProgramming.js"));
+const Robotics = lazy(() => import("./views/events/Robotics.js"));
+const CompetitiveProgramming = lazy(() => import("./views/events/CompetitiveProgramming.js"));
 const Sponsorship = lazy(() => import("./views/Sponsorship.js"));
 
 function NoMatch() {

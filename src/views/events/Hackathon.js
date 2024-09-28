@@ -7,8 +7,8 @@ import CodesOfConduct from '../../components/CodesOfConduct';
 
 import HackathonAbout from '../../components/HackathonAbout';
 
-import HackathonBackground from '../../assets/Events/Hackathon/HSBackground.png';
-import HackathonLogo from '../../assets/Events/Hackathon/HSLogo.png';
+import HackathonBackground from '../../assets/events/Hackathon/HSBackground.png';
+import HackathonLogo from '../../assets/events/Hackathon/HSLogo.png';
 
 import RotoVRLogo from './../../assets/SponsorLogos/rotovr.png';
 import Hastings from './.././../assets/SponsorLogos/hastings.png';

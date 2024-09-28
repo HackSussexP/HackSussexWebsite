@@ -3,7 +3,7 @@ import React from 'react';
 import Resources from '../../components/Resources';
 import EventWhereWhen from '../../components/EventWhereWhen';
 import AboutSection from '../../components/AboutSection';
-import RoboticsBackground from '../../assets/Events/Robotics/RoboticsBackground.png';
+import RoboticsBackground from '../../assets/events/Robotics/RoboticsBackground.png';
 
 const linksData = [
     // Website - Online Practice
