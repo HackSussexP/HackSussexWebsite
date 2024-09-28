@@ -1,27 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import HackathonBackground from './../assets/events/Hackathon/HSBackground.png';
-import HackathonLogo from '../assets/events/Hackathon/HSLogo.png';
+import HackathonBackground from './../assets/Events/Hackathon/HSBackground.png';
+import HackathonLogo from '../assets/Events/Hackathon/HSLogo.png';
 
-import CodersCupBackground from './../assets/events/CodersCup/CodersCupBackground.png';
-import CodersCupLogo from '../assets/events/CodersCup/CodersCupLogo.png';
+import CodersCupBackground from './../assets/Events/CodersCup/CodersCupBackground.png';
+import CodersCupLogo from '../assets/Events/CodersCup/CodersCupLogo.png';
 
-import GameJamLogo from './../assets/events/GameJam/GJLogo.png';
-import GameJamBackground from './../assets/events/GameJam/GJBackground.png';
+import GameJamLogo from './../assets/Events/GameJam/GJLogo.png';
+import GameJamBackground from './../assets/Events/GameJam/GJBackground.png';
 
-import PwnSussexLogo from './../assets/events/PwnSussex/PwnSussexLogo.png';
-import PwnSussexBackground from './../assets/events/PwnSussex/PwnSussexBackground.png';
+import PwnSussexLogo from './../assets/Events/PwnSussex/PwnSussexLogo.png';
+import PwnSussexBackground from './../assets/Events/PwnSussex/PwnSussexBackground.png';
 
-import LeetcodingLogo from './../assets/events/Leetcoding/LeetcodingLogo.png';
-import LeetcodingBackground from './../assets/events/Leetcoding/LeetcodingBackground.png';
+import LeetcodingLogo from './../assets/Events/Leetcoding/LeetcodingLogo.png';
+import LeetcodingBackground from './../assets/Events/Leetcoding/LeetcodingBackground.png';
 
-import RoboticsBackground from './../assets/events/Robotics/RoboticsBackground.png';
+import RoboticsBackground from './../assets/Events/Robotics/RoboticsBackground.png';
 
-import CompetitiveCodingBackground from './../assets/events/CompetitiveProgramming/CompetitiveProgrammingBackground.jpg';
+import CompetitiveCodingBackground from './../assets/Events/CompetitiveProgramming/CompetitiveProgrammingBackground.jpg';
 
-import MineSocLogo from './../assets/events/MineSoc/MineSocLogo.png';
-import MineSocBackground from './../assets/events/MineSoc/MineSocBackground.png';
+import MineSocLogo from './../assets/Events/MineSoc/MineSocLogo.png';
+import MineSocBackground from './../assets/Events/MineSoc/MineSocBackground.png';
 
 const HomeCarousel = () => {
   return (
