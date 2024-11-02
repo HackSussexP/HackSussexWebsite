@@ -74,11 +74,11 @@ const App = () => {
 
 function RouterReload() {
   const navigate = useNavigate();
-  // useEffect(() => {
-  //   if (window.location.pathname === "/") {
-  //     navigate("/Events/coderscup");
-  //   }
-  // }, []); {/* Update for specific events */}
+  useEffect(() => {
+    if (window.location.pathname === "/") {
+      navigate("/Events/gamejam");
+    }
+  }, []); {/* Update for specific events */}
   return (
     <>
       <ScrollToTop />

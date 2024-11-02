@@ -19,10 +19,10 @@ import huk from './../../assets/SponsorLogos/GameJam/hackathonsUK.png';
 import UoS from './../../assets/SponsorLogos/UoS.png';
 
 const config = {
-  "timer": true,
+  "timer": false,
   "event": false,
-  "schedule": true,
-  "sponsors": true,
+  "schedule": false,
+  "sponsors": false,
   "date": "Feb 17, 2024, 10:00:00",
   "title": "2024 Hackathon",
   "tickets": false,

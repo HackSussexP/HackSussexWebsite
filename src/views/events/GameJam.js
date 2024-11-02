@@ -1,6 +1,6 @@
 import {React, useEffect} from 'react';
 
-import GameJamLogo from './../../assets/Events/GameJam/GJLogo.png';
+import GameJamLogo from './../../assets/Events/GameJam/GJ24Logo.png';
 import GameJamBackground from './../../assets/Events/GameJam/GJBackground.png';
 
 import EventWhereWhen from '../../components/EventWhereWhen'; 
@@ -14,14 +14,14 @@ import AboutSection from '../../components/AboutSection';
 
 
 const config = {
-  "timer": false,
+  "timer": true,
   "event": false,
   "schedule": false,
   "sponsors": false,
   "date": "Nov 30, 2024, 11:00:00",
   "title": "2024 Game Jam",
-  "tickets": false,
-  "url": "https://pretix.eu/HackSussex2023/register/"
+  "tickets": true,
+  "url": "https://tickets.hacksussex.com/GameJam24/"
 }
 
 var schedule = {
@@ -183,7 +183,7 @@ const GameJam = () => {
               <div className="col-12 col-lg-6">
                 <img src={GameJamLogo} alt="Game Jam Logo" className='img-fluid me-auto ms-auto d-block p-3'/>
                 <p className='text-wrap text-start d-none d-lg-block'>
-                  📅 25th - 26th November 2023<br />
+                  📅 30th - 1st December 2024<br />
                   📍 Chichester building, University of Sussex, UK<br />
                   🌐 In-Person
                 </p>
@@ -192,9 +192,9 @@ const GameJam = () => {
                 <h1 className='fw-bold display-4 text-electric'>Game Jam Event Loading...</h1>
                 <div className='mt-3'>
                   <div className="progress" style={{ height: '30px', borderRadius: '15px', backgroundColor: '#222' }}>
-                    <div className="progress-barprogress-bar-animated bg-success" role="progressbar" style={{ width: '100%' }} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div className="progress-barprogress-bar-animated bg-success" role="progressbar" style={{ width: '65%' }} aria-valuenow="65" aria-valuemin="0" aria-valuemax="65"></div>
                   </div>
-                  <div className='text-center mt-2 text-light display-6'>100%</div>
+                  <div className='text-center mt-2 text-light display-6'>65%</div>
                 </div>
               </div>
           </div>
@@ -204,16 +204,16 @@ const GameJam = () => {
       {config.timer && <Timer date={config.date} title={config.title} />}
       <AboutSection description={<>
                     <p>
-                    This year, we are hosting our first GameJam. Collaborating with many of the local studios surrounding Brighton to focus 
+                    The Game Jam is back! Collaborating with many of the local studios surrounding Brighton to focus 
                     in on our Game Development and Design enthusiasts. Much like a hackathon, teams will be tasked with building a project to 
                     compete in tracks to inspire game design and win prizes.If you are looking for an opportunity to collaborate with others and 
                     experience trial and error throughout the game development process, this event would be a good match for you. Also, it will 
                     be great for those who are looking for a place to have exploration of new technologies in the realm of game development. The 
-                    event is entirely free and paid for by our lovely sponsors. HackSussex GameJam 2023 is run in accordance with the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" rel="noopener noreferrer">MLH Code of Conduct</a>.
+                    event is entirely free and paid for by our lovely sponsors. HackSussex GameJam 2024 is run in accordance with the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" rel="noopener noreferrer">MLH Code of Conduct</a>.
                     </p>
                     </>}
                     list={["24 Hours of project building", "Win exciting prizes", "Free swag", "Free Food and Drinks", "Workshops to learn skills"]} />
-      <EventWhereWhen location="University of Sussex, Brighton" date={"25 November 2023"} link={null} />
+      <EventWhereWhen location="University of Sussex, Brighton" date={"30 November 2024"} link={null} />
       {config.schedule && <Schedule schedule={schedule} multi_day={true} />}
       <CodesOfConduct links={codes} />
       {config.sponsors && <Sponsors sponsorData={sponsorData} />}
