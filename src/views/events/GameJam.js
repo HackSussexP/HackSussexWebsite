@@ -16,11 +16,11 @@ import AboutSection from '../../components/AboutSection';
 const config = {
   "timer": true,
   "event": false,
-  "schedule": false,
+  "schedule": true,
   "sponsors": false,
   "date": "Nov 30, 2024, 11:00:00",
   "title": "2024 Game Jam",
-  "tickets": true,
+  "tickets": false,
   "url": "https://tickets.hacksussex.com/GameJam24/"
 }
 
@@ -48,21 +48,16 @@ var schedule = {
     },
     {
       time: "2:00PM",
-      event: "Roto Workshop",
+      event: "Github Workshop",
       location: "Chichester 1 Lecture Theatre",
     },
     {
       time: "3:30PM",
-      event: "Unity - VR Talk",
+      event: "Game Dev & Shaders",
       location: "Chichester 1 Lecture Theatre",
     },
     {
-      time: "4:30PM",
-      event: "Cup Stacking Contest",
-      location: "Chichester 1 FTL",
-    },
-    {
-      time: "5:30PM",
+      time: "5:00PM",
       event: "MS Paint w/ Bob Ross",
       location: "Chichester 1 Lecture Theatre",
     },
@@ -73,7 +68,7 @@ var schedule = {
     },
     {
       time: "10:00PM",
-      event: "Minecraft Games",
+      event: "Karaoke",
       location: "Chichester 1",
     }
   ],
@@ -100,17 +95,12 @@ var schedule = {
     },
     {
       time: "12:00PM",
-      event: "Jam Finishes + Science Fair",
+      event: "Jam Finishes + Lunch",
       location: "Chichester 1",
     },
     {
       time: "1:00PM",
-      event: "Lunch",
-      location: "Chichester 1",
-    },
-    {
-      time: "2:00PM",
-      event: "Presentations",
+      event: "Judging Begins",
       location: "Chichester 1",
     },
     {
@@ -192,9 +182,9 @@ const GameJam = () => {
                 <h1 className='fw-bold display-4 text-electric'>Game Jam Event Loading...</h1>
                 <div className='mt-3'>
                   <div className="progress" style={{ height: '30px', borderRadius: '15px', backgroundColor: '#222' }}>
-                    <div className="progress-barprogress-bar-animated bg-success" role="progressbar" style={{ width: '65%' }} aria-valuenow="65" aria-valuemin="0" aria-valuemax="65"></div>
+                    <div className="progress-barprogress-bar-animated bg-success" role="progressbar" style={{ width: '100%' }} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label='progress bar'></div>
                   </div>
-                  <div className='text-center mt-2 text-light display-6'>65%</div>
+                  <div className='text-center mt-2 text-light display-6'>100%</div>
                 </div>
               </div>
           </div>

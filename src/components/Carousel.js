@@ -79,9 +79,9 @@ const HomeCarousel = () => {
                           <h1 className='fw-bold display-4 text-electric'>Game Jam Event Loading...</h1>
                           <div className='mt-3'>
                             <div className="progress" style={{ height: '30px', borderRadius: '15px', backgroundColor: '#222' }}>
-                              <div className="progress-barprogress-bar-animated bg-success" role="progressbar" style={{ width: '65%' }} aria-valuenow="65" aria-valuemin="0" aria-valuemax="65"></div>
+                              <div className="progress-barprogress-bar-animated bg-success" role="progressbar" style={{ width: '65%' }} aria-label="progress bar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <div className='text-center mt-2 text-light display-6'>65%</div>
+                            <div className='text-center mt-2 text-light display-6'>100%</div>
                           </div>
                         </div>
                     </div>
