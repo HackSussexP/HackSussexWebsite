@@ -63,7 +63,7 @@ var schedule = {
     },
     {
       time: "6:30PM",
-      event: "Dinner + Doctor Who",
+      event: "Dinner",
       location: "Chichester 1 Lecture Theatre",
     },
     {
