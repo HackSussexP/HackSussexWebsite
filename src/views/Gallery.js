@@ -60,16 +60,17 @@ const Gallery = () => {
       repo: 'public_assets',
       path: 'assets',
     })
-
+  
     // Find the gallery folder
     const res = response.data.filter((item) => item.name === "Gallery")
-
+  
+    // Fetch the entire tree structure for the "Gallery" folder (recursive)
     const children = await octokit.request('GET /repos/{owner}/{repo}/git/trees/{tree_sha}?recursive=1', {
       owner: 'HackSussexP',
       repo: 'public_assets',
       tree_sha: res[0].sha,
     })
-
+  
     const pathList = {}
     children.data.tree.forEach((item) => {
       if (item.type === "tree") {
@@ -81,21 +82,21 @@ const Gallery = () => {
         })
       }
     })
-
+  
     const events = Object.keys(pathList)
     setEvents(events)
-
+  
     const years = events.map((event) => Object.keys(pathList[event]))
     setYears(years)
-
-    // Collect image metadata (don't load images yet)
-    const imageUrls = children.data.tree.filter((item) => item.type === "blob")
+  
+    // Collect image metadata (paths) and filter out non-image files
+    const imageUrls = children.data.tree.filter((item) => item.type === "blob" && (item.path.endsWith('.jpg') || item.path.endsWith('.png')))
       .map((image) => image.path)
-      .filter(Boolean)
-
+  
     // Shuffle image metadata (paths) before setting them
     setImages(shuffleArray(imageUrls))
   }
+  
 
   useEffect(() => {
     getData()
@@ -200,6 +201,7 @@ const Gallery = () => {
                     onError={handleError}
                     onClick={() => handleShowModal(`${url}/${image}`)}
                     onLoad={() => handleImageLoad(image)}  // Trigger loading of image
+                    loading='lazy'
                   />
                 </div>
               )
