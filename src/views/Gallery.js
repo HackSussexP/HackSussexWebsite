@@ -26,35 +26,32 @@ const Gallery = () => {
     backgroundColor: 'var(--electric-green)',
   }
 
-  const [images, setImages] = useState([])
-  const [events, setEvents] = useState([])
-  const [years, setYears] = useState([])
+  const [images, setImages] = useState([])  // image metadata
+  const [events, setEvents] = useState([])  // event names
+  const [years, setYears] = useState([])  // available years for each event
   const [selectedEvent, setSelectedEvent] = useState("all")
   const [selectedYear, setSelectedYear] = useState(null)
+  const [imageCache, setImageCache] = useState({})  // store loaded images
   const [modalImageSrc, setModalImageSrc] = useState('')
   const url = "https://cdn.jsdelivr.net/gh/HackSussexP/public_assets@main/assets/Gallery/"
 
   const eventDisplayNames = useMemo(() => {
-    const defaultNames = {
-      all: "All",
-    };
+    const defaultNames = { all: "All" }
     const dynamicNames = events.reduce((acc, event) => {
-      acc[event] = event
-        .replace(/-/g, ' ')
-        .replace(/\b\w/g, (char) => char.toUpperCase());
-      return acc;
-    }, {});
-    return { ...defaultNames, ...dynamicNames };
-  }, [events]);
+      acc[event] = event.replace(/-/g, ' ').replace(/\b\w/g, (char) => char.toUpperCase())
+      return acc
+    }, {})
+    return { ...defaultNames, ...dynamicNames }
+  }, [events])
 
   const shuffleArray = (array) => {
-    let shuffledArray = [...array];
-    for (let i = shuffledArray.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]]; // Swap elements
-    }
-    return shuffledArray;
-  };
+    let shuffledArray = [...array]
+    // for (let i = shuffledArray.length - 1; i > 0; i--) {
+    //   var j = Math.floor(Math.random() * (i + 1)) ;
+    //   [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+    // }
+    return shuffledArray
+  }  
 
   const getData = async () => {
     const octokit = new Octokit()
@@ -64,7 +61,7 @@ const Gallery = () => {
       path: 'assets',
     })
 
-    // find the gallery folder
+    // Find the gallery folder
     const res = response.data.filter((item) => item.name === "Gallery")
 
     const children = await octokit.request('GET /repos/{owner}/{repo}/git/trees/{tree_sha}?recursive=1', {
@@ -73,37 +70,30 @@ const Gallery = () => {
       tree_sha: res[0].sha,
     })
 
-    const path_list = {}
+    const pathList = {}
     children.data.tree.forEach((item) => {
       if (item.type === "tree") {
         const paths = item.path.split('/')
-        let current = path_list
-
+        let current = pathList
         paths.forEach((path) => {
-          if (!current[path]) {
-            current[path] = {}
-          }
+          if (!current[path]) current[path] = {}
           current = current[path]
         })
       }
     })
 
-    const events = Object.keys(path_list)
+    const events = Object.keys(pathList)
     setEvents(events)
 
-    const years = events.map((event) => Object.keys(path_list[event]))
+    const years = events.map((event) => Object.keys(pathList[event]))
     setYears(years)
 
-    const images_list = children.data.tree.filter((item) => item.type === "blob")
+    // Collect image metadata (don't load images yet)
+    const imageUrls = children.data.tree.filter((item) => item.type === "blob")
+      .map((image) => image.path)
+      .filter(Boolean)
 
-    const imageUrls = images_list.map((image) => {
-      if (image.path) {
-        return image.path
-      }
-      return null
-    }).filter(Boolean)
-
-    // Shuffle the images before setting them
+    // Shuffle image metadata (paths) before setting them
     setImages(shuffleArray(imageUrls))
   }
 
@@ -113,14 +103,22 @@ const Gallery = () => {
 
   const handleError = (e) => {
     e.target.src = placeholderImage
-    // set style to not be clickable
     e.target.style.cursor = 'default'
     e.target.style.pointerEvents = 'none'
-
   }
 
   const handleShowModal = (imageSrc) => {
     setModalImageSrc(imageSrc)
+  }
+
+  const handleImageLoad = (imagePath) => {
+    if (!imageCache[imagePath]) {
+      const image = new Image()
+      image.src = `${url}/${imagePath}`
+      image.onload = () => {
+        setImageCache((prevCache) => ({ ...prevCache, [imagePath]: image.src }))
+      }
+    }
   }
 
   return (
@@ -196,14 +194,12 @@ const Gallery = () => {
               return (
                 <div key={image} className="col-md-4 mb-4" style={containerStyle}>
                   <img
-                    src={`${url}/${image}`}
+                    src={imageCache[image] || placeholderImage}  // Use cached image or placeholder
                     style={coverImageStyle}
                     alt="Gallery"
                     onError={handleError}
-                    data-bs-toggle="modal"
-                    data-bs-target="#galleryModal"
-                    data-bs-whatever={`${url}/${image}`}
                     onClick={() => handleShowModal(`${url}/${image}`)}
+                    onLoad={() => handleImageLoad(image)}  // Trigger loading of image
                   />
                 </div>
               )
@@ -217,7 +213,7 @@ const Gallery = () => {
         <div className="modal-dialog modal-dialog-centered modal-xl custom-modal">
           <div className="modal-content">
             <div className="modal-body rounded">
-              <img id="modalImage" className="imf-fluid rounded" src={modalImageSrc} alt="Gallery" />
+              <img id="modalImage" className="img-fluid rounded" src={modalImageSrc} alt="Gallery" />
             </div>
           </div>
         </div>
