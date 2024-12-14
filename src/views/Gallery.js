@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useMemo } from 'react'
 import { Octokit } from 'octokit'
 import placeholderImage from '../assets/Gallery Placeholder.png'
 
@@ -34,17 +34,18 @@ const Gallery = () => {
   const [modalImageSrc, setModalImageSrc] = useState('')
   const url = "https://cdn.jsdelivr.net/gh/HackSussexP/public_assets@main/assets/Gallery/"
 
-  const eventDisplayNames = {
-    all: "All",
-    coderscup: "Coders' Cup",
-    codesocials: "Code Socials",
-    gamejam: "Game Jam",
-    hackathon: "Hackathon",
-    leetcoding: "Leetcoding",
-    misc: "Miscellaneous",
-    pwnsussex: "PwnSussex",
-    robotics: "Robotics",
-  }
+  const eventDisplayNames = useMemo(() => {
+    const defaultNames = {
+      all: "All",
+    };
+    const dynamicNames = events.reduce((acc, event) => {
+      acc[event] = event
+        .replace(/-/g, ' ')
+        .replace(/\b\w/g, (char) => char.toUpperCase());
+      return acc;
+    }, {});
+    return { ...defaultNames, ...dynamicNames };
+  }, [events]);
 
   const getData = async () => {
     const octokit = new Octokit()
