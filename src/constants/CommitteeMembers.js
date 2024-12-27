@@ -132,7 +132,7 @@ const committeeMembers = [
         name: "David Frommont",
         role: "Social Media and Web Development",
         linkedinLink: "https://www.linkedin.com/in/david-frommont/",
-        githubLink: "https://github.com/davidfrommont",
+        githubLink: "https://github.com/dfrommont",
       },
       {
         name: "Tori Nevins",
