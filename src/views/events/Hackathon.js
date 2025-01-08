@@ -174,7 +174,7 @@ const Hackathon = () => {
       {config.tickets && <TicketSection url={config.url} />}
       {config.timer && <Timer date={config.date} title={config.title} />}
       <HackathonAbout />
-      <EventWhereWhen location="University of Sussex, Brighton" date={"17 February 2024"} link={null} />
+      <EventWhereWhen location="University of Sussex, Brighton" date={"22 February 2025"} link={null} />
       {config.schedule && <Schedule schedule={schedule} multi_day={true} />}
       {config.sponsors && <Sponsors sponsorData={sponsorData}/>}
       <CodesOfConduct links={codes} />
