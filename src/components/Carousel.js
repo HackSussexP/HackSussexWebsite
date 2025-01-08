@@ -39,7 +39,7 @@ const HomeCarousel = () => {
                       <div className="col-12 col-lg-6">
                         <img src={HackathonLogo} alt="Hackathon Logo" className="img-fluid me-auto ms-auto d-block p-3" />
                         <p className='text-wrap text-start d-none d-lg-block'>
-                          📅 February 2025 <br />
+                          📅 22nd-23rd February 2025 <br />
                           📍 Chichester building, University of Sussex, UK <br />
                           🌐 In-Person
                         </p>
