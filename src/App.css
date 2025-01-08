@@ -32,6 +32,10 @@ html, body {
   background-image: url("assets/Backgrounds/GameJamBackground.png");
 }
 
+.text-dark {
+  color: var(--dark-grey);
+}
+
 #root {
   min-height: 100vh;
   max-height: 100%;
@@ -246,7 +250,51 @@ html, body {
 }
 
 .img-sponsors {
-  object-fit: contain !important;
+  max-width: 250px;
+  max-height: 150px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.gold-sponsor .card {
+  background: linear-gradient(to top, #ffd700, #ffecb3);
+}
+
+.silver-sponsor .card {
+  background: linear-gradient(to top, #c0c0c0, #e8e8e8);
+}
+
+.bronze-sponsor .card {
+  background: linear-gradient(to top, #cd7f32, #f0dab5)
+}
+
+.partner-sponsor .card {
+  background: linear-gradient(to bottom, var(--lime), var(--blue))
+}
+
+.row .gold-sponsor {
+  /* fit content in 300px */
+  height: 300px;
+  contain: content;
+}
+
+.row .silver-sponsor {
+  /* fit content in 300px */
+  height: 300px;
+  contain: content;
+}
+
+.row .bronze-sponsor {
+  /* fit content in 300px */
+  height: 300px;
+  contain: content;
+}
+
+.row .partner-sponsor {
+  /* fit content in 300px */
+  height: 300px;
+  contain: content;
 }
 
 /* used in sponsorship's page to scales logos when in mobile */

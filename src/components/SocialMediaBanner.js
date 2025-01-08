@@ -11,7 +11,7 @@ const SocialMediaBanner = () => {
     <>
       <div className="container-fluid social-media-banner p-3 text-center gradient">
         <div className="row text-center">
-          <h2 className="col-12">Find us on Social Media</h2>
+          <h2 className="col-12 text-dark">Find us on Social Media</h2>
         </div>
         <div className="row justify-content-center p-2">
           <div className="col-6 col-md-2 col-lg-1 mb-3 mb-lg-0">
@@ -48,7 +48,7 @@ const SocialMediaBanner = () => {
       </div>
       <style jsx>{`
         .social-icon {
-          color: #00;
+          color: var(--dark-grey);
           transition: color 0.5s;
         }
         .discord-icon:hover,
