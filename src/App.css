@@ -250,7 +250,70 @@ html, body {
 }
 
 .img-sponsors {
-  object-fit: contain !important;
+  max-width: 250px; /* Adjust to desired width */
+  max-height: 150px; /* Adjust to desired height */
+  object-fit: contain; /* Ensures logos maintain their aspect ratio */
+  display: block;
+  margin: 0 auto; /* Centers the image */
+}
+
+.gold-sponsor .card {
+  background: linear-gradient(to top, #ffd700, #ffecb3); /* Gold gradient */;
+}
+
+.silver-sponsor .card {
+  background: linear-gradient(to top, #c0c0c0, #e8e8e8); /* Silver gradient */
+}
+
+.bronze-sponsor .card {
+  background: linear-gradient(to top, #cd7f32, #f0dab5)
+}
+
+.partner-sponsor .card {
+  background: linear-gradient(to bottom, var(--lime), var(--blue))
+}
+
+/* .gold-sponsor .img-sponsors {
+  max-width: 250px;
+  max-height: 200px; 
+}
+.silver-sponsor .img-sponsors {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.bronze-sponsor .img-sponsors {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.partner-sponsor .img-sponsors {
+  max-width: 250px;
+  max-height: 150px;
+} */
+
+.row .gold-sponsor {
+  /* fit content in 300px */
+  height: 300px;
+  contain: content;
+}
+
+.row .silver-sponsor {
+  /* fit content in 300px */
+  height: 300px;
+  contain: content;
+}
+
+.row .bronze-sponsor {
+  /* fit content in 300px */
+  height: 300px;
+  contain: content;
+}
+
+.row .partner-sponsor {
+  /* fit content in 300px */
+  height: 300px;
+  contain: content;
 }
 
 /* used in sponsorship's page to scales logos when in mobile */

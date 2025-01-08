@@ -10,21 +10,18 @@ import HackathonAbout from '../../components/HackathonAbout';
 import HackathonBackground from '../../assets/Events/Hackathon/HSBackground.png';
 import HackathonLogo from '../../assets/Events/Hackathon/HSLogo.png';
 
-import RotoVRLogo from './../../assets/SponsorLogos/rotovr.png';
-import Hastings from './.././../assets/SponsorLogos/hastings.png';
-import paxton from './../../assets/SponsorLogos/paxton-logo.png';
-import teachFirst from './../../assets/SponsorLogos/GameJam/TeachFirst.png';
+import Hastings from './.././../assets/SponsorLogos/hastings-stacked.png';
 import bcs from './../../assets/SponsorLogos/BCS.png';
-import huk from './../../assets/SponsorLogos/GameJam/hackathonsUK.png';
+import huk from './../../assets/SponsorLogos/huk.png';
 import UoS from './../../assets/SponsorLogos/UoS.png';
 
 const config = {
-  "timer": false,
+  "timer": true,
   "event": false,
   "schedule": false,
   "sponsors": false,
-  "date": "Feb 17, 2024, 10:00:00",
-  "title": "2024 Hackathon",
+  "date": "Feb 22, 2025, 10:00:00",
+  "title": "2025 Hackathon",
   "tickets": false,
   "url": "https://tickets.hacksussex.com/"
 }
@@ -120,40 +117,28 @@ var schedule = {
     }
   ]
 }
-
 const sponsorData = [
   {
-    title: "Gold Sponsors",
-    size: "125px",
-    logos: [
-      { src: RotoVRLogo, url: "https://www.rotovr.com/" },
-      { src: Hastings, url: "https://www.hastingsdirect.com/" },
-    ]
+    title: "Silver Sponsor",
+    logo: Hastings,
+    url: "https://www.hastingsdirect.com/"
   },
   {
-    title: "Silver Sponsors",
-    size: "110px",
-    logos: [
-      { src: paxton, url: "https://www.paxton-access.com/" },
-      { src: bcs, url: "https://www.bcs.org/" }
-    ]
+    title: "Silver Sponsor",
+    logo: bcs,
+    url: "https://www.bcs.org/"
   },
   {
-    title: "Bronze Sponsors",
-    size: "100px",
-    logos: [
-      { src: teachFirst, url: "https://www.teachfirst.org.uk/" }
-    ]
+    title: "Partner",
+    logo: huk,
+    url: "https://www.hackathons.org.uk/"
   },
   {
-    title: "Partners",
-    size: "100px",
-    logos: [
-      { src: huk, url: "https://www.hackathons.org.uk/" },
-      { src: UoS, url: "https://www.sussex.ac.uk/ei/" },
-    ]
+    title: "Partner",
+    logo: UoS,
+    url: "https://www.sussex.ac.uk/ei/"
   },
-];
+]
 
 const codes = [
   { name: "Hackthons UK", url: "https://www.hackathons.org.uk/code-of-conduct" }
@@ -169,7 +154,7 @@ const Hackathon = () => {
             <div className="col-12 col-lg-6">
               <img src={HackathonLogo} alt="Hackathon Logo" className="img-fluid me-auto ms-auto d-block p-3" />
               <p className='text-wrap text-start d-none d-lg-block'>
-                📅 17th - 18th February 2024 <br />
+                📅 22nd - 23rd February 2025 <br />
                 📍 Chichester building, University of Sussex, UK
               </p>
             </div>
@@ -191,7 +176,7 @@ const Hackathon = () => {
       <HackathonAbout />
       <EventWhereWhen location="University of Sussex, Brighton" date={"17 February 2024"} link={null} />
       {config.schedule && <Schedule schedule={schedule} multi_day={true} />}
-      <Sponsors sponsorData={sponsorData}/>
+      {config.sponsors && <Sponsors sponsorData={sponsorData}/>}
       <CodesOfConduct links={codes} />
     </>
   );
