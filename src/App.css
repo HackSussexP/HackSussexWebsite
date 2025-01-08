@@ -32,6 +32,10 @@ html, body {
   background-image: url("assets/Backgrounds/GameJamBackground.png");
 }
 
+.text-dark {
+  color: var(--dark-grey);
+}
+
 #root {
   min-height: 100vh;
   max-height: 100%;
