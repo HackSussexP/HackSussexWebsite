@@ -22,8 +22,8 @@ const config = {
   "sponsors": false,
   "date": "Feb 22, 2025, 10:00:00",
   "title": "2025 Hackathon",
-  "tickets": false,
-  "url": "https://tickets.hacksussex.com/"
+  "tickets": true,
+  "url": "https://tickets.hacksussex.com/HackSussex25/"
 }
 
 var schedule = {

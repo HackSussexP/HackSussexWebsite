@@ -75,9 +75,9 @@ const App = () => {
 function RouterReload() {
   const navigate = useNavigate();
   useEffect(() => {
-    // if (window.location.pathname === "/") {
-    //   navigate("/Events/gamejam");
-    // }
+    if (window.location.pathname === "/") {
+      navigate("/Events/hackathon");
+    }
   }, []); {/* Update for specific events */}
   return (
     <>
