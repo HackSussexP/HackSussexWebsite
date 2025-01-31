@@ -17,9 +17,12 @@ const Sponsors = ({ sponsorData }) => {
             ? 'bronze-sponsor'
             : 'partner-sponsor';
           return (
-            <div key={i} className={`col-12 col-md-6 col-lg-4 ${tierClass}`}>
-              <div className={`card rounded-0 text-dark m-3 p-3 ${tierClass}`}>
-                <h3 className="display-6">{sponsor.title}</h3>
+            <div key={i} className={`col-12 col-md-6 col-lg-4 m-3 ${tierClass}`}>
+              {/* 2 rows, one for title which is smaller, another for logo which is larger */}
+              <div className="row">
+                <h3 className="display-6 text-dark">{sponsor.title}</h3>
+              </div>
+              <div className="row">
                 <div className="col-8 col-md-6 col-lg-auto text-center py-5 mx-auto my-auto">
                   <a
                     href={sponsor.url}

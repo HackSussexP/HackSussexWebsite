@@ -255,19 +255,19 @@ html, body {
   object-fit: fill;
 }
 
-.gold-sponsor .card {
+.gold-sponsor{
   background: linear-gradient(to top, #ffd700, #ffecb3);
 }
 
-.silver-sponsor .card {
+.silver-sponsor {
   background: linear-gradient(to top, #c0c0c0, #e8e8e8);
 }
 
-.bronze-sponsor .card {
+.bronze-sponsor {
   background: linear-gradient(to top, #cd7f32, #f0dab5)
 }
 
-.partner-sponsor .card {
+.partner-sponsor {
   background: linear-gradient(to bottom, var(--lime), var(--blue))
 }
 

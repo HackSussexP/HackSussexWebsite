@@ -19,7 +19,7 @@ const config = {
   "timer": true,
   "event": false,
   "schedule": false,
-  "sponsors": false,
+  "sponsors": true,
   "date": "Feb 22, 2025, 10:00:00",
   "title": "2025 Hackathon",
   "tickets": true,
