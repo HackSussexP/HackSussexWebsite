@@ -7,10 +7,12 @@ import ella from "../assets/Committee/ella.jpg";
 import finley from "../assets/Committee/finley.jpg";
 import bryn from "../assets/Committee/bryn.jpg";
 import luke from "../assets/Committee/luke.jpg";
-import edward from "../assets/Committee/edward.jpg";
 import amy_scott from "../assets/Committee/amy.png";
 import john from "../assets/Committee/john.png";
 import colin from "../assets/Committee/colin.jpg";
+import will from "../assets/Committee/will.png";
+import jae from "../assets/Committee/jae.jpg";
+import youssef from "../assets/Committee/youseff.jpg";
 
 const committeeMembers = [
   {
@@ -84,12 +86,6 @@ const committeeMembers = [
         githubLink: "https://github.com/LukeS03",
       },
       {
-        imageUrl: edward,
-        name: "Edward Lynch",
-        role: "General Committee",
-        email: "edward@hacksussex.com",
-      },
-      {
         imageUrl: emily,
         name: "Emily-mae Neame",
         role: "General Committee",
@@ -104,6 +100,25 @@ const committeeMembers = [
         name: "Colin McCallum",
         role: "General Committee",
       },
+      {
+        imageUrl: will,
+        name: "Will Kimbell",
+        role: "General Committee",
+        githubLink: "https://github.com/will-x86"
+      },
+      {
+        imageUrl: jae,
+        name: "Johnathan Anderson",
+        linkedinLink: "https://www.linkedin.com/in/jonathancheesbrough/",
+        githubLink: "https://github.com/Jheesbrough",
+        role: "Web Development"
+      },
+      {
+        imageUrl: youssef,
+        name: "Youssef Derouiche",
+        role: "General Committee",
+        linkedinLink: "https://www.linkedin.com/in/youssefd2001/"
+      }
     ],
   },
   {
