@@ -249,50 +249,39 @@ html, body {
   background-color: rgb(255, 255, 255);
 }
 
-.img-sponsors {
-  max-width: 250px;
+/* .img-sponsors {
+  object-fit: contain;
   max-height: 150px;
-  object-fit: fill;
-}
+  min-height: 150px;
+  max-width: 350px;
+  min-width: 350px;
+} */
 
-.gold-sponsor .card {
+.gold-sponsor {
   background: linear-gradient(to top, #ffd700, #ffecb3);
 }
 
-.silver-sponsor .card {
+.silver-sponsor {
   background: linear-gradient(to top, #c0c0c0, #e8e8e8);
 }
 
-.bronze-sponsor .card {
+.bronze-sponsor {
   background: linear-gradient(to top, #cd7f32, #f0dab5)
 }
 
-.partner-sponsor .card {
+.partner-sponsor {
   background: linear-gradient(to bottom, var(--lime), var(--blue))
 }
 
-.row .gold-sponsor {
-  /* fit content in 300px */
-  height: 300px;
-  contain: content;
+.img-sponsors {
+  object-fit: contain;
+  max-height: 150px;
+  max-width: 350px;
 }
 
-.row .silver-sponsor {
-  /* fit content in 300px */
+.gold-sponsor, .silver-sponsor, .bronze-sponsor, .partner-sponsor {
+  border-radius: 5px;
   height: 300px;
-  contain: content;
-}
-
-.row .bronze-sponsor {
-  /* fit content in 300px */
-  height: 300px;
-  contain: content;
-}
-
-.row .partner-sponsor {
-  /* fit content in 300px */
-  height: 300px;
-  contain: content;
 }
 
 /* used in sponsorship's page to scales logos when in mobile */

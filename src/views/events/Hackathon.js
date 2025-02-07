@@ -10,10 +10,11 @@ import HackathonAbout from '../../components/HackathonAbout';
 import HackathonBackground from '../../assets/Events/Hackathon/HSBackground.png';
 import HackathonLogo from '../../assets/Events/Hackathon/HSLogo.png';
 
-import Hastings from './.././../assets/SponsorLogos/hastings-stacked.png';
+import Hastings from './.././../assets/SponsorLogos/hastings.png';
 import bcs from './../../assets/SponsorLogos/BCS.png';
-import huk from './../../assets/SponsorLogos/huk.png';
+import huk from './../../assets/SponsorLogos/huk.svg';
 import UoS from './../../assets/SponsorLogos/UoS.png';
+import recurse from './../../assets/SponsorLogos/recurse.webp';
 
 const config = {
   "timer": true,
@@ -127,6 +128,11 @@ const sponsorData = [
     title: "Silver Sponsor",
     logo: bcs,
     url: "https://www.bcs.org/"
+  },
+  {
+    title: "Bronze Sponsor",
+    logo: recurse,
+    url: "https://www.recurse.ml/"
   },
   {
     title: "Partner",
