@@ -249,14 +249,6 @@ html, body {
   background-color: rgb(255, 255, 255);
 }
 
-/* .img-sponsors {
-  object-fit: contain;
-  max-height: 150px;
-  min-height: 150px;
-  max-width: 350px;
-  min-width: 350px;
-} */
-
 .gold-sponsor {
   background: linear-gradient(to top, #ffd700, #ffecb3);
 }
