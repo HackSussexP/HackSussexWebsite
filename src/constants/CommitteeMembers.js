@@ -13,7 +13,7 @@ import colin from "../assets/Committee/colin.jpg";
 import will from "../assets/Committee/will.png";
 import jae from "../assets/Committee/jae.jpg";
 import youssef from "../assets/Committee/youseff.jpg";
-import nathaniel from "../assets/Committee/nathaniel.jpg";
+import nathaniel from "../assets/Committee/nathaniel.png";
 
 const committeeMembers = [
   {
