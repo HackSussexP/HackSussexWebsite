@@ -17,24 +17,20 @@ const Sponsors = ({ sponsorData }) => {
             ? 'bronze-sponsor'
             : 'partner-sponsor';
           return (
-            <div key={i} className={`col-12 col-md-6 col-lg-4 ${tierClass}`}>
-              <div className={`card rounded-0 text-dark m-3 p-3 ${tierClass}`}>
-                <h3 className="display-6">{sponsor.title}</h3>
-                <div className="col-8 col-md-6 col-lg-auto text-center py-5 mx-auto my-auto">
-                  <a
-                    href={sponsor.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={sponsor.logo}
-                      alt="Sponsor Logo"
-                      className="img-fluid img-sponsors"
-                    />
-                  </a>
-                </div>
-              </div>
+            <div key={i} className={`container col-12 col-md-6 col-lg-4 m-3 ${tierClass} d-flex flex-column`}>
+            <div className="title-row">
+              <h3 className="display-6 text-dark pt-3">{sponsor.title}</h3>
             </div>
+            <div className="image-row flex-grow-1 h-100 justify-content-center align-items-center">
+              <a href={sponsor.url} target="_blank" rel="noopener noreferrer" className="d-flex w-100 h-100 justify-content-center align-items-center">
+                <img 
+                  src={sponsor.logo} 
+                  alt="Sponsor Logo" 
+                  className="img-fluid img-sponsors h-100 w-100 object-fit-contain align-item-center"
+                />
+              </a>
+            </div>
+          </div>
           )
         })}
       </div>
