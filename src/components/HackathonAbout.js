@@ -30,7 +30,7 @@ const HackathonAbout = () => {
     <>
         <div className='container d-block w-75'>
             <AboutSection description={<>
-                <p>HackSussex 2025 is almost upon us! This unique event is hosted over a full weekend, including 24 hours of non-stop coding, workshops hosted by our sponsors, 5 mouth-wateringly tasty meals from local Brighton caterers, snacks and drinks, and an exclusive 2025 t-shirt, <strong>all for free</strong>!</p>
+                <p>HackSussex 2025 is almost upon us! This unique event is hosted over a full weekend, including 24 hours of non-stop coding, workshops hosted by our sponsors, 4 mouth-wateringly tasty meals from local Brighton caterers, snacks and drinks, and an exclusive 2025 t-shirt, <strong>all for free</strong>!</p>
                 <p>Your project can enter multiple of our many prize tracks. If you don’t have a team, find your family-for-the-weekend in our team building event! Together you’ll create a game, some software or something electronic. Have you never coded before? Have you been coding since before you were conceived? Are you competitive? Are you laid back? Want to boost your CV while having fun? Join us for our best Hackathon yet – you won’t want to miss this!</p>
                 </>}
             list={["A laptop with a charger", "HDMI cable (we have monitors that you can use)", "Any peripherals you want to use in a project", "Any necessary hardware or tools, if you plan on working on a project with them", "Water bottle and reusbale cup for hot drinks", "Toiletries and any medication you require"]} />
