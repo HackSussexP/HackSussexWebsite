@@ -65,10 +65,11 @@ const committeeMembers = [
       },
       {
         imageUrl: jae,
-        name: "Johnathan Anderson",
+        name: "Jae Cheesbrough Anderson",
         linkedinLink: "https://www.linkedin.com/in/jonathancheesbrough/",
         githubLink: "https://github.com/Jheesbrough",
-        role: "Web Development"
+        role: "Web Development",
+        email: "J@hacksussex.com"
       },
       {
         imageUrl: jacopo,
