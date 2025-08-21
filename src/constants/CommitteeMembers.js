@@ -7,10 +7,13 @@ import ella from "../assets/Committee/ella.jpg";
 import finley from "../assets/Committee/finley.jpg";
 import bryn from "../assets/Committee/bryn.jpg";
 import luke from "../assets/Committee/luke.jpg";
-import edward from "../assets/Committee/edward.jpg";
 import amy_scott from "../assets/Committee/amy.png";
 import john from "../assets/Committee/john.png";
 import colin from "../assets/Committee/colin.jpg";
+import will from "../assets/Committee/will.png";
+import jae from "../assets/Committee/jae.jpg";
+import youssef from "../assets/Committee/youseff.jpg";
+import nathaniel from "../assets/Committee/nathaniel.png";
 
 const committeeMembers = [
   {
@@ -39,6 +42,13 @@ const committeeMembers = [
         email: "bryn@hacksussex.com",
       },
       {
+        imageUrl: nathaniel,
+        name: "Nathaniel Roumana",
+        role: "Welfare Officer & Social Media",
+        linkedinLink: "https://www.linkedin.com/in/nathanielroumana/",
+        githubLink: "https://github.com/TheAesthetical",
+      },
+      {
         imageUrl: keagan,
         name: "Keagan Kozlowski",
         role: "Finance Officer",
@@ -60,6 +70,14 @@ const committeeMembers = [
         role: "Social Media",
         email: "amy@hacksussex.com",
         linkedinLink: "https://uk.linkedin.com/in/amy-scott-ba6038221",
+      },
+      {
+        imageUrl: jae,
+        name: "Jae Cheesbrough Anderson",
+        linkedinLink: "https://www.linkedin.com/in/jonathancheesbrough/",
+        githubLink: "https://github.com/Jheesbrough",
+        role: "Web Development",
+        email: "J@hacksussex.com"
       },
       {
         imageUrl: jacopo,
@@ -92,12 +110,6 @@ const committeeMembers = [
         githubLink: "https://github.com/LukeS03",
       },
       {
-        imageUrl: edward,
-        name: "Edward Lynch",
-        role: "General Committee",
-        email: "edward@hacksussex.com",
-      },
-      {
         imageUrl: emily,
         name: "Emily-mae Neame",
         role: "General Committee",
@@ -112,6 +124,18 @@ const committeeMembers = [
         name: "Colin McCallum",
         role: "General Committee",
       },
+      {
+        imageUrl: will,
+        name: "Will Kimbell",
+        role: "General Committee",
+        githubLink: "https://github.com/will-x86"
+      },
+      {
+        imageUrl: youssef,
+        name: "Youssef Derouiche",
+        role: "General Committee",
+        linkedinLink: "https://www.linkedin.com/in/youssefd2001/"
+      }
     ],
   },
   {
@@ -140,7 +164,7 @@ const committeeMembers = [
         name: "David Frommont",
         role: "Social Media and Web Development",
         linkedinLink: "https://www.linkedin.com/in/david-frommont/",
-        githubLink: "https://github.com/davidfrommont",
+        githubLink: "https://github.com/dfrommont",
       },
       {
         name: "Tori Nevins",

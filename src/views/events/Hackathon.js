@@ -10,23 +10,22 @@ import HackathonAbout from '../../components/HackathonAbout';
 import HackathonBackground from '../../assets/Events/Hackathon/HSBackground.png';
 import HackathonLogo from '../../assets/Events/Hackathon/HSLogo.png';
 
-import RotoVRLogo from './../../assets/SponsorLogos/rotovr.png';
-import Hastings from './.././../assets/SponsorLogos/hastings.png';
-import paxton from './../../assets/SponsorLogos/paxton-logo.png';
-import teachFirst from './../../assets/SponsorLogos/GameJam/TeachFirst.png';
+import Hastings from './.././../assets/SponsorLogos/hastings.svg';
 import bcs from './../../assets/SponsorLogos/BCS.png';
-import huk from './../../assets/SponsorLogos/GameJam/hackathonsUK.png';
+import huk from './../../assets/SponsorLogos/huk.svg';
 import UoS from './../../assets/SponsorLogos/UoS.png';
+import recurse from './../../assets/SponsorLogos/recurse.png';
+import casm from './../../assets/SponsorLogos/casm.png';
 
 const config = {
-  "timer": false,
+  "timer": true,
   "event": false,
-  "schedule": false,
-  "sponsors": false,
-  "date": "Feb 17, 2024, 10:00:00",
-  "title": "2024 Hackathon",
+  "schedule": true,
+  "sponsors": true,
+  "date": "Feb 22, 2025, 10:00:00",
+  "title": "2025 Hackathon",
   "tickets": false,
-  "url": "https://tickets.hacksussex.com/"
+  "url": "https://tickets.hacksussex.com/HackSussex25/"
 }
 
 var schedule = {
@@ -48,39 +47,39 @@ var schedule = {
     },
     {
       time: "1:00PM",
-      event: "Lunch",
+      event: "Lunch - Happy Go Souvlaki",
       location: "Chichester 1",
     },
     {
       time: "2:00PM",
-      event: "Hasting Direct Event",
+      event: "Recurse ML Product Demo",
       location: "Chichester 1 Lecture Theatre",
     },
     {
-      time: "3:30PM",
-      event: "Roto event",
+      time: "2:30pm",
+      event: "CASM Technology Q&A",
+      location: "Chichester 1 Lecture Theatre"
+    },
+    {
+      time: "3:00PM",
+      event: "Hastings Direct - AI: when, why, what and not",
       location: "Chichester 1 Lecture Theatre",
     },
     {
-      time: "5:00PM",
-      event: "Cup Stacking",
-      location: "Chichester 1 FTL",
-    },
-    {
-      time: "6:30PM",
-      event: "Dinner",
+      time: "7:00PM",
+      event: "Dinner - PizzaMe",
       location: "Chichester 1 Lecture Theatre",
     },
     {
-      time: "10:00PM",
-      event: "Minecraft Games",
+      time: "8:00PM",
+      event: "Bob Ross Paint",
       location: "Chichester 1",
     }
   ],
   2:[
     {
       time: "12:00AM",
-      event: "Midnight Pizza",
+      event: "Midnight Snack",
       location: "Chichester 1",
     },
     {
@@ -89,8 +88,8 @@ var schedule = {
       location: "Chichester 1 Lecture Theatre",
     },
     {
-      time: "8:30AM",
-      event: "Breakfast",
+      time: "9:00AM",
+      event: "Breakfast - Bon Vivant",
       location: "Breakfast",
     },
     {
@@ -104,12 +103,12 @@ var schedule = {
       location: "Chichester 1",
     },
     {
-      time: "12:00PM",
-      event: "Lunch",
+      time: "1:00PM",
+      event: "Lunch - Tun Tun's Cafe",
       location: "Chichester 1",
     },
     {
-      time: "1:00PM",
+      time: "2:00PM",
       event: "Presentations",
       location: "Chichester 1",
     },
@@ -120,40 +119,33 @@ var schedule = {
     }
   ]
 }
-
 const sponsorData = [
   {
-    title: "Gold Sponsors",
-    size: "125px",
-    logos: [
-      { src: RotoVRLogo, url: "https://www.rotovr.com/" },
-      { src: Hastings, url: "https://www.hastingsdirect.com/" },
-    ]
+    title: "Silver Sponsor",
+    logo: Hastings,
+    url: "https://www.hastingsdirect.com/"
   },
   {
-    title: "Silver Sponsors",
-    size: "110px",
-    logos: [
-      { src: paxton, url: "https://www.paxton-access.com/" },
-      { src: bcs, url: "https://www.bcs.org/" }
-    ]
+    title: "Silver Sponsor",
+    logo: bcs,
+    url: "https://www.bcs.org/"
   },
   {
-    title: "Bronze Sponsors",
-    size: "100px",
-    logos: [
-      { src: teachFirst, url: "https://www.teachfirst.org.uk/" }
-    ]
+    title: "Silver Sponsor",
+    logo: casm,
+    url: "https://www.casmtechnology.com/"
   },
   {
-    title: "Partners",
-    size: "100px",
-    logos: [
-      { src: huk, url: "https://www.hackathons.org.uk/" },
-      { src: UoS, url: "https://www.sussex.ac.uk/ei/" },
-    ]
+    title: "Bronze Sponsor",
+    logo: recurse,
+    url: "https://www.recurse.ml/"
   },
-];
+  {
+    title: "Partner",
+    logo: UoS,
+    url: "https://www.sussex.ac.uk/ei/"
+  },
+]
 
 const codes = [
   { name: "Hackthons UK", url: "https://www.hackathons.org.uk/code-of-conduct" }

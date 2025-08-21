@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="col-12 col-md-6 offset-md-2 text-center text-md-right">
             <Link to="/" className="text-light mx-2 footer-link">Home</Link>
             <Link to="/about" className="text-light mx-2 footer-link">About</Link>
-            <Link to="/events" className="text-light mx-2 footer-link">Events</Link>
+            <Link to="/sponsorship" className="text-light mx-2 footer-link">Sponsors</Link>
             <Link to="/gallery" className="text-light mx-2 footer-link">Gallery</Link>
             <Link to="/faq" className='text-light mx-2 footer-link'>FAQ</Link>
           </div>
