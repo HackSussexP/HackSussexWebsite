@@ -21,7 +21,7 @@ const hallOfFameData = [
   {
     imageUrl: layton,
     title: "Layton",
-    subheading: "2024 winner and beater of last years's winner Patrick in a bonus round",
+    subheading: "2024 winner and beater of last years' winner Patrick in a bonus round",
     paragraph: "A final year CS student and champion who proved his worth in this years competition. Layton can commonly be found due to his big orange hair and height of 6'2. When not being super friendly, Layton can be found working on coursework and helping other students with their assignments."
   },
   {
@@ -45,30 +45,30 @@ const hallOfFameData = [
 ];
 
 const config = {
-  "timer": true,
+  "timer": false,
   "event": false,
-  "schedule": true,
+  "schedule": false,
   "sponsors": false,
-  "open": true,
-  "date": "May 10, 2024, 12:0:0",
-  "title": "Coders' Cup 2024",
+  "open": false,
+  "date": "17th April, 2025",
+  "title": "Coders' Cup 2025",
 }
 
 var schedule = {
   1: [
     {
-      time: "25th March",
+      time: "3rd April",
       event: "Qualifications Open",
       location: "HackerRank",
     },
     {
-      time: "15th April",
+      time: "11th April",
       event: "Qualifications Close",
       location: "HackerRank",
     },
     {
-      time: "10 May",
-      event: "Live Final",
+      time: "17th Apriil",
+      event: "Final",
       location: "Online",
     }
   ],
@@ -142,7 +142,7 @@ const CodersCup = () => {
         </div>
       </div>
  {config.open && <div className='container-fluid d-flex justify-content-center mt-3'> {/* Awaiting lik to competition */}
-      <Link className='rounded text-center display-4 p-3' to={"https://www.youtube.com/watch?v=VixYfv0UEyE"} target={"_blank"} style={hoveredLink === true ? hoverStyle : defaultStyle} onMouseEnter={() => setHoveredLink(true)} onMouseLeave={() => setHoveredLink(false)}>Watch the live final here!</Link>
+      <Link className='rounded text-center display-4 p-3' to={"https://forms.gle/2TvJ9yvYCMktsdXz5"} target={"_blank"} style={hoveredLink === true ? hoverStyle : defaultStyle} onMouseEnter={() => setHoveredLink(true)} onMouseLeave={() => setHoveredLink(false)}>Register to enter</Link>
     </div>}
       {/* {config.timer && <Timer date={config.date} title={config.title} />} */}
       <AboutSection description={[`Join us once again for our annual programming competition, the Coders' Cup! Livestreamed from the campus studio we bring you a number of experienced seriosu programmers battling each other to see who is the best competitive programmer that sussex can offer.`, `Want to come watch for yourself? This event will be livestreamed on our youtube and a small number of seats will be available in the studio on the day for friends and family of our competitors.`, ]}/>

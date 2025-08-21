@@ -169,7 +169,7 @@ const Hackathon = () => {
             <div className="col-12 col-lg-6">
               <img src={HackathonLogo} alt="Hackathon Logo" className="img-fluid me-auto ms-auto d-block p-3" />
               <p className='text-wrap text-start d-none d-lg-block'>
-                📅 17th - 18th February 2024 <br />
+                📅 March 2026 <br />
                 📍 Chichester building, University of Sussex, UK
               </p>
             </div>
@@ -189,10 +189,10 @@ const Hackathon = () => {
       {config.tickets && <TicketSection url={config.url} />}
       {config.timer && <Timer date={config.date} title={config.title} />}
       <HackathonAbout />
-      <EventWhereWhen location="University of Sussex, Brighton" date={"17 February 2024"} link={null} />
+      {config.event && <EventWhereWhen location="University of Sussex, Brighton" date={"17 February 2024"} link={null} /> }
       {config.schedule && <Schedule schedule={schedule} multi_day={true} />}
-      <Sponsors sponsorData={sponsorData}/>
-      <CodesOfConduct links={codes} />
+      {config.sponsors && <Sponsors sponsorData={sponsorData}/> }
+      {config.event && <CodesOfConduct links={codes} /> }
     </>
   );
 }

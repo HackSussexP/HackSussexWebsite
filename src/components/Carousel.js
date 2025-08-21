@@ -39,7 +39,7 @@ const HomeCarousel = () => {
                       <div className="col-12 col-lg-6">
                         <img src={HackathonLogo} alt="Hackathon Logo" className="img-fluid me-auto ms-auto d-block p-3" />
                         <p className='text-wrap text-start d-none d-lg-block'>
-                          📅 February 2025 <br />
+                          📅 March 2026 <br />
                           📍 Chichester building, University of Sussex, UK <br />
                           🌐 In-Person
                         </p>
@@ -70,7 +70,7 @@ const HomeCarousel = () => {
                         <div className="col-12 col-lg-6">
                           <img src={GameJamLogo} alt="Game Jam Logo" className='img-fluid me-auto ms-auto d-block p-3'/>
                           <p className='text-wrap text-start d-none d-lg-block'>
-                            📅 30th-1st December 2024<br />
+                            📅 December 2025<br />
                             📍 Chichester building, University of Sussex, UK<br />
                             🌐 In-Person
                           </p>
@@ -100,7 +100,7 @@ const HomeCarousel = () => {
                           <img src={CodersCupLogo} alt="Coders' Cup Logo" className="img-fluid me-auto ms-auto d-block p-3 pb-0" />
                           <h1 className='fw-bold display-4 text-electric d-none d-lg-block'>Coders' Cup</h1>
                           <p className='text-wrap text-start d-none d-lg-block'>
-                            📅 May 2025<br />
+                            📅 May 2026<br />
                             📍 Live on Youtube<br />
                             🌐 Online
                           </p>

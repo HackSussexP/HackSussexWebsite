@@ -14,9 +14,9 @@ import AboutSection from '../../components/AboutSection';
 
 
 const config = {
-  "timer": true,
+  "timer": false,
   "event": false,
-  "schedule": true,
+  "schedule": false,
   "sponsors": false,
   "date": "Nov 30, 2024, 11:00:00",
   "title": "2024 Game Jam",
@@ -173,7 +173,7 @@ const GameJam = () => {
               <div className="col-12 col-lg-6">
                 <img src={GameJamLogo} alt="Game Jam Logo" className='img-fluid me-auto ms-auto d-block p-3'/>
                 <p className='text-wrap text-start d-none d-lg-block'>
-                  📅 30th - 1st December 2024<br />
+                  📅 December 2025<br />
                   📍 Chichester building, University of Sussex, UK<br />
                   🌐 In-Person
                 </p>
@@ -199,13 +199,13 @@ const GameJam = () => {
                     compete in tracks to inspire game design and win prizes.If you are looking for an opportunity to collaborate with others and 
                     experience trial and error throughout the game development process, this event would be a good match for you. Also, it will 
                     be great for those who are looking for a place to have exploration of new technologies in the realm of game development. The 
-                    event is entirely free and paid for by our lovely sponsors. HackSussex GameJam 2024 is run in accordance with the <a href="https://static.mlh.io/docs/org-code-of-conduct.pdf" target="_blank" rel="noopener noreferrer">Hackathons UK Code of Conduct</a>.
+                    {/* event is entirely free and paid for by our lovely sponsors. HackSussex GameJam 2024 is run in accordance with the <a href="https://static.mlh.io/docs/org-code-of-conduct.pdf" target="_blank" rel="noopener noreferrer">Hackathons UK Code of Conduct</a>. */}
                     </p>
                     </>}
                     list={["24 Hours of project building", "Win exciting prizes", "Free swag", "Free Food and Drinks", "Workshops to learn skills"]} />
-      <EventWhereWhen location="University of Sussex, Brighton" date={"30 November 2024"} link={null} />
+      {config.event && <EventWhereWhen location="University of Sussex, Brighton" date={"30 November 2024"} link={null} /> }
       {config.schedule && <Schedule schedule={schedule} multi_day={true} />}
-      <CodesOfConduct links={codes} />
+      {config.event && <CodesOfConduct links={codes} /> }
       {config.sponsors && <Sponsors sponsorData={sponsorData} />}
     </div>
     </>

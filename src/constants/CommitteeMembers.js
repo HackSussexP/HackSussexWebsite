@@ -14,6 +14,14 @@ import colin from "../assets/Committee/colin.jpg";
 
 const committeeMembers = [
   {
+    year: 2025,
+    data: [
+      {
+        name: "Coming Soon"
+      }
+    ]
+  },
+  {
     year: 2024,
     data: [
       {
