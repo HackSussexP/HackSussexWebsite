@@ -76,6 +76,7 @@ const committeeMembers = [
         role: "Graphic Design",
         email: "fin@hacksussex.com",
         githubLink: "https://github.com/NeverHave1Ever2",
+        linkedinLink: "https://www.linkedin.com/in/finley-hudson"
       },
       {
         imageUrl: david2,
@@ -193,6 +194,7 @@ const committeeMembers = [
         name: "Finley Hudson",
         role: "Graphic Design",
         githubLink: "https://github.com/NeverHave1Ever2",
+        linkedinLink: "https://www.linkedin.com/in/finley-hudson"
       },
       {
         imageUrl: luke,
@@ -363,6 +365,7 @@ const committeeMembers = [
         name: "Finley Hudson",
         role: "Graphic Design",
         githubLink: "https://github.com/NeverHave1Ever2",
+        linkedinLink: "https://www.linkedin.com/in/finley-hudson"
       },
       {
         imageUrl: eddie,
