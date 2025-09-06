@@ -14,7 +14,7 @@ import will from "../assets/Committee/will.png";
 import youssef from "../assets/Committee/youseff.jpg";
 import nathaniel from "../assets/Committee/nathaniel.png";
 
-import amy_cho from "../assets/Committee/amys2.jpg";
+import amy_cho from "../assets/Committee/amy.png";
 import anton from "../assets/Committee/anton.png";
 import charlotte from "../assets/Committee/charlotte.png";
 import david from "../assets/Committee/david.png";
