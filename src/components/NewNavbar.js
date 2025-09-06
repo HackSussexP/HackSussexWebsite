@@ -49,6 +49,11 @@ const Navbar = (props) => {
                   About
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link px-4" to="/signup" onClick={closeNavbar}>
+                  Sign Up
+                </Link>
+              </li>
               <li className="nav-item dropdown">
                 <Link className="nav-link dropdown-toggle px-4" to="#" id="navbarEventDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Events
