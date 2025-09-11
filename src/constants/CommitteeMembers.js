@@ -44,6 +44,7 @@ import colin2 from "../assets/Committee/colin2.png";
 import tom2 from "../assets/Committee/tom2.jpg";
 import jack2 from "../assets/Committee/jack2.jpg";
 import david2 from "../assets/Committee/david2.png";
+import zainob from "../assets/Committee/zainob.jpg";
 
 import dan from "../assets/Committee/Dan.png";
 import rie from "../assets/Committee/rie.jpg";
@@ -100,6 +101,12 @@ const committeeMembers = [
         role: "Web Development",
         email: "jackg@hacksussex.com",
         linkedinLink: "https://www.linkedin.com/in/jack-edward-gibson/"
+      },
+      {
+        imageUrl: zainob,
+        name: "Zainob Oyin",
+        role: "Socials and Social Media",
+        email: "zainob@hacksussex.com"
       },
       {
         imageUrl: colin2,
