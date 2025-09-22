@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 
 import Navbar from './components/NewNavbar.js'; // what is this error for
 import Footer from './components/Footer.js';
+import Signup from './views/Signup.js';
 
 const Home = lazy(() => import('./views/Home.js'));
 const About = lazy(() => import('./views/About.js'));
@@ -157,6 +158,10 @@ function RouterReload() {
         <Route
           path="/faq"
           element={<FAQ />}
+        />
+        <Route
+          path="/signup"
+          element={<Signup />}
         />
         <Route
           path="*"

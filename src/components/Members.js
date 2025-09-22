@@ -43,7 +43,7 @@ const PreviousMembers = ({ year, committee, index, collapsable }) => {
                 .map((member) => (
                   <div
                     className="col-lg-2 col-md-3 col-sm-4 col-12 mb-5"
-                    key={member.name}
+                    key={member.name + year}
                   >
                     <PhotoCard {...member} />
                   </div>

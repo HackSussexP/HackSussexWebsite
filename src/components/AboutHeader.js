@@ -30,6 +30,13 @@ const AboutHeader = () => {
               <Link 
                 type="button" 
                 className={`btn btn-blue btn-lg col-auto ${styles.largeButton}`} 
+                to='/signup'
+              >
+                Sign Up
+              </Link>
+              <Link 
+                type="button" 
+                className={`btn btn-blue btn-lg col-auto ${styles.largeButton}`} 
                 to='/gallery'
               >
                 Gallery
