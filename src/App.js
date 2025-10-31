@@ -1,9 +1,10 @@
 import './App.css';
 
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy, useEffect} from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import Navbar from './components/NewNavbar.js'; // what is this error for
 import Footer from './components/Footer.js';
@@ -87,12 +88,13 @@ const App = () => {
 };
 
 function RouterReload() {
-  // const navigate = useNavigate();
-  // useEffect(() => {
-  //   if (window.location.pathname === "/") {
-  //     navigate("/Events/hackathon");
-  //   }
-  // }, []); {/* Update for specific events */}
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (window.location.pathname === "/") {
+      navigate("/Events/gamejam");
+    }
+  }, []); {/* Update for specific events */}
+
   return (
     <>
       <ScrollToTop />

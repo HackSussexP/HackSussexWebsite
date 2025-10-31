@@ -7,7 +7,7 @@ import HackathonLogo from '../assets/Events/Hackathon/HSLogo.png';
 import CodersCupBackground from './../assets/Events/CodersCup/CodersCupBackground.png';
 import CodersCupLogo from '../assets/Events/CodersCup/CodersCupLogo.png';
 
-import GameJamLogo from './../assets/Events/GameJam/GJ24Logo.png';
+import GameJamLogo from './../assets/Events/GameJam/GJ25Logo.png';
 import GameJamBackground from './../assets/Events/GameJam/GJBackground.png';
 
 import PwnSussexLogo from './../assets/Events/PwnSussex/PwnSussexLogo.png';
@@ -66,9 +66,9 @@ const HomeCarousel = () => {
                 <div className="carousel-item">
                   <img src={GameJamBackground} className="d-block w-100 h-100 img-fluid carousel-img" alt='Background' />
                   <div className="carousel-caption">
-                    <div className='row align-items-center'>
-                        <div className="col-12 col-lg-6">
-                          <img src={GameJamLogo} alt="Game Jam Logo" className='img-fluid me-auto ms-auto d-block p-3'/>
+                    <div className='row align-items-center h-100'>
+                        <div className="col-12 col-lg-6 h-100">
+                          <img src={GameJamLogo} alt="Game Jam Logo" className='img-fluid me-auto ms-auto d-block p-3 h-100 object-fit-contain'/>
                           <p className='text-wrap text-start d-none d-lg-block'>
                             📅 December 2025<br />
                             📍 Chichester building, University of Sussex, UK<br />

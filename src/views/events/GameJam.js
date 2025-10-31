@@ -1,6 +1,6 @@
 import {React, useEffect} from 'react';
 
-import GameJamLogo from './../../assets/Events/GameJam/GJ24Logo.png';
+import GameJamLogo from './../../assets/Events/GameJam/GJ25Logo.png';
 import GameJamBackground from './../../assets/Events/GameJam/GJBackground.png';
 
 import EventWhereWhen from '../../components/EventWhereWhen'; 
@@ -14,14 +14,14 @@ import AboutSection from '../../components/AboutSection';
 
 
 const config = {
-  "timer": false,
-  "event": false,
+  "timer": true,
+  "event": true,
   "schedule": false,
   "sponsors": false,
-  "date": "Nov 30, 2024, 11:00:00",
-  "title": "2024 Game Jam",
-  "tickets": false,
-  "url": "https://tickets.hacksussex.com/GameJam24/"
+  "date": "Dec 6, 2025, 10:00:00",
+  "title": "2025 Game Jam",
+  "tickets": true,
+  "url": "https://tickets.hacksussex.com/GameJam25/"
 }
 
 var schedule = {
@@ -169,9 +169,9 @@ const GameJam = () => {
       <div className="carousel-inner p-0">
         <img src={GameJamBackground} className="d-block w-100 h-100 img-fluid splash" alt='Background' />
         <div className="carousel-caption">
-          <div className='row align-items-center'>
-              <div className="col-12 col-lg-6">
-                <img src={GameJamLogo} alt="Game Jam Logo" className='img-fluid me-auto ms-auto d-block p-3'/>
+          <div className='row align-items-center h-100'>
+              <div className="col-12 col-lg-6 h-100">
+                <img src={GameJamLogo} alt="Game Jam Logo" className="img-fluid d-block mx-auto p-3 h-100 object-fit-contain" />
                 <p className='text-wrap text-start d-none d-lg-block'>
                   📅 December 2025<br />
                   📍 Chichester building, University of Sussex, UK<br />
@@ -203,7 +203,7 @@ const GameJam = () => {
                     </p>
                     </>}
                     list={["24 Hours of project building", "Win exciting prizes", "Free swag", "Free Food and Drinks", "Workshops to learn skills"]} />
-      {config.event && <EventWhereWhen location="University of Sussex, Brighton" date={"30 November 2024"} link={null} /> }
+      {config.event && <EventWhereWhen location="University of Sussex, Brighton" date={config.date} link={null} /> }
       {config.schedule && <Schedule schedule={schedule} multi_day={true} />}
       {config.event && <CodesOfConduct links={codes} /> }
       {config.sponsors && <Sponsors sponsorData={sponsorData} />}
