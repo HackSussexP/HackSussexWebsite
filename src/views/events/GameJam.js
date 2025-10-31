@@ -21,7 +21,7 @@ const config = {
   "date": "Dec 6, 2025, 10:00:00",
   "title": "2025 Game Jam",
   "tickets": true,
-  "url": "https://tickets.hacksussex.com/GameJam25/"
+  "url": "https://tickets.hacksussex.com/GameJam2025/"
 }
 
 var schedule = {
