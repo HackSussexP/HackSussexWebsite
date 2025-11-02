@@ -199,7 +199,7 @@ const GameJam = () => {
                     compete in tracks to inspire game design and win prizes.If you are looking for an opportunity to collaborate with others and 
                     experience trial and error throughout the game development process, this event would be a good match for you. Also, it will 
                     be great for those who are looking for a place to have exploration of new technologies in the realm of game development. The 
-                    {/* event is entirely free and paid for by our lovely sponsors. HackSussex GameJam 2024 is run in accordance with the <a href="https://static.mlh.io/docs/org-code-of-conduct.pdf" target="_blank" rel="noopener noreferrer">Hackathons UK Code of Conduct</a>. */}
+                    event is entirely free and paid for by our lovely sponsors. HackSussex GameJam 2025 is run in accordance with the <a href="https://static.mlh.io/docs/org-code-of-conduct.pdf" target="_blank" rel="noopener noreferrer">Hackathons UK Code of Conduct</a>.
                     </p>
                     </>}
                     list={["24 Hours of project building", "Win exciting prizes", "Free swag", "Free Food and Drinks", "Workshops to learn skills"]} />
