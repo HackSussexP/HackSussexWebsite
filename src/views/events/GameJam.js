@@ -170,15 +170,15 @@ const GameJam = () => {
         <img src={GameJamBackground} className="d-block w-100 h-100 img-fluid splash" alt='Background' />
         <div className="carousel-caption">
           <div className='row align-items-center h-100'>
-              <div className="col-12 col-lg-6 h-100">
-                <img src={GameJamLogo} alt="Game Jam Logo" className="img-fluid d-block mx-auto p-3 h-100 object-fit-contain" />
-                <p className='text-wrap text-start d-none d-lg-block'>
+              <div className="h-100">
+                <img src={GameJamLogo} alt="Game Jam Logo" className="img-fluid d-block mx-auto h-100 object-fit-cover" />
+                {/* <p className='text-wrap text-start d-none d-lg-block'>
                   📅 December 2025<br />
                   📍 Chichester building, University of Sussex, UK<br />
                   🌐 In-Person
-                </p>
+                </p> */}
               </div>
-              <div className='col-lg-6 d-none d-lg-block'>
+              {/* <div className='col-lg-6 d-none d-lg-block'>
                 <h1 className='fw-bold display-4 text-electric'>Game Jam Event Loading...</h1>
                 <div className='mt-3'>
                   <div className="progress" style={{ height: '30px', borderRadius: '15px', backgroundColor: '#222' }}>
@@ -186,7 +186,7 @@ const GameJam = () => {
                   </div>
                   <div className='text-center mt-2 text-light display-6'>100%</div>
                 </div>
-              </div>
+              </div> */}
           </div>
         </div>
       </div>
