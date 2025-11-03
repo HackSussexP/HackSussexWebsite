@@ -14,7 +14,7 @@ const CodesOfConduct = ({ links }) => {
   };
 
   return (
-    <div className="container-fluid text-center text-white my-4" style={{backgroundColor: "var(--darker-blue)"}}>
+    <div className="container-fluid text-center text-white" style={{backgroundColor: "var(--darker-blue)"}}>
         <div className="row p-2 justify-content-center">
           <div className="col-auto">
             <h1 className="pb-1 text fw-bold h3 ms-auto me-auto">{links.length > 1 ? "This event is run is accordance with the following codes of conduct:" :"This event is run is accordance with the following code of conduct:"}</h1>
