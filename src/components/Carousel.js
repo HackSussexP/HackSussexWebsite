@@ -68,9 +68,9 @@ const HomeCarousel = () => {
                   <div className="carousel-caption">
                     <div className='row align-items-center h-100'>
                         <div className="col-12 col-lg-6 h-100">
-                          <img src={GameJamLogo} alt="Game Jam Logo" className='img-fluid me-auto ms-auto d-block p-3 h-100 object-fit-contain'/>
+                          <img src={GameJamLogo} alt="Game Jam Logo" className='img-fluid me-auto ms-auto d-block p-3 h-75 object-fit-contain'/>
                           <p className='text-wrap text-start d-none d-lg-block'>
-                            📅 December 2025<br />
+                            📅 6th-7th December 2025<br />
                             📍 Chichester building, University of Sussex, UK<br />
                             🌐 In-Person
                           </p>
@@ -79,9 +79,9 @@ const HomeCarousel = () => {
                           <h1 className='fw-bold display-4 text-electric'>Game Jam Event Loading...</h1>
                           <div className='mt-3'>
                             <div className="progress" style={{ height: '30px', borderRadius: '15px', backgroundColor: '#222' }}>
-                              <div className="progress-barprogress-bar-animated bg-success" role="progressbar" style={{ width: '65%' }} aria-label="progress bar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                              <div className="progress-barprogress-bar-animated bg-success" role="progressbar" style={{ width: '85%' }} aria-label="progress bar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <div className='text-center mt-2 text-light display-6'>100%</div>
+                            <div className='text-center mt-2 text-light display-6'>85%</div>
                           </div>
                         </div>
                     </div>

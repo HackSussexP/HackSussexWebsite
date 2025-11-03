@@ -162,10 +162,6 @@ function RouterReload() {
           element={<FAQ />}
         />
         <Route
-          path="/signup"
-          element={<Signup />}
-        />
-        <Route
           path="*"
           element={<NoMatch />}
         />

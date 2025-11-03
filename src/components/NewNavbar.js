@@ -20,26 +20,26 @@ const Navbar = (props) => {
         <div className="container-fluid py-2 px-5">
 
           {/* MLH Flag */}
-          {/* <a 
+          <a 
             id="mlh-trust-badge" 
             className="d-none d-lg-block"
             style={{display: 'block', maxWidth: '100px', minWidth: '60px', position: 'fixed', right: '100px', top: '0', width: '10%', zIndex: 10000}} 
-            href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=blue" 
+            href="ttps://mlh.io/eu?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white" 
             target="_blank" 
             rel="noopener noreferrer"
           >
             <img 
-              src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-blue.svg" 
-              alt="Major League Hacking 2024 Hackathon Season" 
+              src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-white.svg" 
+              alt="Major League Hacking 2026 Hackathon Season" 
               style={{width: '100%'}} 
             />
-          </a> */}
+          </a>
           {/* End MLH Flag */}
 
           <Link class="navbar-brand" to="/" onClick={closeNavbar}>
             <img src={logo} alt="logo" width="100" height="50" />
           </Link>
-          <button class={`navbar-toggler btn rounded ${navbar ? 'collapsed' : ''}`} type="button" onClick={toggleNavbar}>
+          <button class={`navbar-toggler btn rounded ${navbar ? 'collapsed' : ''}`} type="button" onClick={toggleNavbar} aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>   
           <div className={`collapse navbar-collapse ${navbar ? 'show' : ''}`}>
@@ -47,11 +47,6 @@ const Navbar = (props) => {
               <li className="nav-item">
                 <Link className="nav-link px-4" to="/about" onClick={closeNavbar}>
                   About
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link px-4" to="/signup" onClick={closeNavbar}>
-                  Sign Up
                 </Link>
               </li>
               <li className="nav-item dropdown">
