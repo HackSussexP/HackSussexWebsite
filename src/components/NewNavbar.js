@@ -24,7 +24,7 @@ const Navbar = (props) => {
             id="mlh-trust-badge" 
             className="d-none d-lg-block"
             style={{display: 'block', maxWidth: '100px', minWidth: '60px', position: 'fixed', right: '100px', top: '0', width: '10%', zIndex: 10000}} 
-            href="ttps://mlh.io/eu?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white" 
+            href="https://mlh.io/eu?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white" 
             target="_blank" 
             rel="noopener noreferrer"
           >
