@@ -1,0 +1,43 @@
+import { createContext, useState, useEffect, ReactNode } from "react";
+
+// Import your JSON files
+import committeeData from "../config/committee.json";
+import eventsData from "../config/events.json";
+import sponsorsData from "../config/sponsors.json";
+import siteMetadata from "../config/siteData.json";
+
+
+export const SiteDataContext = createContext();
+
+export const SiteDataProvider = ({ children }) => {
+  const [data, setData] = useState({
+    committee: [],
+    events: { upcomingEvents: [], pastEvents: [] },
+    sponsors: [],
+    siteMetadata: {},
+  });
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchData = () => {
+      setData({
+        committee: committeeData.committee,
+        events: {
+          upcomingEvents: eventsData.upcomingEvents,
+          pastEvents: eventsData.pastEvents,
+        },
+        sponsors: sponsorsData.sponsors,
+        siteMetadata: siteMetadata.siteMetadata,
+      });
+      setLoading(false);
+    };
+
+    fetchData();
+  }, []);
+
+  return (
+    <SiteDataContext.Provider value={{ ...data, loading }}>
+      {children}
+    </SiteDataContext.Provider>
+  );
+};

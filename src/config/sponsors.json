@@ -1,0 +1,29 @@
+
+{
+  "sponsors": [
+    {
+      "id": "spn_1f3d9b7c",
+      "name": "GitHub",
+      "logoUrl": "https://logo.svgcdn.com/logos/github.png",
+      "website": "https://github.com/"
+    },
+    {
+      "id": "spn_2b8c4a6d",
+      "name": "Google",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+      "website": "https://google.com/"
+    },
+    {
+      "id": "spn_3e7a1d9f",
+      "name": "DigitalOcean",
+      "logoUrl": "https://logo.svgcdn.com/devicon-plain/digitalocean-plain-wordmark.png",
+      "website": "https://digitalocean.com/"
+    },
+    {
+      "id": "spn_4a9f8c2e",
+      "name": "MLH",
+      "logoUrl": "https://mlh.io/assets/img/mlh-logo-white.svg",
+      "website": "https://mlh.io/"
+    }
+  ]
+}

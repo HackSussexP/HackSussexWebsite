@@ -1,0 +1,112 @@
+:root   
+{
+    --white: #ffffff;
+    --text-colour: #ffffff;
+    --secondary-text-colour: #1f1f1f;
+    --background-colour: #000000;
+    --accent-colour: #94dbc6;
+    --footer-background: #0f0920;
+    --max-width: 1200px;
+}
+
+[data-theme="light"] {
+    --background-colour: #ffffff;
+    --text-colour: #343434;
+}
+
+*{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    box-sizing: border-box;
+    color: var(--text-colour);
+}
+
+h1, h2, h3
+{
+    font-weight: bolder !important;
+}
+
+html
+{
+    scroll-behavior: smooth;
+    max-width: 100dvw;
+    overflow-x: hidden;
+    background-color: var(--background-colour);
+}
+
+body
+{
+    margin: 0;
+}
+
+.page-container
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    align-items: center;
+}
+
+.page-content
+{
+    max-width: 1500px;
+    flex: 1;
+}
+
+.button-container
+{
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    display: inline-block;
+    background-color: var(--accent-colour);
+    color: white;
+    border: none;
+    height: fit-content;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.75rem 1.25rem;
+    border-radius: 24px;
+    margin-top: 1.2rem;
+    transition: background-color 0.3s;
+    outline: 1px solid var(--white);
+}
+
+button:hover {
+    background-color: var(--accent-colour);
+}
+
+.page-title
+{
+    text-align: start;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-colour);
+}
+
+.page-title.right
+{
+    text-align: end;
+}
+
+.top-description
+{
+    font-size: 1rem;
+    color: var(--text-colour);
+    opacity: 0.6;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.top-description.right
+{
+    text-align: end;
+}
+
+@font-face {
+    font-family: "Milker";
+    src: url("../../public/fonts/Milker.otf");
+}

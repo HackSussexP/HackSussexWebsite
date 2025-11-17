@@ -1,0 +1,48 @@
+.navbarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 1rem;
+  color: var(--text-colour);
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.358);
+}
+
+.navLinks {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo {
+  height: 50px; /* adjust as needed */
+  padding: 10px;
+  object-fit: contain;
+}
+
+
+.navLink {
+  color: var(--text-colour);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.navLink.active
+{
+  opacity: 1 !important;
+}
+
+.navLink:hover {
+  color: var(--accent-colour);
+}
