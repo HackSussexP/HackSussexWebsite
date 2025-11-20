@@ -1,14 +1,12 @@
 {
   "siteMetadata": {
-    "title": "HackSussex",
-    "description": "HackSussex is the University of Sussex's premier student-led tech society, dedicated to fostering innovation, collaboration, and learning in technology.",
-    "url": "https://hacksussex.com",
-    "image": "/assets/site-preview.png",
     "socialMedia": {
-      "twitter": "https://twitter.com/HackSussex",
+      "x": "https://x.com/HackSussex",
       "instagram": "https://instagram.com/HackSussex",
       "linkedin": "https://linkedin.com/company/HackSussex",
-      "github": ""
+      "discord": "https://discord.com/invite/Uwsbxy8Bqf",
+      "tiktok": "https://www.tiktok.com/@hacksussex",
+      "youtube": "https://www.youtube.com/@HackSussex"
     }
   }
 }
