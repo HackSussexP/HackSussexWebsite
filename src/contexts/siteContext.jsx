@@ -6,6 +6,7 @@ import eventsData from "../config/events.json";
 import sponsorsData from "../config/sponsors.json";
 import siteMetadata from "../config/siteData.json";
 
+// to add: faq, 
 
 export const SiteDataContext = createContext();
 
