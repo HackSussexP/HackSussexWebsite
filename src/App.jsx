@@ -6,12 +6,14 @@ import NotFound from "./pages/not-found/not-found";
 import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
 
-import Committee from "./pages/committee/committee";
-
 import { useSiteData } from "./hooks/useSiteData";
 
 import "./styles/global.css";
 import "./styles/loading.css";
+
+import Committee from "./pages/committee/committee";
+import Sponsors from "./pages/sponsors/sponsors";
+import Gallery from "./pages/gallery/gallery";
 
 const App = () => {
     const { loading } = useSiteData();
@@ -33,6 +35,9 @@ const App = () => {
                     <Route path="*" element={<NotFound />} />
 
                     <Route path="/committee" element={<Committee />} />
+                    <Route path="/sponsors" element={<Sponsors />} />
+                    <Route path="/gallery" element={<Gallery />} />
+
                 </Routes>
             </div>
             <Footer />

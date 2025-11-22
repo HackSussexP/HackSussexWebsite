@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./event.module.css";
 import messages from "./event.messages";
+import { githubRawToLocal } from "../../util/githubRawToLocal";
 
 const Event = ({ event, sponsors }) => {
-  const eventSponsors = sponsors.filter((s) =>
+  const eventSponsors = sponsors?.filter((s) =>
     event.sponsors.includes(s.id)
   );
 
@@ -12,7 +13,7 @@ const Event = ({ event, sponsors }) => {
       {/* Image */}
       <div className={styles.imageWrapper}>
         <img src={event.image} alt={event.title} className={styles.image} />
-        <img src={event.logo} alt={`${event.title} Logo`} className={styles.logo} />
+        <img src={githubRawToLocal(event.logo)} alt={`${event.title} Logo`} className={styles.logo} />
       </div>
 
       {/* Content */}
@@ -33,7 +34,7 @@ const Event = ({ event, sponsors }) => {
 
         {/* Sponsors */}
         <div className={styles.bottomLine}>
-          {eventSponsors.length > 0 && (
+          {eventSponsors?.length > 0 && (
             <div className={styles.sponsors}>
               <p className={styles.sponsorTitle}>
                 {messages.sponsorsTitle}

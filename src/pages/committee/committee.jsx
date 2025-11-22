@@ -5,13 +5,15 @@ import messages from "./committee.messages";
 const Committee = () => {
   const { committee, loading } = useSiteData();
 
+  console.log("commitee here ", committee)
+
   if (loading) return <p>{messages.loading}</p>;
 
   return (
     <div className={styles.container}>
       <h1 className={styles.heading}>{messages.title}</h1>
       <div className={styles.grid}>
-        {committee.map((member) => (
+        {committee?.map((member) => (
           <div key={member.id} className={styles.card}>
             <img
               src={member.image}
@@ -39,16 +41,6 @@ const Committee = () => {
                   className={`${styles.socialLink} ${styles.github}`}
                 >
                   GitHub
-                </a>
-              )}
-              {member.instagram && (
-                <a
-                  href={member.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`${styles.socialLink} ${styles.instagram}`}
-                >
-                  Instagram
                 </a>
               )}
             </div>

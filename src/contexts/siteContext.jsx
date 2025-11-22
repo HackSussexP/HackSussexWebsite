@@ -8,6 +8,8 @@ import siteMetadata from "../config/siteData.json";
 
 // to add: faq, 
 
+console.log("sponsorsData: ", sponsorsData);
+
 export const SiteDataContext = createContext();
 
 export const SiteDataProvider = ({ children }) => {
@@ -22,13 +24,13 @@ export const SiteDataProvider = ({ children }) => {
   useEffect(() => {
     const fetchData = () => {
       setData({
-        committee: committeeData.committee,
+        committee: committeeData,
         events: {
           upcomingEvents: eventsData.upcomingEvents,
           pastEvents: eventsData.pastEvents,
         },
-        sponsors: sponsorsData.sponsors,
-        siteMetadata: siteMetadata.siteMetadata,
+        sponsors: sponsorsData,
+        siteData: siteMetadata,
       });
       setLoading(false);
     };
