@@ -144,7 +144,7 @@
       "2023/2024, 2024/2025"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_py243unx.jpg",
-    "pastCommittee": false,
+    "pastCommittee": true,
     "github": "https://github.com/VeryCoolPatrick",
     "linkedin": "https://www.linkedin.com/in/patrick-culmer-982628195/"
   },
@@ -156,7 +156,7 @@
       "2024/2025"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_1v5y09i7.jpg",
-    "pastCommittee": false
+    "pastCommittee": true
   },
   {
     "id": "mem_28db5eyg9f9",
@@ -166,7 +166,7 @@
       "2024/2025"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_tqug3tr8.png",
-    "pastCommittee": false,
+    "pastCommittee": true,
     "linkedin": "https://www.linkedin.com/in/nathanielroumana/",
     "github": "https://github.com/TheAesthetical"
   },
@@ -178,7 +178,7 @@
       "2023/2024, 2024/2025"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_iy2zrig5.jpg",
-    "pastCommittee": false,
+    "pastCommittee": true,
     "linkedin": "https://www.linkedin.com/in/keagankozlowski/",
     "github": "https://github.com/KeaganKozlowski"
   },
@@ -214,7 +214,7 @@
       "2024/2025"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_wocekjme.jpg",
-    "pastCommittee": false,
+    "pastCommittee": true,
     "github": "https://github.com/LukeS03"
   },
   {
@@ -225,7 +225,7 @@
       "2024/2025"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_zc2hcytb.jpg",
-    "pastCommittee": false
+    "pastCommittee": true
   },
   {
     "id": "mem_pk9ov7civmm",
@@ -235,7 +235,7 @@
       "2024/2025"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_orpa5tug.png",
-    "pastCommittee": false
+    "pastCommittee": true
   },
   {
     "id": "mem_mosfwknfn0r",
@@ -245,7 +245,7 @@
       "2024/2025"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_23uyqt7r.png",
-    "pastCommittee": false,
+    "pastCommittee": true,
     "github": "https://github.com/will-x86"
   },
   {
@@ -256,7 +256,7 @@
       "2024/2025"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_62uz5hz8.jpg",
-    "pastCommittee": false,
+    "pastCommittee": true,
     "linkedin": "https://www.linkedin.com/in/youssefd2001/"
   },
   {
@@ -267,7 +267,7 @@
       "2023/2024"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_ls3r0zip.png",
-    "pastCommittee": false,
+    "pastCommittee": true,
     "linkedin": "https://www.linkedin.com/in/tori-nevins-686069197/"
   },
   {
@@ -278,7 +278,7 @@
       "2023/2024"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_9kmxhtib.png",
-    "pastCommittee": false,
+    "pastCommittee": true,
     "github": "https://github.com/kittyearstales",
     "linkedin": "https://www.linkedin.com/in/amy-cho-029989173/"
   },
@@ -290,7 +290,7 @@
       "2021/2022, 2022/2023, 2023/2024"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_3lquiduk.png",
-    "pastCommittee": false,
+    "pastCommittee": true,
     "linkedin": "https://www.linkedin.com/in/eliaslassalle/"
   },
   {
@@ -301,7 +301,7 @@
       "2022/2023, 2023/2024"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_om8mror9.png",
-    "pastCommittee": false,
+    "pastCommittee": true,
     "linkedin": "https://www.linkedin.com/in/ryu-wong/",
     "github": "https://github.com/SkollRyu"
   },
@@ -313,7 +313,7 @@
       "2022/2023, 2023/2024"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_brf07jus.png",
-    "pastCommittee": false,
+    "pastCommittee": true,
     "github": "https://github.com/TonyRikun",
     "linkedin": "https://www.linkedin.com/in/antons-vasiljevs/"
   },
@@ -325,7 +325,7 @@
       "2022/2023, 2023/2024"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_hzshtvs5.png",
-    "pastCommittee": false,
+    "pastCommittee": true,
     "github": "https://github.com/Henry-Ash-Williams",
     "linkedin": "https://www.linkedin.com/in/henry-williams-49b7ab226/"
   },
@@ -337,7 +337,7 @@
       "2022/2023, 2023/2024"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_1yumv7jz.png",
-    "pastCommittee": false,
+    "pastCommittee": true,
     "linkedin": "https://www.linkedin.com/in/richerd-joseph-479492223/"
   },
   {
@@ -348,7 +348,7 @@
       "2021/2022, 2022/2023, 2023/2024"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_55f9t7r1.png",
-    "pastCommittee": false,
+    "pastCommittee": true,
     "github": "https://github.com/judebirch",
     "linkedin": "https://www.linkedin.com/in/jude-birch-1288a0193/"
   },
@@ -360,7 +360,7 @@
       "2021/2022, 2022/2023, 2023/2024"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_4f8z479m.png",
-    "pastCommittee": false,
+    "pastCommittee": true,
     "github": "https://github.com/JKybett",
     "linkedin": "https://www.linkedin.com/in/jkybett/"
   },
@@ -372,7 +372,7 @@
       "2023/2024"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_pq90gdy7.png",
-    "pastCommittee": false,
+    "pastCommittee": true,
     "linkedin": "https://www.linkedin.com/in/jamie-sage/"
   },
   {
@@ -383,7 +383,7 @@
       "2023/2024"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_rutep36o.png",
-    "pastCommittee": false
+    "pastCommittee": true
   },
   {
     "id": "mem_w2k9ztak27",
@@ -393,7 +393,7 @@
       "2023/2024"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_r7jx30dg.png",
-    "pastCommittee": false
+    "pastCommittee": true
   },
   {
     "id": "mem_3gjs73fwak9",
@@ -403,7 +403,7 @@
       "2022/2023"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_2rc5tke7.jpg",
-    "pastCommittee": false
+    "pastCommittee": true
   },
   {
     "id": "mem_wlcsw87pha",
@@ -413,7 +413,7 @@
       "2022/2023"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_0hm8s0ag.jpg",
-    "pastCommittee": false
+    "pastCommittee": true
   },
   {
     "id": "mem_un8v97mgvlk",
@@ -423,7 +423,7 @@
       "2021/2022"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_fgsas3cv.png",
-    "pastCommittee": false
+    "pastCommittee": true
   },
   {
     "id": "mem_z5r1i8qztsl",
@@ -433,6 +433,6 @@
       "2021/2022"
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_x1e478et.png",
-    "pastCommittee": false
+    "pastCommittee": true
   }
 ]
