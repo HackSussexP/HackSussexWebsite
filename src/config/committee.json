@@ -210,5 +210,125 @@
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_62uz5hz8.jpg",
     "pastCommittee": false,
     "linkedin": "https://www.linkedin.com/in/youssefd2001/"
+  },
+  {
+    "id": "mem_c84t4dlpvaf",
+    "name": "Tori Nevins",
+    "role": "Social Media",
+    "year": "2023/2024",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_ls3r0zip.png",
+    "pastCommittee": false,
+    "linkedin": "https://www.linkedin.com/in/tori-nevins-686069197/"
+  },
+  {
+    "id": "mem_svicc9cx71",
+    "name": "Amy Cho",
+    "role": "Social Media",
+    "year": "2023/2024",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_9kmxhtib.png",
+    "pastCommittee": false,
+    "github": "https://github.com/kittyeartales",
+    "linkedin": "https://www.linkedin.com/in/amy-cho-029989173/"
+  },
+  {
+    "id": "mem_hpxth1qip86",
+    "name": "Elias Lassalle",
+    "role": "Media production",
+    "year": "2021/2022, 2022/2023, 2023/2024",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_3lquiduk.png",
+    "pastCommittee": false,
+    "linkedin": "https://www.linkedin.com/in/eliaslassalle/"
+  },
+  {
+    "id": "mem_lqy1vxkvv1h",
+    "name": "Ryu Wong",
+    "role": "General Committee",
+    "year": "2022/2023, 2023/2024",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_om8mror9.png",
+    "pastCommittee": false,
+    "linkedin": "https://www.linkedin.com/in/ryu-wong/",
+    "github": "https://github.com/SkollRyu"
+  },
+  {
+    "id": "mem_ofeaao56elj",
+    "name": "Anton Vasilijevs",
+    "role": "General Committee",
+    "year": "2022/2023, 2023/2024",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_brf07jus.png",
+    "pastCommittee": false,
+    "github": "https://github.com/TonyRikun",
+    "linkedin": "https://www.linkedin.com/in/antons-vasiljevs/"
+  },
+  {
+    "id": "mem_2xlfs2rjrp3",
+    "name": "Henry Ash Williams",
+    "role": "General Committee",
+    "year": "2022/2023, 2023/2024",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_hzshtvs5.png",
+    "pastCommittee": false,
+    "github": "https://github.com/Henry-Ash-Williams",
+    "linkedin": "https://www.linkedin.com/in/henry-williams-49b7ab226/"
+  },
+  {
+    "id": "mem_q1ml5ndjqk",
+    "name": "Richerd Joseph",
+    "role": "General Committee",
+    "year": "2022/2023, 2023/2024",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_1yumv7jz.png",
+    "pastCommittee": false,
+    "linkedin": "https://www.linkedin.com/in/richerd-joseph-479492223/"
+  },
+  {
+    "id": "mem_6d63hf3mr08",
+    "name": "Jude Birch",
+    "role": "General Committee",
+    "year": "2021/2022, 2022/2023, 2023/2024",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_55f9t7r1.png",
+    "pastCommittee": false,
+    "github": "https://github.com/judebirch",
+    "linkedin": "https://www.linkedin.com/in/jude-birch-1288a0193/"
+  },
+  {
+    "id": "mem_g4h64j7n5xb",
+    "name": "Josh Kybett",
+    "role": "General Committee",
+    "year": "2021/2022, 2022/2023, 2023/2024",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_4f8z479m.png",
+    "pastCommittee": false,
+    "github": "https://github.com/JKybett",
+    "linkedin": "https://www.linkedin.com/in/jkybett/"
+  },
+  {
+    "id": "mem_ac6emvo5z1a",
+    "name": "Jamie Sage",
+    "role": "General Committee",
+    "year": "",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_pq90gdy7.png",
+    "pastCommittee": false,
+    "linkedin": "https://www.linkedin.com/in/jamie-sage/"
+  },
+  {
+    "id": "mem_az0ymxu316v",
+    "name": "Keisuke Tsujie",
+    "role": "General Committee",
+    "year": "",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_rutep36o.png",
+    "pastCommittee": false
+  },
+  {
+    "id": "mem_w2k9ztak27",
+    "name": "Eddie Lynch",
+    "role": "General Committee",
+    "year": "",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_r7jx30dg.png",
+    "pastCommittee": false
+  },
+  {
+    "id": "mem_3gjs73fwak9",
+    "name": "Rie Tse",
+    "role": "Welfare",
+    "year": "",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_2rc5tke7.jpg",
+    "pastCommittee": false
   }
 ]
