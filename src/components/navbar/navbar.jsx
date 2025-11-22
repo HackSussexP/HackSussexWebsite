@@ -14,7 +14,7 @@ const Navbar = () => {
 
   const links = messages.links.map((link) => {
     if (link.name === "Merch Store") {
-      return { ...link, path: siteData?.merch || "#" };
+      return { ...link, path: siteData?.merch || "#", external: true };
     }
     return link;
   });
@@ -28,17 +28,29 @@ const Navbar = () => {
 
       {/* Navigation links */}
       <div className={styles.navLinks}>
-        {links.map((link) => (
-          <NavLink
-            key={link.path}
-            to={link.path}
-            className={({ isActive }) =>
-              isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
-            }
-          >
-            {link.name}
-          </NavLink>
-        ))}
+        {links.map((link) =>
+          link.external ? (
+            <a
+              key={link.path}
+              href={link.path}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.navLink}
+            >
+              {link.name}
+            </a>
+          ) : (
+            <NavLink
+              key={link.path}
+              to={link.path}
+              className={({ isActive }) =>
+                isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
+              }
+            >
+              {link.name}
+            </NavLink>
+          )
+        )}
       </div>
 
       {/* Work With Us */}

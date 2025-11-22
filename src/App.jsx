@@ -14,6 +14,7 @@ import "./styles/loading.css";
 import Committee from "./pages/committee/committee";
 import Sponsors from "./pages/sponsors/sponsors";
 import Gallery from "./pages/gallery/gallery";
+import Events from "./pages/events/events";
 
 const App = () => {
     const { loading } = useSiteData();
@@ -37,7 +38,7 @@ const App = () => {
                     <Route path="/committee" element={<Committee />} />
                     <Route path="/sponsors" element={<Sponsors />} />
                     <Route path="/gallery" element={<Gallery />} />
-
+                    <Route path="/events" element={<Events />} />
                 </Routes>
             </div>
             <Footer />

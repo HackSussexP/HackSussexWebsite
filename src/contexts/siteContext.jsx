@@ -15,7 +15,7 @@ export const SiteDataContext = createContext();
 export const SiteDataProvider = ({ children }) => {
   const [data, setData] = useState({
     committee: [],
-    events: { upcomingEvents: [], pastEvents: [] },
+    events: {},
     sponsors: [],
     siteMetadata: {},
   });
@@ -25,10 +25,7 @@ export const SiteDataProvider = ({ children }) => {
     const fetchData = () => {
       setData({
         committee: committeeData,
-        events: {
-          upcomingEvents: eventsData.upcomingEvents,
-          pastEvents: eventsData.pastEvents,
-        },
+        events: eventsData,
         sponsors: sponsorsData,
         siteData: siteMetadata,
       });
