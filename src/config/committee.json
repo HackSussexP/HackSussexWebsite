@@ -330,5 +330,29 @@
     "year": "",
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_2rc5tke7.jpg",
     "pastCommittee": false
+  },
+  {
+    "id": "mem_wlcsw87pha",
+    "name": "Louis Murphy",
+    "role": "Social Media",
+    "year": "",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_0hm8s0ag.jpg",
+    "pastCommittee": false
+  },
+  {
+    "id": "mem_un8v97mgvlk",
+    "name": "Adnan Quisar",
+    "role": "Web development",
+    "year": "",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_fgsas3cv.png",
+    "pastCommittee": false
+  },
+  {
+    "id": "mem_z5r1i8qztsl",
+    "name": "Dan Bates",
+    "role": "Secretary",
+    "year": "",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_x1e478et.png",
+    "pastCommittee": false
   }
 ]
