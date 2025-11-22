@@ -95,7 +95,7 @@
     "id": "mem_73jqt35d4yb",
     "name": "Tom Harwood",
     "role": "General Committee",
-    "year": "",
+    "year": "2021/2022, 2022/2023, 2023/2024, 2025/2026",
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_uw7tkgwv.jpg",
     "pastCommittee": false,
     "github": "https://github.com/tomtehtom",
@@ -105,7 +105,7 @@
     "id": "mem_cfewr9cz8vc",
     "name": "Lukas Hastings",
     "role": "General Committee",
-    "year": "",
+    "year": "2023/2024, 2025/2026",
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_zsa3n69l.jpg",
     "pastCommittee": false,
     "linkedin": "https://www.linkedin.com/in/lukas-hastings-a9a055255/"
@@ -152,9 +152,9 @@
     "id": "mem_lz2eshm9d5",
     "name": "Jacopo Calvi",
     "role": "Web development",
-    "year": "",
-    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_vwoepoa5.jpg",
-    "pastCommittee": false,
+    "year": "2024/2025",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_ryqckrkk.jpg",
+    "pastCommittee": true,
     "github": "https://github.com/cactuuus",
     "linkedin": "https://www.linkedin.com/in/jacopo-poe-calvi/"
   },
@@ -176,5 +176,39 @@
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_wocekjme.jpg",
     "pastCommittee": false,
     "github": "https://github.com/LukeS03"
+  },
+  {
+    "id": "mem_xyf8zmevaa",
+    "name": "Emily-mae Neame",
+    "role": "General Committee",
+    "year": "2024/2025",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_zc2hcytb.jpg",
+    "pastCommittee": false
+  },
+  {
+    "id": "mem_pk9ov7civmm",
+    "name": "John Cory-Wright",
+    "role": "General Committee",
+    "year": "2024/2025",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_orpa5tug.png",
+    "pastCommittee": false
+  },
+  {
+    "id": "mem_mosfwknfn0r",
+    "name": "Will Kimbell",
+    "role": "General Committee",
+    "year": "",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_23uyqt7r.png",
+    "pastCommittee": false,
+    "github": "https://github.com/will-x86"
+  },
+  {
+    "id": "mem_xi84dbr9b8o",
+    "name": "Youssef Derouiche",
+    "role": "General Committee",
+    "year": "2024/2025",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_62uz5hz8.jpg",
+    "pastCommittee": false,
+    "linkedin": "https://www.linkedin.com/in/youssefd2001/"
   }
 ]
