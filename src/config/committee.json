@@ -1,12 +1,13 @@
 [
   {
     "id": "mem_wct62v494uq",
-    "name": "Nathaniel",
-    "role": "Webdev",
+    "name": "Nathaniel Bates",
+    "role": "Web development",
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_1n74y1ti.jpeg",
     "pastCommittee": false,
     "years": [
-      "2025"
+      "2025",
+      "2024/2025"
     ]
   },
   {
