@@ -1,11 +1,18 @@
 .container {
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: 3rem 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.committee
+{
+  max-width: var(--max-width);
 }
 
 .heading {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 700;
   margin-bottom: 2rem;
   text-align: center;
@@ -31,14 +38,12 @@
 
 .card {
   border: 1px solid #e5e7eb;
-  border-radius: 0.5rem;
   padding: 1rem;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  transition: box-shadow 0.2s ease;
+  background-color: white;
+  color: black;
 }
 
 .card:hover {
-  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
 }
 
 .cardImage {
@@ -52,10 +57,11 @@
 .name {
   font-size: 1.25rem;
   font-weight: 600;
+  color: black;
 }
 
 .role {
-  color: #4b5563;
+  color: #000000;
 }
 
 .socialLinks {
@@ -74,8 +80,4 @@
 
 .github {
   color: #1F2937;
-}
-
-.instagram {
-  color: #E1306C;
 }

@@ -5,13 +5,15 @@ import { githubRawToLocal } from "../../util/githubRawToLocal";
 import SketchyBorder from "../sketchy/sketch-border";
 import Arrow from "../../assets/misc/arrow.png"
 
-const Event = ({ event, sponsors }) => {
+const Event = ({ event, sponsors, ticketsClosed }) => {
   const eventSponsors = sponsors?.filter((s) =>
     event.sponsors.includes(s.id)
   );
 
   return (
-    <SketchyBorder strokeWidth={15} amplitude={4} segmentPercent={0.05}>
+    <SketchyBorder>
+
+      <div className="background-grid container"></div>
       <div className={`${styles.eventCard}`}>
         {/* Image */}
         <div className={styles.imageWrapper}>
@@ -60,6 +62,7 @@ const Event = ({ event, sponsors }) => {
               </div>
             )}
 
+            {!ticketsClosed && 
             <div className={styles.buttons}>
               <button>{messages.calendarBtnText}</button>
 
@@ -73,7 +76,7 @@ const Event = ({ event, sponsors }) => {
                <img className={styles.arrow3} src ={Arrow}></img>
                 {messages.ticketsBtnText}
               </button>
-            </div>
+            </div>}
           </div>
         </div>
       </div>

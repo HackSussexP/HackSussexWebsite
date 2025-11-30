@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import Polaroid from "./polaroid/polaroid";
+import Polaroid from "./polaroid";
+import styles from "./polaroid.module.css"
 
 // Import all polaroid images
 const importAllPolaroids = (r) => r.keys().map(r);
 const allPolaroidsRaw = importAllPolaroids(
-  require.context("../assets/gallery", false, /\.(png|jpe?g|gif)$/)
+  require.context("../../assets/gallery", false, /\.(png|jpe?g|gif)$/)
 );
 const allPolaroids = allPolaroidsRaw.map((img) => img.default || img);
 
@@ -42,7 +43,7 @@ const PolaroidColumn = ({ right }) => {
   }, [right]);
 
   return (
-    <div className={`polaroid-column ${right ? "right" : ""}`}>
+    <div className={`${styles.polaroidColumn} ${right ? styles.right : ""}`}>
       {polaroids.map((p) => (
         <Polaroid key={p.id} image={p.image} rotate={p.rotate} />
       ))}

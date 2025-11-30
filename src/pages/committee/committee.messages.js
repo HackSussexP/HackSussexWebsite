@@ -1,5 +1,5 @@
 const messages = {
-  title: "Our Committee",
+  title: "Meet Our Committee",
   loading: "Loading committee..."
 };
 

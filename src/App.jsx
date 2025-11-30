@@ -16,7 +16,7 @@ import Sponsors from "./pages/sponsors/sponsors";
 import Gallery from "./pages/gallery/gallery";
 import Events from "./pages/events/events";
 
-import PolaroidColumn from "./components/polaroid-column";
+import PolaroidColumn from "./components/polaroid/polaroid-column";
 
 const App = () => {
     const { loading } = useSiteData();
@@ -38,12 +38,13 @@ const App = () => {
             <div className="page-content">
                     <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="*" element={<NotFound />} />
 
                     <Route path="/committee" element={<Committee />} />
                     <Route path="/sponsors" element={<Sponsors />} />
                     <Route path="/gallery" element={<Gallery />} />
                     <Route path="/events" element={<Events />} />
+
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </div>
             <Footer />

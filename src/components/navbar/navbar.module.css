@@ -2,39 +2,37 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 1rem 0rem;
   width: 100%;
   z-index: 10;
-  max-width: 1600px;
+  max-width: var(--max-width)
 }
 
 .leftContainer,
 .rightContainer {
-  flex: 1;
   display: flex;
   align-items: center;
 }
 
 .leftContainer {
   justify-content: flex-start;
+  margin-right: 25px;
 }
 
 .rightContainer {
   justify-content: flex-end;
   gap: 1rem;
+  flex: 1;
 }
 
 .centerContainer {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .navLinks {
   display: flex;
   gap: 2.4rem;
-  align-items: center;
-  width: var(--max-width);
+  flex: 1;
+  align-items: flex-start;
 }
 
 .navLink {

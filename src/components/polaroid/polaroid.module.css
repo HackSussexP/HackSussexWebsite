@@ -5,6 +5,7 @@
     width: auto;
     height: 250;
     transform: translateX(-20%);
+    box-shadow: 2px 4px 15px 2px black;
 }
 
 .polaroidTemplate
@@ -23,4 +24,29 @@
     width: 100%;
     background-color: var(--background-colour);
     height: 100%;
+}
+
+.polaroidColumn
+{
+    left: 0;
+    position: absolute;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: 3;
+}
+
+.polaroidColumn.right
+{
+    left: auto;
+    right: 0;
+}
+
+
+@media (max-width: 1750px) {
+    .polaroidColumn
+    {
+        opacity: 0;
+    }
 }

@@ -22,7 +22,6 @@
 {
     text-align: end;
     font-size: 3rem;
-    font-weight: 700;
     margin-bottom: 1rem;
     color: black;
     font-weight: bold;
@@ -50,3 +49,23 @@
   text-align: center;
   margin-top: 4rem;
 }
+
+.eventWrapper
+{
+  position: relative;
+}
+
+.countdown
+{
+  position: absolute;
+  bottom: 30;
+  text-align: center;
+  left: 30;
+  color: red;
+  padding: 10px;
+  font-size: 2rem;
+  margin: 0;
+  background-color: white;
+  width: 280px;
+}
+

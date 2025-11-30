@@ -13,9 +13,9 @@ const Home = () => {
     <div className={styles.homePage}>
       <Hero />
       <UpcomingEvents />
-      <About />
+      {/* <About /> */}
       <Sponsors />
-      <Video />
+      {/* <Video /> */}
       <Merch />
       <Feedback />
     </div>
