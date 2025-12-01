@@ -12,12 +12,17 @@ import Sponsors from '../../components/Sponsors';
 
 import AboutSection from '../../components/AboutSection';
 
+import BCS from "../../assets/SponsorLogos/BCS.png";
+import UOS from "../../assets/SponsorLogos/UoS.png";
+import MLH from "../../assets/SponsorLogos/Mlh-logo.png";
+import HUK from "../../assets/SponsorLogos/huk.png";
+
 
 const config = {
   "timer": true,
   "event": true,
-  "schedule": false,
-  "sponsors": false,
+  "schedule": true,
+  "sponsors": true,
   "date": "Dec 6, 2025, 10:00:00",
   "title": "2025 Game Jam",
   "tickets": true,
@@ -38,115 +43,84 @@ var schedule = {
     },
     {
       time: "12:00",
-      event: "Jam Begins",
+      event: "Hacking Begins",
       location: "Chichester 1 Labs",
     },
     {
-      time: "1:00PM",
-      event: "Lunch",
+      time: "12:30",
+      event: "Lunch - TunTuns",
       location: "Chichester 1",
     },
     {
-      time: "2:00PM",
-      event: "Github Workshop",
+      time: "14:00",
+      event: "MLH Gemini Workshop",
       location: "Chichester 1 Lecture Theatre",
     },
     {
-      time: "3:30PM",
-      event: "Game Dev & Shaders",
+      time: "15:30",
+      event: "MLH Copilot Workshop",
       location: "Chichester 1 Lecture Theatre",
     },
     {
-      time: "5:00PM",
-      event: "MS Paint w/ Bob Ross",
+      time: "17:00",
+      event: "Cupstacking Competition",
       location: "Chichester 1 Lecture Theatre",
     },
     {
-      time: "6:30PM",
-      event: "Dinner",
+      time: "18:00",
+      event: "Dinner - PizzaMe",
       location: "Chichester 1 Lecture Theatre",
     },
     {
-      time: "10:00PM",
-      event: "Karaoke",
+      time: "21:00",
+      event: "Minecraft Hunger Games",
       location: "Chichester 1",
     }
   ],
   2:[
     {
-      time: "12:00AM",
-      event: "Midnight Pizza",
+      time: "1:00",
+      event: "Movie & Popcorn",
       location: "Chichester 1",
     },
     {
-      time: "1:00AM",
-      event: "Movie",
+      time: "8:30",
+      event: "Breakfast - Pastries",
       location: "Chichester 1 Lecture Theatre",
     },
     {
-      time: "8:30AM",
-      event: "Breakfast",
+      time: "11:00",
+      event: "Soft Deadline",
       location: "Breakfast",
     },
     {
-      time: "11:00AM",
-      event: "Soft Deadline",
+      time: "12:00",
+      event: "Hacking Ends",
+      location: "Breakfast",
+    },
+    {
+      time: "12:00",
+      event: "Lunch - CaPhe Republic",
       location: "Chichester 1",
     },
     {
-      time: "12:00PM",
-      event: "Jam Finishes + Lunch",
+      time: "13:00",
+      event: "Judging Period",
       location: "Chichester 1",
     },
     {
-      time: "1:00PM",
-      event: "Judging Begins",
-      location: "Chichester 1",
-    },
-    {
-      time: "4:00PM",
+      time: "16:00PM",
       event: "Closing Ceremony",
-      location: "Chichester 1 Lecture Theatre",
+      location: "Chichester 1",
     }
   ]
 }
 
 const sponsorData = [
-  {
-    title: "Gold Sponsor",
-    size: "50%",
-    logos: [
-      { src: "", url: "" },
-    ]
-  },
-  {
-    title: "Silver Sponsors",
-    size: "30%",
-    logos: [
-      { src: "", url: "" },
-    ]
-  },
-  {
-    title: "Bronze Sponsors",
-    size: "30%",
-    logos: [
-      { src: "", url: "" },
-    ]
-  },
-  {
-    title: "Partners",
-    size: "30%",
-    logos: [
-      { src: "", url: "" },
-    ]
-  },
-  {
-    title: "Supporters",
-    size: "20%",
-    logos: [
-      { src: "", url: "" },
-    ]
-  }
+  {name : "HUK", img: HUK, url: "https://www.hackathons.org.uk/"},
+  {name : "BCS", img: BCS, url: "https://www.bcs.org/"},
+  {name : "UoS", img: UOS, url: "https://www.sussex.ac.uk/"},
+  {name : "MLH", img: MLH, url: "https://mlh.io/"},
 ];
 
 const codes = [
@@ -205,8 +179,8 @@ const GameJam = () => {
                     list={["24 Hours of project building", "Win exciting prizes", "Free swag", "Free Food and Drinks", "Workshops to learn skills"]} />
       {config.event && <EventWhereWhen location="University of Sussex, Brighton" date={config.date} link={null} /> }
       {config.schedule && <Schedule schedule={schedule} multi_day={true} />}
-      {config.event && <CodesOfConduct links={codes} /> }
       {config.sponsors && <Sponsors sponsorData={sponsorData} />}
+      {config.event && <CodesOfConduct links={codes} /> }
     </div>
     </>
   );
