@@ -19,13 +19,13 @@ import HUK from "../../assets/SponsorLogos/huk.png";
 
 
 const config = {
-  "timer": true,
-  "event": true,
-  "schedule": true,
-  "sponsors": true,
+  "timer": false,
+  "event": false,
+  "schedule": false,
+  "sponsors": false,
   "date": "Dec 6, 2025, 10:00:00",
   "title": "2025 Game Jam",
-  "tickets": true,
+  "tickets": false,
   "url": "https://tickets.hacksussex.com/GameJam2025/"
 }
 
