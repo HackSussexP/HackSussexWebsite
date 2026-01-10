@@ -1,5 +1,6 @@
 {
-  "upcomingEvents": [
+  "upcomingEvents": [],
+  "pastEvents": [
     {
       "id": "evt_lp72u50x3w",
       "title": "Game Jam 2025",
@@ -12,6 +13,5 @@
       "ticketsLink": "https://tickets.hacksussex.com/GameJam2025/",
       "eventType": "Game Jam"
     }
-  ],
-  "pastEvents": []
+  ]
 }
