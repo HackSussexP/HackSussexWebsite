@@ -1,5 +1,19 @@
 {
-  "upcomingEvents": [],
+  "upcomingEvents": [
+    {
+      "id": "evt_5jk0p4hid9a",
+      "title": "Hack Sussex 2026",
+      "date": "2026-02-19T06:35:00.000Z",
+      "location": "University of Sussex",
+      "description": "Hackathon 2026!!",
+      "sponsors": [
+        "sponsor_umlbpo97xof"
+      ],
+      "logo": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/events/events_7elwt0gm.jpg",
+      "section": "upcomingEvents",
+      "eventType": "Hackathon"
+    }
+  ],
   "pastEvents": [
     {
       "id": "evt_lp72u50x3w",
