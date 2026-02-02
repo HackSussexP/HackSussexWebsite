@@ -30,7 +30,7 @@ const HackathonAbout = () => {
     <>
         <div className='container d-block w-75'>
             <AboutSection description={<>
-                <p>HackSussex 2025 is almost upon us! This unique event is hosted over a full weekend, including 24 hours of non-stop coding, workshops hosted by our sponsors, 4 mouth-wateringly tasty meals from local Brighton caterers, snacks and drinks, and an exclusive 2025 t-shirt, <strong>all for free</strong>!</p>
+                <p>HackSussex 2026 is almost upon us! This unique event is hosted over a full weekend, including 24 hours of non-stop coding, workshops hosted by our sponsors, 4 mouth-wateringly tasty meals from local Brighton caterers, snacks and drinks, and an exclusive 2025 t-shirt, <strong>all for free</strong>!</p>
                 <p>Your project can enter multiple of our many prize tracks. If you don’t have a team, find your family-for-the-weekend in our team building event! Together you’ll create a game, some software or something electronic. Have you never coded before? Have you been coding since before you were conceived? Are you competitive? Are you laid back? Want to boost your CV while having fun? Join us for our best Hackathon yet – you won’t want to miss this!</p>
                 </>}
             list={["A laptop with a charger", "HDMI cable (we have monitors that you can use)", "Any peripherals you want to use in a project", "Any necessary hardware or tools, if you plan on working on a project with them", "Water bottle and reusbale cup for hot drinks", "Toiletries and any medication you require"]} />
@@ -117,43 +117,10 @@ const HackathonAbout = () => {
                 <p className='col m-2 p-2 text-light text-center display-4'>What actually is a hackathon?</p>
             </div>
             <AboutSection description={<>
-                <p>With only a few days until the Hacksussex Hackathon 2024, we hope that you are just as excited as we are! To ensure that you are having the best experience during your time developing, we have gathered all the important information regarding the event.</p>
-                <p>In-person registration for the hackathon will begin at 10am on the 17th of February. It will take place at <a href="https://www.google.com/maps/place/50%C2%B051'56.4%22N+0%C2%B005'13.5%22W/@50.865676,-0.08709,17z/data=!3m1!4b1!4m4!3m3!8m2!3d50.865676!4d-0.08709?entry=ttu" style={hoveredLink === true ? styles.hoverStyle : styles.defaultStyle} onMouseEnter={() => setHoveredLink(true)} onMouseLeave={() => setHoveredLink(false)}>Chichester 1, University of Sussex</a>. The event will end at 6pm on the 18th of February.</p>
-                <p>If coming from Falmer Station, keep an eye out for HackSussex signs guiding the way. If you are coming via the 25 or 23 bus from Brighton, hop off at the North South Road stop.</p>
-                <p>If you are not coming with a team, you can find your team-for-the-weekend in our team building event on Saturday morning.</p>
-                <p>Please be aware that by attending the Hackathon 2024, you are acknowledging that images, (audio, visual, photographic) may be taken of you. All content may be used by HackSussex, The University of Sussex and companies involved with Hackathon 2024.</p>
-                <p>We also ask that you do not bring any nut products because there are attendees with severe allergies.</p>
-            </>}
-            list={["A laptop with a charger", "HDMI cable (we have monitors that you can use)", "Any peripherals you want to use in a project", "Any necessary hardware or tools, if you plan on working on a project with them", "Water bottle and reusbale cup for hot drinks", "Toiletries and any medication you require"]} />
-            <div className='row m-3 justify-content-center'>
-                <iframe
-                    className="rounded" 
-                    src="https://www.youtube.com/embed/X0D1yNHRXoI" 
-                    style={styles.mobileVideo}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowFullScreen
-                    title="Hackathon Video"
-                ></iframe>
-            </div>
-            <div className='container row rounded-4 my-2 mb-5 text-center text-dark' style={{backgroundColor: "var(--lime)"}}>
-                <p className='display-6 text-decoration-underline'>Upcoming Train Strikes and Engineering Work</p>
-                <p className='h5 lh-lg'>Please note the following:</p>
-                <ul className='list-group-flush'>
-                <li className='list-group-item'>- There are no trains running between Three Bridges and Brighton on both days of the hackathon.</li>
-                <li className='list-group-item'>- There is a bus replacement service between Three Bridges and Brighton in the early morning and late night Monday 12th to Friday 16th (week before Hackathon).</li>
-                <li className='list-group-item'>- There is a bus replacement service between Haywards Heath/Brighton and Eastbourne Monday 19th to Friday 23rd (week after Hackathon).</li>
-                </ul>
-                <p className='h5'>There are further strikes and engineering work planned around this time so please check with your rail travel provider before travelling.</p>
-                <a
-                style={hoveredLink === true ? hoverStyle : defaultStyle}
-                onMouseEnter={() => setHoveredLink(true)}
-                onMouseLeave={() => setHoveredLink(false)}
-                className="fs-4"
-                href='https://www.southernrailway.com/travel-information/plan-your-journey/planned-engineering-work'
-                target="_blank"
-                rel="noreferrer"
-                >Click here for more information.</a>
-            </div>
+                <p>HackSussex 2026 is almost upon us! This unique event is hosted over a full weekend, including 24 hours of non-stop coding, workshops hosted by our sponsors, 4 mouth-wateringly tasty meals from local Brighton caterers, snacks and drinks, and an exclusive 2025 t-shirt, <strong>all for free</strong>!</p>
+                <p>Your project can enter multiple of our many prize tracks. If you don’t have a team, find your family-for-the-weekend in our team building event! Together you’ll create a game, some software or something electronic. Have you never coded before? Have you been coding since before you were conceived? Are you competitive? Are you laid back? Want to boost your CV while having fun? Join us for our best Hackathon yet – you won’t want to miss this!</p>
+                </>}
+                list={["A laptop with a charger", "HDMI cable (we have monitors that you can use)", "Any peripherals you want to use in a project", "Any necessary hardware or tools, if you plan on working on a project with them", "Water bottle and reusbale cup for hot drinks", "Toiletries and any medication you require"]} />
         </div>
     </>
     );

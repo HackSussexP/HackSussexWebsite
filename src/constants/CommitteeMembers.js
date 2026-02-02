@@ -89,14 +89,6 @@ const committeeMembers = [
         githubLink: "https://github.com/dfrommont",
       },
       {
-        imageUrl: ella2,
-        name: "Ella Bennison",
-        role: "Competitive Programming",
-        email: "ella@hacksussex.com",
-        githubLink: "https://github.com/EllaCompSci",
-        linkedinLink: "https://www.linkedin.com/in/ella-bennison-7bab61254",
-      },
-      {
         imageUrl: jackG,
         name: "Jack Gibbs",
         role: "Web Development",

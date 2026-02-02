@@ -19,13 +19,13 @@ import casm from './../../assets/SponsorLogos/casm.png';
 
 const config = {
   "timer": true,
-  "event": false,
-  "schedule": true,
-  "sponsors": true,
-  "date": "Feb 22, 2025, 10:00:00",
-  "title": "2025 Hackathon",
-  "tickets": false,
-  "url": "https://tickets.hacksussex.com/HackSussex25/"
+  "event": true,
+  "schedule": false,
+  "sponsors": false,
+  "date": "Feb 28, 2026, 10:00:00",
+  "title": "2026 Hackathon",
+  "tickets": true,
+  "url": "https://tickets.hacksussex.com/HackSussex26/"
 }
 
 var schedule = {
@@ -148,7 +148,8 @@ const sponsorData = [
 ]
 
 const codes = [
-  { name: "Hackthons UK", url: "https://www.hackathons.org.uk/code-of-conduct" }
+  { name: "Hackthons UK", url: "https://www.hackathons.org.uk/code-of-conduct" },
+  { name: "MLH", url: "https://mlh.io/code-of-conduct" }
 ];
 
 const Hackathon = () => {
@@ -161,7 +162,7 @@ const Hackathon = () => {
             <div className="col-12 col-lg-6">
               <img src={HackathonLogo} alt="Hackathon Logo" className="img-fluid me-auto ms-auto d-block p-3" />
               <p className='text-wrap text-start d-none d-lg-block'>
-                📅 March 2026 <br />
+                📅 Feb/March 2026 <br />
                 📍 Chichester building, University of Sussex, UK
               </p>
             </div>
@@ -181,7 +182,7 @@ const Hackathon = () => {
       {config.tickets && <TicketSection url={config.url} />}
       {config.timer && <Timer date={config.date} title={config.title} />}
       <HackathonAbout />
-      {config.event && <EventWhereWhen location="University of Sussex, Brighton" date={"17 February 2024"} link={null} /> }
+      {config.event && <EventWhereWhen location="University of Sussex, Brighton" date={"28 February 2026"} link={null} /> }
       {config.schedule && <Schedule schedule={schedule} multi_day={true} />}
       {config.sponsors && <Sponsors sponsorData={sponsorData}/> }
       {config.event && <CodesOfConduct links={codes} /> }

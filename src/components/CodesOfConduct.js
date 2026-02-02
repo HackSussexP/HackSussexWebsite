@@ -28,7 +28,7 @@ const CodesOfConduct = ({ links }) => {
                         className="fs-4"
                         href={link.url}
                     >
-                      {index > 0 ? link.name + ", " : link.name}
+                      {index == 0 ? link.name + ", " : link.name}
                     </a>
                 </div>
             ))}
