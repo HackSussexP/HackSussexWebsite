@@ -162,7 +162,7 @@ const Hackathon = () => {
             <div className="col-12 col-lg-6">
               <img src={HackathonLogo} alt="Hackathon Logo" className="img-fluid me-auto ms-auto d-block p-3" />
               <p className='text-wrap text-start d-none d-lg-block'>
-                📅 Feb/March 2026 <br />
+                📅 28th Feb - 1st March 2026 <br />
                 📍 Chichester building, University of Sussex, UK
               </p>
             </div>
