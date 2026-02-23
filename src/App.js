@@ -1,6 +1,6 @@
 import './App.css';
 
-import React, { Suspense, lazy, useEffect} from 'react';
+import React, { Suspense, lazy, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import { Link } from 'react-router-dom';
@@ -89,11 +89,12 @@ const App = () => {
 
 function RouterReload() {
   const navigate = useNavigate();
+
   useEffect(() => {
     if (window.location.pathname === "/") {
       navigate("/Events/hackathon");
     }
-  }, []); {/* Update for specific events */}
+  }, []); {/* Update for specific events */ }
 
   return (
     <>

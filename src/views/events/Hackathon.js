@@ -1,4 +1,4 @@
-import EventWhereWhen from '../../components/EventWhereWhen'; 
+import EventWhereWhen from '../../components/EventWhereWhen';
 import Timer from '../../components/Timer';
 import Schedule from '../../components/Schedule';
 import Sponsors from '../../components/Sponsors';
@@ -16,15 +16,19 @@ import huk from './../../assets/SponsorLogos/huk.svg';
 import UoS from './../../assets/SponsorLogos/UoS.png';
 import recurse from './../../assets/SponsorLogos/recurse.png';
 import casm from './../../assets/SponsorLogos/casm.png';
+import mlh from './../../assets/SponsorLogos/Mlh-logo.png';
+import unity from './../../assets/SponsorLogos/unity.png';
+import gatwick from './../../assets/SponsorLogos/gatwick.png';
+import sussexai from './../../assets/SponsorLogos/sussex ai logo.png';
 
 const config = {
-  "timer": true,
+  "timer": false,
   "event": true,
-  "schedule": false,
-  "sponsors": false,
+  "schedule": true,
+  "sponsors": true,
   "date": "Feb 28, 2026, 10:00:00",
   "title": "2026 Hackathon",
-  "tickets": true,
+  "tickets": false,
   "url": "https://tickets.hacksussex.com/HackSussex26/"
 }
 
@@ -42,41 +46,61 @@ var schedule = {
     },
     {
       time: "12:00PM",
-      event: "Hacking Begins",
+      event: "Hacking Begins + Unity Talk",
       location: "Chichester 1 Labs",
     },
     {
       time: "1:00PM",
-      event: "Lunch - Happy Go Souvlaki",
-      location: "Chichester 1",
-    },
-    {
-      time: "2:00PM",
-      event: "Recurse ML Product Demo",
+      event: "Lunch",
       location: "Chichester 1 Lecture Theatre",
     },
     {
-      time: "2:30pm",
-      event: "CASM Technology Q&A",
+      time: "1:30PM",
+      event: "Sponsor Fair",
       location: "Chichester 1 Lecture Theatre"
     },
     {
+      time: "2:00PM",
+      event: "London Gatwick Airport Talk",
+      location: "Chichester 1 Lecture Theatre",
+    },
+    {
       time: "3:00PM",
-      event: "Hastings Direct - AI: when, why, what and not",
+      event: "Hastings Direct Talk",
+      location: "Chichester 1 Lecture Theatre",
+    },
+    {
+      time: "4:00PM",
+      event: "AI at Sussex",
+      location: "Chichester 1",
+    },
+    {
+      time: "5:00PM",
+      event: "CTX-AI Talk",
+      location: "Chichester 1 Lecture Theatre",
+    },
+    {
+      time: "6:00PM",
+      event: "Dinner",
       location: "Chichester 1 Lecture Theatre",
     },
     {
       time: "7:00PM",
-      event: "Dinner - PizzaMe",
+      event: "MLH AI Studio",
+      location: "Chichester 1 Lecture Theatre",
+    },
+    {
+      time: "7:30PM",
+      event: "MLH Github Copilot",
       location: "Chichester 1 Lecture Theatre",
     },
     {
       time: "8:00PM",
-      event: "Bob Ross Paint",
-      location: "Chichester 1",
-    }
+      event: "HUK Cup Stacking",
+      location: "Chichester 1 Lecture Theatre",
+    },
   ],
-  2:[
+  2: [
     {
       time: "12:00AM",
       event: "Midnight Snack",
@@ -88,9 +112,9 @@ var schedule = {
       location: "Chichester 1 Lecture Theatre",
     },
     {
-      time: "9:00AM",
-      event: "Breakfast - Bon Vivant",
-      location: "Breakfast",
+      time: "8:30AM",
+      event: "Breakfast",
+      location: "Chichester 1",
     },
     {
       time: "11:00AM",
@@ -99,17 +123,12 @@ var schedule = {
     },
     {
       time: "12:00PM",
-      event: "Hacking Ends",
+      event: "Hacking Finishes / Lunch",
       location: "Chichester 1",
     },
     {
       time: "1:00PM",
-      event: "Lunch - Tun Tun's Cafe",
-      location: "Chichester 1",
-    },
-    {
-      time: "2:00PM",
-      event: "Presentations",
+      event: "Judging",
       location: "Chichester 1",
     },
     {
@@ -132,13 +151,28 @@ const sponsorData = [
   },
   {
     title: "Silver Sponsor",
-    logo: casm,
-    url: "https://www.casmtechnology.com/"
+    logo: gatwick,
+    url: "https://www.gatwickairport.com/"
   },
   {
-    title: "Bronze Sponsor",
-    logo: recurse,
-    url: "https://www.recurse.ml/"
+    title: "Silver Sponsor",
+    logo: sussexai,
+    url: "https://www.sussexai.ac.uk/"
+  },
+  {
+    title: "Silver Sponsor",
+    logo: unity,
+    url: "https://www.unity.com/"
+  },
+  {
+    title: "Partner",
+    logo: mlh,
+    url: "https://mlh.io/"
+  },
+  {
+    title: "Partner",
+    logo: huk,
+    url: "https://www.hackathons.org.uk/"
   },
   {
     title: "Partner",
@@ -153,7 +187,7 @@ const codes = [
 ];
 
 const Hackathon = () => {
-  return(
+  return (
     <>
       <div className="carousel-inner p-0">
         <img src={HackathonBackground} className="d-block w-100 img-fluid splash" alt='Hackathon background' />
@@ -167,11 +201,11 @@ const Hackathon = () => {
               </p>
             </div>
             <div className="col-6 d-none d-lg-block">
-              <iframe 
-                className="w-100 rounded" 
-                src="https://www.youtube.com/embed/I0szBuNtyLs?si=zrvUYJ0cMzRRywWV" 
+              <iframe
+                className="w-100 rounded"
+                src="https://www.youtube.com/embed/I0szBuNtyLs?si=zrvUYJ0cMzRRywWV"
                 style={{ aspectRatio: '16/9', maxWidth: '560px', borderRadius: '15px' }}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 title="Hackathon Video"
               ></iframe>
@@ -182,10 +216,10 @@ const Hackathon = () => {
       {config.tickets && <TicketSection url={config.url} />}
       {config.timer && <Timer date={config.date} title={config.title} />}
       <HackathonAbout />
-      {config.event && <EventWhereWhen location="University of Sussex, Brighton" date={"28 February 2026"} link={null} /> }
+      {config.event && <EventWhereWhen location="University of Sussex, Brighton" date={"28 February 2026"} link={null} />}
       {config.schedule && <Schedule schedule={schedule} multi_day={true} />}
-      {config.sponsors && <Sponsors sponsorData={sponsorData}/> }
-      {config.event && <CodesOfConduct links={codes} /> }
+      {config.sponsors && <Sponsors sponsorData={sponsorData} />}
+      {config.event && <CodesOfConduct links={codes} />}
     </>
   );
 }
