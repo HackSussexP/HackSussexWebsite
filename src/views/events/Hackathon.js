@@ -52,7 +52,7 @@ var schedule = {
     {
       time: "1:00PM",
       event: "Lunch",
-      location: "Chichester 1 Lecture Theatre",
+      location: "Reception Area",
     },
     {
       time: "1:30PM",
@@ -82,7 +82,7 @@ var schedule = {
     {
       time: "6:00PM",
       event: "Dinner",
-      location: "Chichester 1 Lecture Theatre",
+      location: "Reception Area",
     },
     {
       time: "7:00PM",
@@ -97,7 +97,7 @@ var schedule = {
     {
       time: "8:00PM",
       event: "HUK Cup Stacking",
-      location: "Chichester 1 Lecture Theatre",
+      location: "FTL",
     },
   ],
   2: [
@@ -114,7 +114,7 @@ var schedule = {
     {
       time: "8:30AM",
       event: "Breakfast",
-      location: "Chichester 1",
+      location: "Reception Area",
     },
     {
       time: "11:00AM",
@@ -124,12 +124,12 @@ var schedule = {
     {
       time: "12:00PM",
       event: "Hacking Finishes / Lunch",
-      location: "Chichester 1",
+      location: "Reception Area",
     },
     {
       time: "1:00PM",
       event: "Judging",
-      location: "Chichester 1",
+      location: "Hacking space",
     },
     {
       time: "4:00PM",
