@@ -45,13 +45,13 @@ const hallOfFameData = [
 ];
 
 const config = {
-  "timer": false,
+  "timer": true,
   "event": false,
   "schedule": false,
   "sponsors": false,
-  "open": false,
-  "date": "17th April, 2025",
-  "title": "Coders' Cup 2025",
+  "open": true,
+  "date": "8th May, 2026",
+  "title": "Coders' Cup 2026",
 }
 
 var schedule = {
@@ -142,10 +142,10 @@ const CodersCup = () => {
         </div>
       </div>
  {config.open && <div className='container-fluid d-flex justify-content-center mt-3'> {/* Awaiting lik to competition */}
-      <Link className='rounded text-center display-4 p-3' to={"https://forms.gle/2TvJ9yvYCMktsdXz5"} target={"_blank"} style={hoveredLink === true ? hoverStyle : defaultStyle} onMouseEnter={() => setHoveredLink(true)} onMouseLeave={() => setHoveredLink(false)}>Register to enter</Link>
+      <Link className='rounded text-center display-4 p-3' to={"https://docs.google.com/forms/d/e/1FAIpQLSfv854bsplBWjSA5_e38_e3tMNgGvRQQEqPb8W0NnCJ9l54JA/viewform?usp=header"} target={"_blank"} style={hoveredLink === true ? hoverStyle : defaultStyle} onMouseEnter={() => setHoveredLink(true)} onMouseLeave={() => setHoveredLink(false)}>Register to enter</Link>
     </div>}
       {/* {config.timer && <Timer date={config.date} title={config.title} />} */}
-      <AboutSection description={[`Join us once again for our annual programming competition, the Coders' Cup! Livestreamed from the campus studio we bring you a number of experienced seriosu programmers battling each other to see who is the best competitive programmer that sussex can offer.`, `Want to come watch for yourself? This event will be livestreamed on our youtube and a small number of seats will be available in the studio on the day for friends and family of our competitors.`, ]}/>
+      <AboutSection description={[`Join us once again for our annual programming competition, the Coders' Cup! Livestreamed from the campus studio we bring you a number of experienced seriosu programmers battling each other to see who is the best competitive programmer that sussex can offer.`, `Want to come watch for yourself? This event will be livestreamed on our youtube channel.`, ]}/>
       <EventWhereWhen location="University of Sussex, Brighton" date={config.timer === true ? config.date : null} link={null} />
       {config.schedule && <Schedule schedule={schedule} multi_day={false} />}
       {config.sponsors && <Sponsors sponsorData={sponsorData}/>}
