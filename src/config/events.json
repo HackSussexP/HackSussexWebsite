@@ -1,5 +1,6 @@
 {
-  "upcomingEvents": [
+  "upcomingEvents": [],
+  "pastEvents": [
     {
       "title": "HackSussex 2026",
       "past": false,
@@ -51,9 +52,7 @@
       ],
       "id": "4501c5f6-c490-4117-bfdf-6233091c73a1",
       "section": "pastEvents"
-    }
-  ],
-  "pastEvents": [
+    },
     {
       "title": "HackSussex 2023",
       "date": "2023-02-18",
