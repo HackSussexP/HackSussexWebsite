@@ -1,0 +1,37 @@
+.container {
+  width: 100%;
+}
+
+.topLine {
+  display: block;
+  width: 100%;
+}
+
+.title {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.bottom {
+  position: relative;
+  padding: 2.5rem 0;
+  text-align: center;
+}
+
+.bottomText {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.ctaButton {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ctaContainer {
+  display: inline-block;
+  position: relative;
+}

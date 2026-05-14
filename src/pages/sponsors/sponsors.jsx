@@ -3,6 +3,7 @@ import styles from "./sponsors.module.css";
 import messages from "./sponsors.messages";
 import { githubRawToLocal } from "../../util/githubRawToLocal";
 import { useNavigate } from "react-router-dom";
+import TopHeader from "../../components/topHeader/TopHeader";
 
 const Sponsors = () => {
   const { sponsors, loading } = useSiteData();
@@ -14,23 +15,13 @@ const Sponsors = () => {
   return (
     <div className={styles.container}>
       <div className={styles.sponsors}>
-        <div className={styles.sponsorsTopLine}>
-          <div className={styles.sponsorsText}>
-            <h1
-              className={styles.heading}
-            >{messages.title}
-            </h1>
-            <p className={styles.ctaText}>{messages.ctaText}</p>
-          </div>
-          <div className={styles.cta}>
-            <button
-              className="secondary"
-              onClick={() => navigate("/contact#sponsor")}
-            >
-              {messages.ctaButton}
-            </button>
-          </div>
-        </div>
+        <TopHeader
+          title={messages.title}
+          ctaText={<p className={styles.ctaText}>{messages.ctaText}</p>}
+          ctaButtonLabel={messages.ctaButton}
+          onCtaClick={() => navigate("/contact#sponsor")}
+          className={styles.sponsorsTopLine}
+        />
         <div>
           <div className="background-grid container"></div>
           <div className={styles.grid}>

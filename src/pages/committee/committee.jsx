@@ -3,6 +3,7 @@ import { useSiteData } from "../../hooks/useSiteData";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import styles from "./committee.module.css";
 import messages from "./committee.messages";
+import TopHeader from "../../components/topHeader/TopHeader";
 
 const Committee = () => {
   const { committee, loading } = useSiteData();
@@ -62,21 +63,13 @@ const Committee = () => {
   return (
     <section className={styles.container}>
       <div className={styles.committee}>
-        <div className={styles.committeeTopLine}>
-          <div className={styles.sponsorsText}>
-            <h1 className={styles.title}>{messages.title}</h1>
-            <p className={styles.ctaText}>{messages.ctaText}</p>
-          </div>
-
-          <div className={styles.cta}>
-            <button
-              className="secondary"
-              onClick={() => navigate("/contact#committee")}
-            >
-              {messages.ctaButton}
-            </button>
-          </div>
-        </div>
+        <TopHeader
+          title={messages.title}
+          ctaText={<p className={styles.ctaText}>{messages.ctaText}</p>}
+          ctaButtonLabel={messages.ctaButton}
+          onCtaClick={() => navigate("/contact#committee")}
+          className={styles.committeeTopLine}
+        />
 
         {/* Current Committee */}
         <div className={styles.section}>

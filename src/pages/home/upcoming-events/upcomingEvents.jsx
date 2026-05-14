@@ -4,6 +4,7 @@ import styles from "./upcomingEvents.module.css";
 import messages from "./upcomingEvents.messages";
 import Event from "../../../components/event/event";
 import { useNavigate } from "react-router-dom";
+import TopHeader from "../../../components/topHeader/TopHeader";
 
 const UpcomingEvents = () => {
   const { events, sponsors, loading } = useSiteData();
@@ -60,19 +61,13 @@ const UpcomingEvents = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.topLine}>
-        <div className={styles.text}>
-          <h1 className={styles.heading}>{messages.heading}</h1>
-          <p className={styles.description}>{messages.description}</p>
-        </div>
-        <div className={styles.cta}>
-          <button
-            onClick={() => navigate("/events")}
-          >
-            {messages.ctaButton}
-          </button>
-        </div>
-      </div>
+      <TopHeader
+        title={messages.heading}
+        ctaText={<p className={styles.description}>{messages.description}</p>}
+        ctaButtonLabel={messages.ctaButton}
+        onCtaClick={() => navigate("/events")}
+        className={styles.topLine}
+      />
 
       <div className={styles.upComingEvent}>
         {events.upcomingEvents.map((event) => (

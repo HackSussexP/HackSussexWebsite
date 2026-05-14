@@ -3,6 +3,7 @@ import styles from "./events.module.css";
 import messages from "./events.messages";
 import { useNavigate } from "react-router-dom";
 import { useSiteData } from "../../../hooks/useSiteData";
+import TopHeader from "../../../components/topHeader/TopHeader";
 
 const EventTypes = () => {
   const navigate = useNavigate();
@@ -10,21 +11,13 @@ const EventTypes = () => {
 
   return (
     <section className={styles.container}>
-      <div className={styles.topLine}>
-        <div className={styles.text}>
-          <h1 className={styles.heading}>{messages.pageTitle}</h1>
-          <p className={styles.description}>{messages.description}</p>
-        </div>
-        <div className={styles.cta}>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfRM_qgPo4I5--Ijp-Bd2Ttf_01-5zOGZpxDtPRwwIslpO2EA/viewform?usp=publish-editor"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button>{messages.ctaButton}</button>
-          </a>
-        </div>
-      </div>
+      <TopHeader
+        title={messages.pageTitle}
+        ctaText={<p className={styles.description}>{messages.description}</p>}
+        ctaButtonLabel={messages.ctaButton}
+        onCtaClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSfRM_qgPo4I5--Ijp-Bd2Ttf_01-5zOGZpxDtPRwwIslpO2EA/viewform?usp=publish-editor", "_blank")}
+        className={styles.topLine}
+      />
       <div className={styles.grid}>
         {messages.eventTypes.map((event) => {
           const Icon = event.icon;
