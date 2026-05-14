@@ -1,5 +1,6 @@
 .container {
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .topLine {
@@ -10,28 +11,29 @@
 .title {
   margin: 0 0 0.5rem 0;
   font-size: 2rem;
+  margin-top: 2rem;
   text-align: left;
 }
 
 .bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-between;
   position: relative;
-  padding: 2.5rem 0;
+  padding: 0.5rem 0;
   text-align: center;
+  align-items: center;
 }
 
-.bottomText {
-  margin: 0 auto;
+.ctaText {
   max-width: 900px;
+  font-size: 1rem;
+  margin: 0;
+  text-align: start;
+  opacity: 0.8;
 }
 
 .ctaButton {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.ctaContainer {
-  display: inline-block;
-  position: relative;
+  height: fit-content;
 }

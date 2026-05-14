@@ -6,8 +6,7 @@
   max-width: var(--max-width);
 }
 
-.sponsors
-{
+.sponsors {
   width: 100%;
 }
 
@@ -24,7 +23,6 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   width: 100%;
-  margin-top: 35px;
 }
 
 .card {
@@ -35,7 +33,9 @@
   flex: 1 1 calc(25% - 1.5rem);
   min-width: 250px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   cursor: pointer;
   /* Glass effect */
   background: rgba(255, 255, 255, 0.023);
@@ -44,8 +44,7 @@
 
   border: 1px solid rgba(255, 255, 255, 0.15);
 
-  box-shadow:
-    0 8px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .card:hover {
@@ -93,47 +92,39 @@
   gap: 1rem;
 }
 
-.sponsorsTopLine
-{
+.sponsorsTopLine {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   gap: 20px;
 }
 
-.sponsorsText p
-{
+.sponsorsText p {
   margin-bottom: 0;
 }
 
 @media (max-width: 1185px) {
-  .grid
-  {
+  .grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .cardImage
-  {
+  .cardImage {
     max-height: 200px;
   }
 }
 
 @media (max-width: 900px) {
-  .sponsorsTopLine
-  {
+  .sponsorsTopLine {
     flex-direction: column;
     align-items: flex-start;
   }
-  .sponsorsText
-  {
+  .sponsorsText {
     width: 100%;
   }
 }
 
 @media (max-width: 680px) {
-  .grid
-  {
+  .grid {
     grid-template-columns: 1fr;
   }
-  
 }

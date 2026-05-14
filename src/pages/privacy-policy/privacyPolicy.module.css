@@ -1,6 +1,4 @@
-
-.container
-{
+.container {
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -9,8 +7,7 @@
   color: white;
 }
 
-.heading
-{
+.heading {
   text-align: start;
   font-size: 2.5rem;
   font-weight: 700;
@@ -18,78 +15,67 @@
   color: white;
 }
 
-.lastUpdated
-{
+.lastUpdated {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 30px;
   font-style: italic;
 }
 
-.intro
-{
+.intro {
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 40px;
   color: white;
 }
 
-.section
-{
+.section {
   margin-bottom: 40px;
   width: 100%;
 }
 
-.sectionTitle
-{
+.sectionTitle {
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 15px;
   color: white;
 }
 
-.section p
-{
+.section p {
   line-height: 1.7;
   margin-bottom: 15px;
   color: white;
 }
 
-.category
-{
+.category {
   margin-bottom: 20px;
   margin-left: 20px;
 }
 
-.categoryTitle
-{
+.categoryTitle {
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 10px;
   color: white;
 }
 
-.list
-{
+.list {
   margin-left: 40px;
   margin-bottom: 15px;
 }
 
-.list li
-{
+.list li {
   line-height: 1.7;
   margin-bottom: 8px;
   color: white;
 }
 
-.list li strong
-{
+.list li strong {
   color: white;
   font-weight: 600;
 }
 
-.email
-{
+.email {
   font-weight: 600;
   color: white;
   font-size: 1.1rem;

@@ -38,24 +38,22 @@ const Socials = () => {
   if (loading || !siteData) return null;
 
   const socialEntries = Object.entries(siteData).filter(
-    ([key]) => key !== "merch" && SOCIAL_CONFIG[key]
+    ([key]) => key !== "merch" && SOCIAL_CONFIG[key],
   );
 
   return (
     <ul className={styles.socialsList}>
       {socialEntries.map(([key, url]) => (
-          <a
-            key={url}
-            href={url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.socialLink}
-            aria-label={SOCIAL_CONFIG[key].label}
-          >
-            <span className={styles.icon}>
-              {SOCIAL_CONFIG[key].icon}
-            </span>
-          </a>
+        <a
+          key={url}
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.socialLink}
+          aria-label={SOCIAL_CONFIG[key].label}
+        >
+          <span className={styles.icon}>{SOCIAL_CONFIG[key].icon}</span>
+        </a>
       ))}
     </ul>
   );

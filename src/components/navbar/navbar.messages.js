@@ -3,7 +3,6 @@ const messages = {
   mlhBadgeHref:
     "https://mlh.io/eu?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white",
   links: [
-
     { name: "Gallery", path: "/gallery" },
     { name: "Sponsors", path: "/sponsors" },
     { name: "All Events", path: "/events" },
@@ -22,7 +21,7 @@ const messages = {
     { name: "FAQ", path: "/faq" },
     { name: "Merch Store", path: "/" },
   ],
-  workWithUs: "Work With Us"
+  workWithUs: "Work With Us",
 };
 
 export default messages;

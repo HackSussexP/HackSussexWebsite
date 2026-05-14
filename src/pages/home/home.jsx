@@ -7,7 +7,6 @@ import EventTypes from "./events/events";
 import JoinCommittee from "./join-committee/joinCommittee";
 
 const Home = () => {
-
   return (
     <div className={styles.homePage}>
       <Hero />
@@ -21,4 +20,3 @@ const Home = () => {
 };
 
 export default Home;
-

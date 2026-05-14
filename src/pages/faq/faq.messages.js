@@ -6,8 +6,7 @@ const messages = {
     {
       id: "since-when-active",
       question: "Since when has HackSussex been active?",
-      answer:
-        "HackSussex has been an active student-led society since 2012.",
+      answer: "HackSussex has been an active student-led society since 2012.",
     },
     {
       id: "types-of-events",
@@ -35,7 +34,8 @@ const messages = {
     },
     {
       id: "competitive-or-laid-back",
-      question: "Are your events suitable for both competitive and laid-back individuals?",
+      question:
+        "Are your events suitable for both competitive and laid-back individuals?",
       answer:
         "Absolutely. Our events cater to both competitive participants and those who prefer a more relaxed, exploratory experience.",
     },
@@ -53,9 +53,9 @@ const messages = {
     },
     {
       id: "cost",
-      question: "Are there any costs associated with attending a HackSussex event?",
-      answer:
-        "No. All HackSussex events are completely free for participants.",
+      question:
+        "Are there any costs associated with attending a HackSussex event?",
+      answer: "No. All HackSussex events are completely free for participants.",
     },
   ],
 };

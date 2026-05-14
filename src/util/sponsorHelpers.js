@@ -12,21 +12,21 @@
  * @returns {Object} tiers -> array of sponsor objects
  */
 export function getSponsorsByTier(event, allSponsors = []) {
-    const tiers = { gold: [], silver: [], bronze: [], partner: [], other: [] };
-    if (!event || !event.sponsors) return tiers;
+  const tiers = { gold: [], silver: [], bronze: [], partner: [], other: [] };
+  if (!event || !event.sponsors) return tiers;
 
-    if (Array.isArray(event.sponsors)) {
-        // legacy format: treat them as "other"
-        tiers.other = allSponsors.filter((s) => event.sponsors.includes(s.id));
-    } else {
-        Object.keys(tiers).forEach((tier) => {
-            if (tier === "other") return;
-            const ids = event.sponsors[tier] || [];
-            tiers[tier] = allSponsors.filter((s) => ids.includes(s.id));
-        });
-    }
+  if (Array.isArray(event.sponsors)) {
+    // legacy format: treat them as "other"
+    tiers.other = allSponsors.filter((s) => event.sponsors.includes(s.id));
+  } else {
+    Object.keys(tiers).forEach((tier) => {
+      if (tier === "other") return;
+      const ids = event.sponsors[tier] || [];
+      tiers[tier] = allSponsors.filter((s) => ids.includes(s.id));
+    });
+  }
 
-    return tiers;
+  return tiers;
 }
 
 /**
@@ -36,5 +36,5 @@ export function getSponsorsByTier(event, allSponsors = []) {
  * @returns {Array}
  */
 export function flattenSponsors(tiers) {
-    return Object.values(tiers).flat();
+  return Object.values(tiers).flat();
 }

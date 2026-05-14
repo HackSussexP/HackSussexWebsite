@@ -70,12 +70,16 @@ const Footer = () => {
         <span>
           © {new Date().getFullYear()} {messages.copyrightHolder}
         </span>
-        
+
         <div className={styles.bottomLinks}>
           <a href={messages.privacyPolicy.href}>
             {messages.privacyPolicy.label}
           </a>
-          <a href={messages.dashboard.href} target="_blank" rel="noopener noreferrer">
+          <a
+            href={messages.dashboard.href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {messages.dashboard.label}
           </a>
         </div>

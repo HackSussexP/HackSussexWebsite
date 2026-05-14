@@ -67,7 +67,9 @@ const NewsletterSignup = () => {
   };
 
   return (
-    <div className={`${styles.emailInputWrapper} ${loading ? styles.disabled : ""}`}>
+    <div
+      className={`${styles.emailInputWrapper} ${loading ? styles.disabled : ""}`}
+    >
       <input
         type="email"
         placeholder={messages.placeholder}

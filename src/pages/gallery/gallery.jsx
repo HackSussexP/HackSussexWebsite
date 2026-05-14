@@ -5,7 +5,7 @@ import messages from "./gallery.messages";
 // Automatically import all images
 const importAll = (r) => r.keys().map(r);
 const allImagesRaw = importAll(
-  require.context("../../assets/gallery", false, /\.(png|jpe?g|gif)$/)
+  require.context("../../assets/gallery", false, /\.(png|jpe?g|gif)$/),
 );
 
 const allImages = allImagesRaw.map((img) => {
@@ -26,9 +26,7 @@ const Gallery = () => {
   const [activeImage, setActiveImage] = useState(null);
 
   // Categories
-  const categories = Array.from(
-    new Set(allImages.map((img) => img.category))
-  );
+  const categories = Array.from(new Set(allImages.map((img) => img.category)));
 
   // Filter images
   const filteredImages =
@@ -41,7 +39,7 @@ const Gallery = () => {
   const startIndex = (currentPage - 1) * IMAGES_PER_PAGE;
   const paginatedImages = filteredImages.slice(
     startIndex,
-    startIndex + IMAGES_PER_PAGE
+    startIndex + IMAGES_PER_PAGE,
   );
 
   useEffect(() => {
@@ -110,9 +108,7 @@ const Gallery = () => {
           </span>
 
           <button
-            onClick={() =>
-              setCurrentPage((p) => Math.min(p + 1, totalPages))
-            }
+            onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
             disabled={currentPage === totalPages}
           >
             Next
@@ -122,20 +118,14 @@ const Gallery = () => {
 
       {/* LIGHTBOX OVERLAY */}
       {activeImage && (
-        <div
-          className={styles.overlay}
-          onClick={() => setActiveImage(null)}
-        >
+        <div className={styles.overlay} onClick={() => setActiveImage(null)}>
           <img
             src={activeImage}
             alt=""
             className={styles.overlayImage}
             onClick={(e) => e.stopPropagation()}
           />
-          <button
-            className={styles.close}
-            onClick={() => setActiveImage(null)}
-          >
+          <button className={styles.close} onClick={() => setActiveImage(null)}>
             ✕
           </button>
         </div>

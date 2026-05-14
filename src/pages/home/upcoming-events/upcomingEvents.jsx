@@ -21,7 +21,7 @@ const UpcomingEvents = () => {
       events.upcomingEvents.forEach((event) => {
         const eventDate = new Date(event.date);
         const cutoffDate = new Date(
-          eventDate.getTime() - 7 * 24 * 60 * 60 * 1000
+          eventDate.getTime() - 7 * 24 * 60 * 60 * 1000,
         );
 
         const now = Date.now();
@@ -63,10 +63,9 @@ const UpcomingEvents = () => {
     <div className={styles.container}>
       <TopHeader
         title={messages.heading}
-        ctaText={<p className={styles.description}>{messages.description}</p>}
+        ctaText={messages.description}
         ctaButtonLabel={messages.ctaButton}
         onCtaClick={() => navigate("/events")}
-        className={styles.topLine}
       />
 
       <div className={styles.upComingEvent}>

@@ -3,6 +3,7 @@ import { useSiteData } from "../../hooks/useSiteData";
 import styles from "./events.module.css";
 import messages from "./events.messages";
 import Event from "../../components/event/event";
+import TopHeader from "../../components/topHeader/TopHeader";
 
 const Events = () => {
   const { events, sponsors, loading } = useSiteData();
@@ -20,7 +21,9 @@ const Events = () => {
       const updatedTimers = {};
       upcomingEvents.forEach((event) => {
         const eventDate = new Date(event.date);
-        const cutoffDate = new Date(eventDate.getTime() - 7 * 24 * 60 * 60 * 1000);
+        const cutoffDate = new Date(
+          eventDate.getTime() - 7 * 24 * 60 * 60 * 1000,
+        );
         const diff = cutoffDate - now;
 
         if (diff <= 0) {
@@ -43,11 +46,15 @@ const Events = () => {
   }, [upcomingEvents]);
 
   if (upcomingEvents.length === 0 && pastEvents.length === 0)
-    return (<div className={styles.container}><p className={styles.noEvents}>{messages.noEvents}</p></div>);
+    return (
+      <div className={styles.container}>
+        <p className={styles.noEvents}>{messages.noEvents}</p>
+      </div>
+    );
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.heading}>{messages.title}</h1>
+      <TopHeader title={messages.title} ctaText={messages.description} />
 
       {upcomingEvents.length > 0 && (
         <div className={styles.upcomingEventsContainer}>

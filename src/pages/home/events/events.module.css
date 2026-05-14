@@ -46,9 +46,7 @@
   gap: 3rem;
   width: 100%;
   margin: 0 auto;
-  margin-top: 35px;
 }
-
 
 .card {
   display: flex;
@@ -57,7 +55,9 @@
   align-items: flex-start;
   text-align: start;
   border-radius: var(--border-radius);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 
   background: rgba(255, 255, 255, 0.023);
   backdrop-filter: blur(14px);
@@ -65,12 +65,10 @@
 
   border: 1px solid rgba(255, 255, 255, 0.15);
 
-  box-shadow:
-    0 8px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
-.card p
-{
+.card p {
   flex: 1;
 }
 
@@ -98,13 +96,11 @@
   object-fit: cover;
 }
 
-.card svg
-{
+.card svg {
   color: white;
   width: 30px;
   height: 30px;
 }
-
 
 .iconOverlay {
   position: absolute;
@@ -116,7 +112,6 @@
   color: white;
   font-size: 1.4rem;
 }
-
 
 .name {
   font-size: 1.5rem;

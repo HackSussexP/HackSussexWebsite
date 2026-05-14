@@ -6,8 +6,7 @@
   flex-direction: column;
 }
 
-.mlhBanner
-{
+.mlhBanner {
   position: absolute;
   top: -50px;
   width: 130px;
@@ -43,12 +42,9 @@
   gap: 1rem;
 }
 
-
-.upComingEvent
-{
+.upComingEvent {
   position: relative;
   max-width: var(--max-width);
-  margin-top: 35px;
 }
 
 /* .upComingEvent::after
@@ -73,13 +69,11 @@
   margin-top: 4rem;
 }
 
-.eventWrapper
-{
+.eventWrapper {
   position: relative;
 }
 
-.countdown
-{
+.countdown {
   position: absolute;
   bottom: 30;
   text-align: center;
@@ -91,4 +85,3 @@
   background-color: white;
   width: 280px;
 }
-

@@ -5,26 +5,37 @@ import messages from "./event.messages";
 import { githubRawToLocal } from "../../util/githubRawToLocal";
 import { getSponsorsByTier, flattenSponsors } from "../../util/sponsorHelpers";
 
-const Event = ({ event, sponsors, timer, simpleDesign = false, isPast = false }) => {
+const Event = ({
+  event,
+  sponsors,
+  timer,
+  simpleDesign = false,
+  isPast = false,
+}) => {
   // helper to render up to 3 lines and preserve manual breaks
   const renderDescription = (text) => {
     if (!text) return null;
     const lines = text.split(/\r?\n/);
     if (lines.length <= 3) {
       return lines.map((line, i) => (
-        <span key={i}>{line}{i < lines.length - 1 && <br />}</span>
+        <span key={i}>
+          {line}
+          {i < lines.length - 1 && <br />}
+        </span>
       ));
     }
     const firstThree = lines.slice(0, 3);
     return firstThree.map((line, i) => (
       <span key={i}>
-        {line}{i < firstThree.length - 1 ? <br /> : "…"}
+        {line}
+        {i < firstThree.length - 1 ? <br /> : "…"}
       </span>
     ));
   };
   const navigate = useNavigate();
 
   const ticketsClosed = timer?.closed;
+  const timerKnown = typeof timer !== "undefined" && timer !== null;
   const eventDate = new Date(event.date);
   const now = new Date();
   const showAddToCalendar = now < eventDate;
@@ -52,7 +63,9 @@ const Event = ({ event, sponsors, timer, simpleDesign = false, isPast = false })
       END:VCALENDAR
       `.trim();
 
-    const blob = new Blob([icsContent], { type: "text/calendar;charset=utf-8" });
+    const blob = new Blob([icsContent], {
+      type: "text/calendar;charset=utf-8",
+    });
     const url = URL.createObjectURL(blob);
 
     const link = document.createElement("a");
@@ -110,19 +123,25 @@ const Event = ({ event, sponsors, timer, simpleDesign = false, isPast = false })
             {isPast
               ? messages.detailsBtnText || "See details"
               : event.schedule && event.schedule.length > 0
-              ? messages.scheduleBtnText
-              : messages.detailsBtnText || "See details"}
+                ? messages.scheduleBtnText
+                : messages.detailsBtnText || "See details"}
           </button>
-          {ticketsClosed ? (
-            <button disabled>{messages.ticketsClosedText}</button>
-          ) : event.ticketsLink?.startsWith("https") ? (
-            <button
-              onClick={() =>
-                window.open(event.ticketsLink, "_blank", "noopener,noreferrer")
-              }
-            >
-              {messages.ticketsBtnText}
-            </button>
+          {timerKnown ? (
+            ticketsClosed && !isPast ? (
+              <button disabled>{messages.ticketsClosedText}</button>
+            ) : event.ticketsLink?.startsWith("https") ? (
+              <button
+                onClick={() =>
+                  window.open(
+                    event.ticketsLink,
+                    "_blank",
+                    "noopener,noreferrer",
+                  )
+                }
+              >
+                {messages.ticketsBtnText}
+              </button>
+            ) : null
           ) : null}
         </div>
       </div>
@@ -149,7 +168,9 @@ const Event = ({ event, sponsors, timer, simpleDesign = false, isPast = false })
           <p className={styles.location}>{event.location}</p>
 
           {/* render description with preserved breaks and limit to three lines */}
-          <p className={styles.description}>{renderDescription(event.description)}</p>
+          <p className={styles.description}>
+            {renderDescription(event.description)}
+          </p>
 
           {!ticketsClosed && timer?.text && (
             <p className={styles.countdown}>{timer.text}</p>
@@ -190,19 +211,28 @@ const Event = ({ event, sponsors, timer, simpleDesign = false, isPast = false })
                 {messages.calendarBtnText}
               </button>
             )}
-            <button className="secondary" onClick={() => navigate(`/schedules/${event.id}`)}>
+            <button
+              className="secondary"
+              onClick={() => navigate(`/schedules/${event.id}`)}
+            >
               {messages.scheduleBtnText}
             </button>
-            {ticketsClosed ? (
-              <button disabled>{messages.ticketsClosedText}</button>
-            ) : event.ticketsLink?.startsWith("https") ? (
-              <button
-                onClick={() =>
-                  window.open(event.ticketsLink, "_blank", "noopener,noreferrer")
-                }
-              >
-                {messages.ticketsBtnText}
-              </button>
+            {timerKnown ? (
+              ticketsClosed && !isPast ? (
+                <button disabled>{messages.ticketsClosedText}</button>
+              ) : event.ticketsLink?.startsWith("https") ? (
+                <button
+                  onClick={() =>
+                    window.open(
+                      event.ticketsLink,
+                      "_blank",
+                      "noopener,noreferrer",
+                    )
+                  }
+                >
+                  {messages.ticketsBtnText}
+                </button>
+              ) : null
             ) : null}
           </div>
         </div>

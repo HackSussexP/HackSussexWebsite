@@ -3,7 +3,7 @@ import styles from "./contact.module.css";
 import messages from "./contact.messages";
 
 const Contact = () => {
-  const { page, reasons, thankYou } = messages; 
+  const { page, reasons, thankYou } = messages;
   const reasonKeys = Object.keys(reasons).filter((key) => key !== "default");
 
   const [reasonKey, setReasonKey] = useState("default");
@@ -12,7 +12,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
-  const [submitted, setSubmitted] = useState(false); 
+  const [submitted, setSubmitted] = useState(false);
 
   const updateReasonFromHash = () => {
     const hash = window.location.hash.replace("#", "").toLowerCase();

@@ -7,37 +7,34 @@
   gap: 0px;
 }
 
-.emailInputWrapper button
-{
-    transform: translateX(-1px);
+.emailInputWrapper button {
+  transform: translateX(-1px);
 }
 
 .emailInputWrapper.disabled {
   opacity: 0.8;
 }
 
-.emailInputWrapper input
-{
-    background-color: white;
-    outline: none;
-    width: 100%;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    height: 100%;
-    color: black;
+.emailInputWrapper input {
+  background-color: white;
+  outline: none;
+  width: 100%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  height: 100%;
+  color: black;
 }
 
 input:disabled {
   cursor: not-allowed;
 }
 
-.arrowButton
-{
-    height: 100%;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    padding-right: 14px;
-    font-size: 1.4rem;
+.arrowButton {
+  height: 100%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding-right: 14px;
+  font-size: 1.4rem;
 }
 
 .spinner {
@@ -51,8 +48,12 @@ input:disabled {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .loadingButton {

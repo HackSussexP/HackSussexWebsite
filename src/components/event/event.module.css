@@ -11,7 +11,9 @@
   padding: 20px;
 
   border-radius: var(--border-radius);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 
   background: rgba(255, 255, 255, 0.023);
   backdrop-filter: blur(14px);
@@ -182,7 +184,6 @@
   padding: 10px;
 }
 
-
 .buttons {
   display: flex;
   gap: 1rem;
@@ -193,49 +194,43 @@
 }
 
 @media (max-width: 740px) {
-  .eventCard
-  {
+  .eventCard {
     flex-direction: column;
   }
 
-  .imageWrapper, .content
-  {
+  .imageWrapper,
+  .content {
     width: 100%;
     height: auto;
   }
 }
 
 @media (max-width: 1050px) {
-  .simpleButtons
-  {
+  .simpleButtons {
     flex-direction: column;
   }
 }
 
 @media (max-width: 765px) {
-  .simpleCard
-  {
+  .simpleCard {
     flex-direction: column;
     align-items: flex-start;
     text-align: start;
   }
 
-  .simpleDetails
-  {
+  .simpleDetails {
     width: 100%;
     padding: 0;
   }
 
-  .simpleImage
-  {
+  .simpleImage {
     width: 100%;
     height: auto;
     object-fit: contain;
     margin-bottom: 1rem;
   }
 
-  .simpleButtons
-  {
+  .simpleButtons {
     flex-direction: row;
     justify-content: flex-start;
     width: 100%;

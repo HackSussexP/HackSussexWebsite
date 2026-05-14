@@ -6,18 +6,18 @@ import messages from "./faq.messages";
 const FAQ = () => {
   const [openIds, setOpenIds] = useState([]); // store open item ids
 
-
   const toggleFAQ = (id) => {
-    setOpenIds((prev) =>
-      prev.includes(id)
-        ? prev.filter((openId) => openId !== id) // close
-        : [...prev, id] // open
+    setOpenIds(
+      (prev) =>
+        prev.includes(id)
+          ? prev.filter((openId) => openId !== id) // close
+          : [...prev, id], // open
     );
   };
 
   // wrapper around react-collapse for consistent styling
   const Answer = ({ isOpen, children }) => (
-    <Collapse isOpened={isOpen} theme={{collapse: styles.collapse}}>
+    <Collapse isOpened={isOpen} theme={{ collapse: styles.collapse }}>
       <div className={styles.answer}>
         <p>{children}</p>
       </div>
@@ -41,9 +41,7 @@ const FAQ = () => {
               >
                 <span>{faq.question}</span>
                 <span
-                  className={`${styles.arrow} ${
-                    isOpen ? styles.open : ""
-                  }`}
+                  className={`${styles.arrow} ${isOpen ? styles.open : ""}`}
                 >
                   ▾
                 </span>

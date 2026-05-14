@@ -18,9 +18,7 @@ const deterministicLeafColor = (index) => {
   const blue = [52, 152, 219];
 
   const t = deterministicBetween(index, 0, 1);
-  const rgb = lime.map((c, i) =>
-    Math.round(c + (blue[i] - c) * t)
-  );
+  const rgb = lime.map((c, i) => Math.round(c + (blue[i] - c) * t));
 
   return `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
 };

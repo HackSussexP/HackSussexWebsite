@@ -6,7 +6,6 @@
   max-width: var(--max-width);
 }
 
-
 .heading {
   text-align: start;
   font-size: 2.5rem;
@@ -30,7 +29,9 @@
   flex: 1 1 calc(25% - 1.5rem);
   min-width: 250px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   cursor: pointer;
   /* Glass effect */
   background: rgba(255, 255, 255, 0.023);
@@ -39,8 +40,7 @@
 
   border: 1px solid rgba(255, 255, 255, 0.15);
 
-  box-shadow:
-    0 8px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .card:hover {
@@ -89,16 +89,14 @@
   gap: 1rem;
 }
 
-.sponsorsTopLine
-{
+.sponsorsTopLine {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   gap: 20px;
 }
 
-.sponsorsText p
-{
+.sponsorsText p {
   margin-bottom: 0;
 }
 
@@ -110,8 +108,7 @@
 }
 
 @media (max-width: 1000px) {
-  .sponsorsTopLine
-  {
+  .sponsorsTopLine {
     flex-direction: column;
     align-items: flex-start;
   }

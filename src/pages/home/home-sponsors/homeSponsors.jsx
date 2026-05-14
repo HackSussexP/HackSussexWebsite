@@ -1,4 +1,3 @@
-
 import { useSiteData } from "../../../hooks/useSiteData";
 import styles from "./homeSponsors.module.css";
 import messages from "./homeSponsors.messages";
@@ -14,20 +13,17 @@ const Sponsors = () => {
   const navigate = useNavigate();
 
   const selectedSponsors = sponsors?.filter((sponsor) =>
-        ["Hastings Direct", "BCS", "EDF", "Electric Square"].includes(
-          sponsor.name
-        )
-    )
+    ["Hastings Direct", "BCS", "EDF", "Electric Square"].includes(sponsor.name),
+  );
 
   return (
     <div className={styles.container}>
       <div className={styles.sponsors}>
         <TopHeader
           title={messages.title}
-          ctaText={<p className={styles.ctaText}>{messages.ctaText}</p>}
+          ctaText={messages.ctaText}
           ctaButtonLabel={messages.ctaButton}
           onCtaClick={() => navigate("/contact#sponsor")}
-          className={styles.sponsorsTopLine}
         />
         <div>
           <div className="background-grid container"></div>
@@ -47,7 +43,6 @@ const Sponsors = () => {
             ))}
           </div>
         </div>
-
       </div>
     </div>
   );

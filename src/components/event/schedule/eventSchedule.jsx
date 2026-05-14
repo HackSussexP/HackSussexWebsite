@@ -4,7 +4,10 @@ import { useSiteData } from "../../../hooks/useSiteData";
 import { githubRawToLocal } from "../../../util/githubRawToLocal";
 import styles from "./eventSchedule.module.css";
 import messages from "./eventSchedule.messages";
-import { getSponsorsByTier, flattenSponsors } from "../../../util/sponsorHelpers";
+import {
+  getSponsorsByTier,
+  flattenSponsors,
+} from "../../../util/sponsorHelpers";
 
 const EventSchedule = () => {
   const { eventId } = useParams();
@@ -30,7 +33,7 @@ const EventSchedule = () => {
   const hasSchedule =
     Array.isArray(event.schedule) &&
     event.schedule.some(
-      (day) => Array.isArray(day.events) && day.events.length > 0
+      (day) => Array.isArray(day.events) && day.events.length > 0,
     );
 
   // normalise sponsor data for display
@@ -41,7 +44,7 @@ const EventSchedule = () => {
   const now = new Date();
 
   const oneWeekBeforeEvent = new Date(
-    eventDate.getTime() - 7 * 24 * 60 * 60 * 1000
+    eventDate.getTime() - 7 * 24 * 60 * 60 * 1000,
   );
 
   const showTicketsButton = now < oneWeekBeforeEvent;
@@ -82,19 +85,20 @@ const EventSchedule = () => {
             </div>
           ))}
         </div>
-      ) : (
-        null
-      )}
+      ) : null}
 
       {anySponsors.length > 0 && (
         <div className={styles.sponsorsSection}>
-          <h2 className={styles.sponsorsTitle}>{messages.sponsorSectionTitle || "Event Sponsors"}</h2>
+          <h2 className={styles.sponsorsTitle}>
+            {messages.sponsorSectionTitle || "Event Sponsors"}
+          </h2>
           <div className={styles.sponsorRow}>
-            {['gold','silver','bronze','partner','other'].map((tier) =>
+            {["gold", "silver", "bronze", "partner", "other"].map((tier) =>
               (sponsorsByTier[tier] || []).map((sponsor) => (
                 <div key={sponsor.id} className={styles.sponsorCard}>
                   <span className={styles.sponsorTierLabel}>
-                    {messages.tierLabels?.[tier] || tier.charAt(0).toUpperCase() + tier.slice(1)}
+                    {messages.tierLabels?.[tier] ||
+                      tier.charAt(0).toUpperCase() + tier.slice(1)}
                   </span>
                   <img
                     src={githubRawToLocal(sponsor.logoUrl)}
@@ -102,7 +106,7 @@ const EventSchedule = () => {
                     className={styles.sponsorImage}
                   />
                 </div>
-              ))
+              )),
             )}
           </div>
         </div>
@@ -124,11 +128,7 @@ const EventSchedule = () => {
         <div className={styles.ticketCta}>
           <button
             onClick={() =>
-              window.open(
-                event.ticketsLink,
-                "_blank",
-                "noopener,noreferrer"
-              )
+              window.open(event.ticketsLink, "_blank", "noopener,noreferrer")
             }
           >
             Book tickets now

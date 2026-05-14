@@ -17,10 +17,9 @@ const Sponsors = () => {
       <div className={styles.sponsors}>
         <TopHeader
           title={messages.title}
-          ctaText={<p className={styles.ctaText}>{messages.ctaText}</p>}
+          ctaText={messages.ctaText}
           ctaButtonLabel={messages.ctaButton}
           onCtaClick={() => navigate("/contact#sponsor")}
-          className={styles.sponsorsTopLine}
         />
         <div>
           <div className="background-grid container"></div>
@@ -40,7 +39,6 @@ const Sponsors = () => {
             ))}
           </div>
         </div>
-
       </div>
     </div>
   );

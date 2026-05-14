@@ -59,7 +59,7 @@
 }
 
 .navLink:hover {
-  opacity: 1; 
+  opacity: 1;
 }
 
 .active {
@@ -155,7 +155,6 @@
   margin-top: 20px;
 }
 
-
 .mobileItem {
   display: flex;
   flex-direction: row;
@@ -164,8 +163,7 @@
   flex-wrap: wrap;
 }
 
-.mobileItem a
-{
+.mobileItem a {
   text-decoration: none;
 }
 
@@ -177,7 +175,6 @@
   .rightContainer {
     display: none;
   }
-
 
   .mobileControls {
     display: flex;

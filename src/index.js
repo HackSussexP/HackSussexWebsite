@@ -8,16 +8,14 @@ import { BrowserRouter } from "react-router-dom";
 import { SiteDataProvider } from "./contexts/siteContext";
 import { ThemeProvider } from "./contexts/themeContext";
 
-
 root.render(
-    <React.StrictMode>
-        <BrowserRouter>
-            <SiteDataProvider>
-                <ThemeProvider>
-                    <App />
-                </ThemeProvider>
-            </SiteDataProvider>
-        </BrowserRouter>
-    </React.StrictMode>
-)
-
+  <React.StrictMode>
+    <BrowserRouter>
+      <SiteDataProvider>
+        <ThemeProvider>
+          <App />
+        </ThemeProvider>
+      </SiteDataProvider>
+    </BrowserRouter>
+  </React.StrictMode>,
+);

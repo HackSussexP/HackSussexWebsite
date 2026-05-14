@@ -13,13 +13,9 @@ const Committee = () => {
     return <p className={styles.loading}>{messages.loading}</p>;
   }
 
-  const currentCommittee = committee?.filter(
-    (member) => !member.pastCommittee
-  );
+  const currentCommittee = committee?.filter((member) => !member.pastCommittee);
 
-  const pastCommittee = committee?.filter(
-    (member) => member.pastCommittee
-  );
+  const pastCommittee = committee?.filter((member) => member.pastCommittee);
 
   const renderMembers = (members) => (
     <div className={styles.grid}>
@@ -65,22 +61,17 @@ const Committee = () => {
       <div className={styles.committee}>
         <TopHeader
           title={messages.title}
-          ctaText={<p className={styles.ctaText}>{messages.ctaText}</p>}
+          ctaText={messages.ctaText}
           ctaButtonLabel={messages.ctaButton}
           onCtaClick={() => navigate("/contact#committee")}
-          className={styles.committeeTopLine}
         />
 
         {/* Current Committee */}
-        <div className={styles.section}>
-          {renderMembers(currentCommittee)}
-        </div>
+        <div className={styles.section}>{renderMembers(currentCommittee)}</div>
 
         {/* Past Committee */}
         <div className={styles.section}>
-          <h2 className={styles.sectionTitle}>
-            {messages.pastCommitteeTitle}
-          </h2>
+          <h2 className={styles.sectionTitle}>{messages.pastCommitteeTitle}</h2>
           {renderMembers(pastCommittee)}
         </div>
       </div>

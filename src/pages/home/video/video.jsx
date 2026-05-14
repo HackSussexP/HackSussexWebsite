@@ -11,10 +11,9 @@ const Video = () => {
     <div className={styles.container}>
       <TopHeader
         title={messages.heading}
-        ctaText={<p className={styles.description}>{messages.description}</p>}
+        ctaText={messages.description}
         ctaButtonLabel={messages.ctaButton}
         onCtaClick={() => window.open(siteData.youtube, "_blank")}
-        className={styles.topLine}
       />
       <div className={styles.videoGrid}>
         <iframe

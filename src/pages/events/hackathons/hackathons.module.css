@@ -4,25 +4,22 @@
   margin: 0 auto;
 }
 
-.title
-{
+.title {
   text-align: start;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.imagesContainer
-{
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 30px;
+.imagesContainer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
-.imagesContainer img
-{
-    height: 180px;
-    object-fit: contain;
-    border-radius: var(--border-radius);
+.imagesContainer img {
+  height: 180px;
+  object-fit: contain;
+  border-radius: var(--border-radius);
 }

@@ -20,7 +20,6 @@
   margin-top: 30px;
 }
 
-
 .question {
   width: 100%;
   background: transparent;
@@ -31,14 +30,13 @@
   align-items: flex-start;
   cursor: pointer;
   text-align: start;
-  font-size: 1.0rem;
+  font-size: 1rem;
   font-weight: 600;
   outline: 2px solid var(--border-colour);
   border-radius: var(--border-radius);
 }
 
-.question span
-{
+.question span {
   color: white;
   white-space: wrap;
 }
@@ -66,5 +64,8 @@
 /* optional collapse wrapper style if needed */
 .collapse {
   overflow: hidden;
-  transition: height 0.35s ease-in-out, opacity 0.3s ease, padding 0.3s ease;
+  transition:
+    height 0.35s ease-in-out,
+    opacity 0.3s ease,
+    padding 0.3s ease;
 }
